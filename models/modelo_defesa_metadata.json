@@ -1,0 +1,18 @@
+{
+  "model_path": "C:\\Users\\eduar\\Desktop\\Mestrado\\AVI\\Digital_Twin\\models\\GBM_1_AutoML_1_20251207_234026",
+  "auc": 0.5621546961325967,
+  "accuracy": 0.5789473684210527,
+  "features": [
+    "zona_baliza_id",
+    "distancia_remate_m",
+    "velocidade_remate_kmh",
+    "minuto_jogo",
+    "diferenca_golos_momento",
+    "altura_cm",
+    "envergadura_cm",
+    "velocidade_lateral_ms"
+  ],
+  "trained_date": "2025-12-07T23:40:43.272299",
+  "n_train": 1299,
+  "n_test": 323
+}
