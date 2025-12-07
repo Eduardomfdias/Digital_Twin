@@ -23,7 +23,7 @@ st.set_page_config(
 )
 
 # CSS
-with open('../styles/custom.css') as f:
+with open('styles/custom.css') as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
 # BD
@@ -52,12 +52,20 @@ with st.sidebar:
         adversarios_df['nome'].tolist(),
         index=0
     )
-    adversario_id = adversarios_df[adversarios_df['nome'] == adversario_nome]['id'].values[0]
+    adversario_id = int(adversarios_df[adversarios_df['nome'] == adversario_nome]['id'].values[0])
     
     # Info do adversário
     query = "SELECT * FROM adversarios WHERE id = ?"
     with db.get_connection() as conn:
-        adv_info = pd.read_sql_query(query, conn, params=(adversario_id,)).iloc[0]
+        adv_info_df = pd.read_sql_query(query, conn, params=(adversario_id,))
+
+    # Verificar se encontrou o adversário (SEM INDENTAÇÃO EXTRA!)
+    if len(adv_info_df) == 0:
+        st.error(f"❌ Adversário com ID {adversario_id} não encontrado na base de dados!")
+        st.info("💡 Verifica se a tabela 'adversarios' tem dados.")
+        st.stop()
+
+    adv_info = adv_info_df.iloc[0]
     
     st.divider()
     

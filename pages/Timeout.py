@@ -24,7 +24,7 @@ st.set_page_config(
 )
 
 # Carregar CSS
-with open('../styles/custom.css') as f:
+with open('styles/custom.css') as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
 # Inicializar BD
@@ -96,7 +96,13 @@ with col3:
     WHERE guarda_redes_id = ? AND epoca = 2025
     """
     with db.get_connection() as conn:
-        taxa = pd.read_sql_query(query, conn, params=(gr_id,))['taxa_defesa_global'].values[0]
+        taxa_df = pd.read_sql_query(query, conn, params=(gr_id,))
+
+    # Verificar se há dados
+    if len(taxa_df) == 0:
+        taxa = 0.0  # Default se não houver dados
+    else:
+        taxa = taxa_df['taxa_defesa_global'].values[0]
     st.metric("🥅 Eficácia GR", f"{taxa:.1f}%", "+2%")
 
 with col4:
@@ -120,13 +126,19 @@ with col_left:
     st.plotly_chart(fig_compat, use_container_width=True)
     
     # Recomendação baseada em dados reais
-    melhor_gr = compat_df.iloc[0]
-    
-    if melhor_gr['nome'] == goalkeeper_nome:
-        st.success(f"✅ **{goalkeeper_nome}** é a melhor opção vs {adversario_nome} ({melhor_gr['taxa_defesa_perc']:.1f}% eficácia)")
+    if len(compat_df) == 0:
+        st.warning("⚠️ Sem dados de compatibilidade para este adversário.")
     else:
-        st.warning(f"⚠️ **SUGESTÃO DE SUBSTITUIÇÃO**: {melhor_gr['nome']} tem melhor compatibilidade ({melhor_gr['taxa_defesa_perc']:.1f}% vs {compat_df[compat_df['nome']==goalkeeper_nome]['taxa_defesa_perc'].values[0]:.1f}%)")
-    
+        melhor_gr = compat_df.iloc[0]
+        
+        if melhor_gr['nome'] == goalkeeper_nome:
+            st.success(f"✅ **{goalkeeper_nome}** é a melhor opção vs {adversario_nome} ({melhor_gr['taxa_defesa_perc']:.1f}% eficácia)")
+        else:
+            atual_taxa = compat_df[compat_df['nome']==goalkeeper_nome]['taxa_defesa_perc'].values
+            if len(atual_taxa) > 0:
+                st.warning(f"⚠️ **SUGESTÃO DE SUBSTITUIÇÃO**: {melhor_gr['nome']} tem melhor compatibilidade ({melhor_gr['taxa_defesa_perc']:.1f}% vs {atual_taxa[0]:.1f}%)")
+            else:
+                st.warning(f"⚠️ **SUGESTÃO**: {melhor_gr['nome']} tem melhor compatibilidade ({melhor_gr['taxa_defesa_perc']:.1f}%)")
     st.divider()
     
     # Heatmap de performance por zona do GR atual

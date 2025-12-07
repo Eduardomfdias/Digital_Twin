@@ -23,7 +23,7 @@ st.set_page_config(
 )
 
 # CSS
-with open('../styles/custom.css') as f:
+with open('styles/custom.css') as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
 # BD
@@ -63,7 +63,8 @@ with st.sidebar:
     # Taxa defesa atual
     query = "SELECT taxa_defesa_global FROM epocas WHERE guarda_redes_id = ? AND epoca = 2025"
     with db.get_connection() as conn:
-        taxa_atual = pd.read_sql_query(query, conn, params=(gr_id,))['taxa_defesa_global'].values[0]
+        taxa_df = pd.read_sql_query(query, conn, params=(gr_id,))
+        taxa_atual = taxa_df['taxa_defesa_global'].values[0] if len(taxa_df) > 0 else 55.0
     
     st.metric("Taxa Defesa (2025)", f"{taxa_atual:.1f}%")
 
