@@ -1,0 +1,15 @@
+id,nome,estilo_ofensivo,media_golos_jogo,ranking_liga,transicoes_rapidas_jogo,remates_zona_alta_perc,remates_zona_media_perc,remates_zona_baixa_perc,velocidade_media_remate_kmh,tipo_ataque_predominante,eficacia_primeira_linha_perc,eficacia_segunda_linha_perc
+1,FC Porto,Posicional,35.2,1,28,45,35,20,105,Circulação,72,58
+2,SL Benfica,Misto,33.8,2,35,40,38,22,102,Transição,68,62
+3,Sporting CP,Rápido,34.5,3,42,38,36,26,108,Contra-ataque,65,60
+4,SC Braga,Posicional,30.1,4,25,48,33,19,100,Circulação,70,55
+5,Águas Santas,Misto,28.5,5,30,42,37,21,98,Equilibrado,66,58
+6,ABC Braga,Posicional,27.8,6,22,50,32,18,96,Circulação,68,54
+7,Avanca,Rápido,29.3,7,38,36,40,24,104,Transição,63,61
+8,Madeira SAD,Misto,26.9,8,27,44,35,21,99,Equilibrado,67,56
+9,Póvoa,Posicional,25.2,9,20,52,30,18,94,Circulação,69,52
+10,Belenenses,Rápido,27.1,10,40,34,42,24,106,Contra-ataque,62,63
+11,Vitória Setúbal,Misto,24.8,11,32,43,36,21,97,Equilibrado,65,57
+12,Boa Hora,Posicional,23.5,12,18,54,28,18,92,Circulação,71,50
+13,Lever,Rápido,26.4,13,36,35,41,24,103,Transição,64,59
+14,Farense,Misto,22.9,14,29,45,34,21,95,Equilibrado,66,55

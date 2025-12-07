@@ -1,0 +1,1623 @@
+id,jogo_id,zona_baliza_id,zona_baliza_nome,distancia_remate_m,velocidade_remate_kmh,tipo_remate,posicao_ofensiva,minuto_jogo,fase_jogo,tempo_desde_ultima_defesa_s,resultado,diferenca_golos_momento,inferioridade_numerica
+1,1,9,Inferior Direita,8.5,115.4,Rectaguarda,Pivot,11,1ºT,153,Defesa,-5,False
+2,1,7,Inferior Esquerda,8.5,100.7,Apoio,Pivot,25,1ºT,127,Defesa,1,False
+3,1,9,Inferior Direita,6.7,115.9,Penetração,Central,39,2ºT,34,Golo,-2,False
+4,1,4,Média Esquerda,9.9,117.2,Rectaguarda,Extremo Direito,53,2ºT,128,Golo,1,False
+5,1,8,Inferior Centro,9.4,109.1,Apoio,Lateral Esquerdo,45,2ºT,13,Golo,-5,False
+6,1,3,Superior Direita,6.5,88.5,Rectaguarda,Pivot,9,1ºT,105,Golo,-5,False
+7,1,2,Superior Centro,8.7,117.7,Penetração,Central,11,1ºT,11,Golo,3,False
+8,1,2,Superior Centro,8.6,100.7,Penetração,Extremo Esquerdo,21,1ºT,89,Golo,1,False
+9,1,9,Inferior Direita,8.0,104.2,Contra-ataque,Pivot,44,2ºT,177,Golo,1,False
+10,1,5,Média Centro,7.6,94.8,Suspensão,Pivot,40,2ºT,165,Defesa,-3,False
+11,1,7,Inferior Esquerda,6.9,90.6,Rectaguarda,Pivot,24,1ºT,31,Golo,-5,False
+12,1,9,Inferior Direita,7.8,98.9,Suspensão,Extremo Esquerdo,31,2ºT,20,Golo,-1,False
+13,1,2,Superior Centro,9.8,97.7,Penetração,Extremo Direito,22,1ºT,124,Golo,3,False
+14,1,4,Média Esquerda,7.0,87.9,7 metros,Pivot,26,1ºT,28,Golo,4,False
+15,1,7,Inferior Esquerda,9.7,100.7,Suspensão,Central,15,1ºT,124,Golo,1,False
+16,1,7,Inferior Esquerda,7.0,105.8,7 metros,Lateral Esquerdo,37,2ºT,7,Defesa,-1,True
+17,1,7,Inferior Esquerda,8.5,94.3,Apoio,Central,24,1ºT,80,Golo,1,False
+18,1,1,Superior Esquerda,9.0,113.6,Apoio,Extremo Esquerdo,52,2ºT,62,Golo,-1,False
+19,1,6,Média Direita,9.4,105.1,Apoio,Lateral Esquerdo,29,1ºT,122,Defesa,5,False
+20,1,6,Média Direita,8.1,106.0,Suspensão,Pivot,16,1ºT,176,Golo,5,False
+21,1,5,Média Centro,8.7,96.3,Contra-ataque,Lateral Direito,30,1ºT,69,Defesa,1,False
+22,1,8,Inferior Centro,9.3,86.4,Apoio,Lateral Direito,31,2ºT,95,Defesa,-3,False
+23,1,3,Superior Direita,8.5,87.0,Contra-ataque,Central,59,2ºT,115,Golo,-2,False
+24,1,8,Inferior Centro,9.8,93.2,Suspensão,Lateral Esquerdo,43,2ºT,75,Defesa,-2,False
+25,1,3,Superior Direita,8.9,100.8,Apoio,Extremo Esquerdo,51,2ºT,101,Golo,0,False
+26,1,2,Superior Centro,8.5,105.0,Apoio,Lateral Direito,59,2ºT,54,Defesa,-3,False
+27,1,8,Inferior Centro,8.5,88.0,Apoio,Lateral Esquerdo,31,2ºT,133,Defesa,5,False
+28,1,1,Superior Esquerda,8.4,97.4,Contra-ataque,Lateral Esquerdo,55,2ºT,101,Golo,-2,False
+29,1,5,Média Centro,9.5,109.7,Contra-ataque,Central,34,2ºT,103,Defesa,3,True
+30,1,3,Superior Direita,9.3,103.0,Apoio,Extremo Direito,54,2ºT,119,Defesa,0,False
+31,1,7,Inferior Esquerda,7.9,95.9,Apoio,Lateral Direito,53,2ºT,57,Defesa,-2,False
+32,1,9,Inferior Direita,6.3,93.9,Rectaguarda,Lateral Esquerdo,19,1ºT,38,Defesa,1,False
+33,1,5,Média Centro,7.5,106.2,Apoio,Pivot,42,2ºT,97,Golo,5,False
+34,1,2,Superior Centro,7.0,107.9,7 metros,Lateral Esquerdo,38,2ºT,102,Defesa,4,False
+35,1,5,Média Centro,6.7,91.5,Rectaguarda,Extremo Direito,9,1ºT,42,Defesa,3,False
+36,1,5,Média Centro,8.5,101.8,Penetração,Pivot,44,2ºT,71,Golo,3,False
+37,1,9,Inferior Direita,8.5,106.2,Contra-ataque,Extremo Direito,12,1ºT,69,Golo,0,False
+38,1,3,Superior Direita,8.5,91.1,Contra-ataque,Central,42,2ºT,29,Defesa,1,False
+39,1,8,Inferior Centro,10.3,114.0,Contra-ataque,Central,7,1ºT,32,Golo,-2,False
+40,1,5,Média Centro,7.0,98.4,7 metros,Pivot,17,1ºT,179,Defesa,5,False
+41,1,1,Superior Esquerda,8.2,107.5,Rectaguarda,Extremo Esquerdo,54,2ºT,60,Golo,4,False
+42,1,2,Superior Centro,9.5,100.1,Apoio,Pivot,5,1ºT,44,Golo,-3,False
+43,1,6,Média Direita,7.4,95.8,Apoio,Lateral Direito,29,1ºT,160,Golo,2,False
+44,1,3,Superior Direita,9.1,95.2,Suspensão,Central,17,1ºT,139,Golo,2,False
+45,1,4,Média Esquerda,7.0,102.9,7 metros,Central,8,1ºT,141,Defesa,5,False
+46,1,1,Superior Esquerda,6.6,93.6,Rectaguarda,Lateral Direito,9,1ºT,58,Golo,0,False
+47,1,2,Superior Centro,7.0,96.3,7 metros,Lateral Esquerdo,15,1ºT,136,Defesa,-1,False
+48,1,9,Inferior Direita,7.0,90.0,7 metros,Central,52,2ºT,143,Golo,0,False
+49,1,3,Superior Direita,7.3,96.4,Suspensão,Extremo Esquerdo,26,1ºT,61,Golo,5,False
+50,1,8,Inferior Centro,7.0,99.1,7 metros,Lateral Esquerdo,46,2ºT,143,Golo,-3,False
+51,1,3,Superior Direita,6.5,111.0,Penetração,Pivot,41,2ºT,128,Defesa,5,False
+52,1,3,Superior Direita,8.4,86.5,Suspensão,Extremo Direito,42,2ºT,48,Golo,1,False
+53,1,7,Inferior Esquerda,7.0,91.4,7 metros,Central,2,1ºT,59,Golo,0,False
+54,1,1,Superior Esquerda,7.3,93.4,Apoio,Lateral Esquerdo,58,2ºT,10,Golo,-1,False
+55,1,9,Inferior Direita,7.0,85.2,7 metros,Pivot,5,1ºT,106,Golo,0,False
+56,1,8,Inferior Centro,8.7,93.1,Apoio,Extremo Esquerdo,30,1ºT,83,Defesa,-3,True
+57,2,3,Superior Direita,7.0,96.2,7 metros,Lateral Direito,32,2ºT,107,Golo,2,False
+58,2,6,Média Direita,7.0,88.5,Rectaguarda,Pivot,59,2ºT,135,Defesa,-4,True
+59,2,5,Média Centro,8.2,94.5,Contra-ataque,Extremo Esquerdo,45,2ºT,21,Defesa,4,False
+60,2,8,Inferior Centro,9.3,104.0,Suspensão,Extremo Direito,46,2ºT,158,Defesa,-5,False
+61,2,4,Média Esquerda,9.6,93.6,Penetração,Pivot,46,2ºT,102,Defesa,0,False
+62,2,3,Superior Direita,9.3,111.7,Suspensão,Extremo Direito,37,2ºT,19,Golo,2,True
+63,2,5,Média Centro,9.2,114.9,Penetração,Lateral Direito,47,2ºT,100,Defesa,-1,False
+64,2,3,Superior Direita,7.3,86.4,Rectaguarda,Extremo Direito,60,2ºT,99,Defesa,0,False
+65,2,7,Inferior Esquerda,7.0,94.4,7 metros,Pivot,24,1ºT,177,Golo,0,False
+66,2,2,Superior Centro,6.5,109.5,Penetração,Lateral Esquerdo,34,2ºT,174,Defesa,-4,False
+67,2,2,Superior Centro,7.0,110.4,7 metros,Extremo Direito,35,2ºT,21,Golo,-5,False
+68,2,5,Média Centro,9.3,111.9,Apoio,Extremo Direito,1,1ºT,105,Defesa,5,False
+69,2,9,Inferior Direita,7.0,111.7,7 metros,Lateral Direito,53,2ºT,129,Golo,-4,False
+70,2,4,Média Esquerda,6.6,95.6,Penetração,Central,38,2ºT,78,Golo,0,False
+71,2,5,Média Centro,6.2,89.7,Apoio,Extremo Direito,43,2ºT,96,Defesa,-4,True
+72,2,7,Inferior Esquerda,7.9,90.4,Penetração,Extremo Direito,18,1ºT,55,Golo,5,False
+73,2,6,Média Direita,7.1,112.2,Suspensão,Extremo Direito,8,1ºT,22,Golo,-1,False
+74,2,4,Média Esquerda,8.9,99.9,Suspensão,Central,52,2ºT,26,Golo,1,False
+75,2,1,Superior Esquerda,9.7,94.0,Rectaguarda,Lateral Esquerdo,2,1ºT,22,Golo,4,False
+76,2,2,Superior Centro,9.0,108.1,Apoio,Pivot,43,2ºT,176,Golo,-3,False
+77,2,3,Superior Direita,6.8,95.0,Apoio,Central,32,2ºT,148,Golo,2,False
+78,2,3,Superior Direita,6.1,107.7,Rectaguarda,Extremo Esquerdo,27,1ºT,31,Golo,-2,False
+79,2,6,Média Direita,9.6,97.9,Suspensão,Pivot,51,2ºT,161,Golo,-5,False
+80,2,4,Média Esquerda,7.0,112.6,7 metros,Extremo Esquerdo,29,1ºT,130,Golo,4,False
+81,2,8,Inferior Centro,8.7,104.7,Penetração,Extremo Esquerdo,12,1ºT,179,Defesa,4,False
+82,2,9,Inferior Direita,8.8,117.9,Contra-ataque,Extremo Esquerdo,24,1ºT,61,Golo,-2,False
+83,2,5,Média Centro,6.5,89.7,Penetração,Pivot,24,1ºT,95,Golo,4,True
+84,2,8,Inferior Centro,7.0,103.0,7 metros,Extremo Direito,2,1ºT,102,Defesa,-5,False
+85,2,5,Média Centro,7.3,88.7,Rectaguarda,Central,55,2ºT,27,Golo,-3,False
+86,2,7,Inferior Esquerda,8.6,100.3,Penetração,Extremo Direito,58,2ºT,133,Defesa,-2,False
+87,2,9,Inferior Direita,6.7,86.1,Suspensão,Central,6,1ºT,29,Golo,-5,True
+88,2,4,Média Esquerda,6.4,112.9,Rectaguarda,Pivot,33,2ºT,26,Defesa,-5,False
+89,2,2,Superior Centro,7.0,111.1,Suspensão,Lateral Esquerdo,25,1ºT,103,Golo,-2,False
+90,2,2,Superior Centro,7.0,86.3,Suspensão,Central,35,2ºT,50,Golo,-3,False
+91,2,3,Superior Direita,7.2,100.4,Penetração,Central,60,2ºT,176,Golo,-5,False
+92,2,3,Superior Direita,9.3,90.6,Contra-ataque,Lateral Direito,54,2ºT,52,Golo,-2,False
+93,2,6,Média Direita,8.9,111.5,Contra-ataque,Pivot,53,2ºT,127,Golo,-5,False
+94,2,6,Média Direita,8.8,101.9,Apoio,Extremo Esquerdo,33,2ºT,82,Defesa,3,False
+95,2,2,Superior Centro,8.5,108.6,Penetração,Lateral Direito,12,1ºT,12,Golo,-2,False
+96,2,6,Média Direita,10.3,86.7,Contra-ataque,Extremo Esquerdo,26,1ºT,141,Golo,4,False
+97,2,3,Superior Direita,8.4,104.7,Apoio,Extremo Esquerdo,38,2ºT,9,Golo,-4,False
+98,2,8,Inferior Centro,8.1,86.5,Suspensão,Extremo Direito,53,2ºT,77,Defesa,-1,False
+99,2,6,Média Direita,6.7,102.8,Rectaguarda,Extremo Direito,52,2ºT,157,Golo,2,False
+100,2,1,Superior Esquerda,8.1,115.4,Contra-ataque,Central,41,2ºT,119,Defesa,-1,False
+101,2,1,Superior Esquerda,10.0,107.4,Penetração,Lateral Esquerdo,54,2ºT,43,Golo,-3,False
+102,2,6,Média Direita,10.6,97.4,Contra-ataque,Extremo Esquerdo,24,1ºT,102,Golo,-3,True
+103,3,4,Média Esquerda,7.4,106.5,Suspensão,Lateral Esquerdo,16,1ºT,90,Golo,5,False
+104,3,4,Média Esquerda,9.8,92.4,Suspensão,Lateral Direito,1,1ºT,12,Defesa,5,True
+105,3,9,Inferior Direita,7.4,113.5,Penetração,Pivot,11,1ºT,130,Defesa,-1,False
+106,3,5,Média Centro,7.0,117.4,7 metros,Extremo Direito,12,1ºT,151,Golo,0,False
+107,3,1,Superior Esquerda,9.0,86.7,Suspensão,Extremo Esquerdo,5,1ºT,25,Golo,3,False
+108,3,4,Média Esquerda,9.7,99.5,Rectaguarda,Extremo Esquerdo,26,1ºT,73,Golo,2,False
+109,3,3,Superior Direita,8.4,114.3,Rectaguarda,Pivot,6,1ºT,98,Defesa,3,False
+110,3,3,Superior Direita,6.6,116.8,Apoio,Pivot,31,2ºT,88,Defesa,-1,False
+111,3,3,Superior Direita,6.9,87.7,Apoio,Extremo Direito,31,2ºT,154,Golo,1,False
+112,3,9,Inferior Direita,10.3,90.7,Contra-ataque,Extremo Direito,9,1ºT,82,Golo,4,False
+113,3,5,Média Centro,8.1,116.9,Contra-ataque,Pivot,47,2ºT,164,Defesa,-5,False
+114,3,4,Média Esquerda,7.2,104.3,Penetração,Extremo Direito,48,2ºT,89,Golo,-5,True
+115,3,6,Média Direita,9.7,94.4,Apoio,Extremo Esquerdo,9,1ºT,106,Defesa,2,False
+116,3,7,Inferior Esquerda,7.0,111.7,7 metros,Extremo Direito,27,1ºT,138,Defesa,-5,False
+117,3,7,Inferior Esquerda,9.0,100.7,Contra-ataque,Lateral Direito,47,2ºT,23,Golo,-5,False
+118,3,2,Superior Centro,10.4,104.5,Contra-ataque,Pivot,55,2ºT,31,Defesa,3,True
+119,3,8,Inferior Centro,7.0,110.2,7 metros,Pivot,16,1ºT,36,Golo,5,False
+120,3,2,Superior Centro,9.6,108.0,Rectaguarda,Extremo Direito,6,1ºT,136,Defesa,5,False
+121,3,1,Superior Esquerda,7.1,97.9,Suspensão,Pivot,55,2ºT,11,Defesa,-3,False
+122,3,4,Média Esquerda,7.0,108.8,7 metros,Lateral Direito,37,2ºT,146,Golo,-2,False
+123,3,5,Média Centro,9.4,116.0,Apoio,Extremo Esquerdo,9,1ºT,19,Defesa,-1,False
+124,3,5,Média Centro,7.9,114.9,Apoio,Extremo Esquerdo,21,1ºT,180,Defesa,-3,False
+125,3,5,Média Centro,7.0,95.5,7 metros,Lateral Esquerdo,34,2ºT,77,Defesa,0,False
+126,3,6,Média Direita,9.2,91.3,Apoio,Pivot,34,2ºT,12,Defesa,-5,True
+127,3,5,Média Centro,6.3,97.2,Penetração,Lateral Direito,13,1ºT,162,Golo,5,False
+128,3,8,Inferior Centro,8.9,103.4,Contra-ataque,Central,28,1ºT,105,Golo,3,False
+129,3,3,Superior Direita,6.1,86.4,Suspensão,Lateral Direito,41,2ºT,139,Defesa,1,False
+130,3,9,Inferior Direita,8.8,102.1,Rectaguarda,Pivot,10,1ºT,31,Golo,-3,False
+131,3,2,Superior Centro,9.5,114.5,Penetração,Central,33,2ºT,79,Golo,3,False
+132,3,8,Inferior Centro,9.0,112.0,Rectaguarda,Pivot,35,2ºT,32,Defesa,5,False
+133,3,5,Média Centro,9.7,90.9,Apoio,Lateral Direito,40,2ºT,81,Defesa,1,False
+134,3,9,Inferior Direita,7.0,114.8,7 metros,Lateral Esquerdo,55,2ºT,137,Defesa,-4,True
+135,3,9,Inferior Direita,7.0,115.6,7 metros,Pivot,30,1ºT,86,Golo,1,False
+136,3,1,Superior Esquerda,6.0,86.8,Rectaguarda,Central,34,2ºT,91,Defesa,4,False
+137,3,3,Superior Direita,10.0,117.3,Apoio,Extremo Direito,56,2ºT,86,Golo,5,False
+138,3,1,Superior Esquerda,9.7,114.1,Rectaguarda,Extremo Esquerdo,9,1ºT,80,Golo,4,False
+139,3,1,Superior Esquerda,7.0,116.3,7 metros,Central,25,1ºT,84,Golo,1,False
+140,3,1,Superior Esquerda,7.0,89.9,7 metros,Lateral Direito,11,1ºT,95,Golo,-1,False
+141,3,2,Superior Centro,7.2,117.3,Rectaguarda,Pivot,2,1ºT,99,Golo,-3,True
+142,3,7,Inferior Esquerda,8.3,88.9,Penetração,Extremo Direito,16,1ºT,178,Golo,-4,False
+143,3,5,Média Centro,8.5,101.8,Contra-ataque,Lateral Esquerdo,42,2ºT,158,Golo,-3,False
+144,3,2,Superior Centro,7.0,98.4,7 metros,Extremo Esquerdo,22,1ºT,58,Golo,4,True
+145,3,3,Superior Direita,10.4,117.5,Contra-ataque,Pivot,11,1ºT,99,Golo,-5,False
+146,3,9,Inferior Direita,7.0,101.8,Apoio,Lateral Direito,19,1ºT,176,Golo,3,False
+147,3,6,Média Direita,8.0,94.6,Apoio,Extremo Esquerdo,8,1ºT,38,Golo,1,True
+148,3,8,Inferior Centro,9.2,104.7,Suspensão,Lateral Direito,7,1ºT,15,Golo,-2,False
+149,3,5,Média Centro,6.4,106.7,Suspensão,Lateral Direito,35,2ºT,108,Defesa,2,False
+150,3,6,Média Direita,7.8,106.0,Suspensão,Central,27,1ºT,62,Defesa,2,False
+151,3,9,Inferior Direita,7.0,86.3,7 metros,Extremo Direito,31,2ºT,44,Golo,-2,False
+152,3,2,Superior Centro,6.3,85.7,Apoio,Pivot,48,2ºT,37,Defesa,1,False
+153,3,1,Superior Esquerda,7.2,86.8,Penetração,Extremo Direito,31,2ºT,159,Golo,3,False
+154,3,7,Inferior Esquerda,8.0,91.4,Suspensão,Pivot,49,2ºT,7,Golo,2,False
+155,3,9,Inferior Direita,6.8,90.3,Penetração,Pivot,47,2ºT,162,Golo,-4,False
+156,3,5,Média Centro,10.3,105.6,Contra-ataque,Extremo Esquerdo,4,1ºT,155,Golo,1,False
+157,3,3,Superior Direita,7.0,88.5,7 metros,Extremo Direito,54,2ºT,109,Golo,4,False
+158,3,6,Média Direita,7.0,97.3,7 metros,Pivot,25,1ºT,113,Defesa,5,False
+159,3,4,Média Esquerda,7.3,113.0,Penetração,Extremo Direito,17,1ºT,159,Defesa,0,False
+160,3,6,Média Direita,11.0,95.7,Contra-ataque,Extremo Esquerdo,54,2ºT,6,Defesa,5,True
+161,3,4,Média Esquerda,9.8,114.3,Penetração,Extremo Esquerdo,59,2ºT,63,Golo,3,False
+162,3,3,Superior Direita,6.1,98.7,Rectaguarda,Pivot,2,1ºT,35,Golo,0,False
+163,3,5,Média Centro,6.7,96.0,Apoio,Central,50,2ºT,32,Defesa,4,False
+164,3,6,Média Direita,7.0,98.5,7 metros,Lateral Direito,11,1ºT,117,Golo,2,False
+165,3,1,Superior Esquerda,9.5,114.3,Rectaguarda,Extremo Direito,59,2ºT,62,Golo,-3,False
+166,3,3,Superior Direita,7.4,87.7,Apoio,Lateral Esquerdo,32,2ºT,5,Defesa,0,False
+167,3,9,Inferior Direita,8.6,108.3,Contra-ataque,Extremo Direito,57,2ºT,136,Golo,-3,False
+168,4,6,Média Direita,8.6,90.3,Suspensão,Extremo Direito,57,2ºT,175,Defesa,-3,True
+169,4,3,Superior Direita,7.0,114.9,7 metros,Central,51,2ºT,150,Golo,1,False
+170,4,7,Inferior Esquerda,8.7,97.8,Suspensão,Extremo Esquerdo,42,2ºT,177,Golo,4,False
+171,4,5,Média Centro,7.3,117.6,Rectaguarda,Lateral Esquerdo,34,2ºT,30,Golo,-4,False
+172,4,6,Média Direita,7.1,113.2,Rectaguarda,Extremo Esquerdo,50,2ºT,28,Defesa,2,False
+173,4,1,Superior Esquerda,8.9,114.8,Apoio,Lateral Esquerdo,41,2ºT,64,Defesa,4,False
+174,4,3,Superior Direita,8.2,101.0,Penetração,Central,16,1ºT,116,Golo,5,False
+175,4,2,Superior Centro,9.6,96.5,Contra-ataque,Extremo Esquerdo,29,1ºT,83,Defesa,-2,False
+176,4,6,Média Direita,7.0,100.2,7 metros,Pivot,42,2ºT,162,Golo,0,False
+177,4,2,Superior Centro,8.9,114.0,Penetração,Extremo Direito,38,2ºT,50,Golo,-4,False
+178,4,7,Inferior Esquerda,9.0,106.2,Apoio,Lateral Esquerdo,31,2ºT,92,Golo,-4,False
+179,4,7,Inferior Esquerda,7.0,86.9,7 metros,Pivot,6,1ºT,69,Golo,2,False
+180,4,9,Inferior Direita,9.1,112.7,Apoio,Lateral Esquerdo,25,1ºT,27,Defesa,-2,False
+181,4,8,Inferior Centro,7.5,102.0,Rectaguarda,Central,53,2ºT,144,Defesa,-4,True
+182,4,5,Média Centro,6.7,96.1,Rectaguarda,Extremo Esquerdo,59,2ºT,140,Defesa,2,False
+183,4,9,Inferior Direita,8.7,114.2,Suspensão,Lateral Direito,39,2ºT,147,Defesa,-2,False
+184,4,9,Inferior Direita,7.0,107.1,7 metros,Pivot,1,1ºT,87,Defesa,-4,False
+185,4,7,Inferior Esquerda,6.6,114.5,Penetração,Central,16,1ºT,111,Defesa,4,False
+186,4,9,Inferior Direita,10.4,97.9,Contra-ataque,Central,12,1ºT,30,Golo,2,False
+187,4,7,Inferior Esquerda,9.5,108.3,Apoio,Central,43,2ºT,74,Defesa,-1,False
+188,4,1,Superior Esquerda,6.7,104.9,Rectaguarda,Lateral Esquerdo,39,2ºT,137,Golo,-4,False
+189,4,8,Inferior Centro,8.4,90.4,Suspensão,Pivot,49,2ºT,145,Golo,4,False
+190,4,2,Superior Centro,9.4,88.5,Contra-ataque,Extremo Direito,49,2ºT,34,Defesa,-2,False
+191,4,9,Inferior Direita,8.2,116.1,Rectaguarda,Central,58,2ºT,164,Golo,0,False
+192,4,9,Inferior Direita,7.8,97.5,Penetração,Extremo Direito,17,1ºT,137,Golo,-3,False
+193,4,8,Inferior Centro,6.1,104.7,Suspensão,Extremo Esquerdo,3,1ºT,160,Defesa,4,False
+194,4,4,Média Esquerda,7.1,88.4,Suspensão,Lateral Direito,19,1ºT,45,Defesa,4,False
+195,4,8,Inferior Centro,8.5,87.5,Contra-ataque,Extremo Direito,51,2ºT,33,Defesa,-2,False
+196,4,9,Inferior Direita,9.5,106.3,Penetração,Pivot,40,2ºT,122,Defesa,-5,False
+197,4,9,Inferior Direita,8.2,86.7,Rectaguarda,Lateral Esquerdo,45,2ºT,140,Golo,-5,False
+198,4,5,Média Centro,9.7,95.2,Rectaguarda,Lateral Esquerdo,42,2ºT,78,Defesa,0,False
+199,4,5,Média Centro,7.9,94.2,Rectaguarda,Extremo Esquerdo,13,1ºT,76,Defesa,-3,False
+200,4,4,Média Esquerda,7.5,99.0,Rectaguarda,Lateral Direito,34,2ºT,120,Defesa,-3,False
+201,4,8,Inferior Centro,7.0,111.3,7 metros,Lateral Direito,55,2ºT,120,Golo,-4,False
+202,4,7,Inferior Esquerda,8.7,86.4,Suspensão,Pivot,54,2ºT,33,Golo,5,True
+203,4,8,Inferior Centro,8.4,108.6,Rectaguarda,Extremo Direito,46,2ºT,131,Defesa,-2,False
+204,4,3,Superior Direita,7.0,112.7,7 metros,Extremo Direito,1,1ºT,169,Defesa,-2,False
+205,4,9,Inferior Direita,6.9,89.7,Apoio,Pivot,1,1ºT,52,Golo,5,False
+206,4,3,Superior Direita,9.6,116.2,Contra-ataque,Central,60,2ºT,161,Golo,-4,False
+207,4,9,Inferior Direita,8.3,110.8,Rectaguarda,Lateral Direito,33,2ºT,52,Defesa,4,False
+208,4,4,Média Esquerda,10.5,109.1,Contra-ataque,Lateral Esquerdo,47,2ºT,128,Golo,2,False
+209,4,4,Média Esquerda,6.2,106.7,Penetração,Pivot,15,1ºT,57,Defesa,-3,False
+210,4,9,Inferior Direita,6.4,86.3,Penetração,Pivot,37,2ºT,171,Golo,1,False
+211,4,4,Média Esquerda,7.0,105.9,7 metros,Extremo Direito,41,2ºT,37,Defesa,2,False
+212,4,2,Superior Centro,6.2,102.7,Penetração,Extremo Direito,24,1ºT,106,Golo,-3,False
+213,4,6,Média Direita,8.7,90.7,Penetração,Lateral Direito,42,2ºT,96,Defesa,1,False
+214,5,6,Média Direita,7.0,86.9,7 metros,Central,17,1ºT,40,Defesa,-3,False
+215,5,2,Superior Centro,6.7,93.6,Penetração,Central,13,1ºT,137,Defesa,5,False
+216,5,2,Superior Centro,7.0,111.3,7 metros,Central,52,2ºT,113,Golo,2,False
+217,5,8,Inferior Centro,10.2,86.5,Contra-ataque,Extremo Esquerdo,24,1ºT,105,Defesa,-4,False
+218,5,1,Superior Esquerda,9.6,94.3,Apoio,Lateral Direito,39,2ºT,31,Defesa,-1,False
+219,5,9,Inferior Direita,9.3,88.4,Contra-ataque,Central,9,1ºT,58,Golo,2,False
+220,5,5,Média Centro,7.0,93.5,7 metros,Lateral Direito,19,1ºT,161,Defesa,1,False
+221,5,9,Inferior Direita,8.4,105.2,Suspensão,Lateral Esquerdo,52,2ºT,8,Defesa,-3,False
+222,5,7,Inferior Esquerda,7.4,94.3,Apoio,Extremo Esquerdo,53,2ºT,95,Defesa,-4,False
+223,5,2,Superior Centro,6.4,98.8,Apoio,Central,41,2ºT,69,Defesa,-3,False
+224,5,5,Média Centro,9.0,98.6,Rectaguarda,Extremo Direito,11,1ºT,49,Golo,-5,False
+225,5,9,Inferior Direita,10.0,88.4,Contra-ataque,Central,9,1ºT,76,Defesa,-4,False
+226,5,9,Inferior Direita,10.0,104.6,Contra-ataque,Pivot,26,1ºT,153,Golo,-1,False
+227,5,4,Média Esquerda,7.0,116.7,7 metros,Extremo Esquerdo,32,2ºT,58,Defesa,-4,False
+228,5,9,Inferior Direita,6.6,117.7,Penetração,Lateral Esquerdo,11,1ºT,51,Golo,4,True
+229,5,4,Média Esquerda,8.4,115.2,Contra-ataque,Extremo Direito,14,1ºT,128,Golo,3,True
+230,5,5,Média Centro,8.1,101.9,Penetração,Extremo Direito,51,2ºT,50,Defesa,-4,False
+231,5,3,Superior Direita,8.6,101.0,Contra-ataque,Extremo Direito,14,1ºT,47,Golo,-4,False
+232,5,6,Média Direita,10.0,104.1,Apoio,Lateral Direito,24,1ºT,35,Golo,2,False
+233,5,4,Média Esquerda,7.0,97.8,7 metros,Lateral Direito,49,2ºT,83,Golo,5,False
+234,5,3,Superior Direita,9.2,104.3,Rectaguarda,Extremo Esquerdo,33,2ºT,6,Defesa,-5,True
+235,5,7,Inferior Esquerda,9.3,103.3,Contra-ataque,Lateral Direito,1,1ºT,51,Defesa,-5,False
+236,5,5,Média Centro,6.7,95.9,Rectaguarda,Extremo Direito,2,1ºT,107,Defesa,-2,False
+237,5,9,Inferior Direita,8.2,92.2,Contra-ataque,Lateral Esquerdo,47,2ºT,69,Golo,5,False
+238,5,2,Superior Centro,7.0,94.4,7 metros,Lateral Esquerdo,5,1ºT,14,Defesa,2,False
+239,5,1,Superior Esquerda,8.6,98.8,Rectaguarda,Pivot,39,2ºT,153,Golo,5,False
+240,5,2,Superior Centro,8.1,104.9,Penetração,Central,43,2ºT,67,Golo,2,False
+241,5,8,Inferior Centro,8.1,104.4,Rectaguarda,Lateral Esquerdo,5,1ºT,140,Defesa,-5,False
+242,5,8,Inferior Centro,9.7,109.4,Contra-ataque,Central,17,1ºT,148,Golo,1,False
+243,5,6,Média Direita,7.0,92.3,Apoio,Pivot,36,2ºT,131,Defesa,-1,False
+244,5,6,Média Direita,9.6,111.2,Contra-ataque,Lateral Direito,42,2ºT,23,Defesa,0,True
+245,5,8,Inferior Centro,6.7,89.8,Apoio,Lateral Direito,13,1ºT,91,Golo,5,False
+246,5,8,Inferior Centro,7.0,97.3,7 metros,Pivot,49,2ºT,76,Defesa,4,False
+247,5,8,Inferior Centro,6.5,95.0,Penetração,Extremo Direito,52,2ºT,88,Golo,-5,False
+248,5,1,Superior Esquerda,8.6,102.5,Suspensão,Central,22,1ºT,97,Golo,-2,True
+249,5,6,Média Direita,6.5,87.5,Apoio,Extremo Esquerdo,37,2ºT,139,Defesa,4,False
+250,5,6,Média Direita,7.0,88.3,7 metros,Extremo Esquerdo,26,1ºT,103,Golo,4,False
+251,5,3,Superior Direita,7.8,117.0,Penetração,Extremo Direito,13,1ºT,113,Defesa,-4,False
+252,5,7,Inferior Esquerda,7.8,114.4,Rectaguarda,Pivot,48,2ºT,163,Golo,2,False
+253,5,2,Superior Centro,10.0,92.0,Contra-ataque,Central,6,1ºT,82,Defesa,3,False
+254,5,7,Inferior Esquerda,7.4,111.6,Suspensão,Extremo Direito,26,1ºT,159,Golo,0,False
+255,5,7,Inferior Esquerda,8.3,86.1,Rectaguarda,Lateral Esquerdo,11,1ºT,141,Defesa,1,False
+256,5,3,Superior Direita,9.0,94.4,Suspensão,Extremo Direito,13,1ºT,106,Golo,-4,False
+257,5,2,Superior Centro,9.9,114.6,Rectaguarda,Extremo Esquerdo,10,1ºT,13,Defesa,-4,False
+258,5,5,Média Centro,8.1,114.4,Suspensão,Pivot,17,1ºT,79,Defesa,0,False
+259,5,2,Superior Centro,10.0,116.1,Contra-ataque,Central,52,2ºT,96,Defesa,0,False
+260,5,3,Superior Direita,6.0,91.8,Penetração,Extremo Esquerdo,16,1ºT,41,Golo,-5,False
+261,5,9,Inferior Direita,8.9,91.5,Suspensão,Lateral Esquerdo,19,1ºT,128,Golo,4,False
+262,6,6,Média Direita,8.5,107.3,Contra-ataque,Extremo Esquerdo,30,1ºT,19,Defesa,4,False
+263,6,8,Inferior Centro,8.6,100.3,Suspensão,Lateral Direito,44,2ºT,116,Defesa,2,False
+264,6,9,Inferior Direita,9.0,103.3,Suspensão,Pivot,38,2ºT,172,Golo,2,False
+265,6,4,Média Esquerda,9.5,94.8,Apoio,Extremo Esquerdo,54,2ºT,86,Golo,4,False
+266,6,6,Média Direita,10.7,89.4,Contra-ataque,Lateral Direito,7,1ºT,83,Defesa,-3,False
+267,6,7,Inferior Esquerda,7.0,107.8,7 metros,Lateral Esquerdo,1,1ºT,145,Golo,-3,False
+268,6,9,Inferior Direita,7.0,96.7,7 metros,Lateral Esquerdo,7,1ºT,69,Golo,-1,False
+269,6,9,Inferior Direita,8.5,92.0,Suspensão,Lateral Esquerdo,18,1ºT,6,Golo,-5,False
+270,6,9,Inferior Direita,7.4,86.0,Rectaguarda,Lateral Esquerdo,49,2ºT,42,Golo,0,False
+271,6,4,Média Esquerda,7.5,98.2,Apoio,Pivot,35,2ºT,51,Defesa,0,False
+272,6,8,Inferior Centro,10.4,97.0,Contra-ataque,Extremo Direito,25,1ºT,41,Golo,-4,False
+273,6,7,Inferior Esquerda,8.0,105.6,Rectaguarda,Lateral Direito,44,2ºT,10,Golo,2,False
+274,6,9,Inferior Direita,9.8,111.9,Rectaguarda,Lateral Esquerdo,29,1ºT,114,Golo,0,False
+275,6,1,Superior Esquerda,7.9,116.6,Penetração,Lateral Direito,32,2ºT,146,Golo,5,True
+276,6,6,Média Direita,9.2,114.3,Apoio,Lateral Esquerdo,4,1ºT,136,Defesa,-4,False
+277,6,1,Superior Esquerda,7.0,96.3,7 metros,Lateral Esquerdo,26,1ºT,10,Golo,0,False
+278,6,2,Superior Centro,6.3,110.9,Suspensão,Extremo Esquerdo,48,2ºT,166,Defesa,0,False
+279,6,8,Inferior Centro,7.0,116.1,7 metros,Pivot,43,2ºT,101,Golo,-4,False
+280,6,2,Superior Centro,8.2,100.4,Apoio,Extremo Direito,3,1ºT,131,Golo,-1,False
+281,6,3,Superior Direita,8.3,102.3,Apoio,Lateral Direito,32,2ºT,80,Golo,5,False
+282,6,2,Superior Centro,9.8,103.6,Penetração,Lateral Esquerdo,8,1ºT,141,Golo,4,False
+283,6,6,Média Direita,7.8,90.1,Apoio,Pivot,12,1ºT,138,Golo,3,False
+284,6,3,Superior Direita,6.1,111.0,Penetração,Extremo Esquerdo,53,2ºT,68,Defesa,0,True
+285,6,7,Inferior Esquerda,7.1,114.6,Rectaguarda,Central,59,2ºT,65,Golo,-3,True
+286,6,8,Inferior Centro,8.8,89.0,Penetração,Lateral Direito,3,1ºT,84,Golo,-3,False
+287,6,2,Superior Centro,8.6,114.2,Apoio,Lateral Esquerdo,32,2ºT,125,Defesa,5,False
+288,6,5,Média Centro,6.1,88.2,Rectaguarda,Lateral Esquerdo,21,1ºT,68,Defesa,2,False
+289,6,5,Média Centro,8.0,109.2,Rectaguarda,Pivot,46,2ºT,153,Defesa,-4,False
+290,6,5,Média Centro,7.9,85.4,Apoio,Pivot,44,2ºT,52,Defesa,-1,False
+291,6,1,Superior Esquerda,10.4,87.5,Contra-ataque,Pivot,17,1ºT,61,Golo,2,False
+292,6,1,Superior Esquerda,7.0,108.7,Penetração,Pivot,28,1ºT,72,Defesa,-5,True
+293,6,8,Inferior Centro,10.2,110.0,Contra-ataque,Pivot,7,1ºT,165,Golo,-5,False
+294,6,5,Média Centro,9.1,90.6,Suspensão,Central,44,2ºT,13,Golo,5,False
+295,6,7,Inferior Esquerda,8.0,103.8,Penetração,Extremo Direito,38,2ºT,177,Golo,-2,False
+296,6,3,Superior Direita,6.0,113.0,Rectaguarda,Extremo Direito,16,1ºT,101,Defesa,-2,False
+297,6,1,Superior Esquerda,9.3,85.3,Suspensão,Central,35,2ºT,174,Golo,2,True
+298,6,1,Superior Esquerda,7.8,96.4,Penetração,Central,44,2ºT,52,Golo,4,False
+299,6,5,Média Centro,9.9,92.9,Contra-ataque,Extremo Esquerdo,43,2ºT,156,Golo,0,False
+300,6,2,Superior Centro,9.1,117.5,Apoio,Extremo Esquerdo,22,1ºT,47,Defesa,2,False
+301,6,1,Superior Esquerda,7.3,115.1,Penetração,Lateral Direito,31,2ºT,26,Golo,3,False
+302,6,2,Superior Centro,7.6,85.1,Suspensão,Extremo Esquerdo,33,2ºT,56,Defesa,1,False
+303,6,3,Superior Direita,8.8,103.8,Apoio,Extremo Esquerdo,42,2ºT,84,Golo,-5,False
+304,6,6,Média Direita,7.0,97.6,7 metros,Central,29,1ºT,133,Defesa,-4,False
+305,6,7,Inferior Esquerda,9.8,93.4,Suspensão,Pivot,6,1ºT,109,Golo,0,False
+306,6,7,Inferior Esquerda,7.0,96.5,7 metros,Extremo Direito,30,1ºT,174,Defesa,1,False
+307,6,6,Média Direita,7.0,109.7,7 metros,Pivot,31,2ºT,144,Golo,2,False
+308,6,4,Média Esquerda,7.0,109.5,7 metros,Central,15,1ºT,71,Golo,5,True
+309,6,4,Média Esquerda,7.0,94.9,Penetração,Lateral Direito,26,1ºT,156,Golo,2,False
+310,6,6,Média Direita,7.0,96.0,7 metros,Central,15,1ºT,62,Defesa,-1,False
+311,6,3,Superior Direita,7.7,97.5,Rectaguarda,Central,34,2ºT,154,Defesa,-1,False
+312,6,6,Média Direita,10.9,106.0,Contra-ataque,Extremo Esquerdo,28,1ºT,66,Golo,3,False
+313,6,9,Inferior Direita,9.3,102.3,Suspensão,Lateral Direito,35,2ºT,102,Defesa,3,True
+314,6,9,Inferior Direita,7.8,109.4,Rectaguarda,Pivot,32,2ºT,87,Defesa,2,False
+315,6,3,Superior Direita,10.6,102.7,Contra-ataque,Extremo Esquerdo,26,1ºT,81,Golo,3,False
+316,6,8,Inferior Centro,7.4,116.1,Apoio,Lateral Direito,34,2ºT,121,Defesa,5,False
+317,6,5,Média Centro,8.8,115.0,Apoio,Extremo Direito,26,1ºT,59,Golo,-1,False
+318,6,5,Média Centro,8.7,93.6,Apoio,Lateral Direito,41,2ºT,68,Golo,4,False
+319,6,4,Média Esquerda,7.0,113.1,Penetração,Extremo Esquerdo,17,1ºT,26,Golo,-1,False
+320,7,8,Inferior Centro,7.0,114.6,7 metros,Lateral Direito,23,1ºT,128,Defesa,2,False
+321,7,4,Média Esquerda,7.0,103.6,7 metros,Extremo Direito,21,1ºT,160,Golo,1,False
+322,7,7,Inferior Esquerda,7.6,99.9,Rectaguarda,Pivot,26,1ºT,77,Golo,-4,False
+323,7,4,Média Esquerda,7.0,112.4,7 metros,Pivot,7,1ºT,178,Golo,-3,False
+324,7,8,Inferior Centro,9.0,114.4,Suspensão,Extremo Direito,29,1ºT,79,Golo,1,False
+325,7,1,Superior Esquerda,7.5,97.4,Penetração,Extremo Esquerdo,52,2ºT,141,Golo,0,False
+326,7,8,Inferior Centro,8.5,114.8,Apoio,Pivot,54,2ºT,89,Golo,3,False
+327,7,7,Inferior Esquerda,6.5,98.2,Apoio,Pivot,29,1ºT,165,Golo,-3,True
+328,7,8,Inferior Centro,9.3,103.1,Rectaguarda,Extremo Esquerdo,34,2ºT,78,Defesa,-4,False
+329,7,1,Superior Esquerda,9.9,94.2,Suspensão,Lateral Direito,5,1ºT,87,Defesa,0,False
+330,7,6,Média Direita,7.5,90.3,Rectaguarda,Lateral Direito,15,1ºT,149,Defesa,5,False
+331,7,3,Superior Direita,6.4,105.9,Apoio,Lateral Direito,11,1ºT,30,Defesa,4,False
+332,7,7,Inferior Esquerda,9.8,109.5,Contra-ataque,Pivot,47,2ºT,127,Golo,-5,False
+333,7,6,Média Direita,9.3,109.5,Penetração,Central,9,1ºT,167,Defesa,-4,False
+334,7,4,Média Esquerda,9.0,91.9,Suspensão,Lateral Esquerdo,48,2ºT,86,Defesa,1,False
+335,7,9,Inferior Direita,9.9,101.3,Suspensão,Central,58,2ºT,21,Golo,1,False
+336,7,1,Superior Esquerda,7.9,88.6,Penetração,Extremo Direito,5,1ºT,75,Golo,-2,False
+337,7,7,Inferior Esquerda,9.9,107.6,Contra-ataque,Extremo Direito,7,1ºT,132,Golo,-4,False
+338,7,6,Média Direita,8.7,94.0,Suspensão,Lateral Esquerdo,5,1ºT,162,Golo,-3,False
+339,7,7,Inferior Esquerda,9.5,102.3,Contra-ataque,Extremo Direito,38,2ºT,115,Golo,4,False
+340,7,4,Média Esquerda,8.5,115.7,Suspensão,Central,35,2ºT,130,Defesa,0,False
+341,7,8,Inferior Centro,6.3,98.9,Rectaguarda,Lateral Direito,23,1ºT,42,Defesa,-4,False
+342,7,3,Superior Direita,8.0,85.0,Contra-ataque,Pivot,22,1ºT,114,Golo,-1,True
+343,7,1,Superior Esquerda,9.3,96.4,Suspensão,Lateral Esquerdo,27,1ºT,149,Golo,-3,True
+344,7,6,Média Direita,7.0,103.5,7 metros,Pivot,5,1ºT,6,Golo,3,False
+345,7,3,Superior Direita,8.5,89.7,Suspensão,Lateral Esquerdo,17,1ºT,43,Defesa,-3,False
+346,7,6,Média Direita,8.2,114.0,Rectaguarda,Extremo Direito,7,1ºT,16,Defesa,0,False
+347,7,3,Superior Direita,6.2,115.2,Apoio,Extremo Esquerdo,12,1ºT,50,Golo,0,False
+348,7,8,Inferior Centro,6.7,100.3,Suspensão,Extremo Esquerdo,43,2ºT,160,Defesa,-2,False
+349,7,7,Inferior Esquerda,6.4,114.4,Suspensão,Central,23,1ºT,100,Defesa,-1,False
+350,7,4,Média Esquerda,8.8,103.1,Contra-ataque,Pivot,33,2ºT,95,Defesa,4,False
+351,7,5,Média Centro,8.8,103.3,Suspensão,Extremo Direito,50,2ºT,70,Defesa,-1,False
+352,7,7,Inferior Esquerda,9.9,91.7,Penetração,Extremo Esquerdo,50,2ºT,100,Golo,1,True
+353,7,9,Inferior Direita,7.0,90.5,7 metros,Lateral Esquerdo,17,1ºT,106,Golo,4,False
+354,7,1,Superior Esquerda,9.9,95.3,Penetração,Lateral Esquerdo,3,1ºT,167,Defesa,1,False
+355,7,9,Inferior Direita,8.0,86.5,Rectaguarda,Lateral Esquerdo,27,1ºT,69,Golo,3,False
+356,7,4,Média Esquerda,6.0,87.6,Penetração,Lateral Direito,11,1ºT,5,Defesa,-4,False
+357,7,7,Inferior Esquerda,6.9,91.3,Penetração,Extremo Direito,11,1ºT,169,Defesa,-1,False
+358,7,4,Média Esquerda,7.5,100.8,Rectaguarda,Extremo Esquerdo,40,2ºT,162,Defesa,-2,False
+359,7,3,Superior Direita,9.9,90.9,Contra-ataque,Central,40,2ºT,78,Golo,4,False
+360,7,8,Inferior Centro,9.8,114.8,Contra-ataque,Central,1,1ºT,144,Defesa,0,False
+361,7,5,Média Centro,8.4,104.9,Apoio,Lateral Esquerdo,16,1ºT,50,Defesa,5,False
+362,7,6,Média Direita,7.5,116.4,Penetração,Extremo Direito,19,1ºT,64,Defesa,-5,False
+363,7,7,Inferior Esquerda,8.5,108.1,Contra-ataque,Lateral Direito,10,1ºT,155,Golo,-1,False
+364,7,6,Média Direita,6.1,108.9,Apoio,Lateral Esquerdo,33,2ºT,180,Golo,2,False
+365,7,3,Superior Direita,7.0,115.0,7 metros,Pivot,26,1ºT,67,Golo,5,False
+366,7,2,Superior Centro,6.6,98.8,Penetração,Lateral Direito,46,2ºT,131,Defesa,0,False
+367,7,6,Média Direita,7.3,97.1,Penetração,Extremo Esquerdo,45,2ºT,21,Golo,-3,False
+368,7,2,Superior Centro,7.0,103.2,7 metros,Lateral Direito,52,2ºT,170,Golo,-3,False
+369,7,6,Média Direita,9.7,90.2,Contra-ataque,Central,51,2ºT,85,Golo,4,False
+370,7,8,Inferior Centro,10.3,98.8,Contra-ataque,Lateral Esquerdo,41,2ºT,53,Defesa,2,False
+371,7,2,Superior Centro,7.0,101.4,7 metros,Pivot,16,1ºT,119,Defesa,2,False
+372,7,7,Inferior Esquerda,9.5,88.6,Contra-ataque,Pivot,51,2ºT,136,Golo,-2,False
+373,7,7,Inferior Esquerda,7.0,113.2,7 metros,Pivot,7,1ºT,136,Golo,5,False
+374,7,9,Inferior Direita,6.9,87.3,Suspensão,Lateral Esquerdo,6,1ºT,157,Golo,-3,True
+375,7,1,Superior Esquerda,7.0,111.9,7 metros,Lateral Direito,45,2ºT,168,Golo,3,False
+376,7,7,Inferior Esquerda,6.4,103.3,Apoio,Extremo Direito,47,2ºT,107,Golo,-2,False
+377,7,9,Inferior Direita,8.2,107.7,Apoio,Pivot,44,2ºT,149,Defesa,4,False
+378,7,7,Inferior Esquerda,9.7,112.3,Suspensão,Extremo Direito,14,1ºT,49,Golo,0,False
+379,7,6,Média Direita,8.1,96.2,Apoio,Lateral Esquerdo,29,1ºT,115,Defesa,-1,False
+380,7,5,Média Centro,6.8,95.6,Suspensão,Lateral Direito,4,1ºT,101,Defesa,-4,False
+381,8,9,Inferior Direita,6.7,105.4,Penetração,Extremo Direito,21,1ºT,96,Golo,-4,False
+382,8,7,Inferior Esquerda,7.8,92.6,Suspensão,Extremo Direito,50,2ºT,169,Golo,2,False
+383,8,9,Inferior Direita,7.0,93.2,7 metros,Extremo Direito,26,1ºT,89,Golo,3,False
+384,8,5,Média Centro,7.0,92.1,7 metros,Extremo Direito,24,1ºT,75,Golo,5,False
+385,8,1,Superior Esquerda,7.0,116.5,7 metros,Lateral Direito,57,2ºT,99,Golo,3,False
+386,8,1,Superior Esquerda,8.8,115.6,Apoio,Lateral Direito,20,1ºT,118,Defesa,0,False
+387,8,4,Média Esquerda,6.3,96.6,Penetração,Extremo Esquerdo,56,2ºT,74,Defesa,4,False
+388,8,3,Superior Direita,6.0,89.3,Apoio,Extremo Direito,30,1ºT,36,Defesa,1,False
+389,8,8,Inferior Centro,9.5,110.5,Apoio,Extremo Esquerdo,35,2ºT,155,Defesa,-1,False
+390,8,2,Superior Centro,8.4,106.5,Penetração,Extremo Direito,16,1ºT,87,Defesa,2,False
+391,8,7,Inferior Esquerda,8.9,90.5,Apoio,Extremo Esquerdo,36,2ºT,179,Defesa,5,True
+392,8,9,Inferior Direita,8.9,85.9,Contra-ataque,Lateral Esquerdo,1,1ºT,132,Golo,-3,True
+393,8,6,Média Direita,7.0,96.2,7 metros,Extremo Esquerdo,22,1ºT,97,Defesa,5,False
+394,8,6,Média Direita,7.0,105.6,7 metros,Lateral Direito,40,2ºT,121,Defesa,3,False
+395,8,3,Superior Direita,9.7,93.4,Penetração,Extremo Esquerdo,14,1ºT,89,Golo,-2,False
+396,8,8,Inferior Centro,9.7,110.4,Rectaguarda,Central,18,1ºT,71,Golo,-3,False
+397,8,6,Média Direita,9.5,99.5,Penetração,Extremo Esquerdo,57,2ºT,47,Defesa,0,False
+398,8,4,Média Esquerda,9.3,106.2,Apoio,Central,16,1ºT,143,Golo,1,False
+399,8,5,Média Centro,7.0,104.4,7 metros,Pivot,33,2ºT,32,Defesa,-3,False
+400,8,5,Média Centro,10.9,104.5,Contra-ataque,Lateral Esquerdo,58,2ºT,125,Golo,2,False
+401,8,9,Inferior Direita,9.3,94.4,Contra-ataque,Extremo Esquerdo,47,2ºT,51,Golo,0,True
+402,8,3,Superior Direita,6.3,87.7,Apoio,Central,2,1ºT,28,Golo,-5,False
+403,8,7,Inferior Esquerda,7.0,101.9,7 metros,Lateral Direito,1,1ºT,49,Golo,1,False
+404,8,8,Inferior Centro,10.0,95.5,Rectaguarda,Extremo Direito,54,2ºT,165,Defesa,5,False
+405,8,9,Inferior Direita,7.4,112.9,Apoio,Extremo Esquerdo,34,2ºT,42,Defesa,4,False
+406,8,3,Superior Direita,7.0,117.6,7 metros,Extremo Esquerdo,58,2ºT,118,Golo,-5,False
+407,8,8,Inferior Centro,8.8,117.2,Contra-ataque,Extremo Direito,44,2ºT,144,Golo,-5,False
+408,8,6,Média Direita,7.2,94.4,Suspensão,Central,22,1ºT,179,Defesa,-5,False
+409,8,1,Superior Esquerda,8.9,105.3,Contra-ataque,Lateral Direito,19,1ºT,15,Golo,0,False
+410,8,5,Média Centro,6.2,106.9,Penetração,Extremo Direito,36,2ºT,108,Defesa,-4,False
+411,8,8,Inferior Centro,7.0,108.7,7 metros,Extremo Esquerdo,8,1ºT,151,Golo,-1,False
+412,8,7,Inferior Esquerda,7.6,104.8,Suspensão,Central,52,2ºT,84,Golo,-1,False
+413,8,7,Inferior Esquerda,8.8,99.8,Apoio,Lateral Direito,23,1ºT,53,Golo,3,False
+414,8,9,Inferior Direita,7.8,100.5,Rectaguarda,Lateral Esquerdo,27,1ºT,50,Defesa,5,False
+415,8,9,Inferior Direita,8.9,100.0,Penetração,Lateral Direito,7,1ºT,162,Golo,4,True
+416,8,4,Média Esquerda,7.1,103.4,Suspensão,Extremo Direito,22,1ºT,37,Defesa,5,False
+417,8,2,Superior Centro,7.0,111.9,7 metros,Extremo Direito,50,2ºT,89,Golo,3,False
+418,8,6,Média Direita,7.0,111.6,7 metros,Central,58,2ºT,170,Defesa,-5,False
+419,8,2,Superior Centro,8.0,102.9,Rectaguarda,Lateral Direito,10,1ºT,167,Defesa,-1,True
+420,8,3,Superior Direita,9.1,99.6,Contra-ataque,Lateral Direito,60,2ºT,55,Golo,3,False
+421,8,2,Superior Centro,9.1,105.5,Penetração,Extremo Esquerdo,58,2ºT,12,Golo,-5,False
+422,8,7,Inferior Esquerda,10.2,113.8,Contra-ataque,Pivot,18,1ºT,36,Golo,5,False
+423,8,5,Média Centro,6.8,101.7,Suspensão,Extremo Esquerdo,37,2ºT,47,Golo,-1,False
+424,8,1,Superior Esquerda,9.7,116.3,Apoio,Pivot,47,2ºT,79,Defesa,-2,False
+425,8,4,Média Esquerda,7.0,116.2,Penetração,Extremo Direito,35,2ºT,22,Defesa,-5,False
+426,8,6,Média Direita,8.8,91.5,Rectaguarda,Extremo Direito,52,2ºT,117,Defesa,-2,False
+427,8,4,Média Esquerda,7.0,94.7,7 metros,Lateral Direito,19,1ºT,52,Defesa,-3,True
+428,8,3,Superior Direita,9.1,97.2,Apoio,Extremo Direito,27,1ºT,166,Golo,0,False
+429,8,4,Média Esquerda,10.5,87.8,Contra-ataque,Lateral Direito,3,1ºT,130,Defesa,5,True
+430,8,7,Inferior Esquerda,8.1,89.2,Apoio,Pivot,28,1ºT,9,Golo,0,False
+431,8,6,Média Direita,8.3,103.3,Rectaguarda,Pivot,43,2ºT,93,Golo,1,False
+432,8,6,Média Direita,7.5,111.2,Rectaguarda,Lateral Esquerdo,46,2ºT,56,Defesa,2,False
+433,9,2,Superior Centro,8.7,114.8,Contra-ataque,Pivot,51,2ºT,171,Golo,-2,False
+434,9,2,Superior Centro,7.0,98.6,7 metros,Extremo Direito,47,2ºT,158,Golo,-1,False
+435,9,2,Superior Centro,8.8,90.7,Suspensão,Central,7,1ºT,119,Defesa,5,False
+436,9,7,Inferior Esquerda,7.1,110.9,Suspensão,Extremo Direito,33,2ºT,41,Defesa,-3,False
+437,9,2,Superior Centro,7.0,115.2,7 metros,Extremo Esquerdo,30,1ºT,77,Golo,-3,False
+438,9,4,Média Esquerda,9.3,101.9,Rectaguarda,Lateral Esquerdo,52,2ºT,63,Golo,-1,False
+439,9,1,Superior Esquerda,9.5,95.5,Suspensão,Extremo Direito,35,2ºT,16,Golo,1,False
+440,9,9,Inferior Direita,9.2,85.7,Contra-ataque,Extremo Direito,50,2ºT,175,Golo,4,False
+441,9,4,Média Esquerda,9.2,87.1,Suspensão,Lateral Esquerdo,44,2ºT,53,Defesa,4,False
+442,9,2,Superior Centro,9.3,101.7,Penetração,Lateral Esquerdo,17,1ºT,51,Golo,1,False
+443,9,4,Média Esquerda,7.9,114.5,Apoio,Extremo Esquerdo,22,1ºT,176,Defesa,-1,False
+444,9,6,Média Direita,8.4,99.4,Apoio,Lateral Esquerdo,3,1ºT,101,Defesa,0,True
+445,9,1,Superior Esquerda,6.3,95.6,Suspensão,Pivot,24,1ºT,120,Defesa,-5,False
+446,9,4,Média Esquerda,9.4,99.7,Apoio,Lateral Esquerdo,28,1ºT,79,Defesa,-1,False
+447,9,7,Inferior Esquerda,9.0,100.7,Contra-ataque,Central,30,1ºT,173,Golo,-2,False
+448,9,5,Média Centro,6.4,105.1,Penetração,Lateral Direito,47,2ºT,158,Defesa,-2,False
+449,9,4,Média Esquerda,7.0,102.5,7 metros,Extremo Direito,8,1ºT,61,Golo,2,False
+450,9,3,Superior Direita,7.0,113.0,7 metros,Central,55,2ºT,146,Golo,-2,True
+451,9,8,Inferior Centro,7.0,93.7,7 metros,Pivot,35,2ºT,28,Golo,0,False
+452,9,1,Superior Esquerda,9.5,111.0,Rectaguarda,Central,59,2ºT,156,Golo,5,False
+453,9,6,Média Direita,9.5,86.0,Contra-ataque,Central,60,2ºT,141,Golo,-2,False
+454,9,4,Média Esquerda,6.9,92.2,Penetração,Pivot,9,1ºT,106,Golo,2,False
+455,9,2,Superior Centro,7.6,113.1,Penetração,Lateral Esquerdo,25,1ºT,108,Golo,-3,False
+456,9,7,Inferior Esquerda,9.2,115.2,Contra-ataque,Central,4,1ºT,130,Golo,-3,False
+457,9,9,Inferior Direita,7.0,99.9,7 metros,Extremo Esquerdo,2,1ºT,178,Defesa,-3,False
+458,9,5,Média Centro,9.3,118.0,Suspensão,Extremo Direito,15,1ºT,109,Golo,-2,True
+459,9,8,Inferior Centro,7.0,100.1,7 metros,Extremo Esquerdo,45,2ºT,20,Golo,-3,False
+460,9,7,Inferior Esquerda,7.0,110.0,7 metros,Lateral Esquerdo,40,2ºT,78,Golo,3,False
+461,9,7,Inferior Esquerda,10.6,96.2,Contra-ataque,Pivot,51,2ºT,16,Golo,-5,False
+462,9,3,Superior Direita,10.6,114.6,Contra-ataque,Extremo Direito,14,1ºT,92,Golo,-3,True
+463,9,9,Inferior Direita,7.9,107.3,Rectaguarda,Lateral Esquerdo,47,2ºT,8,Golo,2,False
+464,9,8,Inferior Centro,7.0,101.4,7 metros,Extremo Esquerdo,53,2ºT,56,Defesa,-5,False
+465,9,3,Superior Direita,8.6,93.0,Contra-ataque,Lateral Direito,40,2ºT,70,Defesa,-2,False
+466,9,8,Inferior Centro,6.4,111.4,Suspensão,Central,54,2ºT,39,Golo,-4,False
+467,9,1,Superior Esquerda,7.5,96.2,Suspensão,Extremo Esquerdo,16,1ºT,164,Defesa,2,True
+468,9,3,Superior Direita,10.9,91.4,Contra-ataque,Extremo Direito,41,2ºT,106,Defesa,-3,False
+469,9,1,Superior Esquerda,10.9,106.2,Contra-ataque,Extremo Direito,38,2ºT,122,Golo,-5,False
+470,9,3,Superior Direita,6.4,95.4,Suspensão,Extremo Direito,22,1ºT,172,Golo,-4,False
+471,9,8,Inferior Centro,8.1,100.2,Suspensão,Central,7,1ºT,43,Golo,1,False
+472,9,5,Média Centro,7.0,112.4,7 metros,Extremo Esquerdo,18,1ºT,5,Defesa,0,True
+473,9,6,Média Direita,9.5,99.2,Apoio,Lateral Esquerdo,50,2ºT,155,Golo,-5,False
+474,9,1,Superior Esquerda,6.8,95.9,Penetração,Central,48,2ºT,64,Defesa,4,False
+475,9,9,Inferior Direita,9.9,103.6,Contra-ataque,Lateral Direito,60,2ºT,51,Golo,5,True
+476,9,3,Superior Direita,9.8,100.2,Suspensão,Lateral Direito,1,1ºT,91,Golo,0,False
+477,9,7,Inferior Esquerda,7.0,115.4,7 metros,Lateral Esquerdo,35,2ºT,97,Defesa,5,False
+478,9,5,Média Centro,7.6,96.3,Apoio,Extremo Direito,42,2ºT,16,Golo,4,False
+479,9,8,Inferior Centro,7.0,92.2,7 metros,Central,41,2ºT,17,Golo,2,False
+480,9,4,Média Esquerda,6.9,99.8,Rectaguarda,Central,13,1ºT,81,Defesa,2,False
+481,9,4,Média Esquerda,8.8,90.2,Rectaguarda,Pivot,20,1ºT,30,Defesa,5,False
+482,9,7,Inferior Esquerda,7.6,105.3,Rectaguarda,Central,42,2ºT,34,Defesa,0,True
+483,9,1,Superior Esquerda,8.7,94.8,Penetração,Pivot,46,2ºT,86,Golo,-4,False
+484,9,5,Média Centro,9.5,88.4,Contra-ataque,Lateral Direito,38,2ºT,99,Defesa,-2,False
+485,9,6,Média Direita,6.0,91.5,Penetração,Central,47,2ºT,144,Defesa,-2,False
+486,9,5,Média Centro,7.0,97.4,7 metros,Lateral Direito,12,1ºT,155,Defesa,-2,False
+487,9,2,Superior Centro,9.8,108.4,Contra-ataque,Extremo Direito,52,2ºT,27,Golo,4,False
+488,9,5,Média Centro,10.2,117.9,Contra-ataque,Lateral Esquerdo,2,1ºT,52,Defesa,1,False
+489,9,5,Média Centro,7.0,115.9,Suspensão,Extremo Esquerdo,8,1ºT,147,Defesa,-3,False
+490,9,4,Média Esquerda,9.4,105.3,Contra-ataque,Extremo Esquerdo,47,2ºT,82,Defesa,5,False
+491,9,8,Inferior Centro,8.1,108.7,Rectaguarda,Lateral Esquerdo,53,2ºT,105,Defesa,-1,False
+492,10,4,Média Esquerda,10.9,105.1,Contra-ataque,Lateral Direito,53,2ºT,80,Golo,0,False
+493,10,4,Média Esquerda,7.0,90.7,7 metros,Extremo Esquerdo,56,2ºT,67,Golo,0,False
+494,10,1,Superior Esquerda,8.7,115.9,Penetração,Pivot,17,1ºT,66,Golo,-5,False
+495,10,2,Superior Centro,6.2,110.1,Rectaguarda,Lateral Direito,35,2ºT,84,Golo,-5,False
+496,10,1,Superior Esquerda,7.2,99.7,Rectaguarda,Extremo Esquerdo,45,2ºT,103,Golo,-4,False
+497,10,5,Média Centro,6.1,116.2,Apoio,Extremo Direito,14,1ºT,35,Defesa,-3,False
+498,10,9,Inferior Direita,6.1,107.4,Apoio,Lateral Direito,52,2ºT,114,Golo,2,False
+499,10,8,Inferior Centro,9.9,101.5,Rectaguarda,Lateral Esquerdo,4,1ºT,74,Defesa,0,False
+500,10,1,Superior Esquerda,7.0,85.3,7 metros,Extremo Direito,9,1ºT,161,Golo,5,False
+501,10,6,Média Direita,9.3,94.3,Contra-ataque,Lateral Direito,43,2ºT,109,Defesa,5,False
+502,10,8,Inferior Centro,6.6,111.4,Rectaguarda,Central,33,2ºT,82,Defesa,5,False
+503,10,3,Superior Direita,7.9,106.9,Rectaguarda,Extremo Esquerdo,23,1ºT,87,Golo,4,False
+504,10,6,Média Direita,10.4,111.6,Contra-ataque,Pivot,9,1ºT,45,Defesa,4,False
+505,10,9,Inferior Direita,7.1,106.8,Apoio,Extremo Esquerdo,43,2ºT,80,Defesa,0,False
+506,10,6,Média Direita,8.4,90.8,Contra-ataque,Lateral Direito,20,1ºT,89,Golo,0,False
+507,10,3,Superior Direita,9.3,117.7,Penetração,Lateral Esquerdo,3,1ºT,15,Golo,2,False
+508,10,1,Superior Esquerda,6.3,115.6,Suspensão,Extremo Esquerdo,20,1ºT,179,Golo,-2,False
+509,10,1,Superior Esquerda,8.4,102.4,Penetração,Lateral Esquerdo,46,2ºT,86,Defesa,1,False
+510,10,4,Média Esquerda,7.0,104.9,7 metros,Lateral Esquerdo,29,1ºT,41,Golo,2,False
+511,10,8,Inferior Centro,9.3,87.1,Suspensão,Central,57,2ºT,86,Golo,-2,True
+512,10,5,Média Centro,8.9,90.4,Apoio,Lateral Esquerdo,31,2ºT,177,Defesa,1,False
+513,10,6,Média Direita,7.3,102.5,Apoio,Central,58,2ºT,123,Defesa,-3,False
+514,10,3,Superior Direita,9.1,115.5,Contra-ataque,Central,10,1ºT,116,Golo,0,False
+515,10,4,Média Esquerda,7.5,107.3,Penetração,Lateral Esquerdo,30,1ºT,61,Defesa,4,False
+516,10,3,Superior Direita,9.4,98.4,Suspensão,Extremo Esquerdo,28,1ºT,72,Defesa,3,False
+517,10,2,Superior Centro,6.3,108.6,Penetração,Central,53,2ºT,108,Defesa,2,False
+518,10,8,Inferior Centro,7.5,97.3,Penetração,Pivot,39,2ºT,169,Defesa,-5,False
+519,10,4,Média Esquerda,10.2,89.0,Contra-ataque,Pivot,32,2ºT,16,Defesa,5,False
+520,10,9,Inferior Direita,7.3,106.4,Penetração,Lateral Direito,7,1ºT,34,Defesa,2,False
+521,10,3,Superior Direita,6.2,95.9,Penetração,Pivot,55,2ºT,127,Defesa,4,False
+522,10,5,Média Centro,6.1,99.0,Rectaguarda,Pivot,20,1ºT,27,Golo,-5,True
+523,10,3,Superior Direita,7.0,93.4,7 metros,Extremo Direito,11,1ºT,15,Defesa,-5,False
+524,10,9,Inferior Direita,9.2,113.4,Rectaguarda,Pivot,57,2ºT,33,Defesa,4,False
+525,10,3,Superior Direita,7.0,91.7,7 metros,Pivot,5,1ºT,84,Golo,-2,False
+526,10,6,Média Direita,9.7,100.0,Contra-ataque,Lateral Direito,43,2ºT,170,Defesa,-5,False
+527,10,7,Inferior Esquerda,8.2,93.5,Contra-ataque,Pivot,6,1ºT,39,Defesa,2,False
+528,10,6,Média Direita,8.2,113.2,Rectaguarda,Lateral Esquerdo,39,2ºT,27,Golo,2,False
+529,10,4,Média Esquerda,9.0,103.8,Suspensão,Extremo Esquerdo,48,2ºT,24,Defesa,1,False
+530,10,3,Superior Direita,8.1,103.5,Rectaguarda,Pivot,14,1ºT,52,Golo,2,False
+531,10,2,Superior Centro,6.8,91.9,Rectaguarda,Extremo Esquerdo,27,1ºT,145,Golo,4,False
+532,10,3,Superior Direita,10.7,109.6,Contra-ataque,Central,58,2ºT,36,Golo,-4,False
+533,10,6,Média Direita,7.0,88.5,7 metros,Pivot,38,2ºT,68,Golo,-1,False
+534,10,3,Superior Direita,6.0,112.0,Apoio,Central,52,2ºT,97,Golo,-2,False
+535,10,3,Superior Direita,8.8,112.5,Rectaguarda,Lateral Esquerdo,10,1ºT,10,Golo,-3,False
+536,10,9,Inferior Direita,8.1,105.5,Rectaguarda,Lateral Direito,41,2ºT,145,Golo,-4,False
+537,10,8,Inferior Centro,8.9,113.8,Rectaguarda,Lateral Direito,58,2ºT,129,Golo,-5,False
+538,10,3,Superior Direita,7.6,107.8,Rectaguarda,Pivot,19,1ºT,14,Golo,-4,False
+539,10,8,Inferior Centro,8.5,93.3,Contra-ataque,Lateral Direito,51,2ºT,92,Defesa,-1,False
+540,10,7,Inferior Esquerda,7.0,111.4,Suspensão,Extremo Direito,34,2ºT,6,Defesa,-4,False
+541,10,7,Inferior Esquerda,10.1,95.9,Contra-ataque,Lateral Esquerdo,20,1ºT,8,Golo,1,True
+542,10,8,Inferior Centro,9.5,93.7,Apoio,Lateral Direito,53,2ºT,97,Defesa,1,False
+543,11,8,Inferior Centro,9.2,102.1,Penetração,Lateral Esquerdo,35,2ºT,38,Golo,-5,False
+544,11,9,Inferior Direita,7.0,85.9,7 metros,Extremo Direito,37,2ºT,37,Golo,0,False
+545,11,9,Inferior Direita,6.6,113.4,Apoio,Lateral Esquerdo,5,1ºT,66,Golo,5,False
+546,11,7,Inferior Esquerda,7.5,102.0,Penetração,Lateral Esquerdo,57,2ºT,95,Golo,-4,False
+547,11,2,Superior Centro,8.4,101.8,Apoio,Lateral Esquerdo,59,2ºT,53,Defesa,-5,False
+548,11,7,Inferior Esquerda,8.6,109.2,Penetração,Central,34,2ºT,174,Golo,-5,False
+549,11,6,Média Direita,7.7,109.4,Suspensão,Extremo Direito,45,2ºT,41,Golo,0,False
+550,11,7,Inferior Esquerda,8.5,98.0,Penetração,Lateral Esquerdo,24,1ºT,107,Golo,4,False
+551,11,5,Média Centro,6.8,91.3,Penetração,Central,42,2ºT,152,Golo,-4,False
+552,11,5,Média Centro,8.5,109.4,Suspensão,Extremo Esquerdo,44,2ºT,74,Golo,1,False
+553,11,2,Superior Centro,7.3,102.5,Apoio,Pivot,36,2ºT,77,Defesa,1,True
+554,11,8,Inferior Centro,9.1,116.0,Suspensão,Extremo Direito,49,2ºT,38,Defesa,1,True
+555,11,3,Superior Direita,10.6,105.4,Contra-ataque,Pivot,22,1ºT,146,Golo,1,False
+556,11,5,Média Centro,7.0,93.4,7 metros,Lateral Direito,21,1ºT,145,Defesa,-2,False
+557,11,3,Superior Direita,8.6,88.9,Apoio,Central,24,1ºT,128,Golo,0,False
+558,11,2,Superior Centro,8.8,108.0,Apoio,Pivot,58,2ºT,151,Golo,0,False
+559,11,8,Inferior Centro,9.3,91.0,Suspensão,Extremo Esquerdo,58,2ºT,169,Golo,-5,False
+560,11,3,Superior Direita,8.9,95.5,Suspensão,Extremo Esquerdo,60,2ºT,95,Golo,-4,False
+561,11,7,Inferior Esquerda,6.1,110.5,Penetração,Lateral Esquerdo,41,2ºT,137,Defesa,-3,True
+562,11,5,Média Centro,8.1,96.0,Apoio,Central,39,2ºT,107,Defesa,1,False
+563,11,6,Média Direita,6.7,116.9,Suspensão,Lateral Esquerdo,43,2ºT,135,Golo,-4,False
+564,11,3,Superior Direita,6.3,117.0,Apoio,Central,49,2ºT,91,Golo,-5,False
+565,11,5,Média Centro,8.8,116.6,Penetração,Central,36,2ºT,82,Defesa,-1,False
+566,11,1,Superior Esquerda,7.7,110.6,Penetração,Lateral Esquerdo,12,1ºT,30,Defesa,5,False
+567,11,5,Média Centro,9.6,94.7,Penetração,Central,2,1ºT,77,Golo,2,False
+568,11,2,Superior Centro,8.7,101.5,Penetração,Extremo Direito,32,2ºT,130,Golo,1,False
+569,11,2,Superior Centro,7.0,115.1,7 metros,Extremo Direito,32,2ºT,90,Golo,4,False
+570,11,7,Inferior Esquerda,8.2,89.1,Penetração,Lateral Esquerdo,38,2ºT,43,Golo,-4,False
+571,11,2,Superior Centro,7.2,111.1,Apoio,Lateral Direito,26,1ºT,19,Defesa,2,False
+572,11,4,Média Esquerda,7.0,90.1,7 metros,Extremo Esquerdo,9,1ºT,16,Defesa,-5,False
+573,11,8,Inferior Centro,9.4,98.4,Penetração,Lateral Esquerdo,7,1ºT,175,Golo,-1,False
+574,11,4,Média Esquerda,7.1,96.4,Suspensão,Pivot,38,2ºT,146,Golo,1,False
+575,11,3,Superior Direita,6.7,88.4,Penetração,Extremo Esquerdo,40,2ºT,105,Golo,-3,False
+576,11,7,Inferior Esquerda,8.0,103.2,Apoio,Extremo Direito,5,1ºT,142,Defesa,5,False
+577,11,5,Média Centro,9.5,87.5,Apoio,Central,5,1ºT,147,Defesa,4,False
+578,11,9,Inferior Direita,9.8,110.4,Rectaguarda,Lateral Esquerdo,31,2ºT,143,Golo,-5,True
+579,11,1,Superior Esquerda,6.4,87.8,Suspensão,Central,16,1ºT,144,Golo,-4,False
+580,11,5,Média Centro,7.0,110.1,7 metros,Extremo Esquerdo,45,2ºT,59,Golo,5,False
+581,11,3,Superior Direita,7.2,108.1,Penetração,Central,35,2ºT,175,Defesa,5,False
+582,11,4,Média Esquerda,8.7,109.1,Penetração,Lateral Esquerdo,31,2ºT,180,Defesa,0,False
+583,11,1,Superior Esquerda,9.5,102.4,Penetração,Extremo Esquerdo,18,1ºT,95,Defesa,-5,False
+584,11,9,Inferior Direita,7.9,96.7,Rectaguarda,Lateral Direito,14,1ºT,141,Defesa,-2,False
+585,11,2,Superior Centro,8.2,103.3,Suspensão,Extremo Direito,42,2ºT,110,Golo,0,False
+586,11,2,Superior Centro,10.1,115.4,Contra-ataque,Central,34,2ºT,161,Defesa,-2,False
+587,11,4,Média Esquerda,9.1,109.5,Penetração,Lateral Esquerdo,2,1ºT,95,Defesa,-4,False
+588,11,7,Inferior Esquerda,7.3,109.6,Penetração,Lateral Direito,46,2ºT,45,Defesa,4,False
+589,11,6,Média Direita,9.5,113.4,Rectaguarda,Lateral Esquerdo,2,1ºT,165,Defesa,-4,False
+590,11,5,Média Centro,9.5,107.9,Apoio,Extremo Esquerdo,22,1ºT,163,Defesa,0,False
+591,11,3,Superior Direita,8.0,85.2,Suspensão,Lateral Direito,35,2ºT,94,Golo,2,False
+592,11,3,Superior Direita,9.2,88.9,Rectaguarda,Lateral Direito,10,1ºT,152,Golo,2,False
+593,11,9,Inferior Direita,7.0,107.1,7 metros,Central,56,2ºT,56,Golo,-1,False
+594,11,4,Média Esquerda,7.0,99.4,7 metros,Lateral Esquerdo,53,2ºT,141,Golo,-5,True
+595,11,2,Superior Centro,9.1,89.0,Suspensão,Extremo Direito,11,1ºT,178,Golo,-2,False
+596,12,2,Superior Centro,6.7,96.2,Suspensão,Extremo Esquerdo,30,1ºT,27,Golo,-2,False
+597,12,2,Superior Centro,6.3,103.6,Penetração,Pivot,50,2ºT,175,Defesa,-5,True
+598,12,8,Inferior Centro,7.0,87.1,7 metros,Lateral Esquerdo,5,1ºT,45,Golo,-3,False
+599,12,2,Superior Centro,7.9,107.7,Penetração,Pivot,28,1ºT,77,Golo,4,False
+600,12,3,Superior Direita,9.1,93.7,Apoio,Pivot,12,1ºT,107,Golo,-1,False
+601,12,7,Inferior Esquerda,6.8,87.2,Rectaguarda,Lateral Direito,34,2ºT,24,Golo,2,True
+602,12,6,Média Direita,7.2,89.6,Rectaguarda,Lateral Esquerdo,16,1ºT,153,Defesa,1,False
+603,12,1,Superior Esquerda,7.0,101.1,7 metros,Lateral Direito,19,1ºT,15,Golo,4,False
+604,12,3,Superior Direita,9.4,109.8,Rectaguarda,Lateral Esquerdo,26,1ºT,65,Golo,2,False
+605,12,6,Média Direita,9.1,98.4,Contra-ataque,Central,38,2ºT,106,Defesa,-5,False
+606,12,7,Inferior Esquerda,9.2,108.9,Rectaguarda,Central,48,2ºT,98,Defesa,-3,False
+607,12,2,Superior Centro,7.9,112.5,Apoio,Extremo Esquerdo,16,1ºT,125,Defesa,-1,False
+608,12,9,Inferior Direita,7.9,93.1,Suspensão,Lateral Direito,34,2ºT,40,Golo,-2,False
+609,12,1,Superior Esquerda,7.1,114.0,Apoio,Extremo Esquerdo,41,2ºT,117,Defesa,5,False
+610,12,6,Média Direita,7.2,85.1,Apoio,Lateral Esquerdo,51,2ºT,40,Defesa,0,False
+611,12,6,Média Direita,6.0,99.0,Penetração,Lateral Direito,57,2ºT,24,Golo,-4,False
+612,12,2,Superior Centro,10.0,116.1,Contra-ataque,Pivot,42,2ºT,37,Defesa,1,False
+613,12,4,Média Esquerda,8.4,95.9,Contra-ataque,Extremo Direito,28,1ºT,179,Defesa,4,False
+614,12,5,Média Centro,10.2,114.8,Contra-ataque,Central,52,2ºT,153,Golo,-1,False
+615,12,5,Média Centro,7.5,97.3,Rectaguarda,Extremo Direito,35,2ºT,14,Defesa,2,False
+616,12,2,Superior Centro,10.0,109.4,Apoio,Central,50,2ºT,6,Golo,5,False
+617,12,3,Superior Direita,8.6,109.2,Suspensão,Central,33,2ºT,95,Golo,3,False
+618,12,8,Inferior Centro,7.8,106.1,Rectaguarda,Lateral Esquerdo,50,2ºT,17,Golo,0,False
+619,12,6,Média Direita,7.7,115.9,Suspensão,Lateral Direito,39,2ºT,135,Golo,2,False
+620,12,6,Média Direita,9.7,104.8,Apoio,Extremo Esquerdo,59,2ºT,10,Defesa,-4,False
+621,12,6,Média Direita,9.4,115.4,Contra-ataque,Lateral Direito,37,2ºT,58,Golo,2,False
+622,12,3,Superior Direita,7.6,85.4,Suspensão,Lateral Esquerdo,8,1ºT,101,Golo,-1,False
+623,12,5,Média Centro,10.9,94.7,Contra-ataque,Lateral Direito,3,1ºT,39,Golo,3,False
+624,12,6,Média Direita,8.4,117.3,Contra-ataque,Extremo Direito,44,2ºT,141,Defesa,-3,False
+625,12,7,Inferior Esquerda,7.0,92.2,7 metros,Lateral Esquerdo,22,1ºT,147,Defesa,-5,False
+626,12,9,Inferior Direita,8.4,107.5,Suspensão,Central,37,2ºT,12,Defesa,4,False
+627,12,7,Inferior Esquerda,8.8,86.4,Suspensão,Central,55,2ºT,81,Golo,-2,True
+628,12,5,Média Centro,8.8,88.5,Suspensão,Lateral Direito,53,2ºT,98,Golo,-5,False
+629,12,9,Inferior Direita,9.3,107.5,Suspensão,Central,2,1ºT,161,Golo,2,False
+630,12,6,Média Direita,10.9,85.4,Contra-ataque,Pivot,21,1ºT,87,Golo,2,True
+631,12,2,Superior Centro,8.4,103.1,Apoio,Lateral Esquerdo,24,1ºT,173,Defesa,0,False
+632,12,9,Inferior Direita,9.1,108.7,Penetração,Pivot,30,1ºT,129,Defesa,-5,False
+633,12,8,Inferior Centro,8.9,96.0,Penetração,Lateral Esquerdo,41,2ºT,173,Golo,-1,True
+634,12,5,Média Centro,6.9,112.0,Apoio,Lateral Direito,38,2ºT,122,Defesa,1,False
+635,12,4,Média Esquerda,7.3,105.1,Rectaguarda,Pivot,37,2ºT,114,Defesa,-4,False
+636,12,4,Média Esquerda,7.0,95.6,7 metros,Pivot,22,1ºT,104,Golo,1,False
+637,12,6,Média Direita,7.9,117.1,Suspensão,Extremo Direito,53,2ºT,49,Golo,-5,True
+638,12,4,Média Esquerda,9.1,115.3,Rectaguarda,Pivot,49,2ºT,137,Defesa,0,False
+639,12,9,Inferior Direita,8.0,96.6,Apoio,Extremo Direito,55,2ºT,142,Golo,-4,False
+640,12,2,Superior Centro,7.9,104.8,Apoio,Central,33,2ºT,22,Golo,-2,False
+641,12,4,Média Esquerda,7.0,94.2,7 metros,Extremo Esquerdo,46,2ºT,43,Golo,-3,False
+642,12,2,Superior Centro,7.8,97.0,Rectaguarda,Lateral Direito,14,1ºT,158,Golo,-2,False
+643,12,9,Inferior Direita,8.1,100.1,Apoio,Central,48,2ºT,137,Golo,3,False
+644,12,4,Média Esquerda,7.3,86.2,Rectaguarda,Central,57,2ºT,151,Golo,1,False
+645,12,3,Superior Direita,8.5,96.1,Contra-ataque,Central,21,1ºT,160,Defesa,2,False
+646,12,3,Superior Direita,8.5,100.8,Contra-ataque,Lateral Esquerdo,24,1ºT,27,Golo,3,False
+647,12,4,Média Esquerda,9.4,102.6,Suspensão,Extremo Esquerdo,22,1ºT,160,Golo,-1,False
+648,12,7,Inferior Esquerda,6.8,105.0,Suspensão,Extremo Direito,50,2ºT,41,Golo,3,False
+649,12,5,Média Centro,7.0,98.4,7 metros,Extremo Direito,14,1ºT,171,Golo,-1,False
+650,12,2,Superior Centro,6.2,117.8,Penetração,Pivot,32,2ºT,146,Defesa,1,False
+651,13,7,Inferior Esquerda,6.8,116.8,Rectaguarda,Lateral Direito,57,2ºT,89,Golo,2,False
+652,13,2,Superior Centro,7.0,114.6,7 metros,Lateral Direito,35,2ºT,36,Defesa,-4,False
+653,13,2,Superior Centro,8.8,86.7,Penetração,Pivot,10,1ºT,135,Defesa,5,False
+654,13,8,Inferior Centro,8.4,103.0,Penetração,Extremo Esquerdo,39,2ºT,171,Defesa,-4,False
+655,13,4,Média Esquerda,7.0,103.2,7 metros,Lateral Direito,34,2ºT,132,Golo,3,False
+656,13,9,Inferior Direita,7.6,105.6,Penetração,Pivot,7,1ºT,179,Golo,1,False
+657,13,5,Média Centro,7.0,89.5,7 metros,Lateral Direito,46,2ºT,136,Defesa,5,False
+658,13,2,Superior Centro,9.5,105.5,Contra-ataque,Extremo Esquerdo,16,1ºT,52,Golo,1,False
+659,13,7,Inferior Esquerda,7.0,86.2,7 metros,Central,25,1ºT,42,Golo,-3,False
+660,13,4,Média Esquerda,7.0,102.3,Apoio,Extremo Direito,32,2ºT,116,Golo,-5,False
+661,13,2,Superior Centro,7.7,101.1,Apoio,Central,38,2ºT,163,Defesa,-5,True
+662,13,4,Média Esquerda,10.8,92.5,Contra-ataque,Extremo Esquerdo,54,2ºT,53,Defesa,1,False
+663,13,6,Média Direita,8.4,102.1,Penetração,Pivot,7,1ºT,174,Defesa,-2,False
+664,13,8,Inferior Centro,7.0,106.1,7 metros,Extremo Direito,52,2ºT,32,Golo,5,False
+665,13,4,Média Esquerda,7.0,114.1,7 metros,Extremo Direito,28,1ºT,70,Golo,4,False
+666,13,6,Média Direita,7.5,102.3,Apoio,Extremo Direito,49,2ºT,95,Golo,4,False
+667,13,5,Média Centro,8.1,108.6,Rectaguarda,Lateral Esquerdo,46,2ºT,122,Golo,-1,False
+668,13,9,Inferior Direita,10.9,105.7,Contra-ataque,Extremo Esquerdo,16,1ºT,140,Defesa,-3,False
+669,13,3,Superior Direita,7.5,111.4,Rectaguarda,Pivot,38,2ºT,145,Golo,-5,False
+670,13,6,Média Direita,9.5,108.8,Contra-ataque,Lateral Esquerdo,46,2ºT,55,Defesa,-1,False
+671,13,6,Média Direita,9.1,92.1,Penetração,Extremo Esquerdo,4,1ºT,170,Defesa,4,False
+672,13,5,Média Centro,9.6,108.0,Contra-ataque,Extremo Direito,1,1ºT,116,Golo,4,False
+673,13,1,Superior Esquerda,7.0,98.7,7 metros,Extremo Esquerdo,7,1ºT,96,Golo,0,False
+674,13,2,Superior Centro,8.3,99.1,Contra-ataque,Lateral Esquerdo,39,2ºT,105,Golo,0,False
+675,13,1,Superior Esquerda,9.0,91.3,Rectaguarda,Extremo Direito,50,2ºT,26,Golo,-2,False
+676,13,1,Superior Esquerda,7.2,105.9,Suspensão,Lateral Esquerdo,26,1ºT,164,Golo,-3,False
+677,13,8,Inferior Centro,7.0,92.7,7 metros,Extremo Direito,42,2ºT,70,Defesa,-3,False
+678,13,6,Média Direita,8.1,94.7,Apoio,Lateral Direito,20,1ºT,44,Defesa,-4,False
+679,13,9,Inferior Direita,8.7,91.6,Suspensão,Lateral Esquerdo,37,2ºT,41,Defesa,-4,False
+680,13,6,Média Direita,9.9,109.1,Penetração,Central,35,2ºT,133,Defesa,1,False
+681,13,4,Média Esquerda,10.9,91.6,Contra-ataque,Extremo Esquerdo,24,1ºT,166,Golo,-5,False
+682,13,9,Inferior Direita,8.9,108.1,Penetração,Lateral Esquerdo,60,2ºT,76,Golo,3,True
+683,13,4,Média Esquerda,9.1,90.5,Suspensão,Extremo Esquerdo,59,2ºT,180,Golo,-5,False
+684,13,4,Média Esquerda,7.0,93.9,7 metros,Extremo Direito,44,2ºT,172,Defesa,-1,False
+685,13,2,Superior Centro,9.5,112.5,Penetração,Extremo Esquerdo,9,1ºT,132,Defesa,-3,False
+686,13,1,Superior Esquerda,6.9,96.6,Rectaguarda,Pivot,50,2ºT,130,Defesa,1,True
+687,13,4,Média Esquerda,7.0,105.0,7 metros,Extremo Esquerdo,19,1ºT,154,Golo,-5,True
+688,13,9,Inferior Direita,9.5,86.7,Rectaguarda,Extremo Direito,12,1ºT,31,Golo,-3,False
+689,13,6,Média Direita,8.1,116.1,Apoio,Extremo Direito,36,2ºT,54,Golo,-2,False
+690,13,2,Superior Centro,8.5,88.9,Contra-ataque,Central,32,2ºT,32,Defesa,0,True
+691,13,1,Superior Esquerda,8.8,85.4,Rectaguarda,Lateral Esquerdo,37,2ºT,146,Golo,5,False
+692,13,4,Média Esquerda,6.2,88.0,Suspensão,Central,40,2ºT,168,Defesa,-2,False
+693,13,4,Média Esquerda,10.0,104.2,Suspensão,Lateral Esquerdo,14,1ºT,75,Defesa,4,False
+694,13,6,Média Direita,7.5,100.7,Penetração,Extremo Esquerdo,43,2ºT,39,Defesa,4,False
+695,13,2,Superior Centro,7.0,90.6,7 metros,Extremo Esquerdo,17,1ºT,15,Golo,-4,True
+696,13,3,Superior Direita,6.6,109.5,Suspensão,Pivot,37,2ºT,86,Defesa,-3,False
+697,13,1,Superior Esquerda,9.8,88.3,Contra-ataque,Extremo Esquerdo,1,1ºT,177,Golo,-1,False
+698,13,1,Superior Esquerda,7.0,87.9,7 metros,Extremo Esquerdo,28,1ºT,126,Defesa,4,False
+699,14,6,Média Direita,8.2,110.0,Penetração,Lateral Esquerdo,50,2ºT,51,Defesa,-3,True
+700,14,6,Média Direita,6.5,90.4,Suspensão,Extremo Direito,20,1ºT,36,Golo,4,False
+701,14,3,Superior Direita,7.6,85.0,Rectaguarda,Extremo Esquerdo,38,2ºT,66,Golo,5,False
+702,14,4,Média Esquerda,9.0,106.6,Suspensão,Central,44,2ºT,17,Defesa,5,True
+703,14,6,Média Direita,8.5,104.9,Contra-ataque,Extremo Direito,8,1ºT,138,Golo,4,False
+704,14,7,Inferior Esquerda,6.3,108.4,Apoio,Lateral Direito,58,2ºT,100,Defesa,-3,False
+705,14,8,Inferior Centro,7.6,108.6,Rectaguarda,Lateral Direito,44,2ºT,71,Defesa,-3,False
+706,14,6,Média Direita,10.0,113.2,Contra-ataque,Lateral Direito,30,1ºT,131,Golo,-3,False
+707,14,2,Superior Centro,8.4,95.2,Rectaguarda,Extremo Direito,29,1ºT,48,Defesa,-4,False
+708,14,6,Média Direita,7.3,116.0,Suspensão,Lateral Esquerdo,43,2ºT,179,Defesa,2,False
+709,14,5,Média Centro,6.6,111.1,Rectaguarda,Extremo Esquerdo,32,2ºT,103,Golo,5,False
+710,14,3,Superior Direita,10.0,91.8,Penetração,Extremo Esquerdo,9,1ºT,84,Golo,-1,False
+711,14,8,Inferior Centro,6.0,107.5,Penetração,Extremo Esquerdo,11,1ºT,103,Golo,-3,False
+712,14,5,Média Centro,7.0,99.5,7 metros,Extremo Esquerdo,10,1ºT,145,Defesa,-5,False
+713,14,2,Superior Centro,10.3,91.2,Contra-ataque,Lateral Esquerdo,17,1ºT,68,Golo,0,False
+714,14,5,Média Centro,7.2,96.0,Rectaguarda,Central,46,2ºT,22,Golo,1,False
+715,14,6,Média Direita,8.3,92.5,Apoio,Central,51,2ºT,119,Defesa,-4,False
+716,14,2,Superior Centro,6.9,89.3,Rectaguarda,Central,42,2ºT,114,Defesa,1,False
+717,14,1,Superior Esquerda,7.7,111.6,Apoio,Pivot,40,2ºT,22,Golo,1,False
+718,14,2,Superior Centro,9.6,98.8,Contra-ataque,Central,26,1ºT,96,Golo,0,False
+719,14,9,Inferior Direita,8.1,112.0,Apoio,Lateral Direito,33,2ºT,113,Defesa,-4,False
+720,14,8,Inferior Centro,6.3,117.8,Penetração,Lateral Direito,51,2ºT,67,Golo,5,False
+721,14,4,Média Esquerda,7.7,94.7,Apoio,Extremo Direito,45,2ºT,46,Defesa,0,False
+722,14,2,Superior Centro,7.0,113.9,7 metros,Lateral Direito,58,2ºT,53,Golo,2,False
+723,14,6,Média Direita,7.8,92.3,Rectaguarda,Central,7,1ºT,68,Golo,3,False
+724,14,1,Superior Esquerda,7.4,117.2,Suspensão,Extremo Direito,46,2ºT,61,Golo,5,False
+725,14,7,Inferior Esquerda,9.7,95.2,Penetração,Extremo Direito,20,1ºT,12,Golo,4,False
+726,14,6,Média Direita,9.4,104.2,Penetração,Extremo Direito,13,1ºT,5,Golo,1,False
+727,14,3,Superior Direita,7.2,94.7,Suspensão,Lateral Direito,9,1ºT,24,Golo,-2,False
+728,14,8,Inferior Centro,9.0,102.0,Penetração,Lateral Direito,21,1ºT,51,Golo,1,True
+729,14,1,Superior Esquerda,8.8,115.7,Rectaguarda,Central,6,1ºT,127,Defesa,0,False
+730,14,7,Inferior Esquerda,8.2,100.0,Apoio,Extremo Esquerdo,15,1ºT,78,Golo,-4,False
+731,14,9,Inferior Direita,10.9,100.5,Contra-ataque,Lateral Direito,22,1ºT,39,Golo,1,False
+732,14,3,Superior Direita,7.2,107.5,Suspensão,Pivot,47,2ºT,143,Defesa,-5,False
+733,14,8,Inferior Centro,6.6,105.9,Rectaguarda,Central,47,2ºT,40,Defesa,-3,False
+734,14,4,Média Esquerda,7.0,108.0,7 metros,Lateral Esquerdo,20,1ºT,161,Golo,-4,False
+735,14,4,Média Esquerda,9.4,113.6,Penetração,Extremo Direito,29,1ºT,89,Defesa,-2,False
+736,14,3,Superior Direita,7.1,114.2,Apoio,Pivot,43,2ºT,18,Golo,5,False
+737,14,8,Inferior Centro,6.4,101.6,Rectaguarda,Extremo Esquerdo,47,2ºT,85,Defesa,3,True
+738,14,9,Inferior Direita,9.8,92.0,Contra-ataque,Extremo Direito,16,1ºT,138,Defesa,4,True
+739,14,9,Inferior Direita,7.7,97.4,Suspensão,Lateral Esquerdo,2,1ºT,10,Golo,-2,False
+740,14,2,Superior Centro,9.1,101.3,Suspensão,Lateral Direito,23,1ºT,163,Defesa,-1,False
+741,14,9,Inferior Direita,6.6,114.4,Suspensão,Pivot,31,2ºT,118,Golo,-2,True
+742,14,1,Superior Esquerda,9.9,85.4,Suspensão,Extremo Direito,23,1ºT,140,Defesa,5,False
+743,14,3,Superior Direita,6.2,100.6,Apoio,Lateral Direito,6,1ºT,132,Golo,-3,False
+744,14,6,Média Direita,7.0,108.7,7 metros,Lateral Esquerdo,8,1ºT,160,Defesa,-5,False
+745,14,8,Inferior Centro,9.3,94.7,Apoio,Extremo Esquerdo,22,1ºT,161,Defesa,-4,False
+746,14,4,Média Esquerda,9.6,101.8,Suspensão,Central,17,1ºT,147,Defesa,-2,False
+747,14,7,Inferior Esquerda,7.6,117.9,Suspensão,Central,1,1ºT,70,Golo,4,False
+748,14,8,Inferior Centro,10.8,97.4,Contra-ataque,Extremo Esquerdo,2,1ºT,21,Golo,2,False
+749,14,2,Superior Centro,6.6,91.5,Apoio,Lateral Direito,33,2ºT,111,Defesa,2,False
+750,14,3,Superior Direita,6.1,99.5,Penetração,Pivot,50,2ºT,55,Golo,-1,False
+751,14,3,Superior Direita,7.7,115.2,Suspensão,Extremo Esquerdo,12,1ºT,93,Golo,-4,False
+752,14,6,Média Direita,7.0,97.2,7 metros,Extremo Direito,50,2ºT,100,Golo,-3,True
+753,14,3,Superior Direita,7.4,115.3,Suspensão,Extremo Direito,18,1ºT,45,Golo,-2,False
+754,15,1,Superior Esquerda,9.6,113.0,Apoio,Lateral Esquerdo,57,2ºT,85,Golo,-5,False
+755,15,3,Superior Direita,7.0,105.9,7 metros,Extremo Esquerdo,17,1ºT,31,Defesa,-1,False
+756,15,8,Inferior Centro,7.0,108.7,7 metros,Extremo Direito,15,1ºT,16,Defesa,2,False
+757,15,8,Inferior Centro,9.3,110.3,Suspensão,Extremo Esquerdo,42,2ºT,115,Golo,-3,False
+758,15,9,Inferior Direita,6.7,98.7,Rectaguarda,Lateral Esquerdo,60,2ºT,178,Golo,0,False
+759,15,1,Superior Esquerda,7.9,101.7,Suspensão,Extremo Direito,22,1ºT,9,Golo,-5,False
+760,15,8,Inferior Centro,8.0,102.1,Rectaguarda,Lateral Direito,48,2ºT,160,Golo,0,False
+761,15,8,Inferior Centro,6.5,102.0,Penetração,Lateral Direito,2,1ºT,175,Golo,-5,False
+762,15,2,Superior Centro,9.5,109.0,Suspensão,Extremo Esquerdo,16,1ºT,35,Golo,3,False
+763,15,5,Média Centro,9.4,106.4,Suspensão,Pivot,29,1ºT,10,Defesa,-4,False
+764,15,4,Média Esquerda,9.9,87.7,Suspensão,Central,59,2ºT,168,Golo,4,False
+765,15,7,Inferior Esquerda,6.3,98.8,Rectaguarda,Lateral Direito,25,1ºT,66,Defesa,-5,False
+766,15,2,Superior Centro,9.9,105.0,Apoio,Central,26,1ºT,150,Defesa,-5,False
+767,15,9,Inferior Direita,6.9,111.6,Penetração,Extremo Direito,7,1ºT,172,Golo,4,False
+768,15,6,Média Direita,6.1,110.5,Penetração,Extremo Esquerdo,55,2ºT,93,Golo,3,False
+769,15,4,Média Esquerda,9.4,97.6,Apoio,Lateral Esquerdo,17,1ºT,107,Defesa,0,True
+770,15,7,Inferior Esquerda,7.0,100.1,7 metros,Pivot,39,2ºT,23,Defesa,-2,False
+771,15,2,Superior Centro,8.8,106.7,Rectaguarda,Pivot,43,2ºT,68,Golo,2,False
+772,15,8,Inferior Centro,7.0,89.7,7 metros,Central,35,2ºT,171,Golo,-3,False
+773,15,9,Inferior Direita,6.4,97.1,Rectaguarda,Pivot,51,2ºT,47,Golo,-3,False
+774,15,7,Inferior Esquerda,8.4,90.3,Rectaguarda,Central,41,2ºT,66,Golo,0,False
+775,15,1,Superior Esquerda,9.4,113.8,Contra-ataque,Extremo Esquerdo,50,2ºT,82,Golo,1,True
+776,15,9,Inferior Direita,8.8,103.4,Contra-ataque,Central,7,1ºT,125,Golo,-3,False
+777,15,1,Superior Esquerda,10.8,92.3,Contra-ataque,Lateral Esquerdo,28,1ºT,91,Golo,-1,False
+778,15,3,Superior Direita,7.7,95.6,Rectaguarda,Extremo Direito,41,2ºT,89,Golo,1,False
+779,15,9,Inferior Direita,6.1,101.4,Apoio,Central,41,2ºT,148,Golo,-3,False
+780,15,5,Média Centro,7.0,92.4,7 metros,Extremo Esquerdo,49,2ºT,125,Defesa,2,False
+781,15,6,Média Direita,7.9,91.6,Rectaguarda,Extremo Direito,33,2ºT,78,Defesa,-3,False
+782,15,6,Média Direita,9.7,98.4,Rectaguarda,Extremo Esquerdo,16,1ºT,53,Defesa,-2,False
+783,15,2,Superior Centro,6.1,104.4,Rectaguarda,Lateral Direito,16,1ºT,8,Golo,-3,False
+784,15,8,Inferior Centro,8.6,87.7,Contra-ataque,Extremo Direito,55,2ºT,45,Golo,-2,False
+785,15,8,Inferior Centro,9.0,97.0,Contra-ataque,Central,60,2ºT,115,Golo,0,False
+786,15,1,Superior Esquerda,7.0,108.3,7 metros,Central,31,2ºT,125,Golo,4,False
+787,15,9,Inferior Direita,6.2,86.9,Apoio,Extremo Esquerdo,25,1ºT,137,Defesa,3,False
+788,15,9,Inferior Direita,6.8,96.4,Suspensão,Lateral Direito,36,2ºT,177,Golo,-3,False
+789,15,9,Inferior Direita,9.6,103.0,Suspensão,Extremo Esquerdo,2,1ºT,124,Golo,-3,False
+790,15,4,Média Esquerda,7.8,86.8,Rectaguarda,Pivot,29,1ºT,49,Golo,-3,False
+791,15,9,Inferior Direita,8.8,105.3,Suspensão,Pivot,14,1ºT,25,Defesa,-4,False
+792,15,3,Superior Direita,6.8,110.5,Apoio,Central,50,2ºT,106,Defesa,-4,False
+793,15,4,Média Esquerda,7.0,115.2,7 metros,Extremo Esquerdo,9,1ºT,160,Golo,1,False
+794,15,5,Média Centro,7.0,91.5,Rectaguarda,Pivot,49,2ºT,13,Defesa,-5,False
+795,15,8,Inferior Centro,9.8,104.6,Contra-ataque,Pivot,3,1ºT,155,Defesa,3,False
+796,15,1,Superior Esquerda,7.5,97.7,Suspensão,Lateral Direito,28,1ºT,106,Golo,4,False
+797,15,4,Média Esquerda,8.4,103.9,Penetração,Lateral Esquerdo,7,1ºT,145,Defesa,-5,False
+798,15,8,Inferior Centro,6.1,89.9,Suspensão,Lateral Direito,36,2ºT,173,Defesa,1,False
+799,15,6,Média Direita,7.0,112.0,7 metros,Extremo Esquerdo,37,2ºT,18,Golo,0,False
+800,15,9,Inferior Direita,9.8,96.2,Penetração,Lateral Direito,27,1ºT,112,Golo,-3,False
+801,15,5,Média Centro,9.4,89.8,Contra-ataque,Lateral Esquerdo,52,2ºT,40,Golo,1,False
+802,15,3,Superior Direita,9.5,95.2,Penetração,Lateral Esquerdo,13,1ºT,32,Golo,-2,False
+803,15,7,Inferior Esquerda,10.4,94.7,Contra-ataque,Central,15,1ºT,155,Defesa,-4,False
+804,15,5,Média Centro,7.0,107.2,7 metros,Lateral Esquerdo,25,1ºT,148,Golo,-3,False
+805,15,5,Média Centro,8.1,90.6,Suspensão,Extremo Direito,54,2ºT,71,Defesa,-5,False
+806,15,5,Média Centro,9.6,86.3,Apoio,Extremo Direito,24,1ºT,128,Defesa,5,False
+807,15,7,Inferior Esquerda,9.8,106.2,Suspensão,Lateral Direito,52,2ºT,23,Defesa,5,False
+808,16,2,Superior Centro,7.0,85.6,7 metros,Extremo Direito,17,1ºT,100,Defesa,4,False
+809,16,4,Média Esquerda,7.0,111.4,7 metros,Extremo Direito,43,2ºT,36,Defesa,-5,False
+810,16,4,Média Esquerda,7.8,101.4,Apoio,Lateral Direito,25,1ºT,91,Golo,-3,False
+811,16,4,Média Esquerda,6.6,115.5,Suspensão,Lateral Esquerdo,31,2ºT,124,Golo,-2,False
+812,16,3,Superior Direita,6.8,90.0,Penetração,Central,15,1ºT,41,Golo,3,False
+813,16,3,Superior Direita,10.4,91.3,Contra-ataque,Pivot,42,2ºT,115,Golo,5,False
+814,16,8,Inferior Centro,9.8,110.8,Apoio,Pivot,29,1ºT,85,Golo,5,False
+815,16,8,Inferior Centro,6.1,97.4,Rectaguarda,Extremo Direito,30,1ºT,115,Golo,2,False
+816,16,4,Média Esquerda,9.7,107.1,Suspensão,Pivot,46,2ºT,170,Defesa,3,False
+817,16,9,Inferior Direita,8.6,115.9,Suspensão,Lateral Direito,23,1ºT,103,Defesa,3,False
+818,16,1,Superior Esquerda,8.3,88.7,Penetração,Lateral Direito,55,2ºT,84,Defesa,-1,False
+819,16,9,Inferior Direita,7.0,96.6,7 metros,Lateral Direito,52,2ºT,105,Golo,3,True
+820,16,9,Inferior Direita,9.6,106.9,Apoio,Extremo Esquerdo,57,2ºT,69,Golo,-2,False
+821,16,8,Inferior Centro,8.9,90.1,Penetração,Extremo Direito,39,2ºT,173,Defesa,5,False
+822,16,8,Inferior Centro,7.6,87.0,Rectaguarda,Extremo Direito,47,2ºT,90,Defesa,3,False
+823,16,5,Média Centro,9.2,99.9,Suspensão,Central,5,1ºT,85,Defesa,-5,False
+824,16,7,Inferior Esquerda,7.9,116.9,Apoio,Extremo Direito,27,1ºT,177,Defesa,-3,False
+825,16,5,Média Centro,9.4,86.5,Rectaguarda,Pivot,2,1ºT,20,Defesa,1,False
+826,16,4,Média Esquerda,9.5,104.8,Contra-ataque,Extremo Esquerdo,47,2ºT,174,Defesa,0,False
+827,16,7,Inferior Esquerda,9.8,109.2,Contra-ataque,Extremo Esquerdo,48,2ºT,25,Defesa,0,False
+828,16,5,Média Centro,9.5,92.7,Suspensão,Central,4,1ºT,152,Defesa,3,False
+829,16,8,Inferior Centro,10.3,86.8,Contra-ataque,Central,44,2ºT,48,Golo,3,False
+830,16,6,Média Direita,8.5,112.2,Suspensão,Extremo Direito,9,1ºT,124,Golo,-4,False
+831,16,4,Média Esquerda,8.5,105.7,Rectaguarda,Pivot,10,1ºT,150,Golo,-3,False
+832,16,6,Média Direita,6.0,117.8,Apoio,Extremo Direito,48,2ºT,117,Golo,2,True
+833,16,1,Superior Esquerda,7.0,116.4,7 metros,Extremo Esquerdo,60,2ºT,103,Golo,-2,False
+834,16,7,Inferior Esquerda,8.9,109.6,Rectaguarda,Extremo Direito,34,2ºT,158,Defesa,5,False
+835,16,8,Inferior Centro,8.2,98.4,Suspensão,Extremo Direito,29,1ºT,105,Defesa,-3,False
+836,16,5,Média Centro,9.6,97.6,Penetração,Pivot,48,2ºT,166,Defesa,-3,True
+837,16,5,Média Centro,9.9,110.3,Contra-ataque,Central,25,1ºT,163,Defesa,0,False
+838,16,3,Superior Direita,7.7,94.3,Penetração,Pivot,19,1ºT,48,Golo,-4,False
+839,16,3,Superior Direita,6.8,111.1,Suspensão,Pivot,60,2ºT,45,Golo,1,False
+840,16,9,Inferior Direita,8.6,114.8,Contra-ataque,Lateral Esquerdo,42,2ºT,53,Golo,-1,False
+841,16,2,Superior Centro,9.9,116.2,Rectaguarda,Pivot,46,2ºT,112,Golo,4,False
+842,16,8,Inferior Centro,9.4,101.2,Contra-ataque,Lateral Esquerdo,8,1ºT,58,Defesa,4,False
+843,16,4,Média Esquerda,9.1,97.3,Contra-ataque,Pivot,48,2ºT,163,Defesa,3,False
+844,16,4,Média Esquerda,9.8,106.4,Apoio,Central,5,1ºT,11,Defesa,-3,False
+845,16,3,Superior Direita,6.8,86.2,Rectaguarda,Extremo Direito,8,1ºT,59,Defesa,-3,False
+846,16,3,Superior Direita,10.7,100.3,Contra-ataque,Pivot,10,1ºT,107,Defesa,5,False
+847,16,1,Superior Esquerda,8.6,92.3,Apoio,Extremo Esquerdo,2,1ºT,126,Defesa,5,False
+848,16,6,Média Direita,10.2,113.7,Contra-ataque,Extremo Direito,13,1ºT,155,Golo,-4,False
+849,16,2,Superior Centro,8.7,103.7,Apoio,Central,26,1ºT,52,Golo,2,False
+850,16,9,Inferior Direita,9.6,105.1,Penetração,Extremo Direito,3,1ºT,117,Defesa,0,False
+851,16,1,Superior Esquerda,9.8,101.0,Rectaguarda,Extremo Esquerdo,54,2ºT,5,Defesa,-5,False
+852,16,6,Média Direita,6.7,86.8,Penetração,Extremo Esquerdo,14,1ºT,105,Defesa,2,True
+853,16,8,Inferior Centro,7.6,102.2,Rectaguarda,Lateral Direito,47,2ºT,70,Defesa,0,False
+854,16,3,Superior Direita,8.1,111.2,Contra-ataque,Extremo Esquerdo,32,2ºT,80,Defesa,3,False
+855,16,8,Inferior Centro,6.1,109.1,Penetração,Lateral Direito,45,2ºT,55,Defesa,5,False
+856,16,7,Inferior Esquerda,7.0,86.1,7 metros,Extremo Esquerdo,35,2ºT,127,Golo,-3,False
+857,16,3,Superior Direita,7.6,86.8,Penetração,Pivot,25,1ºT,114,Golo,3,False
+858,16,3,Superior Direita,6.8,114.4,Suspensão,Extremo Direito,56,2ºT,147,Golo,-4,False
+859,16,9,Inferior Direita,8.6,96.0,Rectaguarda,Extremo Esquerdo,28,1ºT,25,Defesa,0,False
+860,16,2,Superior Centro,7.2,87.5,Apoio,Extremo Direito,41,2ºT,155,Golo,2,False
+861,16,1,Superior Esquerda,7.0,87.0,7 metros,Pivot,34,2ºT,96,Defesa,1,True
+862,16,3,Superior Direita,7.0,105.7,7 metros,Pivot,52,2ºT,80,Golo,4,False
+863,16,6,Média Direita,7.5,111.5,Rectaguarda,Extremo Esquerdo,15,1ºT,113,Golo,2,False
+864,16,2,Superior Centro,6.2,86.7,Rectaguarda,Central,44,2ºT,156,Golo,-5,False
+865,16,1,Superior Esquerda,6.3,102.9,Apoio,Extremo Direito,1,1ºT,113,Golo,-2,False
+866,16,4,Média Esquerda,7.0,115.1,7 metros,Extremo Esquerdo,2,1ºT,118,Defesa,-2,False
+867,16,6,Média Direita,7.0,89.9,7 metros,Lateral Esquerdo,45,2ºT,17,Golo,5,False
+868,16,8,Inferior Centro,6.6,105.6,Rectaguarda,Lateral Direito,10,1ºT,38,Defesa,3,False
+869,16,4,Média Esquerda,7.1,105.1,Penetração,Pivot,40,2ºT,84,Golo,3,False
+870,17,8,Inferior Centro,8.5,92.0,Penetração,Central,6,1ºT,57,Golo,3,False
+871,17,5,Média Centro,8.2,89.0,Penetração,Pivot,31,2ºT,42,Golo,0,False
+872,17,7,Inferior Esquerda,8.2,101.5,Apoio,Pivot,46,2ºT,12,Golo,5,True
+873,17,9,Inferior Direita,8.9,91.5,Penetração,Extremo Direito,60,2ºT,165,Golo,2,False
+874,17,5,Média Centro,7.0,102.7,7 metros,Lateral Direito,13,1ºT,47,Golo,-5,True
+875,17,4,Média Esquerda,7.8,87.6,Apoio,Lateral Direito,2,1ºT,77,Defesa,3,False
+876,17,1,Superior Esquerda,8.2,88.1,Contra-ataque,Lateral Esquerdo,21,1ºT,89,Golo,0,False
+877,17,1,Superior Esquerda,7.0,117.9,7 metros,Extremo Direito,42,2ºT,95,Golo,-1,False
+878,17,7,Inferior Esquerda,7.1,94.3,Apoio,Extremo Direito,21,1ºT,144,Golo,3,False
+879,17,7,Inferior Esquerda,10.9,98.4,Contra-ataque,Extremo Direito,2,1ºT,71,Defesa,1,True
+880,17,1,Superior Esquerda,8.7,113.0,Rectaguarda,Lateral Direito,10,1ºT,13,Defesa,-2,False
+881,17,2,Superior Centro,7.9,117.8,Suspensão,Extremo Direito,10,1ºT,70,Defesa,-3,False
+882,17,5,Média Centro,6.9,100.9,Apoio,Extremo Direito,55,2ºT,157,Golo,-4,False
+883,17,6,Média Direita,8.2,91.3,Penetração,Lateral Direito,59,2ºT,108,Defesa,-2,True
+884,17,3,Superior Direita,7.8,98.6,Apoio,Central,1,1ºT,105,Defesa,2,False
+885,17,9,Inferior Direita,8.8,92.8,Suspensão,Lateral Direito,48,2ºT,174,Golo,4,True
+886,17,4,Média Esquerda,7.6,87.5,Penetração,Lateral Direito,57,2ºT,106,Defesa,-5,False
+887,17,3,Superior Direita,8.1,112.8,Contra-ataque,Lateral Esquerdo,47,2ºT,130,Golo,-3,False
+888,17,4,Média Esquerda,9.8,85.1,Suspensão,Central,50,2ºT,75,Defesa,4,False
+889,17,5,Média Centro,8.8,103.8,Contra-ataque,Extremo Esquerdo,16,1ºT,31,Golo,-2,False
+890,17,8,Inferior Centro,9.3,86.4,Apoio,Extremo Direito,35,2ºT,107,Golo,-3,False
+891,17,2,Superior Centro,6.2,108.2,Penetração,Extremo Direito,30,1ºT,160,Golo,-1,False
+892,17,9,Inferior Direita,8.3,96.4,Apoio,Extremo Esquerdo,33,2ºT,42,Golo,-4,False
+893,17,9,Inferior Direita,10.1,85.3,Contra-ataque,Lateral Esquerdo,5,1ºT,13,Golo,1,False
+894,17,7,Inferior Esquerda,6.3,104.5,Suspensão,Central,8,1ºT,21,Golo,-3,True
+895,17,6,Média Direita,7.4,112.5,Rectaguarda,Lateral Direito,4,1ºT,51,Defesa,3,True
+896,17,5,Média Centro,9.9,98.7,Rectaguarda,Central,1,1ºT,61,Golo,1,False
+897,17,1,Superior Esquerda,8.9,104.7,Rectaguarda,Pivot,39,2ºT,42,Golo,3,True
+898,17,9,Inferior Direita,7.2,99.3,Suspensão,Lateral Direito,10,1ºT,104,Golo,-3,False
+899,17,9,Inferior Direita,7.1,111.9,Penetração,Lateral Esquerdo,52,2ºT,158,Golo,1,False
+900,17,3,Superior Direita,9.3,117.6,Penetração,Lateral Direito,28,1ºT,23,Golo,4,False
+901,17,5,Média Centro,7.9,109.7,Apoio,Lateral Direito,42,2ºT,41,Defesa,-4,False
+902,17,9,Inferior Direita,10.7,98.5,Contra-ataque,Lateral Esquerdo,49,2ºT,92,Defesa,1,False
+903,17,6,Média Direita,9.8,96.4,Apoio,Pivot,1,1ºT,71,Golo,1,True
+904,17,8,Inferior Centro,7.8,110.7,Suspensão,Extremo Esquerdo,4,1ºT,94,Defesa,-4,False
+905,17,7,Inferior Esquerda,8.5,101.8,Suspensão,Central,4,1ºT,145,Defesa,5,False
+906,17,6,Média Direita,7.0,110.3,7 metros,Lateral Direito,28,1ºT,123,Golo,-3,False
+907,17,5,Média Centro,10.5,105.3,Contra-ataque,Central,8,1ºT,55,Golo,-4,False
+908,17,6,Média Direita,7.0,85.9,7 metros,Lateral Esquerdo,8,1ºT,51,Golo,-2,True
+909,17,9,Inferior Direita,7.6,94.2,Suspensão,Pivot,24,1ºT,140,Defesa,-1,False
+910,17,9,Inferior Direita,9.7,88.6,Contra-ataque,Lateral Direito,9,1ºT,175,Golo,5,False
+911,17,7,Inferior Esquerda,7.0,98.9,7 metros,Central,24,1ºT,177,Defesa,1,False
+912,17,8,Inferior Centro,9.0,115.2,Penetração,Extremo Direito,34,2ºT,178,Defesa,-3,False
+913,17,1,Superior Esquerda,8.8,96.2,Apoio,Central,16,1ºT,56,Golo,-1,False
+914,17,1,Superior Esquerda,6.3,98.4,Suspensão,Pivot,58,2ºT,113,Golo,0,False
+915,17,3,Superior Direita,9.5,117.0,Apoio,Pivot,15,1ºT,34,Defesa,5,False
+916,17,1,Superior Esquerda,9.1,91.7,Suspensão,Extremo Esquerdo,1,1ºT,101,Defesa,5,False
+917,17,5,Média Centro,9.4,109.3,Suspensão,Lateral Esquerdo,32,2ºT,134,Defesa,2,False
+918,17,4,Média Esquerda,9.0,86.3,Apoio,Extremo Direito,58,2ºT,178,Defesa,2,False
+919,17,4,Média Esquerda,9.7,111.3,Contra-ataque,Central,58,2ºT,108,Golo,-4,False
+920,17,2,Superior Centro,8.6,116.5,Contra-ataque,Central,14,1ºT,107,Defesa,-5,False
+921,17,2,Superior Centro,7.9,92.0,Penetração,Extremo Esquerdo,45,2ºT,23,Golo,4,False
+922,17,1,Superior Esquerda,6.3,100.2,Rectaguarda,Lateral Esquerdo,49,2ºT,98,Golo,-1,False
+923,17,7,Inferior Esquerda,10.8,94.9,Contra-ataque,Pivot,7,1ºT,103,Golo,1,True
+924,17,8,Inferior Centro,8.0,96.6,Suspensão,Central,41,2ºT,156,Golo,1,False
+925,18,6,Média Direita,8.6,105.1,Contra-ataque,Lateral Direito,33,2ºT,66,Defesa,-4,False
+926,18,4,Média Esquerda,8.7,110.8,Rectaguarda,Extremo Direito,51,2ºT,12,Golo,-3,False
+927,18,1,Superior Esquerda,7.0,105.2,7 metros,Lateral Esquerdo,30,1ºT,73,Golo,5,False
+928,18,5,Média Centro,7.1,88.8,Rectaguarda,Central,5,1ºT,162,Defesa,-3,False
+929,18,5,Média Centro,10.8,105.6,Contra-ataque,Extremo Direito,54,2ºT,68,Defesa,4,False
+930,18,6,Média Direita,7.0,109.0,7 metros,Extremo Esquerdo,15,1ºT,71,Defesa,5,False
+931,18,8,Inferior Centro,8.0,91.6,Apoio,Lateral Direito,50,2ºT,10,Golo,5,False
+932,18,2,Superior Centro,9.7,103.2,Apoio,Central,11,1ºT,59,Defesa,-2,True
+933,18,3,Superior Direita,7.0,111.0,7 metros,Extremo Esquerdo,45,2ºT,45,Golo,4,False
+934,18,9,Inferior Direita,8.1,112.8,Contra-ataque,Pivot,54,2ºT,99,Golo,5,False
+935,18,3,Superior Direita,7.0,107.9,7 metros,Lateral Direito,23,1ºT,125,Golo,-2,False
+936,18,7,Inferior Esquerda,9.5,106.5,Rectaguarda,Pivot,7,1ºT,171,Golo,-3,False
+937,18,2,Superior Centro,7.0,91.3,7 metros,Central,20,1ºT,159,Defesa,-3,False
+938,18,6,Média Direita,9.7,94.7,Suspensão,Extremo Direito,49,2ºT,11,Golo,1,False
+939,18,9,Inferior Direita,9.8,115.8,Rectaguarda,Lateral Direito,57,2ºT,174,Golo,-2,False
+940,18,1,Superior Esquerda,6.2,92.1,Rectaguarda,Lateral Esquerdo,34,2ºT,20,Defesa,2,False
+941,18,6,Média Direita,10.9,89.8,Contra-ataque,Lateral Direito,30,1ºT,40,Golo,-1,False
+942,18,6,Média Direita,7.0,93.9,7 metros,Pivot,19,1ºT,35,Golo,-1,False
+943,18,2,Superior Centro,7.6,97.4,Penetração,Central,31,2ºT,43,Golo,-3,False
+944,18,2,Superior Centro,8.7,117.1,Rectaguarda,Pivot,44,2ºT,121,Defesa,4,True
+945,18,8,Inferior Centro,7.0,108.1,7 metros,Extremo Direito,44,2ºT,60,Defesa,-2,False
+946,18,4,Média Esquerda,9.3,102.6,Apoio,Lateral Direito,52,2ºT,81,Golo,4,True
+947,18,3,Superior Direita,7.2,105.7,Apoio,Extremo Direito,13,1ºT,106,Defesa,-3,False
+948,18,1,Superior Esquerda,8.6,113.1,Suspensão,Extremo Direito,10,1ºT,158,Defesa,-5,False
+949,18,9,Inferior Direita,8.8,102.9,Rectaguarda,Pivot,58,2ºT,31,Golo,-3,False
+950,18,8,Inferior Centro,6.6,102.4,Apoio,Lateral Direito,12,1ºT,11,Defesa,2,False
+951,18,5,Média Centro,10.4,98.3,Contra-ataque,Pivot,32,2ºT,22,Defesa,2,False
+952,18,6,Média Direita,8.7,103.8,Apoio,Central,3,1ºT,62,Defesa,4,False
+953,18,5,Média Centro,9.8,111.1,Contra-ataque,Lateral Direito,24,1ºT,163,Defesa,-3,False
+954,18,7,Inferior Esquerda,9.7,93.7,Suspensão,Pivot,59,2ºT,26,Golo,2,False
+955,18,5,Média Centro,7.0,103.6,7 metros,Central,26,1ºT,17,Golo,2,False
+956,18,8,Inferior Centro,9.4,98.1,Suspensão,Extremo Direito,35,2ºT,47,Defesa,-4,False
+957,18,8,Inferior Centro,7.0,106.7,7 metros,Central,54,2ºT,148,Golo,1,True
+958,18,7,Inferior Esquerda,6.3,91.9,Apoio,Lateral Direito,19,1ºT,97,Golo,-4,False
+959,18,7,Inferior Esquerda,7.3,106.1,Apoio,Extremo Esquerdo,29,1ºT,34,Golo,3,False
+960,18,7,Inferior Esquerda,7.4,101.6,Penetração,Pivot,15,1ºT,75,Golo,0,False
+961,18,5,Média Centro,6.8,91.4,Rectaguarda,Central,27,1ºT,34,Golo,5,False
+962,18,7,Inferior Esquerda,7.9,105.5,Apoio,Extremo Direito,56,2ºT,103,Golo,5,False
+963,18,6,Média Direita,8.4,109.1,Contra-ataque,Lateral Direito,15,1ºT,52,Golo,-5,True
+964,18,5,Média Centro,8.0,92.1,Contra-ataque,Lateral Direito,50,2ºT,128,Golo,-3,False
+965,18,3,Superior Direita,7.7,113.8,Apoio,Extremo Esquerdo,7,1ºT,104,Golo,-5,False
+966,18,1,Superior Esquerda,10.0,97.5,Contra-ataque,Central,56,2ºT,106,Golo,-2,False
+967,18,7,Inferior Esquerda,8.2,104.2,Rectaguarda,Central,37,2ºT,58,Golo,-1,False
+968,18,9,Inferior Direita,9.0,100.8,Apoio,Lateral Esquerdo,45,2ºT,169,Golo,-5,True
+969,18,4,Média Esquerda,9.0,111.0,Penetração,Central,27,1ºT,126,Golo,-4,True
+970,18,4,Média Esquerda,7.4,110.9,Penetração,Extremo Direito,57,2ºT,180,Defesa,-1,True
+971,18,4,Média Esquerda,10.2,99.5,Contra-ataque,Extremo Direito,18,1ºT,168,Golo,0,False
+972,18,3,Superior Direita,6.4,116.3,Suspensão,Central,23,1ºT,25,Golo,-4,False
+973,18,1,Superior Esquerda,6.5,94.6,Penetração,Central,38,2ºT,177,Defesa,-3,False
+974,18,7,Inferior Esquerda,6.9,86.1,Suspensão,Extremo Esquerdo,22,1ºT,32,Defesa,4,False
+975,18,6,Média Direita,9.7,89.9,Contra-ataque,Extremo Esquerdo,30,1ºT,61,Golo,-1,True
+976,18,9,Inferior Direita,9.2,113.0,Penetração,Pivot,21,1ºT,143,Defesa,-2,False
+977,18,1,Superior Esquerda,6.8,93.6,Apoio,Central,18,1ºT,116,Golo,-4,False
+978,18,1,Superior Esquerda,7.0,114.0,Apoio,Extremo Direito,24,1ºT,99,Defesa,2,False
+979,18,4,Média Esquerda,9.9,117.7,Penetração,Central,60,2ºT,155,Golo,-2,False
+980,18,8,Inferior Centro,8.0,87.4,Contra-ataque,Extremo Direito,54,2ºT,168,Defesa,-5,False
+981,18,9,Inferior Direita,9.9,86.8,Apoio,Pivot,9,1ºT,18,Golo,-2,False
+982,18,5,Média Centro,9.3,117.0,Apoio,Pivot,18,1ºT,149,Defesa,-2,False
+983,18,1,Superior Esquerda,9.8,104.4,Rectaguarda,Lateral Esquerdo,59,2ºT,90,Defesa,-1,False
+984,18,4,Média Esquerda,9.0,87.8,Apoio,Extremo Esquerdo,45,2ºT,127,Golo,-3,False
+985,18,5,Média Centro,7.0,95.4,7 metros,Pivot,3,1ºT,85,Defesa,-4,False
+986,18,7,Inferior Esquerda,9.9,107.7,Apoio,Pivot,34,2ºT,95,Defesa,-4,False
+987,18,4,Média Esquerda,9.0,91.7,Contra-ataque,Extremo Esquerdo,47,2ºT,55,Golo,4,False
+988,18,3,Superior Direita,9.6,106.6,Contra-ataque,Central,59,2ºT,60,Golo,2,False
+989,18,4,Média Esquerda,7.0,93.9,7 metros,Extremo Direito,10,1ºT,59,Golo,-2,False
+990,19,8,Inferior Centro,8.7,85.2,Contra-ataque,Lateral Esquerdo,22,1ºT,6,Defesa,-5,False
+991,19,7,Inferior Esquerda,10.8,91.7,Contra-ataque,Extremo Direito,20,1ºT,21,Golo,2,False
+992,19,5,Média Centro,7.0,90.3,7 metros,Pivot,27,1ºT,115,Golo,5,False
+993,19,2,Superior Centro,7.0,102.8,7 metros,Lateral Esquerdo,22,1ºT,153,Defesa,0,False
+994,19,7,Inferior Esquerda,9.1,110.6,Contra-ataque,Extremo Direito,44,2ºT,75,Golo,0,False
+995,19,9,Inferior Direita,9.4,93.3,Contra-ataque,Lateral Esquerdo,47,2ºT,105,Golo,-3,False
+996,19,6,Média Direita,9.0,107.5,Suspensão,Extremo Esquerdo,39,2ºT,42,Defesa,-3,False
+997,19,8,Inferior Centro,10.0,96.3,Penetração,Lateral Direito,38,2ºT,87,Golo,5,False
+998,19,7,Inferior Esquerda,6.4,106.7,Suspensão,Pivot,51,2ºT,43,Defesa,1,False
+999,19,9,Inferior Direita,7.0,96.7,7 metros,Lateral Esquerdo,38,2ºT,65,Golo,-2,False
+1000,19,6,Média Direita,7.0,91.9,7 metros,Central,2,1ºT,31,Defesa,1,False
+1001,19,9,Inferior Direita,6.4,108.1,Apoio,Pivot,12,1ºT,18,Defesa,1,False
+1002,19,9,Inferior Direita,7.0,86.0,7 metros,Lateral Direito,8,1ºT,26,Golo,1,False
+1003,19,6,Média Direita,8.2,110.1,Contra-ataque,Extremo Esquerdo,54,2ºT,79,Golo,1,False
+1004,19,3,Superior Direita,7.7,110.5,Penetração,Extremo Esquerdo,50,2ºT,70,Golo,-2,False
+1005,19,9,Inferior Direita,7.0,94.6,7 metros,Extremo Direito,27,1ºT,177,Defesa,4,False
+1006,19,1,Superior Esquerda,7.8,100.6,Penetração,Extremo Esquerdo,26,1ºT,98,Golo,-1,False
+1007,19,8,Inferior Centro,7.0,93.6,7 metros,Extremo Direito,17,1ºT,154,Golo,0,False
+1008,19,8,Inferior Centro,9.3,98.3,Suspensão,Lateral Direito,60,2ºT,123,Defesa,-1,False
+1009,19,5,Média Centro,9.4,90.6,Contra-ataque,Central,42,2ºT,135,Golo,5,False
+1010,19,1,Superior Esquerda,8.5,99.9,Suspensão,Lateral Direito,8,1ºT,42,Golo,-2,False
+1011,19,7,Inferior Esquerda,6.3,117.7,Suspensão,Lateral Direito,1,1ºT,50,Golo,-2,False
+1012,19,7,Inferior Esquerda,6.8,117.1,Penetração,Extremo Esquerdo,45,2ºT,97,Golo,0,False
+1013,19,3,Superior Direita,9.6,86.8,Apoio,Extremo Esquerdo,9,1ºT,13,Golo,3,False
+1014,19,3,Superior Direita,8.9,89.2,Suspensão,Lateral Esquerdo,57,2ºT,18,Defesa,0,False
+1015,19,2,Superior Centro,7.1,116.9,Penetração,Central,44,2ºT,126,Defesa,-1,False
+1016,19,1,Superior Esquerda,9.4,114.8,Suspensão,Lateral Direito,53,2ºT,172,Defesa,-1,False
+1017,19,3,Superior Direita,7.0,85.2,7 metros,Lateral Esquerdo,33,2ºT,94,Defesa,2,False
+1018,19,4,Média Esquerda,7.0,89.0,7 metros,Extremo Esquerdo,10,1ºT,76,Golo,4,True
+1019,19,5,Média Centro,7.1,105.7,Penetração,Pivot,44,2ºT,108,Defesa,-3,False
+1020,19,8,Inferior Centro,8.9,113.5,Apoio,Pivot,3,1ºT,90,Defesa,-2,False
+1021,19,5,Média Centro,7.0,115.2,7 metros,Lateral Esquerdo,57,2ºT,79,Golo,1,False
+1022,19,7,Inferior Esquerda,6.2,91.8,Suspensão,Extremo Direito,47,2ºT,133,Golo,-1,False
+1023,19,3,Superior Direita,9.2,86.3,Apoio,Pivot,52,2ºT,41,Golo,1,False
+1024,19,7,Inferior Esquerda,10.5,100.4,Contra-ataque,Lateral Direito,3,1ºT,23,Golo,-3,False
+1025,19,5,Média Centro,8.5,110.5,Rectaguarda,Pivot,4,1ºT,75,Golo,1,False
+1026,19,5,Média Centro,8.8,100.0,Rectaguarda,Pivot,45,2ºT,108,Defesa,3,False
+1027,19,7,Inferior Esquerda,9.0,85.8,Suspensão,Pivot,52,2ºT,21,Defesa,-5,False
+1028,19,4,Média Esquerda,8.4,106.3,Suspensão,Lateral Esquerdo,58,2ºT,65,Defesa,-5,False
+1029,19,3,Superior Direita,9.1,86.5,Penetração,Extremo Esquerdo,3,1ºT,128,Golo,-2,False
+1030,19,9,Inferior Direita,6.5,91.8,Penetração,Extremo Esquerdo,9,1ºT,21,Golo,-5,False
+1031,19,7,Inferior Esquerda,7.0,97.0,7 metros,Lateral Direito,39,2ºT,157,Golo,4,False
+1032,19,1,Superior Esquerda,9.6,87.1,Contra-ataque,Pivot,31,2ºT,14,Defesa,5,False
+1033,19,8,Inferior Centro,7.0,97.6,7 metros,Lateral Direito,59,2ºT,14,Golo,-4,False
+1034,19,1,Superior Esquerda,7.0,102.9,7 metros,Central,33,2ºT,144,Golo,-3,False
+1035,19,7,Inferior Esquerda,9.5,100.8,Apoio,Extremo Direito,7,1ºT,92,Golo,4,False
+1036,19,1,Superior Esquerda,8.1,89.7,Rectaguarda,Lateral Esquerdo,7,1ºT,28,Defesa,0,False
+1037,19,2,Superior Centro,9.4,109.8,Rectaguarda,Lateral Esquerdo,28,1ºT,140,Golo,-2,False
+1038,19,1,Superior Esquerda,10.0,111.9,Apoio,Extremo Esquerdo,17,1ºT,152,Golo,-3,False
+1039,19,9,Inferior Direita,7.0,106.8,7 metros,Central,25,1ºT,179,Golo,-4,False
+1040,20,6,Média Direita,8.6,101.6,Rectaguarda,Extremo Esquerdo,47,2ºT,38,Golo,3,False
+1041,20,4,Média Esquerda,9.0,107.2,Contra-ataque,Lateral Esquerdo,59,2ºT,89,Golo,-3,False
+1042,20,3,Superior Direita,6.2,99.3,Penetração,Pivot,7,1ºT,66,Defesa,5,False
+1043,20,9,Inferior Direita,8.9,110.3,Rectaguarda,Lateral Esquerdo,50,2ºT,107,Golo,4,False
+1044,20,5,Média Centro,7.7,117.9,Suspensão,Extremo Esquerdo,47,2ºT,27,Defesa,2,False
+1045,20,2,Superior Centro,7.0,104.0,Suspensão,Lateral Direito,56,2ºT,123,Golo,1,False
+1046,20,5,Média Centro,7.0,114.9,7 metros,Extremo Direito,60,2ºT,64,Defesa,5,False
+1047,20,7,Inferior Esquerda,9.9,114.0,Contra-ataque,Central,9,1ºT,162,Golo,1,False
+1048,20,4,Média Esquerda,8.4,88.3,Penetração,Extremo Direito,30,1ºT,179,Defesa,-3,False
+1049,20,6,Média Direita,6.2,85.8,Penetração,Lateral Esquerdo,26,1ºT,117,Defesa,1,False
+1050,20,2,Superior Centro,7.0,86.0,7 metros,Pivot,53,2ºT,91,Defesa,5,False
+1051,20,8,Inferior Centro,10.5,111.9,Contra-ataque,Lateral Direito,4,1ºT,97,Golo,2,False
+1052,20,1,Superior Esquerda,10.5,111.4,Contra-ataque,Extremo Direito,36,2ºT,174,Defesa,-4,False
+1053,20,9,Inferior Direita,9.2,100.5,Rectaguarda,Pivot,49,2ºT,49,Defesa,-2,False
+1054,20,9,Inferior Direita,8.2,117.7,Apoio,Extremo Direito,6,1ºT,35,Golo,3,False
+1055,20,5,Média Centro,9.6,92.9,Suspensão,Lateral Esquerdo,47,2ºT,96,Defesa,-3,False
+1056,20,8,Inferior Centro,8.4,95.5,Contra-ataque,Lateral Direito,42,2ºT,167,Golo,-4,False
+1057,20,8,Inferior Centro,8.7,88.5,Penetração,Central,11,1ºT,31,Defesa,-1,False
+1058,20,4,Média Esquerda,10.7,93.3,Contra-ataque,Extremo Esquerdo,26,1ºT,7,Golo,-3,False
+1059,20,9,Inferior Direita,9.6,99.8,Contra-ataque,Central,40,2ºT,34,Defesa,-5,False
+1060,20,5,Média Centro,7.5,99.9,Penetração,Central,5,1ºT,104,Golo,-5,False
+1061,20,7,Inferior Esquerda,7.0,112.0,7 metros,Extremo Direito,23,1ºT,66,Golo,-5,False
+1062,20,8,Inferior Centro,7.0,100.4,7 metros,Extremo Esquerdo,51,2ºT,18,Golo,2,False
+1063,20,4,Média Esquerda,6.6,115.4,Suspensão,Lateral Direito,5,1ºT,22,Defesa,2,False
+1064,20,5,Média Centro,9.0,91.0,Suspensão,Lateral Direito,51,2ºT,25,Defesa,2,False
+1065,20,4,Média Esquerda,7.8,92.6,Apoio,Extremo Direito,36,2ºT,8,Defesa,5,False
+1066,20,9,Inferior Direita,8.9,112.5,Rectaguarda,Central,41,2ºT,29,Defesa,0,False
+1067,20,7,Inferior Esquerda,6.2,92.4,Rectaguarda,Extremo Esquerdo,54,2ºT,14,Golo,2,False
+1068,20,6,Média Direita,9.0,97.0,Penetração,Extremo Direito,47,2ºT,136,Defesa,3,True
+1069,20,5,Média Centro,8.7,100.2,Contra-ataque,Lateral Esquerdo,43,2ºT,43,Golo,1,False
+1070,20,6,Média Direita,7.5,117.3,Rectaguarda,Extremo Direito,54,2ºT,54,Golo,1,False
+1071,20,9,Inferior Direita,7.0,107.3,7 metros,Central,5,1ºT,131,Defesa,-1,False
+1072,20,7,Inferior Esquerda,10.6,97.4,Contra-ataque,Lateral Direito,6,1ºT,36,Golo,1,True
+1073,20,1,Superior Esquerda,8.3,107.1,Apoio,Lateral Esquerdo,3,1ºT,119,Golo,-5,True
+1074,20,1,Superior Esquerda,9.9,96.2,Contra-ataque,Pivot,42,2ºT,6,Defesa,-1,False
+1075,20,9,Inferior Direita,7.0,106.7,7 metros,Extremo Esquerdo,60,2ºT,93,Golo,5,False
+1076,20,5,Média Centro,9.9,108.7,Rectaguarda,Pivot,8,1ºT,76,Defesa,0,False
+1077,20,1,Superior Esquerda,7.0,111.1,7 metros,Lateral Direito,51,2ºT,107,Golo,-2,False
+1078,20,6,Média Direita,10.8,106.5,Contra-ataque,Central,29,1ºT,173,Golo,1,False
+1079,20,6,Média Direita,8.0,97.4,Apoio,Central,35,2ºT,143,Golo,1,False
+1080,20,8,Inferior Centro,8.5,108.3,Rectaguarda,Extremo Esquerdo,19,1ºT,8,Defesa,-4,False
+1081,20,4,Média Esquerda,9.1,85.2,Contra-ataque,Lateral Esquerdo,9,1ºT,79,Golo,-1,False
+1082,20,4,Média Esquerda,9.1,87.1,Penetração,Extremo Esquerdo,56,2ºT,177,Golo,-2,False
+1083,20,1,Superior Esquerda,7.0,113.2,7 metros,Central,22,1ºT,9,Defesa,4,False
+1084,20,1,Superior Esquerda,7.4,106.0,Penetração,Extremo Direito,55,2ºT,28,Golo,3,False
+1085,20,3,Superior Direita,8.7,114.7,Rectaguarda,Pivot,47,2ºT,70,Defesa,3,False
+1086,20,6,Média Direita,9.0,116.5,Apoio,Lateral Direito,34,2ºT,117,Golo,-5,False
+1087,20,3,Superior Direita,7.3,107.9,Apoio,Central,34,2ºT,80,Golo,0,False
+1088,20,3,Superior Direita,7.0,99.0,7 metros,Lateral Esquerdo,16,1ºT,20,Golo,-2,False
+1089,20,1,Superior Esquerda,7.0,89.0,7 metros,Lateral Esquerdo,37,2ºT,35,Golo,1,False
+1090,20,5,Média Centro,7.9,104.3,Apoio,Central,59,2ºT,84,Defesa,-4,False
+1091,20,1,Superior Esquerda,7.0,95.3,7 metros,Lateral Esquerdo,56,2ºT,127,Golo,1,False
+1092,21,7,Inferior Esquerda,9.5,86.1,Rectaguarda,Lateral Direito,8,1ºT,131,Defesa,-3,False
+1093,21,8,Inferior Centro,8.4,106.3,Rectaguarda,Lateral Direito,8,1ºT,58,Defesa,3,True
+1094,21,4,Média Esquerda,9.2,85.2,Apoio,Lateral Esquerdo,21,1ºT,31,Defesa,4,False
+1095,21,6,Média Direita,9.6,113.5,Apoio,Lateral Direito,25,1ºT,129,Defesa,-1,True
+1096,21,7,Inferior Esquerda,8.0,94.2,Suspensão,Lateral Direito,28,1ºT,163,Golo,-3,False
+1097,21,6,Média Direita,6.1,107.2,Apoio,Extremo Esquerdo,8,1ºT,62,Defesa,1,False
+1098,21,3,Superior Direita,9.0,90.2,Contra-ataque,Lateral Direito,33,2ºT,48,Golo,2,False
+1099,21,5,Média Centro,8.1,101.1,Contra-ataque,Pivot,37,2ºT,172,Defesa,2,False
+1100,21,1,Superior Esquerda,7.0,106.5,7 metros,Lateral Esquerdo,32,2ºT,18,Golo,-2,False
+1101,21,1,Superior Esquerda,8.4,116.1,Apoio,Extremo Esquerdo,7,1ºT,7,Defesa,1,False
+1102,21,3,Superior Direita,7.4,94.1,Apoio,Central,47,2ºT,21,Defesa,4,False
+1103,21,4,Média Esquerda,6.3,100.9,Apoio,Lateral Esquerdo,2,1ºT,68,Defesa,5,False
+1104,21,6,Média Direita,7.9,90.3,Apoio,Lateral Direito,10,1ºT,160,Defesa,3,True
+1105,21,3,Superior Direita,7.0,88.8,7 metros,Extremo Esquerdo,54,2ºT,133,Golo,-2,False
+1106,21,3,Superior Direita,7.0,90.5,7 metros,Lateral Direito,10,1ºT,91,Golo,4,True
+1107,21,8,Inferior Centro,7.4,105.8,Suspensão,Extremo Esquerdo,42,2ºT,157,Golo,4,False
+1108,21,6,Média Direita,6.1,93.0,Suspensão,Central,6,1ºT,21,Defesa,2,False
+1109,21,7,Inferior Esquerda,7.0,88.1,7 metros,Lateral Esquerdo,43,2ºT,93,Golo,-1,False
+1110,21,3,Superior Direita,10.4,114.3,Contra-ataque,Central,5,1ºT,94,Defesa,3,False
+1111,21,2,Superior Centro,6.7,90.0,Penetração,Lateral Esquerdo,29,1ºT,68,Defesa,-1,False
+1112,21,2,Superior Centro,8.3,87.8,Rectaguarda,Extremo Esquerdo,39,2ºT,51,Defesa,-5,False
+1113,21,4,Média Esquerda,8.1,105.5,Penetração,Pivot,16,1ºT,57,Golo,5,False
+1114,21,3,Superior Direita,9.6,102.0,Apoio,Central,11,1ºT,126,Golo,-5,False
+1115,21,5,Média Centro,7.0,97.0,7 metros,Central,7,1ºT,86,Defesa,-1,False
+1116,21,6,Média Direita,7.0,113.7,7 metros,Lateral Direito,2,1ºT,88,Golo,-2,False
+1117,21,1,Superior Esquerda,7.6,87.9,Apoio,Extremo Direito,33,2ºT,60,Defesa,-1,False
+1118,21,4,Média Esquerda,8.5,86.4,Contra-ataque,Extremo Esquerdo,39,2ºT,94,Defesa,-5,False
+1119,21,8,Inferior Centro,7.4,87.5,Apoio,Extremo Esquerdo,21,1ºT,5,Golo,-2,True
+1120,21,1,Superior Esquerda,7.8,88.3,Penetração,Central,6,1ºT,86,Golo,-3,False
+1121,21,1,Superior Esquerda,9.3,105.0,Penetração,Lateral Direito,41,2ºT,151,Golo,-2,True
+1122,21,5,Média Centro,6.8,116.3,Penetração,Lateral Direito,21,1ºT,22,Golo,1,False
+1123,21,6,Média Direita,8.5,97.4,Rectaguarda,Lateral Esquerdo,22,1ºT,76,Defesa,3,False
+1124,21,7,Inferior Esquerda,6.1,110.1,Apoio,Extremo Direito,35,2ºT,159,Golo,2,False
+1125,21,8,Inferior Centro,6.6,110.3,Apoio,Extremo Esquerdo,39,2ºT,84,Defesa,-1,False
+1126,21,6,Média Direita,9.0,115.6,Penetração,Extremo Direito,8,1ºT,42,Golo,-2,True
+1127,21,8,Inferior Centro,7.5,85.5,Suspensão,Lateral Esquerdo,33,2ºT,115,Golo,4,False
+1128,21,3,Superior Direita,7.1,112.1,Suspensão,Central,20,1ºT,110,Defesa,-3,False
+1129,21,2,Superior Centro,8.9,99.5,Apoio,Extremo Esquerdo,50,2ºT,110,Defesa,3,False
+1130,21,5,Média Centro,9.2,117.3,Rectaguarda,Lateral Esquerdo,7,1ºT,24,Defesa,1,False
+1131,21,8,Inferior Centro,9.3,103.6,Suspensão,Pivot,58,2ºT,112,Defesa,-2,False
+1132,21,6,Média Direita,9.4,101.9,Suspensão,Pivot,27,1ºT,144,Defesa,-2,False
+1133,21,2,Superior Centro,7.0,116.6,7 metros,Lateral Direito,19,1ºT,83,Golo,-3,False
+1134,21,7,Inferior Esquerda,10.7,117.4,Contra-ataque,Extremo Esquerdo,38,2ºT,107,Golo,-4,True
+1135,21,4,Média Esquerda,8.8,103.4,Contra-ataque,Pivot,42,2ºT,135,Defesa,-5,False
+1136,21,5,Média Centro,7.6,101.8,Penetração,Lateral Esquerdo,26,1ºT,56,Defesa,2,False
+1137,21,8,Inferior Centro,10.2,88.8,Contra-ataque,Lateral Direito,7,1ºT,176,Defesa,-1,False
+1138,21,7,Inferior Esquerda,6.0,113.9,Penetração,Pivot,1,1ºT,146,Golo,-3,False
+1139,21,3,Superior Direita,8.4,108.6,Penetração,Lateral Esquerdo,9,1ºT,87,Defesa,-5,False
+1140,21,1,Superior Esquerda,8.2,101.9,Apoio,Pivot,25,1ºT,79,Defesa,-3,True
+1141,21,7,Inferior Esquerda,9.8,96.9,Penetração,Lateral Esquerdo,28,1ºT,107,Golo,5,False
+1142,21,2,Superior Centro,8.0,112.2,Contra-ataque,Pivot,9,1ºT,104,Golo,1,False
+1143,21,4,Média Esquerda,7.0,101.0,7 metros,Extremo Direito,17,1ºT,20,Golo,-2,False
+1144,21,9,Inferior Direita,8.0,111.7,Suspensão,Extremo Esquerdo,45,2ºT,137,Golo,1,False
+1145,21,9,Inferior Direita,6.7,96.2,Penetração,Central,31,2ºT,153,Defesa,-2,False
+1146,21,6,Média Direita,7.0,88.3,7 metros,Pivot,20,1ºT,147,Golo,-4,False
+1147,21,9,Inferior Direita,7.5,101.7,Suspensão,Extremo Direito,22,1ºT,81,Golo,1,False
+1148,21,2,Superior Centro,6.4,89.7,Suspensão,Lateral Esquerdo,38,2ºT,84,Defesa,-4,False
+1149,21,7,Inferior Esquerda,9.5,100.4,Rectaguarda,Extremo Esquerdo,10,1ºT,18,Golo,-5,False
+1150,21,1,Superior Esquerda,10.1,94.6,Contra-ataque,Lateral Direito,56,2ºT,76,Golo,2,False
+1151,21,7,Inferior Esquerda,9.2,97.8,Apoio,Central,21,1ºT,108,Golo,-3,False
+1152,21,9,Inferior Direita,9.4,108.7,Contra-ataque,Pivot,22,1ºT,56,Golo,3,True
+1153,21,7,Inferior Esquerda,8.7,113.6,Rectaguarda,Lateral Esquerdo,57,2ºT,6,Golo,4,False
+1154,21,5,Média Centro,9.7,112.2,Rectaguarda,Lateral Direito,58,2ºT,115,Defesa,-2,False
+1155,22,7,Inferior Esquerda,9.9,115.0,Contra-ataque,Pivot,52,2ºT,10,Defesa,0,True
+1156,22,3,Superior Direita,8.9,96.0,Apoio,Extremo Direito,39,2ºT,105,Golo,4,False
+1157,22,8,Inferior Centro,7.6,95.2,Rectaguarda,Extremo Esquerdo,17,1ºT,52,Golo,4,True
+1158,22,6,Média Direita,10.2,99.1,Contra-ataque,Extremo Direito,43,2ºT,30,Defesa,3,False
+1159,22,7,Inferior Esquerda,6.1,103.5,Suspensão,Lateral Direito,47,2ºT,140,Defesa,5,False
+1160,22,4,Média Esquerda,8.2,90.8,Contra-ataque,Extremo Direito,58,2ºT,68,Defesa,2,False
+1161,22,3,Superior Direita,6.5,112.5,Rectaguarda,Lateral Direito,60,2ºT,154,Golo,0,False
+1162,22,6,Média Direita,10.4,111.3,Contra-ataque,Lateral Direito,16,1ºT,63,Golo,2,False
+1163,22,6,Média Direita,6.2,110.4,Apoio,Extremo Esquerdo,10,1ºT,138,Defesa,3,False
+1164,22,8,Inferior Centro,10.4,110.8,Contra-ataque,Lateral Esquerdo,45,2ºT,141,Defesa,2,True
+1165,22,3,Superior Direita,6.7,93.2,Apoio,Central,14,1ºT,21,Defesa,1,False
+1166,22,5,Média Centro,8.6,97.3,Contra-ataque,Extremo Direito,35,2ºT,145,Golo,0,False
+1167,22,6,Média Direita,8.5,115.5,Rectaguarda,Extremo Esquerdo,52,2ºT,14,Golo,0,False
+1168,22,3,Superior Direita,8.1,99.8,Suspensão,Extremo Esquerdo,42,2ºT,104,Golo,4,False
+1169,22,2,Superior Centro,6.5,94.1,Suspensão,Pivot,11,1ºT,13,Defesa,-5,False
+1170,22,1,Superior Esquerda,8.9,92.3,Suspensão,Extremo Esquerdo,25,1ºT,76,Golo,5,False
+1171,22,1,Superior Esquerda,7.0,112.7,7 metros,Pivot,31,2ºT,159,Defesa,3,False
+1172,22,6,Média Direita,6.3,114.2,Apoio,Lateral Esquerdo,14,1ºT,107,Defesa,5,False
+1173,22,9,Inferior Direita,6.2,97.2,Suspensão,Lateral Direito,27,1ºT,76,Golo,-4,False
+1174,22,9,Inferior Direita,7.0,116.3,7 metros,Pivot,22,1ºT,27,Golo,1,False
+1175,22,6,Média Direita,8.6,91.1,Contra-ataque,Extremo Direito,50,2ºT,31,Defesa,5,False
+1176,22,8,Inferior Centro,7.6,103.0,Apoio,Lateral Esquerdo,17,1ºT,98,Defesa,-2,False
+1177,22,1,Superior Esquerda,9.9,97.2,Rectaguarda,Lateral Esquerdo,42,2ºT,167,Golo,0,False
+1178,22,2,Superior Centro,8.8,107.9,Rectaguarda,Lateral Esquerdo,20,1ºT,123,Defesa,4,False
+1179,22,3,Superior Direita,9.2,100.0,Contra-ataque,Central,57,2ºT,30,Golo,3,False
+1180,22,9,Inferior Direita,9.7,91.0,Contra-ataque,Extremo Esquerdo,46,2ºT,144,Golo,-5,False
+1181,22,3,Superior Direita,8.0,113.2,Suspensão,Pivot,18,1ºT,92,Golo,-2,False
+1182,22,3,Superior Direita,7.3,90.1,Rectaguarda,Extremo Direito,14,1ºT,47,Golo,-2,False
+1183,22,1,Superior Esquerda,7.7,117.3,Rectaguarda,Lateral Direito,32,2ºT,95,Golo,-4,False
+1184,22,6,Média Direita,7.0,101.4,7 metros,Lateral Direito,56,2ºT,100,Golo,4,False
+1185,22,4,Média Esquerda,6.0,88.6,Apoio,Extremo Direito,13,1ºT,129,Golo,3,False
+1186,22,3,Superior Direita,6.3,95.2,Suspensão,Pivot,29,1ºT,40,Golo,1,False
+1187,22,8,Inferior Centro,9.7,92.9,Penetração,Central,37,2ºT,48,Defesa,-1,False
+1188,22,9,Inferior Direita,8.7,114.7,Rectaguarda,Lateral Direito,55,2ºT,118,Golo,0,False
+1189,22,1,Superior Esquerda,9.3,98.7,Apoio,Pivot,34,2ºT,72,Defesa,-5,False
+1190,22,1,Superior Esquerda,10.7,86.8,Contra-ataque,Extremo Esquerdo,56,2ºT,172,Golo,2,False
+1191,22,1,Superior Esquerda,7.0,88.7,7 metros,Lateral Direito,4,1ºT,93,Golo,1,False
+1192,22,4,Média Esquerda,8.3,87.9,Penetração,Extremo Esquerdo,46,2ºT,112,Golo,3,False
+1193,22,6,Média Direita,9.6,104.4,Rectaguarda,Pivot,20,1ºT,61,Golo,0,False
+1194,22,8,Inferior Centro,7.0,115.2,7 metros,Pivot,5,1ºT,103,Golo,1,False
+1195,22,2,Superior Centro,8.7,96.5,Suspensão,Extremo Esquerdo,46,2ºT,113,Golo,-3,False
+1196,22,5,Média Centro,8.1,103.9,Apoio,Pivot,33,2ºT,96,Defesa,-3,False
+1197,22,3,Superior Direita,6.5,85.4,Suspensão,Lateral Esquerdo,53,2ºT,6,Golo,0,False
+1198,22,6,Média Direita,8.6,100.1,Rectaguarda,Lateral Direito,53,2ºT,171,Golo,5,False
+1199,22,2,Superior Centro,9.5,96.3,Apoio,Central,1,1ºT,41,Golo,-2,False
+1200,22,1,Superior Esquerda,7.0,93.2,7 metros,Lateral Direito,60,2ºT,167,Golo,-1,False
+1201,22,3,Superior Direita,8.1,87.8,Penetração,Lateral Esquerdo,12,1ºT,146,Golo,-2,False
+1202,23,7,Inferior Esquerda,6.7,90.6,Penetração,Extremo Direito,32,2ºT,42,Defesa,-2,False
+1203,23,8,Inferior Centro,8.3,96.3,Apoio,Central,48,2ºT,40,Golo,-5,False
+1204,23,2,Superior Centro,7.5,116.7,Suspensão,Pivot,35,2ºT,128,Golo,2,True
+1205,23,5,Média Centro,6.8,88.8,Apoio,Central,55,2ºT,94,Defesa,1,False
+1206,23,8,Inferior Centro,9.4,114.7,Contra-ataque,Lateral Direito,32,2ºT,163,Defesa,5,False
+1207,23,6,Média Direita,8.6,85.9,Apoio,Lateral Direito,21,1ºT,81,Defesa,0,False
+1208,23,4,Média Esquerda,7.0,88.5,7 metros,Lateral Direito,60,2ºT,164,Defesa,-3,False
+1209,23,6,Média Direita,8.9,108.0,Suspensão,Extremo Direito,36,2ºT,134,Golo,1,False
+1210,23,2,Superior Centro,7.0,114.0,7 metros,Lateral Esquerdo,52,2ºT,72,Golo,2,False
+1211,23,9,Inferior Direita,6.2,86.3,Rectaguarda,Lateral Esquerdo,17,1ºT,34,Defesa,3,False
+1212,23,2,Superior Centro,9.8,89.5,Rectaguarda,Pivot,51,2ºT,133,Defesa,-1,False
+1213,23,5,Média Centro,9.3,102.6,Apoio,Lateral Esquerdo,33,2ºT,44,Defesa,-4,False
+1214,23,9,Inferior Direita,8.7,112.0,Contra-ataque,Pivot,55,2ºT,173,Golo,4,False
+1215,23,1,Superior Esquerda,7.9,101.4,Apoio,Extremo Esquerdo,47,2ºT,37,Defesa,-3,False
+1216,23,2,Superior Centro,9.9,101.6,Apoio,Pivot,13,1ºT,168,Golo,-1,False
+1217,23,2,Superior Centro,8.2,87.9,Rectaguarda,Pivot,48,2ºT,73,Defesa,4,False
+1218,23,2,Superior Centro,8.4,115.9,Penetração,Pivot,4,1ºT,159,Defesa,1,False
+1219,23,3,Superior Direita,7.0,116.5,7 metros,Extremo Esquerdo,4,1ºT,134,Golo,4,False
+1220,23,7,Inferior Esquerda,7.0,105.0,7 metros,Pivot,39,2ºT,70,Defesa,-3,True
+1221,23,3,Superior Direita,8.5,114.9,Penetração,Lateral Esquerdo,39,2ºT,90,Golo,4,False
+1222,23,2,Superior Centro,8.9,88.3,Apoio,Lateral Direito,19,1ºT,41,Golo,-5,False
+1223,23,1,Superior Esquerda,7.0,97.4,7 metros,Extremo Esquerdo,44,2ºT,47,Golo,-3,False
+1224,23,6,Média Direita,7.0,106.8,Apoio,Pivot,57,2ºT,48,Defesa,5,False
+1225,23,2,Superior Centro,7.0,85.4,7 metros,Central,39,2ºT,83,Defesa,-3,False
+1226,23,5,Média Centro,9.3,92.7,Contra-ataque,Lateral Direito,1,1ºT,125,Golo,-4,False
+1227,23,3,Superior Direita,7.0,114.7,7 metros,Pivot,56,2ºT,174,Golo,-5,False
+1228,23,5,Média Centro,9.5,114.2,Penetração,Pivot,34,2ºT,56,Defesa,-5,False
+1229,23,6,Média Direita,9.3,95.3,Contra-ataque,Pivot,33,2ºT,10,Defesa,0,False
+1230,23,9,Inferior Direita,10.0,111.4,Suspensão,Pivot,28,1ºT,100,Golo,5,False
+1231,23,2,Superior Centro,10.3,99.8,Contra-ataque,Central,23,1ºT,149,Golo,3,False
+1232,23,3,Superior Direita,7.4,96.7,Apoio,Pivot,19,1ºT,72,Golo,3,False
+1233,23,9,Inferior Direita,8.6,100.6,Contra-ataque,Central,32,2ºT,7,Golo,5,False
+1234,23,3,Superior Direita,9.9,114.9,Apoio,Pivot,10,1ºT,122,Golo,5,False
+1235,23,4,Média Esquerda,8.5,115.2,Suspensão,Pivot,54,2ºT,93,Golo,3,False
+1236,23,6,Média Direita,7.5,113.6,Suspensão,Central,43,2ºT,180,Defesa,3,False
+1237,23,8,Inferior Centro,9.4,114.1,Suspensão,Central,38,2ºT,103,Defesa,4,False
+1238,23,5,Média Centro,8.2,115.3,Contra-ataque,Extremo Direito,14,1ºT,115,Golo,0,False
+1239,23,1,Superior Esquerda,9.6,108.8,Contra-ataque,Lateral Direito,33,2ºT,56,Defesa,0,True
+1240,23,6,Média Direita,9.9,98.4,Rectaguarda,Lateral Direito,20,1ºT,12,Defesa,-3,False
+1241,23,4,Média Esquerda,9.9,90.3,Contra-ataque,Central,12,1ºT,43,Defesa,1,False
+1242,23,4,Média Esquerda,6.5,101.7,Suspensão,Extremo Esquerdo,35,2ºT,113,Defesa,0,False
+1243,23,1,Superior Esquerda,7.1,87.5,Suspensão,Extremo Esquerdo,26,1ºT,59,Golo,2,True
+1244,23,9,Inferior Direita,8.0,91.0,Rectaguarda,Lateral Direito,50,2ºT,110,Golo,3,False
+1245,23,6,Média Direita,7.0,90.6,7 metros,Lateral Direito,40,2ºT,112,Golo,3,False
+1246,23,1,Superior Esquerda,8.2,114.0,Suspensão,Central,30,1ºT,102,Golo,0,False
+1247,23,1,Superior Esquerda,9.1,117.5,Contra-ataque,Extremo Direito,44,2ºT,169,Golo,5,False
+1248,23,4,Média Esquerda,9.0,97.9,Contra-ataque,Pivot,40,2ºT,41,Golo,2,False
+1249,23,6,Média Direita,7.0,89.1,7 metros,Extremo Direito,5,1ºT,136,Defesa,-4,True
+1250,23,1,Superior Esquerda,6.4,91.6,Apoio,Extremo Direito,21,1ºT,105,Defesa,3,False
+1251,23,8,Inferior Centro,8.1,100.4,Penetração,Central,18,1ºT,124,Golo,3,False
+1252,23,8,Inferior Centro,9.8,91.2,Contra-ataque,Extremo Direito,11,1ºT,11,Golo,2,False
+1253,23,5,Média Centro,9.9,116.0,Penetração,Lateral Esquerdo,29,1ºT,140,Defesa,-3,False
+1254,23,3,Superior Direita,7.0,87.0,7 metros,Central,26,1ºT,170,Golo,3,False
+1255,23,5,Média Centro,8.4,105.4,Apoio,Extremo Direito,3,1ºT,35,Defesa,3,False
+1256,23,4,Média Esquerda,6.9,103.7,Apoio,Pivot,43,2ºT,70,Golo,3,False
+1257,23,5,Média Centro,9.9,94.7,Rectaguarda,Extremo Direito,51,2ºT,95,Defesa,1,False
+1258,23,3,Superior Direita,7.0,101.7,7 metros,Pivot,15,1ºT,110,Golo,-3,False
+1259,23,5,Média Centro,6.2,93.4,Suspensão,Lateral Direito,19,1ºT,102,Defesa,2,False
+1260,23,1,Superior Esquerda,6.8,109.5,Apoio,Extremo Esquerdo,55,2ºT,17,Golo,4,False
+1261,23,5,Média Centro,8.0,117.4,Rectaguarda,Central,43,2ºT,103,Defesa,-4,False
+1262,24,9,Inferior Direita,6.6,99.0,Apoio,Lateral Esquerdo,44,2ºT,138,Defesa,-5,False
+1263,24,8,Inferior Centro,6.7,94.9,Rectaguarda,Lateral Esquerdo,57,2ºT,32,Golo,1,False
+1264,24,5,Média Centro,7.8,115.8,Penetração,Extremo Direito,47,2ºT,48,Defesa,-3,False
+1265,24,7,Inferior Esquerda,8.9,113.4,Suspensão,Extremo Direito,24,1ºT,158,Defesa,-5,False
+1266,24,1,Superior Esquerda,7.1,106.5,Suspensão,Central,10,1ºT,65,Golo,4,False
+1267,24,8,Inferior Centro,8.8,98.7,Apoio,Pivot,28,1ºT,179,Golo,-2,False
+1268,24,4,Média Esquerda,8.7,109.1,Apoio,Lateral Direito,47,2ºT,151,Golo,5,True
+1269,24,8,Inferior Centro,7.4,111.0,Rectaguarda,Central,25,1ºT,25,Defesa,-5,False
+1270,24,9,Inferior Direita,7.0,106.4,7 metros,Central,10,1ºT,108,Golo,4,False
+1271,24,9,Inferior Direita,9.9,102.3,Penetração,Central,7,1ºT,83,Defesa,5,False
+1272,24,4,Média Esquerda,7.0,116.2,Rectaguarda,Pivot,4,1ºT,121,Golo,2,False
+1273,24,3,Superior Direita,9.8,110.3,Rectaguarda,Extremo Esquerdo,44,2ºT,163,Golo,3,True
+1274,24,8,Inferior Centro,6.8,111.8,Apoio,Extremo Esquerdo,49,2ºT,176,Golo,2,False
+1275,24,8,Inferior Centro,9.5,99.9,Apoio,Extremo Direito,46,2ºT,6,Golo,3,True
+1276,24,1,Superior Esquerda,10.4,85.5,Contra-ataque,Central,35,2ºT,38,Golo,4,False
+1277,24,1,Superior Esquerda,7.3,92.0,Apoio,Central,2,1ºT,84,Defesa,-4,False
+1278,24,4,Média Esquerda,10.0,101.6,Apoio,Central,8,1ºT,126,Golo,1,False
+1279,24,7,Inferior Esquerda,7.1,92.2,Rectaguarda,Lateral Direito,22,1ºT,49,Golo,-1,True
+1280,24,3,Superior Direita,7.0,85.7,7 metros,Pivot,13,1ºT,127,Golo,-1,False
+1281,24,4,Média Esquerda,7.0,107.1,7 metros,Extremo Esquerdo,42,2ºT,68,Defesa,-4,True
+1282,24,1,Superior Esquerda,9.2,99.5,Suspensão,Extremo Esquerdo,43,2ºT,29,Golo,-5,False
+1283,24,1,Superior Esquerda,7.4,115.8,Suspensão,Central,14,1ºT,9,Golo,-3,False
+1284,24,9,Inferior Direita,8.1,110.3,Contra-ataque,Extremo Direito,18,1ºT,100,Golo,5,False
+1285,24,5,Média Centro,9.7,91.9,Penetração,Extremo Direito,18,1ºT,77,Golo,4,False
+1286,24,4,Média Esquerda,7.0,100.6,7 metros,Extremo Esquerdo,16,1ºT,147,Defesa,-3,True
+1287,24,3,Superior Direita,7.0,96.3,7 metros,Lateral Esquerdo,56,2ºT,31,Golo,-5,False
+1288,24,9,Inferior Direita,7.0,100.8,7 metros,Pivot,50,2ºT,144,Golo,-3,False
+1289,24,8,Inferior Centro,8.9,101.4,Suspensão,Extremo Direito,46,2ºT,88,Golo,3,False
+1290,24,1,Superior Esquerda,7.5,102.4,Rectaguarda,Extremo Direito,18,1ºT,72,Golo,-1,False
+1291,24,8,Inferior Centro,6.8,106.3,Rectaguarda,Extremo Direito,9,1ºT,5,Golo,-2,False
+1292,24,2,Superior Centro,9.6,101.6,Penetração,Lateral Direito,1,1ºT,9,Golo,3,False
+1293,24,7,Inferior Esquerda,9.0,106.3,Suspensão,Extremo Esquerdo,19,1ºT,132,Defesa,3,False
+1294,24,4,Média Esquerda,9.6,104.0,Contra-ataque,Central,28,1ºT,15,Defesa,3,True
+1295,24,3,Superior Direita,8.4,100.1,Penetração,Pivot,15,1ºT,86,Golo,-2,False
+1296,24,6,Média Direita,7.8,105.3,Suspensão,Extremo Esquerdo,22,1ºT,135,Defesa,-5,True
+1297,24,1,Superior Esquerda,8.0,102.2,Suspensão,Extremo Esquerdo,56,2ºT,173,Golo,-2,False
+1298,24,1,Superior Esquerda,9.4,91.8,Penetração,Lateral Esquerdo,1,1ºT,53,Defesa,0,False
+1299,24,2,Superior Centro,7.8,95.5,Suspensão,Pivot,22,1ºT,110,Defesa,-4,False
+1300,24,4,Média Esquerda,9.0,115.4,Rectaguarda,Extremo Esquerdo,27,1ºT,22,Defesa,4,False
+1301,24,7,Inferior Esquerda,8.0,107.6,Penetração,Central,37,2ºT,93,Golo,2,True
+1302,24,5,Média Centro,7.2,110.3,Rectaguarda,Extremo Esquerdo,45,2ºT,145,Defesa,0,False
+1303,24,4,Média Esquerda,8.8,110.5,Apoio,Lateral Direito,3,1ºT,89,Golo,-3,False
+1304,24,7,Inferior Esquerda,6.2,109.4,Rectaguarda,Extremo Esquerdo,29,1ºT,16,Golo,-3,False
+1305,24,9,Inferior Direita,9.7,98.0,Rectaguarda,Central,47,2ºT,7,Golo,5,False
+1306,24,3,Superior Direita,9.1,100.5,Apoio,Central,59,2ºT,107,Golo,-4,True
+1307,25,9,Inferior Direita,7.5,111.3,Rectaguarda,Lateral Direito,34,2ºT,81,Defesa,5,False
+1308,25,1,Superior Esquerda,7.0,107.5,7 metros,Lateral Direito,50,2ºT,34,Golo,4,False
+1309,25,1,Superior Esquerda,10.2,92.9,Contra-ataque,Extremo Esquerdo,56,2ºT,131,Golo,3,False
+1310,25,2,Superior Centro,8.0,99.6,Rectaguarda,Central,5,1ºT,131,Golo,3,False
+1311,25,6,Média Direita,8.4,104.3,Suspensão,Pivot,46,2ºT,37,Golo,-1,False
+1312,25,5,Média Centro,9.4,94.3,Apoio,Lateral Direito,8,1ºT,146,Defesa,1,False
+1313,25,6,Média Direita,7.0,100.6,7 metros,Lateral Direito,43,2ºT,39,Golo,2,False
+1314,25,1,Superior Esquerda,7.0,115.6,Rectaguarda,Lateral Direito,23,1ºT,105,Golo,4,False
+1315,25,1,Superior Esquerda,7.0,98.3,7 metros,Lateral Esquerdo,11,1ºT,172,Golo,-5,False
+1316,25,9,Inferior Direita,7.0,96.2,7 metros,Lateral Esquerdo,53,2ºT,157,Golo,-2,False
+1317,25,9,Inferior Direita,8.4,112.2,Penetração,Lateral Direito,30,1ºT,10,Golo,-4,False
+1318,25,5,Média Centro,8.8,108.5,Suspensão,Central,4,1ºT,7,Defesa,0,False
+1319,25,4,Média Esquerda,6.5,116.1,Suspensão,Lateral Direito,32,2ºT,90,Golo,-2,False
+1320,25,3,Superior Direita,6.7,107.1,Apoio,Extremo Direito,9,1ºT,156,Defesa,5,False
+1321,25,7,Inferior Esquerda,9.0,91.5,Rectaguarda,Lateral Direito,12,1ºT,156,Defesa,3,False
+1322,25,9,Inferior Direita,10.6,97.3,Contra-ataque,Extremo Direito,12,1ºT,60,Golo,2,False
+1323,25,3,Superior Direita,7.8,114.7,Penetração,Central,50,2ºT,108,Golo,5,False
+1324,25,2,Superior Centro,9.8,108.7,Apoio,Lateral Esquerdo,36,2ºT,90,Defesa,-1,False
+1325,25,4,Média Esquerda,10.9,88.5,Contra-ataque,Lateral Esquerdo,20,1ºT,160,Golo,5,False
+1326,25,6,Média Direita,8.5,102.0,Penetração,Pivot,36,2ºT,63,Golo,2,False
+1327,25,5,Média Centro,6.2,94.2,Apoio,Extremo Direito,7,1ºT,88,Defesa,-1,False
+1328,25,4,Média Esquerda,10.9,109.0,Contra-ataque,Extremo Direito,25,1ºT,147,Golo,-3,False
+1329,25,6,Média Direita,8.7,99.2,Suspensão,Pivot,21,1ºT,79,Defesa,-1,False
+1330,25,7,Inferior Esquerda,7.5,96.2,Penetração,Extremo Esquerdo,24,1ºT,61,Defesa,1,False
+1331,25,4,Média Esquerda,8.7,112.1,Suspensão,Lateral Esquerdo,39,2ºT,127,Golo,2,False
+1332,25,2,Superior Centro,9.0,106.9,Rectaguarda,Lateral Esquerdo,45,2ºT,108,Golo,0,False
+1333,25,5,Média Centro,9.0,94.2,Penetração,Pivot,37,2ºT,85,Defesa,4,False
+1334,25,7,Inferior Esquerda,6.2,88.9,Apoio,Pivot,50,2ºT,123,Defesa,3,False
+1335,25,8,Inferior Centro,9.7,91.8,Apoio,Lateral Esquerdo,49,2ºT,115,Defesa,-4,True
+1336,25,8,Inferior Centro,9.3,114.3,Suspensão,Extremo Direito,36,2ºT,120,Golo,4,True
+1337,25,9,Inferior Direita,10.0,105.2,Apoio,Extremo Direito,34,2ºT,120,Defesa,2,False
+1338,25,1,Superior Esquerda,6.7,113.4,Rectaguarda,Pivot,50,2ºT,28,Golo,5,False
+1339,25,8,Inferior Centro,8.7,87.8,Rectaguarda,Extremo Direito,3,1ºT,152,Defesa,-1,True
+1340,25,9,Inferior Direita,7.0,109.6,7 metros,Pivot,59,2ºT,156,Defesa,-1,False
+1341,25,1,Superior Esquerda,9.5,115.0,Rectaguarda,Central,10,1ºT,168,Golo,0,True
+1342,25,6,Média Direita,7.7,98.3,Penetração,Extremo Direito,53,2ºT,162,Defesa,-1,False
+1343,25,3,Superior Direita,8.8,95.3,Contra-ataque,Extremo Direito,58,2ºT,18,Golo,-2,False
+1344,25,1,Superior Esquerda,7.5,92.1,Suspensão,Pivot,3,1ºT,25,Defesa,3,False
+1345,25,8,Inferior Centro,7.1,106.4,Suspensão,Pivot,33,2ºT,21,Defesa,-1,False
+1346,25,6,Média Direita,7.1,96.2,Suspensão,Extremo Direito,28,1ºT,89,Defesa,-4,False
+1347,25,6,Média Direita,7.0,96.7,7 metros,Extremo Direito,57,2ºT,120,Golo,0,False
+1348,25,5,Média Centro,8.0,104.7,Penetração,Extremo Direito,59,2ºT,55,Defesa,5,False
+1349,25,2,Superior Centro,10.8,100.4,Contra-ataque,Central,6,1ºT,63,Golo,1,False
+1350,25,5,Média Centro,8.8,99.2,Contra-ataque,Lateral Esquerdo,53,2ºT,147,Defesa,-4,False
+1351,25,3,Superior Direita,8.3,117.6,Penetração,Central,21,1ºT,81,Golo,3,False
+1352,25,1,Superior Esquerda,7.3,90.7,Apoio,Lateral Esquerdo,58,2ºT,81,Golo,-3,False
+1353,25,4,Média Esquerda,7.8,86.1,Rectaguarda,Lateral Direito,52,2ºT,154,Defesa,0,False
+1354,25,4,Média Esquerda,7.0,112.9,7 metros,Extremo Direito,56,2ºT,55,Defesa,5,False
+1355,26,8,Inferior Centro,8.7,98.0,Apoio,Lateral Esquerdo,51,2ºT,105,Golo,3,False
+1356,26,3,Superior Direita,8.9,103.7,Suspensão,Pivot,54,2ºT,175,Defesa,5,False
+1357,26,2,Superior Centro,7.8,89.4,Rectaguarda,Extremo Direito,19,1ºT,97,Golo,0,False
+1358,26,7,Inferior Esquerda,7.0,109.2,Rectaguarda,Lateral Direito,44,2ºT,142,Golo,-3,True
+1359,26,8,Inferior Centro,6.5,111.2,Penetração,Extremo Esquerdo,34,2ºT,69,Golo,-3,True
+1360,26,9,Inferior Direita,8.3,115.8,Contra-ataque,Pivot,17,1ºT,120,Defesa,3,False
+1361,26,8,Inferior Centro,8.5,108.2,Contra-ataque,Pivot,16,1ºT,50,Golo,-3,False
+1362,26,4,Média Esquerda,6.4,88.0,Penetração,Central,24,1ºT,120,Defesa,-5,False
+1363,26,6,Média Direita,7.0,97.7,7 metros,Extremo Direito,12,1ºT,52,Defesa,1,False
+1364,26,4,Média Esquerda,7.6,85.7,Apoio,Lateral Esquerdo,26,1ºT,157,Golo,-2,False
+1365,26,7,Inferior Esquerda,7.6,103.7,Suspensão,Pivot,15,1ºT,20,Defesa,-1,False
+1366,26,6,Média Direita,7.0,95.7,7 metros,Central,34,2ºT,80,Defesa,4,False
+1367,26,6,Média Direita,7.2,86.1,Rectaguarda,Pivot,51,2ºT,110,Defesa,1,False
+1368,26,7,Inferior Esquerda,6.8,104.6,Apoio,Pivot,1,1ºT,53,Defesa,5,False
+1369,26,5,Média Centro,6.1,102.0,Apoio,Lateral Direito,32,2ºT,59,Golo,-4,False
+1370,26,3,Superior Direita,7.0,107.5,7 metros,Lateral Esquerdo,34,2ºT,38,Golo,-3,False
+1371,26,5,Média Centro,7.9,86.2,Penetração,Central,3,1ºT,164,Golo,-4,False
+1372,26,6,Média Direita,6.3,90.8,Apoio,Pivot,58,2ºT,150,Golo,4,False
+1373,26,9,Inferior Direita,9.1,95.5,Apoio,Extremo Direito,6,1ºT,107,Defesa,-5,False
+1374,26,5,Média Centro,9.2,93.8,Penetração,Lateral Direito,59,2ºT,94,Golo,-3,False
+1375,26,4,Média Esquerda,8.5,106.8,Apoio,Extremo Direito,26,1ºT,171,Golo,1,False
+1376,26,4,Média Esquerda,8.6,87.4,Suspensão,Pivot,11,1ºT,33,Defesa,-4,False
+1377,26,7,Inferior Esquerda,6.8,94.5,Rectaguarda,Extremo Direito,20,1ºT,124,Golo,-3,False
+1378,26,3,Superior Direita,7.0,95.4,7 metros,Lateral Esquerdo,18,1ºT,84,Golo,0,False
+1379,26,6,Média Direita,7.1,115.3,Suspensão,Lateral Direito,52,2ºT,102,Golo,-5,True
+1380,26,4,Média Esquerda,6.6,105.3,Penetração,Lateral Direito,35,2ºT,73,Defesa,-5,False
+1381,26,5,Média Centro,9.8,87.6,Rectaguarda,Extremo Direito,11,1ºT,30,Golo,4,False
+1382,26,3,Superior Direita,7.3,103.6,Suspensão,Lateral Esquerdo,50,2ºT,153,Defesa,-1,False
+1383,26,8,Inferior Centro,10.8,95.8,Contra-ataque,Extremo Esquerdo,15,1ºT,148,Golo,0,False
+1384,26,7,Inferior Esquerda,8.2,88.7,Contra-ataque,Lateral Esquerdo,32,2ºT,173,Golo,-2,False
+1385,26,9,Inferior Direita,7.0,116.9,7 metros,Central,6,1ºT,177,Golo,0,False
+1386,26,4,Média Esquerda,6.6,111.1,Penetração,Pivot,16,1ºT,136,Defesa,4,False
+1387,26,7,Inferior Esquerda,9.2,106.2,Contra-ataque,Extremo Esquerdo,1,1ºT,8,Defesa,-5,False
+1388,26,2,Superior Centro,6.3,88.6,Rectaguarda,Lateral Esquerdo,29,1ºT,135,Golo,-1,False
+1389,26,8,Inferior Centro,6.7,96.3,Rectaguarda,Lateral Esquerdo,46,2ºT,77,Golo,5,False
+1390,26,8,Inferior Centro,6.7,87.6,Penetração,Extremo Direito,34,2ºT,60,Golo,-2,True
+1391,26,7,Inferior Esquerda,8.5,95.6,Contra-ataque,Lateral Direito,34,2ºT,125,Defesa,0,False
+1392,26,1,Superior Esquerda,7.4,97.2,Rectaguarda,Pivot,6,1ºT,8,Defesa,3,False
+1393,26,5,Média Centro,7.3,113.7,Penetração,Central,41,2ºT,36,Defesa,3,False
+1394,26,8,Inferior Centro,7.0,97.7,7 metros,Lateral Esquerdo,10,1ºT,33,Golo,-1,False
+1395,26,2,Superior Centro,9.8,93.5,Rectaguarda,Lateral Direito,29,1ºT,142,Defesa,4,False
+1396,26,3,Superior Direita,7.2,99.4,Penetração,Lateral Esquerdo,20,1ºT,26,Golo,-1,True
+1397,26,6,Média Direita,8.1,117.7,Apoio,Central,53,2ºT,83,Golo,0,False
+1398,26,1,Superior Esquerda,6.2,104.2,Rectaguarda,Pivot,29,1ºT,76,Golo,5,False
+1399,26,2,Superior Centro,8.4,98.1,Contra-ataque,Pivot,6,1ºT,59,Defesa,-3,False
+1400,26,2,Superior Centro,6.1,99.3,Apoio,Extremo Esquerdo,24,1ºT,162,Defesa,0,False
+1401,26,6,Média Direita,6.3,96.9,Penetração,Extremo Esquerdo,11,1ºT,129,Defesa,-4,True
+1402,26,2,Superior Centro,7.0,97.1,7 metros,Lateral Direito,1,1ºT,133,Golo,-5,False
+1403,26,9,Inferior Direita,7.4,98.4,Apoio,Pivot,46,2ºT,48,Defesa,-3,False
+1404,26,6,Média Direita,8.1,104.9,Apoio,Pivot,40,2ºT,52,Golo,1,False
+1405,26,1,Superior Esquerda,8.4,106.7,Suspensão,Pivot,20,1ºT,170,Golo,4,False
+1406,27,8,Inferior Centro,9.4,105.2,Contra-ataque,Extremo Direito,20,1ºT,7,Golo,2,True
+1407,27,3,Superior Direita,7.0,116.9,7 metros,Lateral Direito,51,2ºT,136,Defesa,5,True
+1408,27,7,Inferior Esquerda,6.9,95.8,Rectaguarda,Central,50,2ºT,75,Golo,-3,False
+1409,27,4,Média Esquerda,7.8,87.6,Suspensão,Extremo Esquerdo,29,1ºT,51,Golo,-2,False
+1410,27,6,Média Direita,7.0,98.4,Penetração,Central,22,1ºT,44,Defesa,0,False
+1411,27,1,Superior Esquerda,7.0,103.7,7 metros,Extremo Esquerdo,58,2ºT,91,Golo,5,False
+1412,27,3,Superior Direita,9.8,100.3,Apoio,Lateral Esquerdo,35,2ºT,76,Defesa,4,False
+1413,27,3,Superior Direita,9.2,100.2,Apoio,Central,48,2ºT,175,Defesa,-4,False
+1414,27,2,Superior Centro,8.3,97.0,Apoio,Central,48,2ºT,25,Defesa,-5,False
+1415,27,1,Superior Esquerda,9.9,96.2,Rectaguarda,Lateral Esquerdo,39,2ºT,93,Golo,-4,True
+1416,27,7,Inferior Esquerda,7.0,91.8,7 metros,Lateral Direito,19,1ºT,75,Golo,-4,False
+1417,27,8,Inferior Centro,8.0,114.6,Contra-ataque,Pivot,14,1ºT,164,Defesa,0,False
+1418,27,2,Superior Centro,8.8,105.7,Suspensão,Lateral Esquerdo,60,2ºT,173,Defesa,3,False
+1419,27,6,Média Direita,9.2,98.5,Suspensão,Pivot,18,1ºT,72,Golo,-1,False
+1420,27,2,Superior Centro,8.5,91.9,Rectaguarda,Extremo Esquerdo,22,1ºT,101,Defesa,-2,False
+1421,27,7,Inferior Esquerda,6.3,98.9,Apoio,Lateral Esquerdo,15,1ºT,178,Defesa,-5,False
+1422,27,9,Inferior Direita,7.0,96.0,7 metros,Extremo Direito,2,1ºT,15,Golo,-1,False
+1423,27,7,Inferior Esquerda,9.2,114.2,Apoio,Extremo Direito,40,2ºT,140,Golo,1,False
+1424,27,3,Superior Direita,8.0,89.1,Contra-ataque,Extremo Direito,45,2ºT,52,Golo,-1,True
+1425,27,7,Inferior Esquerda,9.8,110.2,Apoio,Central,14,1ºT,124,Defesa,-3,False
+1426,27,8,Inferior Centro,8.0,96.4,Rectaguarda,Lateral Esquerdo,32,2ºT,126,Defesa,1,False
+1427,27,3,Superior Direita,7.0,103.3,7 metros,Pivot,40,2ºT,103,Golo,2,False
+1428,27,7,Inferior Esquerda,6.6,90.9,Rectaguarda,Extremo Esquerdo,40,2ºT,138,Golo,3,False
+1429,27,5,Média Centro,9.2,114.2,Penetração,Central,34,2ºT,170,Defesa,0,False
+1430,27,6,Média Direita,7.0,104.6,7 metros,Lateral Esquerdo,7,1ºT,22,Golo,4,True
+1431,27,1,Superior Esquerda,6.3,111.6,Suspensão,Extremo Direito,47,2ºT,147,Defesa,2,True
+1432,27,2,Superior Centro,10.2,94.3,Contra-ataque,Lateral Esquerdo,12,1ºT,7,Golo,-4,False
+1433,27,2,Superior Centro,9.1,114.2,Apoio,Pivot,9,1ºT,152,Golo,-3,False
+1434,27,1,Superior Esquerda,7.0,96.8,Rectaguarda,Pivot,43,2ºT,27,Golo,-1,True
+1435,27,2,Superior Centro,10.3,91.7,Contra-ataque,Extremo Esquerdo,48,2ºT,72,Golo,1,False
+1436,27,6,Média Direita,6.4,89.4,Apoio,Central,40,2ºT,26,Defesa,5,False
+1437,27,3,Superior Direita,6.8,106.2,Suspensão,Pivot,6,1ºT,157,Golo,4,False
+1438,27,5,Média Centro,8.9,88.1,Rectaguarda,Extremo Direito,50,2ºT,49,Defesa,-4,False
+1439,27,8,Inferior Centro,7.4,107.9,Suspensão,Lateral Direito,12,1ºT,26,Defesa,1,False
+1440,27,2,Superior Centro,6.2,104.8,Suspensão,Central,29,1ºT,8,Golo,0,False
+1441,27,7,Inferior Esquerda,7.0,117.8,7 metros,Central,12,1ºT,93,Golo,-2,False
+1442,27,4,Média Esquerda,8.7,94.6,Contra-ataque,Extremo Esquerdo,13,1ºT,110,Defesa,2,False
+1443,27,9,Inferior Direita,9.5,86.2,Suspensão,Pivot,36,2ºT,173,Golo,-1,False
+1444,27,9,Inferior Direita,7.0,96.8,7 metros,Extremo Esquerdo,34,2ºT,18,Golo,-1,False
+1445,27,8,Inferior Centro,8.6,107.1,Suspensão,Pivot,12,1ºT,109,Golo,-2,False
+1446,27,5,Média Centro,7.0,116.3,7 metros,Extremo Direito,30,1ºT,144,Defesa,4,False
+1447,27,4,Média Esquerda,8.5,115.8,Penetração,Extremo Esquerdo,1,1ºT,100,Golo,-3,False
+1448,27,4,Média Esquerda,9.3,104.6,Apoio,Lateral Esquerdo,19,1ºT,9,Golo,0,False
+1449,27,9,Inferior Direita,9.3,85.2,Contra-ataque,Central,12,1ºT,14,Golo,0,False
+1450,27,7,Inferior Esquerda,8.4,111.3,Suspensão,Extremo Esquerdo,39,2ºT,15,Golo,-2,False
+1451,27,3,Superior Direita,8.5,93.5,Rectaguarda,Lateral Esquerdo,18,1ºT,61,Golo,-5,True
+1452,27,5,Média Centro,8.5,110.3,Suspensão,Extremo Direito,42,2ºT,63,Golo,-2,False
+1453,28,8,Inferior Centro,10.5,99.8,Contra-ataque,Lateral Esquerdo,30,1ºT,129,Defesa,-5,False
+1454,28,6,Média Direita,8.7,103.2,Contra-ataque,Pivot,3,1ºT,16,Golo,-2,True
+1455,28,5,Média Centro,7.8,94.8,Suspensão,Lateral Direito,40,2ºT,26,Defesa,-4,True
+1456,28,4,Média Esquerda,7.3,86.1,Apoio,Central,34,2ºT,48,Golo,2,False
+1457,28,2,Superior Centro,8.3,109.2,Apoio,Extremo Esquerdo,58,2ºT,91,Golo,-4,False
+1458,28,2,Superior Centro,8.9,87.0,Contra-ataque,Lateral Esquerdo,21,1ºT,160,Defesa,-2,False
+1459,28,4,Média Esquerda,8.3,90.4,Rectaguarda,Central,5,1ºT,103,Defesa,-1,False
+1460,28,9,Inferior Direita,9.8,92.6,Contra-ataque,Central,26,1ºT,146,Golo,2,False
+1461,28,8,Inferior Centro,11.0,104.4,Contra-ataque,Lateral Esquerdo,15,1ºT,80,Golo,1,False
+1462,28,7,Inferior Esquerda,8.1,90.9,Apoio,Lateral Direito,38,2ºT,171,Defesa,3,False
+1463,28,1,Superior Esquerda,11.0,101.2,Contra-ataque,Pivot,59,2ºT,36,Golo,-1,False
+1464,28,7,Inferior Esquerda,8.6,100.2,Contra-ataque,Lateral Esquerdo,52,2ºT,36,Golo,3,False
+1465,28,7,Inferior Esquerda,9.5,108.2,Contra-ataque,Lateral Direito,13,1ºT,45,Golo,-2,False
+1466,28,3,Superior Direita,7.5,101.1,Rectaguarda,Pivot,9,1ºT,134,Defesa,3,False
+1467,28,4,Média Esquerda,8.4,89.9,Apoio,Extremo Esquerdo,11,1ºT,36,Defesa,-2,False
+1468,28,4,Média Esquerda,7.3,91.0,Suspensão,Extremo Direito,5,1ºT,123,Defesa,1,False
+1469,28,9,Inferior Direita,7.3,109.5,Suspensão,Pivot,34,2ºT,172,Defesa,3,False
+1470,28,3,Superior Direita,6.5,111.4,Suspensão,Lateral Direito,53,2ºT,52,Defesa,3,False
+1471,28,9,Inferior Direita,6.2,101.7,Suspensão,Extremo Esquerdo,2,1ºT,167,Defesa,-2,False
+1472,28,2,Superior Centro,9.9,111.3,Rectaguarda,Extremo Direito,49,2ºT,12,Golo,4,True
+1473,28,9,Inferior Direita,7.0,107.0,7 metros,Lateral Direito,20,1ºT,95,Defesa,0,False
+1474,28,1,Superior Esquerda,9.2,107.5,Contra-ataque,Central,46,2ºT,87,Golo,-4,True
+1475,28,7,Inferior Esquerda,10.8,104.4,Contra-ataque,Extremo Direito,52,2ºT,7,Golo,-4,False
+1476,28,3,Superior Direita,7.0,91.6,7 metros,Lateral Esquerdo,42,2ºT,144,Defesa,-2,False
+1477,28,8,Inferior Centro,6.8,109.9,Penetração,Lateral Direito,42,2ºT,138,Golo,2,True
+1478,28,7,Inferior Esquerda,8.2,94.2,Contra-ataque,Extremo Esquerdo,50,2ºT,33,Defesa,-1,False
+1479,28,7,Inferior Esquerda,9.5,108.4,Apoio,Lateral Esquerdo,47,2ºT,75,Defesa,4,False
+1480,28,1,Superior Esquerda,9.5,99.1,Suspensão,Pivot,20,1ºT,83,Golo,-4,False
+1481,28,8,Inferior Centro,9.6,93.1,Suspensão,Lateral Esquerdo,25,1ºT,7,Defesa,-2,False
+1482,28,3,Superior Direita,8.4,96.2,Rectaguarda,Pivot,3,1ºT,29,Defesa,-4,False
+1483,28,5,Média Centro,7.1,92.8,Suspensão,Extremo Direito,10,1ºT,34,Defesa,1,True
+1484,28,5,Média Centro,6.5,109.5,Penetração,Lateral Direito,15,1ºT,23,Defesa,-2,False
+1485,28,7,Inferior Esquerda,7.9,104.3,Penetração,Extremo Esquerdo,36,2ºT,77,Defesa,3,False
+1486,28,5,Média Centro,7.0,112.2,7 metros,Extremo Esquerdo,50,2ºT,143,Defesa,-5,False
+1487,28,2,Superior Centro,7.1,86.8,Penetração,Lateral Esquerdo,40,2ºT,161,Defesa,-3,False
+1488,28,3,Superior Direita,7.6,99.6,Suspensão,Central,35,2ºT,66,Defesa,1,True
+1489,28,4,Média Esquerda,6.4,114.6,Suspensão,Pivot,15,1ºT,156,Golo,-1,False
+1490,28,1,Superior Esquerda,8.5,92.8,Suspensão,Extremo Direito,38,2ºT,176,Golo,-5,False
+1491,28,8,Inferior Centro,8.8,85.8,Suspensão,Pivot,5,1ºT,105,Defesa,5,True
+1492,28,6,Média Direita,7.6,107.3,Rectaguarda,Lateral Esquerdo,9,1ºT,166,Golo,5,False
+1493,28,5,Média Centro,10.9,92.5,Contra-ataque,Pivot,19,1ºT,145,Defesa,0,False
+1494,28,7,Inferior Esquerda,9.0,101.9,Contra-ataque,Lateral Direito,20,1ºT,156,Defesa,-5,False
+1495,28,6,Média Direita,7.0,109.1,7 metros,Extremo Direito,1,1ºT,172,Defesa,-2,False
+1496,28,5,Média Centro,7.0,113.9,7 metros,Extremo Direito,32,2ºT,46,Golo,2,False
+1497,28,3,Superior Direita,7.5,105.7,Apoio,Central,26,1ºT,41,Defesa,3,False
+1498,28,1,Superior Esquerda,8.8,86.4,Contra-ataque,Extremo Esquerdo,5,1ºT,32,Golo,0,False
+1499,28,2,Superior Centro,8.8,96.5,Penetração,Lateral Esquerdo,20,1ºT,158,Golo,-2,False
+1500,28,1,Superior Esquerda,9.9,116.0,Rectaguarda,Lateral Direito,14,1ºT,78,Defesa,4,False
+1501,28,6,Média Direita,9.3,101.8,Apoio,Lateral Direito,36,2ºT,174,Defesa,-3,False
+1502,28,7,Inferior Esquerda,7.9,85.2,Suspensão,Central,24,1ºT,114,Golo,-1,True
+1503,28,3,Superior Direita,7.5,106.9,Penetração,Extremo Direito,39,2ºT,81,Defesa,-5,False
+1504,28,4,Média Esquerda,8.4,110.4,Suspensão,Pivot,2,1ºT,18,Defesa,-3,False
+1505,28,4,Média Esquerda,8.7,95.5,Contra-ataque,Lateral Direito,42,2ºT,72,Golo,-3,False
+1506,28,2,Superior Centro,9.3,116.8,Apoio,Pivot,43,2ºT,21,Golo,-5,False
+1507,28,5,Média Centro,8.5,113.2,Penetração,Pivot,42,2ºT,11,Defesa,2,False
+1508,28,3,Superior Direita,7.0,112.0,7 metros,Central,58,2ºT,104,Defesa,0,False
+1509,28,6,Média Direita,10.6,86.1,Contra-ataque,Pivot,39,2ºT,109,Golo,-4,False
+1510,28,1,Superior Esquerda,11.0,111.2,Contra-ataque,Pivot,47,2ºT,36,Golo,0,False
+1511,29,7,Inferior Esquerda,7.0,101.5,7 metros,Extremo Esquerdo,53,2ºT,122,Golo,-2,False
+1512,29,4,Média Esquerda,7.3,108.4,Rectaguarda,Central,50,2ºT,18,Defesa,4,False
+1513,29,8,Inferior Centro,7.8,100.5,Suspensão,Central,39,2ºT,21,Defesa,5,False
+1514,29,5,Média Centro,6.1,114.8,Rectaguarda,Extremo Direito,54,2ºT,92,Golo,-3,False
+1515,29,9,Inferior Direita,9.9,107.4,Rectaguarda,Lateral Esquerdo,43,2ºT,120,Golo,-1,False
+1516,29,7,Inferior Esquerda,8.7,114.0,Suspensão,Lateral Esquerdo,12,1ºT,114,Defesa,0,False
+1517,29,9,Inferior Direita,8.3,112.7,Contra-ataque,Lateral Direito,8,1ºT,104,Defesa,-5,False
+1518,29,6,Média Direita,7.0,101.8,7 metros,Lateral Esquerdo,19,1ºT,79,Golo,-4,False
+1519,29,1,Superior Esquerda,7.0,99.9,7 metros,Lateral Direito,23,1ºT,96,Golo,4,False
+1520,29,7,Inferior Esquerda,7.8,94.5,Penetração,Pivot,11,1ºT,139,Defesa,4,True
+1521,29,7,Inferior Esquerda,9.8,115.1,Penetração,Lateral Direito,57,2ºT,28,Golo,3,False
+1522,29,5,Média Centro,7.4,117.0,Apoio,Pivot,23,1ºT,89,Defesa,-3,False
+1523,29,1,Superior Esquerda,7.2,117.2,Apoio,Extremo Direito,35,2ºT,100,Golo,-3,False
+1524,29,1,Superior Esquerda,7.5,96.8,Suspensão,Lateral Direito,34,2ºT,139,Golo,5,False
+1525,29,2,Superior Centro,6.0,99.2,Suspensão,Lateral Esquerdo,53,2ºT,166,Defesa,5,False
+1526,29,8,Inferior Centro,7.0,105.1,7 metros,Pivot,25,1ºT,52,Golo,-2,False
+1527,29,8,Inferior Centro,9.4,92.9,Apoio,Extremo Esquerdo,2,1ºT,155,Defesa,-4,False
+1528,29,3,Superior Direita,9.4,115.2,Rectaguarda,Lateral Esquerdo,46,2ºT,43,Golo,-1,True
+1529,29,4,Média Esquerda,7.0,96.1,7 metros,Extremo Direito,33,2ºT,126,Golo,0,False
+1530,29,3,Superior Direita,6.7,91.6,Apoio,Extremo Direito,49,2ºT,17,Defesa,-2,False
+1531,29,4,Média Esquerda,9.0,105.4,Contra-ataque,Central,58,2ºT,85,Golo,-2,True
+1532,29,4,Média Esquerda,9.4,99.7,Apoio,Extremo Esquerdo,28,1ºT,20,Defesa,1,False
+1533,29,1,Superior Esquerda,7.9,103.8,Rectaguarda,Extremo Esquerdo,31,2ºT,48,Golo,-3,False
+1534,29,2,Superior Centro,6.8,88.7,Penetração,Lateral Direito,48,2ºT,133,Defesa,4,False
+1535,29,3,Superior Direita,9.8,94.8,Contra-ataque,Pivot,18,1ºT,148,Golo,-1,True
+1536,29,3,Superior Direita,6.7,117.6,Penetração,Lateral Esquerdo,35,2ºT,59,Golo,0,False
+1537,29,7,Inferior Esquerda,9.1,86.1,Suspensão,Pivot,57,2ºT,23,Golo,2,False
+1538,29,4,Média Esquerda,9.0,89.7,Apoio,Lateral Direito,21,1ºT,112,Defesa,3,False
+1539,29,3,Superior Direita,8.4,111.6,Contra-ataque,Central,34,2ºT,152,Golo,-4,False
+1540,29,3,Superior Direita,7.8,107.6,Rectaguarda,Central,17,1ºT,114,Golo,4,False
+1541,29,2,Superior Centro,7.7,85.9,Suspensão,Extremo Direito,57,2ºT,128,Golo,4,False
+1542,29,8,Inferior Centro,9.8,110.4,Contra-ataque,Central,13,1ºT,166,Golo,4,False
+1543,29,4,Média Esquerda,8.1,114.8,Rectaguarda,Central,39,2ºT,173,Defesa,2,False
+1544,29,8,Inferior Centro,8.0,103.6,Rectaguarda,Extremo Esquerdo,24,1ºT,145,Golo,1,False
+1545,29,5,Média Centro,8.6,107.8,Suspensão,Lateral Esquerdo,47,2ºT,64,Defesa,1,True
+1546,29,7,Inferior Esquerda,8.0,108.9,Suspensão,Lateral Esquerdo,51,2ºT,16,Golo,1,True
+1547,29,7,Inferior Esquerda,9.3,98.5,Rectaguarda,Pivot,51,2ºT,67,Golo,4,False
+1548,29,1,Superior Esquerda,11.0,89.0,Contra-ataque,Pivot,19,1ºT,11,Defesa,-3,False
+1549,29,2,Superior Centro,6.7,110.1,Apoio,Central,26,1ºT,31,Defesa,-5,False
+1550,29,2,Superior Centro,9.3,87.6,Penetração,Pivot,37,2ºT,159,Defesa,2,True
+1551,29,3,Superior Direita,9.2,100.2,Penetração,Lateral Direito,7,1ºT,166,Golo,5,False
+1552,29,1,Superior Esquerda,7.4,115.9,Apoio,Extremo Esquerdo,37,2ºT,113,Golo,5,True
+1553,29,5,Média Centro,7.0,111.2,7 metros,Lateral Direito,20,1ºT,6,Golo,-1,False
+1554,29,5,Média Centro,7.0,90.9,7 metros,Extremo Direito,60,2ºT,175,Defesa,-5,False
+1555,29,4,Média Esquerda,7.0,102.3,7 metros,Central,34,2ºT,126,Defesa,-3,False
+1556,29,3,Superior Direita,8.2,92.5,Rectaguarda,Pivot,16,1ºT,82,Golo,2,False
+1557,29,7,Inferior Esquerda,9.0,85.2,Suspensão,Lateral Esquerdo,57,2ºT,83,Defesa,1,False
+1558,29,6,Média Direita,6.9,109.3,Suspensão,Lateral Esquerdo,21,1ºT,154,Defesa,4,False
+1559,29,5,Média Centro,9.0,93.4,Penetração,Lateral Esquerdo,57,2ºT,57,Golo,-4,False
+1560,29,1,Superior Esquerda,7.0,112.1,7 metros,Central,32,2ºT,145,Golo,0,False
+1561,29,1,Superior Esquerda,7.7,98.2,Apoio,Extremo Direito,19,1ºT,94,Defesa,0,False
+1562,29,7,Inferior Esquerda,6.3,116.1,Suspensão,Extremo Direito,41,2ºT,173,Golo,1,False
+1563,29,9,Inferior Direita,7.4,105.6,Rectaguarda,Lateral Esquerdo,52,2ºT,135,Golo,1,False
+1564,29,6,Média Direita,7.8,99.8,Apoio,Lateral Direito,5,1ºT,61,Defesa,4,False
+1565,29,2,Superior Centro,6.0,101.0,Apoio,Lateral Direito,23,1ºT,19,Defesa,-1,True
+1566,29,4,Média Esquerda,9.3,85.3,Suspensão,Pivot,27,1ºT,24,Defesa,1,False
+1567,29,1,Superior Esquerda,8.8,86.7,Rectaguarda,Lateral Esquerdo,50,2ºT,71,Golo,-1,True
+1568,29,6,Média Direita,8.9,85.8,Apoio,Lateral Esquerdo,43,2ºT,126,Defesa,3,False
+1569,29,8,Inferior Centro,9.5,102.4,Rectaguarda,Pivot,45,2ºT,19,Defesa,-5,False
+1570,29,4,Média Esquerda,10.9,86.8,Contra-ataque,Lateral Esquerdo,44,2ºT,16,Defesa,4,False
+1571,29,8,Inferior Centro,9.0,101.1,Penetração,Central,31,2ºT,65,Golo,3,False
+1572,29,2,Superior Centro,8.6,117.2,Suspensão,Extremo Esquerdo,52,2ºT,21,Defesa,-4,True
+1573,29,8,Inferior Centro,7.8,112.4,Rectaguarda,Lateral Direito,58,2ºT,94,Defesa,1,False
+1574,29,5,Média Centro,7.7,91.2,Rectaguarda,Pivot,22,1ºT,178,Defesa,-1,False
+1575,30,5,Média Centro,8.4,96.1,Apoio,Lateral Esquerdo,17,1ºT,5,Defesa,2,False
+1576,30,2,Superior Centro,9.5,100.1,Contra-ataque,Central,45,2ºT,143,Defesa,-4,False
+1577,30,3,Superior Direita,9.6,101.5,Suspensão,Central,2,1ºT,151,Golo,-3,False
+1578,30,8,Inferior Centro,7.0,94.3,7 metros,Lateral Direito,12,1ºT,69,Golo,-2,False
+1579,30,6,Média Direita,7.0,87.3,7 metros,Lateral Esquerdo,54,2ºT,112,Golo,1,False
+1580,30,7,Inferior Esquerda,9.1,97.1,Penetração,Extremo Direito,2,1ºT,30,Golo,5,False
+1581,30,5,Média Centro,6.6,102.1,Suspensão,Lateral Direito,51,2ºT,140,Golo,5,False
+1582,30,4,Média Esquerda,8.5,104.5,Penetração,Central,32,2ºT,135,Defesa,-4,False
+1583,30,8,Inferior Centro,8.6,85.3,Contra-ataque,Lateral Direito,14,1ºT,22,Golo,0,False
+1584,30,1,Superior Esquerda,9.0,89.5,Penetração,Central,12,1ºT,66,Defesa,-4,False
+1585,30,5,Média Centro,7.0,108.2,7 metros,Extremo Direito,6,1ºT,82,Golo,-2,False
+1586,30,4,Média Esquerda,7.0,87.3,7 metros,Lateral Esquerdo,11,1ºT,152,Golo,-3,False
+1587,30,7,Inferior Esquerda,7.4,89.9,Suspensão,Central,26,1ºT,26,Defesa,-4,False
+1588,30,3,Superior Direita,7.6,111.7,Rectaguarda,Pivot,23,1ºT,17,Defesa,0,False
+1589,30,6,Média Direita,9.1,93.5,Rectaguarda,Lateral Direito,45,2ºT,96,Defesa,-3,False
+1590,30,5,Média Centro,6.3,99.1,Rectaguarda,Extremo Direito,15,1ºT,21,Defesa,0,False
+1591,30,3,Superior Direita,9.9,98.3,Suspensão,Central,24,1ºT,12,Golo,5,False
+1592,30,6,Média Direita,7.9,86.0,Suspensão,Central,22,1ºT,147,Golo,5,False
+1593,30,4,Média Esquerda,7.0,108.2,7 metros,Central,56,2ºT,62,Defesa,-3,True
+1594,30,7,Inferior Esquerda,7.0,115.7,7 metros,Lateral Direito,1,1ºT,115,Golo,0,False
+1595,30,8,Inferior Centro,7.0,95.3,7 metros,Extremo Esquerdo,25,1ºT,155,Golo,0,False
+1596,30,7,Inferior Esquerda,7.2,112.5,Rectaguarda,Extremo Esquerdo,14,1ºT,168,Defesa,2,False
+1597,30,3,Superior Direita,8.9,108.4,Penetração,Central,24,1ºT,173,Golo,1,False
+1598,30,4,Média Esquerda,10.2,87.0,Contra-ataque,Extremo Esquerdo,49,2ºT,32,Golo,-1,False
+1599,30,8,Inferior Centro,7.3,104.2,Penetração,Extremo Direito,60,2ºT,107,Defesa,0,False
+1600,30,9,Inferior Direita,11.0,94.0,Contra-ataque,Extremo Esquerdo,29,1ºT,136,Golo,-2,False
+1601,30,4,Média Esquerda,9.7,111.8,Apoio,Pivot,56,2ºT,9,Defesa,-2,False
+1602,30,1,Superior Esquerda,7.4,92.7,Suspensão,Pivot,46,2ºT,134,Golo,-2,False
+1603,30,8,Inferior Centro,7.2,102.1,Penetração,Lateral Esquerdo,59,2ºT,141,Golo,5,False
+1604,30,7,Inferior Esquerda,8.8,96.4,Apoio,Lateral Direito,33,2ºT,132,Golo,-5,False
+1605,30,6,Média Direita,10.0,112.5,Contra-ataque,Lateral Esquerdo,6,1ºT,57,Golo,0,False
+1606,30,2,Superior Centro,9.8,109.2,Contra-ataque,Central,18,1ºT,53,Golo,-4,False
+1607,30,6,Média Direita,7.0,106.8,7 metros,Lateral Direito,29,1ºT,158,Golo,-4,False
+1608,30,4,Média Esquerda,9.9,99.2,Rectaguarda,Central,12,1ºT,21,Golo,4,False
+1609,30,4,Média Esquerda,6.9,114.2,Penetração,Pivot,35,2ºT,48,Golo,5,False
+1610,30,3,Superior Direita,9.3,85.7,Contra-ataque,Extremo Esquerdo,57,2ºT,153,Golo,-3,False
+1611,30,8,Inferior Centro,9.7,113.3,Penetração,Central,16,1ºT,171,Golo,-1,False
+1612,30,9,Inferior Direita,8.9,112.9,Penetração,Central,45,2ºT,79,Defesa,-5,False
+1613,30,3,Superior Direita,7.5,109.2,Apoio,Extremo Direito,38,2ºT,27,Golo,-3,False
+1614,30,8,Inferior Centro,7.2,87.4,Penetração,Lateral Esquerdo,44,2ºT,111,Defesa,-5,False
+1615,30,3,Superior Direita,9.8,94.3,Suspensão,Lateral Esquerdo,26,1ºT,19,Defesa,-1,False
+1616,30,6,Média Direita,6.9,95.4,Penetração,Extremo Esquerdo,12,1ºT,90,Golo,-3,False
+1617,30,1,Superior Esquerda,6.9,109.6,Penetração,Extremo Esquerdo,55,2ºT,134,Golo,1,False
+1618,30,4,Média Esquerda,10.3,112.2,Contra-ataque,Lateral Direito,4,1ºT,51,Golo,4,False
+1619,30,4,Média Esquerda,7.3,117.3,Suspensão,Lateral Esquerdo,14,1ºT,63,Defesa,-1,False
+1620,30,4,Média Esquerda,9.4,86.0,Contra-ataque,Lateral Direito,10,1ºT,62,Golo,3,True
+1621,30,3,Superior Direita,8.7,92.0,Penetração,Pivot,14,1ºT,42,Golo,1,False
+1622,30,5,Média Centro,9.6,100.9,Penetração,Lateral Direito,6,1ºT,47,Defesa,0,False

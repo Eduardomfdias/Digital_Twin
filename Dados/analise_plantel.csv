@@ -1,0 +1,4 @@
+guarda_redes_1_id,guarda_redes_2_id,indice_similaridade,indice_complementaridade,cobertura_agregada_perc,redundancia,caracteristicas_similares,caracteristicas_complementares,recomendacao_titular,gap_identificado
+1,2,23.3,76.7,65.6,76.7,velocidade_lateral; alcance_vertical; altura,posicionamento; zona_alta; remates_rapidos; zona_baixa,GR2,Remates rápidos
+1,3,43.5,56.5,85.9,56.5,experiencia; alcance_vertical; agilidade,reflexos; remates_rapidos; posicionamento; zona_alta,GR1,Nenhum
+2,3,47.6,52.4,65.9,52.4,envergadura; alcance_vertical; agilidade,zona_alta; leitura_tatica; posicionamento,GR1,Nenhum

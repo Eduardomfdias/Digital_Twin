@@ -1,0 +1,4 @@
+id,nome,altura_cm,envergadura_cm,peso_kg,imc,comprimento_pernas_cm,largura_ombros_cm,alcance_vertical_cm,velocidade_lateral_ms,agilidade_ttest_s,amplitude_split_cm,idade,anos_experiencia,epoca_atual,posicao_principal
+1,Humberto Gomes,185,190,82,23.97,95,48,285,4.2,9.8,165,28,8,2025,Titular
+2,Diogo Ribeiro,186,192,85,24.57,96,49,280,3.8,10.5,160,34,12,2025,Suplente
+3,Tiago Ferreira,191,198,88,24.1,99,51,295,4.5,9.2,170,23,3,2025,Suplente

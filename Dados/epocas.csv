@@ -1,0 +1,7 @@
+id,guarda_redes_id,epoca,jogos_disputados,minutos_jogados,total_remates_sofridos,total_defesas,total_golos_sofridos,taxa_defesa_global,taxa_defesa_zona1,taxa_defesa_zona2,taxa_defesa_zona3,taxa_defesa_zona4,taxa_defesa_zona5,taxa_defesa_zona6,taxa_defesa_zona7,taxa_defesa_zona8,taxa_defesa_zona9,defesas_7metros,golos_7metros,eficacia_7metros,carga_treino_horas,peso_inicio_kg,peso_fim_kg,alcance_vertical_inicio_cm,alcance_vertical_fim_cm,velocidade_lateral_inicio_ms,velocidade_lateral_fim_ms,lesoes,dias_lesionado
+1,1,2024,28,1650,782,456,326,58.3,42.5,55.2,43.8,52.1,68.5,51.8,44.2,56.8,45.1,18,47,27.7,420,82,83,285,288,4.2,4.3,1,12
+2,1,2025,20,1180,568,338,230,59.5,45.1,57.8,46.2,54.3,70.2,53.5,46.8,58.3,47.5,12,30,28.6,310,83,82,288,290,4.3,4.4,0,0
+3,2,2024,18,1020,412,256,156,62.1,48.5,61.2,49.8,58.2,72.5,56.8,48.2,60.5,50.1,8,22,26.7,380,85,86,280,282,3.8,3.9,2,25
+4,2,2025,12,680,285,178,107,62.5,50.2,62.8,51.5,59.8,73.8,58.2,50.5,62.1,52.3,6,16,27.3,245,86,85,282,283,3.9,3.9,0,0
+5,3,2024,10,520,238,129,109,54.2,38.2,52.5,40.1,48.5,65.2,47.8,39.8,53.2,41.5,5,18,21.7,280,88,89,295,298,4.5,4.6,1,8
+6,3,2025,15,780,368,212,156,57.6,42.8,56.2,44.5,52.8,68.5,51.2,43.5,55.8,45.8,8,24,25.0,320,89,88,298,300,4.6,4.7,0,0

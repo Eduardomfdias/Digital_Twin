@@ -1,0 +1,361 @@
+id,guarda_redes_id,data,tipo_treino,foco_principal,duracao_minutos,intensidade,carga_treino,remates_recebidos,defesas_realizadas,taxa_sucesso_perc,sensacao_fisica,confianca,notas_treinador
+1,1,2024-08-01,Técnico-Tático,Deslocamentos Laterais,119,8,952,106,65,61.3,6,10,Semana 1
+2,1,2024-08-03,Recuperação,Posicionamento,106,4,424,0,0,,9,8,Semana 1
+3,1,2024-08-05,Físico,Leitura Jogo,68,10,680,0,0,,10,9,Semana 1
+4,1,2024-08-07,Vídeo-Análise,Flexibilidade,71,8,568,0,0,,7,7,Semana 2
+5,1,2024-08-10,Recuperação,Jogo Aéreo,109,4,436,0,0,,8,5,Semana 2
+6,1,2024-08-12,Técnico-Tático,Força Explosiva,68,6,408,70,44,62.9,8,10,Semana 2
+7,1,2024-08-14,Técnico-Tático,Força Explosiva,104,8,832,67,37,55.2,7,9,Semana 3
+8,1,2024-08-17,Técnico-Tático,Força Explosiva,84,8,672,95,62,65.3,8,9,Semana 3
+9,1,2024-08-19,Técnico-Tático,Defesas Zona Baixa,98,8,784,89,53,59.6,10,10,Semana 3
+10,1,2024-08-21,Recuperação,Jogo Aéreo,93,5,465,0,0,,4,10,Semana 4
+11,1,2024-08-24,Vídeo-Análise,Tempo Reação,60,8,480,0,0,,9,5,Semana 4
+12,1,2024-08-26,Jogo Treino,Jogo Aéreo,68,7,476,65,43,66.2,5,9,Semana 4
+13,1,2024-08-28,Físico,Leitura Jogo,77,10,770,0,0,,8,6,Semana 5
+14,1,2024-08-30,Recuperação,Jogo Aéreo,86,4,344,0,0,,8,9,Semana 5
+15,1,2024-09-01,Técnico-Tático,Deslocamentos Laterais,106,5,530,98,56,57.1,10,5,Semana 5
+16,1,2024-09-04,Técnico-Tático,Flexibilidade,97,6,582,42,23,54.8,9,5,Semana 6
+17,1,2024-09-07,Recuperação,Jogo Aéreo,81,4,324,0,0,,7,7,Semana 6
+18,1,2024-09-10,Vídeo-Análise,Força Explosiva,103,6,618,0,0,,4,7,Semana 6
+19,1,2024-09-12,Vídeo-Análise,Defesas Zona Baixa,73,5,365,0,0,,8,10,Semana 7
+20,1,2024-09-14,Jogo Treino,Resistência,70,7,490,71,51,71.8,6,5,Semana 7
+21,1,2024-09-17,Recuperação,Flexibilidade,107,3,321,0,0,,4,10,Semana 7
+22,1,2024-09-19,Físico,Defesas Zona Alta,90,7,630,0,0,,8,7,Semana 8
+23,1,2024-09-22,Técnico-Tático,Tempo Reação,84,5,420,97,60,61.9,4,6,Semana 8
+24,1,2024-09-24,Técnico-Tático,Tempo Reação,120,6,720,97,56,57.7,10,9,Semana 8
+25,1,2024-09-26,Recuperação,Leitura Jogo,112,5,560,0,0,,7,7,Semana 9
+26,1,2024-09-29,Recuperação,Posicionamento,116,3,348,0,0,,10,7,Semana 9
+27,1,2024-10-02,Físico,Tempo Reação,118,10,1180,0,0,,6,6,Semana 9
+28,1,2024-10-04,Recuperação,Flexibilidade,109,4,436,0,0,,4,10,Semana 10
+29,1,2024-10-07,Técnico-Tático,Defesas Zona Alta,119,8,952,117,82,70.1,6,7,Semana 10
+30,1,2024-10-09,Físico,Deslocamentos Laterais,103,7,721,0,0,,10,8,Semana 10
+31,1,2024-10-11,Vídeo-Análise,Deslocamentos Laterais,60,7,420,0,0,,7,8,Semana 11
+32,1,2024-10-13,Recuperação,Tempo Reação,78,2,156,0,0,,4,8,Semana 11
+33,1,2024-10-15,Jogo Treino,Resistência,102,8,816,48,31,64.6,4,8,Semana 11
+34,1,2024-10-17,Vídeo-Análise,Saídas Baliza,72,8,576,0,0,,10,8,Semana 12
+35,1,2024-10-20,Vídeo-Análise,Tempo Reação,65,5,325,0,0,,8,7,Semana 12
+36,1,2024-10-22,Vídeo-Análise,Resistência,98,5,490,0,0,,5,8,Semana 12
+37,1,2024-10-25,Técnico-Tático,Defesas Zona Baixa,108,7,756,80,57,71.2,5,7,Semana 13
+38,1,2024-10-27,Jogo Treino,Saídas Baliza,118,8,944,94,54,57.4,9,8,Semana 13
+39,1,2024-10-29,Recuperação,Resistência,107,2,214,0,0,,9,6,Semana 13
+40,1,2024-10-31,Recuperação,Jogo Aéreo,102,2,204,0,0,,4,5,Semana 14
+41,1,2024-11-02,Técnico-Tático,Deslocamentos Laterais,120,5,600,113,77,68.1,4,9,Semana 14
+42,1,2024-11-04,Vídeo-Análise,Deslocamentos Laterais,66,6,396,0,0,,8,7,Semana 14
+43,1,2024-11-06,Técnico-Tático,Saídas Baliza,68,5,340,52,30,57.7,6,6,Semana 15
+44,1,2024-11-09,Recuperação,Tempo Reação,112,5,560,0,0,,9,6,Semana 15
+45,1,2024-11-12,Recuperação,Leitura Jogo,106,3,318,0,0,,8,10,Semana 15
+46,1,2024-11-14,Recuperação,Defesas Zona Alta,95,3,285,0,0,,8,10,Semana 16
+47,1,2024-11-16,Físico,Resistência,105,8,840,0,0,,8,10,Semana 16
+48,1,2024-11-19,Recuperação,Deslocamentos Laterais,99,4,396,0,0,,8,6,Semana 16
+49,1,2024-11-22,Físico,Resistência,78,9,702,0,0,,5,5,Semana 17
+50,1,2024-11-24,Recuperação,Tempo Reação,118,2,236,0,0,,7,6,Semana 17
+51,1,2024-11-27,Vídeo-Análise,Deslocamentos Laterais,106,6,636,0,0,,5,6,Semana 17
+52,1,2024-11-30,Recuperação,Tempo Reação,74,4,296,0,0,,7,9,Semana 18
+53,1,2024-12-03,Jogo Treino,Deslocamentos Laterais,115,7,805,86,56,65.1,9,9,Semana 18
+54,1,2024-12-06,Físico,Tempo Reação,78,10,780,0,0,,9,9,Semana 18
+55,1,2024-12-09,Recuperação,Jogo Aéreo,105,2,210,0,0,,8,10,Semana 19
+56,1,2024-12-12,Vídeo-Análise,Força Explosiva,102,5,510,0,0,,9,10,Semana 19
+57,1,2024-12-14,Técnico-Tático,Defesas Zona Baixa,114,7,798,120,86,71.7,10,5,Semana 19
+58,1,2024-12-17,Físico,Leitura Jogo,93,7,651,0,0,,4,8,Semana 20
+59,1,2024-12-19,Jogo Treino,Saídas Baliza,90,6,540,48,27,56.2,9,10,Semana 20
+60,1,2024-12-21,Técnico-Tático,Flexibilidade,69,6,414,47,32,68.1,5,9,Semana 20
+61,1,2024-12-24,Físico,Resistência,77,7,539,0,0,,9,8,Semana 21
+62,1,2024-12-27,Físico,Defesas Zona Alta,96,10,960,0,0,,7,9,Semana 21
+63,1,2024-12-30,Vídeo-Análise,Jogo Aéreo,70,8,560,0,0,,5,9,Semana 21
+64,1,2025-01-01,Recuperação,Força Explosiva,111,5,555,0,0,,7,5,Semana 22
+65,1,2025-01-04,Vídeo-Análise,Jogo Aéreo,74,5,370,0,0,,10,8,Semana 22
+66,1,2025-01-07,Recuperação,Defesas Zona Baixa,61,5,305,0,0,,9,7,Semana 22
+67,1,2025-01-09,Vídeo-Análise,Saídas Baliza,105,8,840,0,0,,9,5,Semana 23
+68,1,2025-01-11,Vídeo-Análise,Posicionamento,120,5,600,0,0,,7,7,Semana 23
+69,1,2025-01-14,Recuperação,Tempo Reação,86,4,344,0,0,,10,6,Semana 23
+70,1,2025-01-17,Jogo Treino,Tempo Reação,63,6,378,49,31,63.3,10,6,Semana 24
+71,1,2025-01-20,Recuperação,Defesas Zona Baixa,87,3,261,0,0,,10,9,Semana 24
+72,1,2025-01-23,Recuperação,Saídas Baliza,118,5,590,0,0,,10,9,Semana 24
+73,1,2025-01-26,Jogo Treino,Saídas Baliza,105,8,840,66,48,72.7,5,9,Semana 25
+74,1,2025-01-29,Físico,Resistência,73,7,511,0,0,,7,10,Semana 25
+75,1,2025-01-31,Técnico-Tático,Saídas Baliza,81,5,405,49,34,69.4,10,6,Semana 25
+76,1,2025-02-02,Técnico-Tático,Defesas Zona Baixa,70,5,350,97,57,58.8,7,7,Semana 26
+77,1,2025-02-04,Jogo Treino,Flexibilidade,84,6,504,81,60,74.1,10,8,Semana 26
+78,1,2025-02-06,Técnico-Tático,Jogo Aéreo,63,8,504,87,57,65.5,7,9,Semana 26
+79,1,2025-02-08,Físico,Força Explosiva,102,9,918,0,0,,9,9,Semana 27
+80,1,2025-02-10,Técnico-Tático,Posicionamento,115,8,920,63,36,57.1,4,10,Semana 27
+81,1,2025-02-12,Físico,Leitura Jogo,116,8,928,0,0,,7,7,Semana 27
+82,1,2025-02-14,Vídeo-Análise,Saídas Baliza,73,5,365,0,0,,4,9,Semana 28
+83,1,2025-02-16,Jogo Treino,Tempo Reação,70,6,420,112,78,69.6,9,8,Semana 28
+84,1,2025-02-18,Físico,Posicionamento,107,7,749,0,0,,9,6,Semana 28
+85,1,2025-02-21,Jogo Treino,Deslocamentos Laterais,70,5,350,90,55,61.1,4,5,Semana 29
+86,1,2025-02-24,Jogo Treino,Posicionamento,66,8,528,69,41,59.4,7,7,Semana 29
+87,1,2025-02-27,Jogo Treino,Leitura Jogo,84,6,504,72,46,63.9,5,8,Semana 29
+88,1,2025-03-01,Jogo Treino,Jogo Aéreo,115,6,690,53,39,73.6,6,7,Semana 30
+89,1,2025-03-03,Recuperação,Leitura Jogo,65,4,260,0,0,,9,7,Semana 30
+90,1,2025-03-06,Jogo Treino,Defesas Zona Baixa,90,6,540,100,60,60.0,6,8,Semana 30
+91,1,2025-03-09,Vídeo-Análise,Defesas Zona Alta,83,5,415,0,0,,8,6,Semana 31
+92,1,2025-03-11,Vídeo-Análise,Defesas Zona Alta,102,8,816,0,0,,8,10,Semana 31
+93,1,2025-03-13,Vídeo-Análise,Resistência,82,5,410,0,0,,9,6,Semana 31
+94,1,2025-03-15,Recuperação,Posicionamento,71,4,284,0,0,,4,9,Semana 32
+95,1,2025-03-17,Recuperação,Leitura Jogo,62,4,248,0,0,,4,5,Semana 32
+96,1,2025-03-19,Vídeo-Análise,Força Explosiva,83,8,664,0,0,,8,6,Semana 32
+97,1,2025-03-21,Recuperação,Tempo Reação,91,5,455,0,0,,10,7,Semana 33
+98,1,2025-03-24,Recuperação,Flexibilidade,90,5,450,0,0,,5,10,Semana 33
+99,1,2025-03-27,Jogo Treino,Jogo Aéreo,85,7,595,41,25,61.0,5,7,Semana 33
+100,1,2025-03-29,Físico,Defesas Zona Alta,60,10,600,0,0,,8,8,Semana 34
+101,1,2025-04-01,Físico,Leitura Jogo,91,9,819,0,0,,10,10,Semana 34
+102,1,2025-04-03,Técnico-Tático,Deslocamentos Laterais,90,8,720,114,67,58.8,8,10,Semana 34
+103,1,2025-04-05,Jogo Treino,Deslocamentos Laterais,86,6,516,49,30,61.2,10,10,Semana 35
+104,1,2025-04-08,Técnico-Tático,Jogo Aéreo,113,8,904,68,42,61.8,6,10,Semana 35
+105,1,2025-04-11,Técnico-Tático,Tempo Reação,69,5,345,47,29,61.7,5,10,Semana 35
+106,1,2025-04-14,Vídeo-Análise,Saídas Baliza,73,7,511,0,0,,8,10,Semana 36
+107,1,2025-04-17,Recuperação,Tempo Reação,68,3,204,0,0,,6,9,Semana 36
+108,1,2025-04-19,Vídeo-Análise,Posicionamento,113,5,565,0,0,,7,6,Semana 36
+109,1,2025-04-21,Jogo Treino,Leitura Jogo,82,8,656,45,28,62.2,6,7,Semana 37
+110,1,2025-04-24,Jogo Treino,Resistência,100,8,800,60,40,66.7,8,7,Semana 37
+111,1,2025-04-26,Jogo Treino,Força Explosiva,99,6,594,75,55,73.3,10,6,Semana 37
+112,1,2025-04-29,Técnico-Tático,Força Explosiva,102,8,816,99,73,73.7,5,10,Semana 38
+113,1,2025-05-02,Vídeo-Análise,Deslocamentos Laterais,83,7,581,0,0,,6,9,Semana 38
+114,1,2025-05-04,Vídeo-Análise,Saídas Baliza,103,8,824,0,0,,8,10,Semana 38
+115,1,2025-05-06,Jogo Treino,Defesas Zona Baixa,60,6,360,112,63,56.2,8,7,Semana 39
+116,1,2025-05-09,Recuperação,Flexibilidade,90,3,270,0,0,,4,7,Semana 39
+117,1,2025-05-12,Físico,Flexibilidade,61,7,427,0,0,,5,5,Semana 39
+118,1,2025-05-15,Técnico-Tático,Flexibilidade,67,6,402,108,73,67.6,10,8,Semana 40
+119,1,2025-05-17,Físico,Posicionamento,75,10,750,0,0,,8,7,Semana 40
+120,1,2025-05-20,Recuperação,Defesas Zona Baixa,67,4,268,0,0,,10,9,Semana 40
+121,2,2024-08-01,Jogo Treino,Saídas Baliza,120,8,960,50,36,72.0,10,6,Semana 1
+122,2,2024-08-04,Vídeo-Análise,Defesas Zona Alta,90,6,540,0,0,,5,10,Semana 1
+123,2,2024-08-07,Vídeo-Análise,Posicionamento,68,7,476,0,0,,9,10,Semana 1
+124,2,2024-08-09,Físico,Leitura Jogo,108,7,756,0,0,,9,5,Semana 2
+125,2,2024-08-12,Jogo Treino,Resistência,92,8,736,94,53,56.4,8,6,Semana 2
+126,2,2024-08-15,Físico,Saídas Baliza,99,9,891,0,0,,4,8,Semana 2
+127,2,2024-08-17,Físico,Saídas Baliza,86,9,774,0,0,,10,8,Semana 3
+128,2,2024-08-20,Jogo Treino,Defesas Zona Baixa,73,5,365,105,62,59.0,7,7,Semana 3
+129,2,2024-08-23,Recuperação,Resistência,87,5,435,0,0,,4,7,Semana 3
+130,2,2024-08-25,Jogo Treino,Flexibilidade,81,8,648,77,52,67.5,5,10,Semana 4
+131,2,2024-08-27,Jogo Treino,Deslocamentos Laterais,88,5,440,77,48,62.3,5,10,Semana 4
+132,2,2024-08-30,Jogo Treino,Defesas Zona Baixa,63,8,504,87,47,54.0,7,10,Semana 4
+133,2,2024-09-01,Técnico-Tático,Leitura Jogo,69,7,483,101,71,70.3,10,9,Semana 5
+134,2,2024-09-04,Vídeo-Análise,Jogo Aéreo,89,5,445,0,0,,9,9,Semana 5
+135,2,2024-09-07,Recuperação,Defesas Zona Baixa,79,2,158,0,0,,4,7,Semana 5
+136,2,2024-09-10,Técnico-Tático,Jogo Aéreo,67,7,469,118,84,71.2,5,10,Semana 6
+137,2,2024-09-12,Físico,Flexibilidade,89,7,623,0,0,,6,5,Semana 6
+138,2,2024-09-14,Recuperação,Jogo Aéreo,102,5,510,0,0,,5,8,Semana 6
+139,2,2024-09-17,Técnico-Tático,Força Explosiva,114,7,798,82,60,73.2,5,6,Semana 7
+140,2,2024-09-20,Recuperação,Deslocamentos Laterais,91,3,273,0,0,,6,5,Semana 7
+141,2,2024-09-22,Vídeo-Análise,Defesas Zona Baixa,99,5,495,0,0,,9,5,Semana 7
+142,2,2024-09-25,Físico,Saídas Baliza,64,9,576,0,0,,5,9,Semana 8
+143,2,2024-09-28,Técnico-Tático,Jogo Aéreo,117,8,936,100,58,58.0,10,7,Semana 8
+144,2,2024-10-01,Recuperação,Saídas Baliza,109,5,545,0,0,,8,7,Semana 8
+145,2,2024-10-04,Técnico-Tático,Resistência,87,7,609,77,54,70.1,4,8,Semana 9
+146,2,2024-10-07,Recuperação,Tempo Reação,105,4,420,0,0,,6,5,Semana 9
+147,2,2024-10-09,Jogo Treino,Força Explosiva,66,6,396,62,39,62.9,8,5,Semana 9
+148,2,2024-10-12,Vídeo-Análise,Resistência,68,6,408,0,0,,9,8,Semana 10
+149,2,2024-10-15,Recuperação,Defesas Zona Alta,93,3,279,0,0,,7,7,Semana 10
+150,2,2024-10-17,Jogo Treino,Saídas Baliza,103,6,618,110,78,70.9,9,6,Semana 10
+151,2,2024-10-20,Recuperação,Força Explosiva,82,5,410,0,0,,7,9,Semana 11
+152,2,2024-10-23,Físico,Resistência,112,8,896,0,0,,4,7,Semana 11
+153,2,2024-10-25,Vídeo-Análise,Flexibilidade,114,7,798,0,0,,7,8,Semana 11
+154,2,2024-10-28,Jogo Treino,Defesas Zona Alta,63,8,504,117,74,63.2,10,6,Semana 12
+155,2,2024-10-30,Vídeo-Análise,Jogo Aéreo,88,5,440,0,0,,6,5,Semana 12
+156,2,2024-11-02,Físico,Posicionamento,73,10,730,0,0,,4,7,Semana 12
+157,2,2024-11-05,Recuperação,Tempo Reação,113,2,226,0,0,,7,5,Semana 13
+158,2,2024-11-08,Recuperação,Jogo Aéreo,80,4,320,0,0,,4,7,Semana 13
+159,2,2024-11-10,Recuperação,Posicionamento,86,3,258,0,0,,9,7,Semana 13
+160,2,2024-11-13,Recuperação,Leitura Jogo,66,5,330,0,0,,8,5,Semana 14
+161,2,2024-11-16,Físico,Saídas Baliza,106,9,954,0,0,,7,9,Semana 14
+162,2,2024-11-19,Físico,Força Explosiva,63,7,441,0,0,,7,6,Semana 14
+163,2,2024-11-22,Vídeo-Análise,Leitura Jogo,95,5,475,0,0,,8,9,Semana 15
+164,2,2024-11-24,Vídeo-Análise,Leitura Jogo,107,5,535,0,0,,10,7,Semana 15
+165,2,2024-11-26,Recuperação,Defesas Zona Alta,93,3,279,0,0,,8,9,Semana 15
+166,2,2024-11-29,Jogo Treino,Tempo Reação,84,7,588,50,35,70.0,5,9,Semana 16
+167,2,2024-12-02,Recuperação,Flexibilidade,73,2,146,0,0,,8,6,Semana 16
+168,2,2024-12-04,Técnico-Tático,Flexibilidade,69,8,552,41,26,63.4,7,6,Semana 16
+169,2,2024-12-07,Técnico-Tático,Tempo Reação,92,6,552,81,45,55.6,5,10,Semana 17
+170,2,2024-12-10,Físico,Força Explosiva,69,7,483,0,0,,7,9,Semana 17
+171,2,2024-12-12,Técnico-Tático,Força Explosiva,90,5,450,64,45,70.3,5,9,Semana 17
+172,2,2024-12-14,Vídeo-Análise,Deslocamentos Laterais,85,5,425,0,0,,8,10,Semana 18
+173,2,2024-12-17,Recuperação,Tempo Reação,114,5,570,0,0,,7,7,Semana 18
+174,2,2024-12-20,Físico,Tempo Reação,94,9,846,0,0,,8,10,Semana 18
+175,2,2024-12-22,Jogo Treino,Defesas Zona Alta,66,8,528,111,77,69.4,4,7,Semana 19
+176,2,2024-12-24,Físico,Força Explosiva,116,7,812,0,0,,8,8,Semana 19
+177,2,2024-12-27,Jogo Treino,Deslocamentos Laterais,108,7,756,92,59,64.1,5,8,Semana 19
+178,2,2024-12-30,Físico,Defesas Zona Alta,86,7,602,0,0,,6,6,Semana 20
+179,2,2025-01-02,Recuperação,Defesas Zona Alta,83,3,249,0,0,,4,6,Semana 20
+180,2,2025-01-05,Recuperação,Defesas Zona Baixa,84,2,168,0,0,,4,7,Semana 20
+181,2,2025-01-07,Físico,Saídas Baliza,118,10,1180,0,0,,7,5,Semana 21
+182,2,2025-01-10,Jogo Treino,Jogo Aéreo,113,8,904,63,36,57.1,8,8,Semana 21
+183,2,2025-01-12,Físico,Tempo Reação,118,9,1062,0,0,,9,9,Semana 21
+184,2,2025-01-15,Recuperação,Saídas Baliza,80,4,320,0,0,,7,9,Semana 22
+185,2,2025-01-18,Jogo Treino,Jogo Aéreo,118,6,708,92,53,57.6,10,7,Semana 22
+186,2,2025-01-20,Técnico-Tático,Defesas Zona Baixa,111,8,888,102,60,58.8,10,8,Semana 22
+187,2,2025-01-23,Vídeo-Análise,Jogo Aéreo,63,8,504,0,0,,6,5,Semana 23
+188,2,2025-01-25,Vídeo-Análise,Defesas Zona Alta,86,5,430,0,0,,7,9,Semana 23
+189,2,2025-01-28,Recuperação,Resistência,115,5,575,0,0,,10,10,Semana 23
+190,2,2025-01-31,Recuperação,Saídas Baliza,72,2,144,0,0,,6,7,Semana 24
+191,2,2025-02-02,Recuperação,Defesas Zona Alta,74,4,296,0,0,,7,6,Semana 24
+192,2,2025-02-05,Técnico-Tático,Defesas Zona Alta,66,7,462,90,58,64.4,9,10,Semana 24
+193,2,2025-02-07,Recuperação,Saídas Baliza,69,3,207,0,0,,9,10,Semana 25
+194,2,2025-02-09,Vídeo-Análise,Jogo Aéreo,111,6,666,0,0,,4,10,Semana 25
+195,2,2025-02-12,Jogo Treino,Jogo Aéreo,92,7,644,117,85,72.6,5,5,Semana 25
+196,2,2025-02-15,Vídeo-Análise,Saídas Baliza,63,5,315,0,0,,9,7,Semana 26
+197,2,2025-02-18,Vídeo-Análise,Posicionamento,69,5,345,0,0,,8,10,Semana 26
+198,2,2025-02-21,Técnico-Tático,Força Explosiva,95,6,570,96,64,66.7,8,9,Semana 26
+199,2,2025-02-23,Recuperação,Flexibilidade,113,5,565,0,0,,5,10,Semana 27
+200,2,2025-02-26,Jogo Treino,Deslocamentos Laterais,108,6,648,76,44,57.9,7,10,Semana 27
+201,2,2025-03-01,Recuperação,Força Explosiva,111,3,333,0,0,,9,7,Semana 27
+202,2,2025-03-03,Recuperação,Força Explosiva,114,5,570,0,0,,5,8,Semana 28
+203,2,2025-03-06,Jogo Treino,Leitura Jogo,82,7,574,44,24,54.5,5,7,Semana 28
+204,2,2025-03-08,Jogo Treino,Defesas Zona Alta,89,6,534,48,28,58.3,8,5,Semana 28
+205,2,2025-03-10,Jogo Treino,Jogo Aéreo,104,5,520,73,40,54.8,10,9,Semana 29
+206,2,2025-03-13,Jogo Treino,Posicionamento,117,6,702,82,52,63.4,10,6,Semana 29
+207,2,2025-03-16,Recuperação,Resistência,86,5,430,0,0,,6,9,Semana 29
+208,2,2025-03-19,Físico,Jogo Aéreo,109,10,1090,0,0,,6,10,Semana 30
+209,2,2025-03-22,Vídeo-Análise,Tempo Reação,101,7,707,0,0,,10,7,Semana 30
+210,2,2025-03-24,Técnico-Tático,Tempo Reação,92,5,460,42,29,69.0,8,6,Semana 30
+211,2,2025-03-27,Técnico-Tático,Jogo Aéreo,108,5,540,79,57,72.2,6,8,Semana 31
+212,2,2025-03-30,Recuperação,Defesas Zona Baixa,98,3,294,0,0,,9,5,Semana 31
+213,2,2025-04-01,Jogo Treino,Leitura Jogo,93,5,465,64,44,68.8,7,7,Semana 31
+214,2,2025-04-04,Físico,Posicionamento,114,8,912,0,0,,5,7,Semana 32
+215,2,2025-04-07,Jogo Treino,Flexibilidade,93,8,744,74,42,56.8,7,10,Semana 32
+216,2,2025-04-10,Técnico-Tático,Leitura Jogo,73,5,365,110,70,63.6,5,7,Semana 32
+217,2,2025-04-12,Técnico-Tático,Força Explosiva,111,6,666,72,52,72.2,7,9,Semana 33
+218,2,2025-04-15,Recuperação,Defesas Zona Alta,117,2,234,0,0,,6,5,Semana 33
+219,2,2025-04-17,Recuperação,Defesas Zona Baixa,105,2,210,0,0,,8,9,Semana 33
+220,2,2025-04-20,Físico,Defesas Zona Alta,102,10,1020,0,0,,4,9,Semana 34
+221,2,2025-04-23,Jogo Treino,Defesas Zona Alta,66,7,462,87,52,59.8,9,10,Semana 34
+222,2,2025-04-25,Jogo Treino,Deslocamentos Laterais,106,8,848,73,48,65.8,5,7,Semana 34
+223,2,2025-04-27,Recuperação,Posicionamento,117,5,585,0,0,,10,9,Semana 35
+224,2,2025-04-30,Físico,Tempo Reação,105,8,840,0,0,,9,5,Semana 35
+225,2,2025-05-03,Físico,Posicionamento,69,7,483,0,0,,6,5,Semana 35
+226,2,2025-05-05,Vídeo-Análise,Posicionamento,115,5,575,0,0,,5,7,Semana 36
+227,2,2025-05-07,Recuperação,Saídas Baliza,118,2,236,0,0,,8,7,Semana 36
+228,2,2025-05-10,Jogo Treino,Defesas Zona Alta,70,8,560,68,48,70.6,5,6,Semana 36
+229,2,2025-05-13,Físico,Deslocamentos Laterais,94,7,658,0,0,,8,7,Semana 37
+230,2,2025-05-15,Vídeo-Análise,Defesas Zona Alta,66,6,396,0,0,,9,9,Semana 37
+231,2,2025-05-18,Vídeo-Análise,Saídas Baliza,87,8,696,0,0,,6,5,Semana 37
+232,2,2025-05-20,Jogo Treino,Leitura Jogo,102,8,816,74,52,70.3,5,6,Semana 38
+233,2,2025-05-23,Técnico-Tático,Força Explosiva,107,6,642,59,33,55.9,10,7,Semana 38
+234,2,2025-05-26,Recuperação,Defesas Zona Alta,81,2,162,0,0,,10,8,Semana 38
+235,2,2025-05-29,Técnico-Tático,Jogo Aéreo,115,5,575,59,33,55.9,6,8,Semana 39
+236,2,2025-05-31,Técnico-Tático,Resistência,63,7,441,110,74,67.3,7,5,Semana 39
+237,2,2025-06-03,Recuperação,Jogo Aéreo,85,3,255,0,0,,9,6,Semana 39
+238,2,2025-06-06,Vídeo-Análise,Posicionamento,98,8,784,0,0,,9,8,Semana 40
+239,2,2025-06-09,Vídeo-Análise,Defesas Zona Baixa,79,6,474,0,0,,9,9,Semana 40
+240,2,2025-06-11,Jogo Treino,Deslocamentos Laterais,67,7,469,109,78,71.6,5,5,Semana 40
+241,3,2024-08-01,Jogo Treino,Força Explosiva,92,7,644,64,41,64.1,10,7,Semana 1
+242,3,2024-08-04,Recuperação,Tempo Reação,83,5,415,0,0,,8,6,Semana 1
+243,3,2024-08-07,Físico,Defesas Zona Baixa,114,7,798,0,0,,7,5,Semana 1
+244,3,2024-08-09,Recuperação,Defesas Zona Alta,90,2,180,0,0,,9,10,Semana 2
+245,3,2024-08-11,Recuperação,Defesas Zona Alta,92,2,184,0,0,,8,8,Semana 2
+246,3,2024-08-13,Jogo Treino,Posicionamento,74,6,444,68,42,61.8,10,8,Semana 2
+247,3,2024-08-16,Vídeo-Análise,Defesas Zona Baixa,93,5,465,0,0,,4,9,Semana 3
+248,3,2024-08-19,Vídeo-Análise,Jogo Aéreo,111,5,555,0,0,,10,6,Semana 3
+249,3,2024-08-21,Técnico-Tático,Posicionamento,115,5,575,77,49,63.6,4,9,Semana 3
+250,3,2024-08-24,Técnico-Tático,Posicionamento,78,6,468,106,65,61.3,5,10,Semana 4
+251,3,2024-08-27,Técnico-Tático,Saídas Baliza,101,6,606,115,64,55.7,6,8,Semana 4
+252,3,2024-08-30,Físico,Saídas Baliza,116,10,1160,0,0,,6,7,Semana 4
+253,3,2024-09-01,Físico,Flexibilidade,111,9,999,0,0,,5,10,Semana 5
+254,3,2024-09-03,Físico,Flexibilidade,93,7,651,0,0,,6,7,Semana 5
+255,3,2024-09-05,Técnico-Tático,Defesas Zona Baixa,84,5,420,72,42,58.3,8,6,Semana 5
+256,3,2024-09-08,Jogo Treino,Leitura Jogo,114,7,798,108,75,69.4,7,7,Semana 6
+257,3,2024-09-11,Vídeo-Análise,Posicionamento,72,5,360,0,0,,6,5,Semana 6
+258,3,2024-09-13,Físico,Deslocamentos Laterais,101,10,1010,0,0,,7,10,Semana 6
+259,3,2024-09-16,Físico,Jogo Aéreo,94,7,658,0,0,,4,5,Semana 7
+260,3,2024-09-18,Jogo Treino,Posicionamento,110,7,770,98,69,70.4,10,10,Semana 7
+261,3,2024-09-21,Jogo Treino,Saídas Baliza,103,7,721,78,55,70.5,5,7,Semana 7
+262,3,2024-09-24,Recuperação,Resistência,76,5,380,0,0,,4,5,Semana 8
+263,3,2024-09-26,Técnico-Tático,Deslocamentos Laterais,95,7,665,77,43,55.8,6,5,Semana 8
+264,3,2024-09-28,Vídeo-Análise,Saídas Baliza,80,6,480,0,0,,7,6,Semana 8
+265,3,2024-10-01,Técnico-Tático,Jogo Aéreo,77,7,539,72,40,55.6,10,10,Semana 9
+266,3,2024-10-04,Jogo Treino,Flexibilidade,93,6,558,44,25,56.8,8,8,Semana 9
+267,3,2024-10-06,Técnico-Tático,Força Explosiva,63,8,504,52,30,57.7,4,6,Semana 9
+268,3,2024-10-08,Recuperação,Posicionamento,119,4,476,0,0,,9,10,Semana 10
+269,3,2024-10-11,Vídeo-Análise,Força Explosiva,79,8,632,0,0,,6,10,Semana 10
+270,3,2024-10-14,Vídeo-Análise,Saídas Baliza,117,8,936,0,0,,4,7,Semana 10
+271,3,2024-10-16,Recuperação,Jogo Aéreo,100,3,300,0,0,,6,8,Semana 11
+272,3,2024-10-18,Técnico-Tático,Jogo Aéreo,108,6,648,87,61,70.1,5,7,Semana 11
+273,3,2024-10-20,Físico,Jogo Aéreo,75,10,750,0,0,,9,6,Semana 11
+274,3,2024-10-23,Vídeo-Análise,Leitura Jogo,72,5,360,0,0,,7,7,Semana 12
+275,3,2024-10-26,Técnico-Tático,Força Explosiva,82,6,492,91,51,56.0,7,10,Semana 12
+276,3,2024-10-29,Técnico-Tático,Saídas Baliza,70,7,490,104,58,55.8,6,8,Semana 12
+277,3,2024-10-31,Técnico-Tático,Leitura Jogo,79,6,474,103,73,70.9,9,6,Semana 13
+278,3,2024-11-02,Jogo Treino,Defesas Zona Baixa,84,6,504,49,30,61.2,7,6,Semana 13
+279,3,2024-11-04,Vídeo-Análise,Jogo Aéreo,93,7,651,0,0,,8,9,Semana 13
+280,3,2024-11-07,Físico,Deslocamentos Laterais,103,7,721,0,0,,8,8,Semana 14
+281,3,2024-11-10,Jogo Treino,Defesas Zona Alta,117,7,819,67,47,70.1,8,9,Semana 14
+282,3,2024-11-12,Físico,Leitura Jogo,86,10,860,0,0,,10,7,Semana 14
+283,3,2024-11-14,Técnico-Tático,Tempo Reação,98,8,784,104,74,71.2,8,10,Semana 15
+284,3,2024-11-16,Jogo Treino,Saídas Baliza,113,7,791,86,49,57.0,7,6,Semana 15
+285,3,2024-11-19,Técnico-Tático,Defesas Zona Baixa,96,5,480,79,43,54.4,4,9,Semana 15
+286,3,2024-11-22,Recuperação,Jogo Aéreo,75,4,300,0,0,,6,6,Semana 16
+287,3,2024-11-25,Físico,Jogo Aéreo,95,10,950,0,0,,4,9,Semana 16
+288,3,2024-11-27,Físico,Deslocamentos Laterais,105,10,1050,0,0,,4,9,Semana 16
+289,3,2024-11-30,Técnico-Tático,Flexibilidade,116,6,696,100,59,59.0,4,10,Semana 17
+290,3,2024-12-02,Físico,Força Explosiva,89,9,801,0,0,,6,7,Semana 17
+291,3,2024-12-05,Vídeo-Análise,Leitura Jogo,102,8,816,0,0,,5,6,Semana 17
+292,3,2024-12-08,Físico,Deslocamentos Laterais,107,10,1070,0,0,,9,5,Semana 18
+293,3,2024-12-11,Vídeo-Análise,Defesas Zona Alta,96,5,480,0,0,,9,8,Semana 18
+294,3,2024-12-14,Jogo Treino,Posicionamento,87,8,696,90,60,66.7,4,10,Semana 18
+295,3,2024-12-16,Vídeo-Análise,Saídas Baliza,71,8,568,0,0,,9,9,Semana 19
+296,3,2024-12-19,Técnico-Tático,Defesas Zona Alta,102,5,510,83,48,57.8,9,6,Semana 19
+297,3,2024-12-21,Vídeo-Análise,Tempo Reação,92,6,552,0,0,,4,8,Semana 19
+298,3,2024-12-24,Vídeo-Análise,Força Explosiva,93,8,744,0,0,,7,5,Semana 20
+299,3,2024-12-27,Físico,Força Explosiva,99,9,891,0,0,,10,10,Semana 20
+300,3,2024-12-29,Vídeo-Análise,Deslocamentos Laterais,97,7,679,0,0,,10,8,Semana 20
+301,3,2025-01-01,Jogo Treino,Leitura Jogo,75,6,450,67,37,55.2,10,9,Semana 21
+302,3,2025-01-04,Recuperação,Defesas Zona Alta,89,4,356,0,0,,4,10,Semana 21
+303,3,2025-01-07,Recuperação,Força Explosiva,71,2,142,0,0,,4,8,Semana 21
+304,3,2025-01-09,Físico,Flexibilidade,113,10,1130,0,0,,5,6,Semana 22
+305,3,2025-01-11,Jogo Treino,Flexibilidade,91,6,546,92,57,62.0,8,10,Semana 22
+306,3,2025-01-14,Técnico-Tático,Resistência,93,8,744,74,46,62.2,8,6,Semana 22
+307,3,2025-01-17,Vídeo-Análise,Resistência,79,7,553,0,0,,9,7,Semana 23
+308,3,2025-01-20,Técnico-Tático,Posicionamento,112,7,784,109,60,55.0,8,8,Semana 23
+309,3,2025-01-23,Físico,Saídas Baliza,65,10,650,0,0,,4,8,Semana 23
+310,3,2025-01-26,Recuperação,Resistência,106,2,212,0,0,,6,7,Semana 24
+311,3,2025-01-28,Técnico-Tático,Tempo Reação,80,7,560,103,70,68.0,8,7,Semana 24
+312,3,2025-01-31,Físico,Posicionamento,118,8,944,0,0,,6,9,Semana 24
+313,3,2025-02-03,Técnico-Tático,Defesas Zona Alta,107,8,856,75,46,61.3,4,8,Semana 25
+314,3,2025-02-06,Físico,Deslocamentos Laterais,103,8,824,0,0,,4,6,Semana 25
+315,3,2025-02-09,Técnico-Tático,Força Explosiva,66,8,528,86,62,72.1,10,9,Semana 25
+316,3,2025-02-12,Jogo Treino,Tempo Reação,95,6,570,70,42,60.0,7,6,Semana 26
+317,3,2025-02-15,Recuperação,Jogo Aéreo,95,3,285,0,0,,4,6,Semana 26
+318,3,2025-02-17,Recuperação,Força Explosiva,67,2,134,0,0,,6,10,Semana 26
+319,3,2025-02-19,Recuperação,Tempo Reação,72,2,144,0,0,,10,7,Semana 27
+320,3,2025-02-21,Jogo Treino,Deslocamentos Laterais,112,8,896,96,60,62.5,4,8,Semana 27
+321,3,2025-02-24,Vídeo-Análise,Força Explosiva,109,5,545,0,0,,6,10,Semana 27
+322,3,2025-02-26,Técnico-Tático,Defesas Zona Alta,120,7,840,113,80,70.8,8,6,Semana 28
+323,3,2025-02-28,Técnico-Tático,Leitura Jogo,77,8,616,55,40,72.7,4,8,Semana 28
+324,3,2025-03-03,Técnico-Tático,Leitura Jogo,80,6,480,40,26,65.0,10,9,Semana 28
+325,3,2025-03-06,Jogo Treino,Força Explosiva,93,6,558,74,46,62.2,9,7,Semana 29
+326,3,2025-03-08,Vídeo-Análise,Defesas Zona Baixa,88,7,616,0,0,,7,8,Semana 29
+327,3,2025-03-10,Físico,Resistência,82,8,656,0,0,,4,6,Semana 29
+328,3,2025-03-12,Físico,Resistência,89,9,801,0,0,,8,7,Semana 30
+329,3,2025-03-14,Recuperação,Leitura Jogo,100,5,500,0,0,,4,8,Semana 30
+330,3,2025-03-16,Técnico-Tático,Força Explosiva,68,8,544,59,37,62.7,9,9,Semana 30
+331,3,2025-03-18,Vídeo-Análise,Saídas Baliza,89,8,712,0,0,,9,5,Semana 31
+332,3,2025-03-20,Vídeo-Análise,Força Explosiva,93,8,744,0,0,,10,6,Semana 31
+333,3,2025-03-23,Técnico-Tático,Posicionamento,107,7,749,85,50,58.8,8,8,Semana 31
+334,3,2025-03-25,Jogo Treino,Força Explosiva,94,7,658,52,31,59.6,8,7,Semana 32
+335,3,2025-03-28,Físico,Defesas Zona Baixa,76,8,608,0,0,,4,10,Semana 32
+336,3,2025-03-30,Técnico-Tático,Leitura Jogo,119,7,833,68,49,72.1,8,7,Semana 32
+337,3,2025-04-02,Recuperação,Defesas Zona Baixa,93,3,279,0,0,,9,7,Semana 33
+338,3,2025-04-05,Recuperação,Saídas Baliza,67,3,201,0,0,,7,8,Semana 33
+339,3,2025-04-07,Vídeo-Análise,Defesas Zona Alta,101,5,505,0,0,,10,5,Semana 33
+340,3,2025-04-10,Físico,Jogo Aéreo,109,10,1090,0,0,,8,6,Semana 34
+341,3,2025-04-13,Jogo Treino,Resistência,78,8,624,42,24,57.1,4,6,Semana 34
+342,3,2025-04-16,Técnico-Tático,Resistência,93,5,465,88,64,72.7,5,8,Semana 34
+343,3,2025-04-18,Recuperação,Resistência,68,5,340,0,0,,10,8,Semana 35
+344,3,2025-04-21,Recuperação,Defesas Zona Baixa,85,4,340,0,0,,6,9,Semana 35
+345,3,2025-04-23,Técnico-Tático,Defesas Zona Alta,68,5,340,64,37,57.8,6,5,Semana 35
+346,3,2025-04-25,Técnico-Tático,Tempo Reação,113,8,904,119,65,54.6,10,9,Semana 36
+347,3,2025-04-27,Vídeo-Análise,Flexibilidade,90,7,630,0,0,,6,10,Semana 36
+348,3,2025-04-29,Recuperação,Tempo Reação,111,3,333,0,0,,6,8,Semana 36
+349,3,2025-05-01,Vídeo-Análise,Resistência,92,5,460,0,0,,7,10,Semana 37
+350,3,2025-05-04,Jogo Treino,Força Explosiva,70,8,560,76,50,65.8,7,10,Semana 37
+351,3,2025-05-07,Jogo Treino,Defesas Zona Alta,103,8,824,82,47,57.3,10,9,Semana 37
+352,3,2025-05-10,Recuperação,Defesas Zona Baixa,119,3,357,0,0,,4,5,Semana 38
+353,3,2025-05-12,Técnico-Tático,Flexibilidade,89,5,445,40,29,72.5,6,7,Semana 38
+354,3,2025-05-15,Recuperação,Flexibilidade,97,2,194,0,0,,6,5,Semana 38
+355,3,2025-05-18,Físico,Posicionamento,109,9,981,0,0,,4,6,Semana 39
+356,3,2025-05-21,Físico,Flexibilidade,105,9,945,0,0,,8,6,Semana 39
+357,3,2025-05-23,Físico,Defesas Zona Baixa,119,7,833,0,0,,7,5,Semana 39
+358,3,2025-05-26,Vídeo-Análise,Tempo Reação,71,6,426,0,0,,7,8,Semana 40
+359,3,2025-05-29,Técnico-Tático,Leitura Jogo,105,7,735,46,27,58.7,6,10,Semana 40
+360,3,2025-06-01,Jogo Treino,Deslocamentos Laterais,103,7,721,49,28,57.1,4,7,Semana 40
