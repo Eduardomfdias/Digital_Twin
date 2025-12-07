@@ -1,0 +1,198 @@
+/* 
+Digital Twin ABC Braga - Estilos Customizados
+*/
+
+/* Header principal */
+.main-header {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #1f77b4;
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Cards de métricas */
+.metric-card {
+    background-color: #f0f2f6;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    border-left: 5px solid #1f77b4;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.metric-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Sidebar info boxes */
+.sidebar-info {
+    background: linear-gradient(135deg, #e8f4f8 0%, #d4e9f2 100%);
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #b8dae6;
+}
+
+/* Botões personalizados */
+.stButton>button {
+    border-radius: 0.5rem;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.stButton>button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Tabs */
+.stTabs [data-baseweb="tab-list"] {
+    gap: 1rem;
+}
+
+.stTabs [data-baseweb="tab"] {
+    height: 3rem;
+    padding: 0 1.5rem;
+    background-color: #f0f2f6;
+    border-radius: 0.5rem 0.5rem 0 0;
+    font-weight: 600;
+}
+
+.stTabs [aria-selected="true"] {
+    background-color: #1f77b4;
+    color: white;
+}
+
+/* Dataframes */
+.dataframe {
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+/* Expanders */
+.streamlit-expanderHeader {
+    background-color: #f8f9fa;
+    border-radius: 0.5rem;
+    font-weight: 600;
+}
+
+/* Progress bars */
+.stProgress > div > div {
+    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+}
+
+/* Métricas Streamlit */
+[data-testid="stMetricValue"] {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1f77b4;
+}
+
+[data-testid="stMetricDelta"] {
+    font-size: 1rem;
+}
+
+/* Info boxes */
+.stInfo {
+    background-color: #e7f3ff;
+    border-left: 4px solid #2196F3;
+}
+
+.stSuccess {
+    background-color: #e8f5e9;
+    border-left: 4px solid #4CAF50;
+}
+
+.stWarning {
+    background-color: #fff8e1;
+    border-left: 4px solid #FF9800;
+}
+
+.stError {
+    background-color: #ffebee;
+    border-left: 4px solid #f44336;
+}
+
+/* Selectbox e inputs */
+.stSelectbox, .stNumberInput, .stSlider {
+    margin-bottom: 1rem;
+}
+
+/* Dividers */
+hr {
+    margin: 2rem 0;
+    border: none;
+    border-top: 2px solid #e0e0e0;
+}
+
+/* Caption/footer */
+.stCaptionContainer {
+    text-align: center;
+    color: #666;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+}
+
+/* Responsividade mobile */
+@media (max-width: 768px) {
+    .main-header {
+        font-size: 1.8rem;
+    }
+    
+    .metric-card {
+        padding: 1rem;
+    }
+}
+
+/* Animações */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.stMarkdown {
+    animation: fadeIn 0.5s ease-in;
+}
+
+/* Cores do tema ABC Braga */
+:root {
+    --primary-color: #1f77b4;
+    --secondary-color: #667eea;
+    --success-color: #4CAF50;
+    --warning-color: #FF9800;
+    --error-color: #f44336;
+    --background-light: #f8f9fa;
+    --text-dark: #2c3e50;
+}
+
+/* Scrollbar customizada */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
