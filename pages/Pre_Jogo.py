@@ -15,6 +15,14 @@ from utils.visualizations import (
     criar_radar_adversario
 )
 
+# NOVO: Import predictor compatibilidade
+try:
+    from models.predictor_compatibilidade import CompatibilidadePredictor
+    H2O_COMPAT_AVAILABLE = True
+except ImportError:
+    H2O_COMPAT_AVAILABLE = False
+    print("⚠️ H2O Compatibilidade não disponível")
+
 # Configuração
 st.set_page_config(
     page_title="Análise Pré-Jogo - ABC Braga",
@@ -32,6 +40,21 @@ def get_db():
     return HandballDataAccess()
 
 db = get_db()
+
+# NOVO: Inicializar predictor compatibilidade
+@st.cache_resource
+def get_predictor_compat():
+    """Carrega modelo H2O.ai de compatibilidade (cached)"""
+    if not H2O_COMPAT_AVAILABLE:
+        return None
+    try:
+        predictor = CompatibilidadePredictor(model_dir='models')
+        return predictor
+    except Exception as e:
+        st.warning(f"⚠️ Modelo Compatibilidade H2O não disponível: {e}")
+        return None
+
+predictor_compat = get_predictor_compat()
 
 # Header
 st.markdown('<div class="main-header">📊 Análise Pré-Jogo e Briefing Tático</div>', unsafe_allow_html=True)
@@ -171,6 +194,146 @@ with tab2:
     # Gráfico de barras
     fig_compat = criar_grafico_compatibilidade_barras(compat_df)
     st.plotly_chart(fig_compat, use_container_width=True)
+    
+    st.divider()
+    
+    # ==================================================================
+    # NOVO: SIMULADOR H2O DE COMPATIBILIDADE
+    # ==================================================================
+    
+    st.markdown("### 🤖 Simulador de Compatibilidade (H2O.ai)")
+    
+    if predictor_compat:
+        st.info("💡 **Modelo ML prevê compatibilidade** - Treinado com 42 combinações GR-Adversário")
+        
+        col_sim1, col_sim2 = st.columns([3, 1])
+        
+        with col_sim1:
+            # Selecionar GR para testar
+            grs_lista = [gr['nome'] for _, gr in compat_df.iterrows()] if len(compat_df) > 0 else db.get_all_goalkeepers()['nome'].tolist()
+            
+            gr_teste_nome = st.selectbox(
+                "🥅 Testar compatibilidade de:",
+                grs_lista,
+                key="gr_teste_compat"
+            )
+            
+            if st.button("🔮 PREVER COMPATIBILIDADE COM H2O.AI", type="primary", use_container_width=True):
+                with st.spinner("🤖 Calculando..."):
+                    try:
+                        # Buscar dados completos do GR
+                        query_gr = "SELECT * FROM guarda_redes WHERE nome = ?"
+                        with db.get_connection() as conn:
+                            gr_teste_df = pd.read_sql_query(query_gr, conn, params=(gr_teste_nome,))
+                        
+                        # Buscar dados completos do adversário
+                        query_adv = "SELECT * FROM adversarios WHERE id = ?"
+                        with db.get_connection() as conn:
+                            adv_teste_df = pd.read_sql_query(query_adv, conn, params=(adversario_id,))
+                        
+                        if len(gr_teste_df) == 0 or len(adv_teste_df) == 0:
+                            st.error("❌ Dados não encontrados!")
+                        else:
+                            # Predição H2O
+                            taxa_pred = predictor_compat.predict_from_dataframes(
+                                gr_row=gr_teste_df.iloc[0],
+                                adv_row=adv_teste_df.iloc[0]
+                            )
+                            
+                            # Buscar histórico (se existir)
+                            taxa_hist_list = compat_df[compat_df['nome'] == gr_teste_nome]['taxa_defesa_perc'].values
+                            taxa_hist = taxa_hist_list[0] if len(taxa_hist_list) > 0 else None
+                            
+                            # RESULTADOS
+                            st.markdown("#### 📊 RESULTADO DA PREDIÇÃO")
+                            
+                            col_r1, col_r2, col_r3 = st.columns(3)
+                            
+                            with col_r1:
+                                st.metric(
+                                    "🤖 Predição H2O",
+                                    f"{taxa_pred:.1f}%",
+                                    help="Machine Learning"
+                                )
+                            
+                            with col_r2:
+                                if taxa_hist:
+                                    delta = taxa_pred - taxa_hist
+                                    st.metric(
+                                        "📊 Histórico Real",
+                                        f"{taxa_hist:.1f}%",
+                                        delta=f"{delta:+.1f}pp"
+                                    )
+                                else:
+                                    st.info("📊 **Sem histórico**\n\nPrimeira vez vs este adversário")
+                            
+                            with col_r3:
+                                if taxa_pred > 60:
+                                    st.success("✅ **ALTA** compatibilidade")
+                                elif taxa_pred > 50:
+                                    st.info("➡️ **MÉDIA** compatibilidade")
+                                else:
+                                    st.error("⚠️ **BAIXA** compatibilidade")
+                            
+                            # Gauge
+                            import plotly.graph_objects as go
+                            
+                            fig_gauge = go.Figure(go.Indicator(
+                                mode="gauge+number",
+                                value=taxa_pred,
+                                title={'text': f"{gr_teste_nome} vs {adversario_nome}"},
+                                gauge={
+                                    'axis': {'range': [0, 100]},
+                                    'bar': {'color': "darkblue"},
+                                    'steps': [
+                                        {'range': [0, 50], 'color': "lightcoral"},
+                                        {'range': [50, 60], 'color': "lightyellow"},
+                                        {'range': [60, 100], 'color': "lightgreen"}
+                                    ]
+                                }
+                            ))
+                            fig_gauge.update_layout(height=300)
+                            st.plotly_chart(fig_gauge, use_container_width=True)
+                            
+                            # Recomendação
+                            if taxa_pred > 60:
+                                st.success(f"✅ **{gr_teste_nome}** é ALTAMENTE compatível vs {adversario_nome} (Taxa prevista: {taxa_pred:.1f}%)")
+                            elif taxa_pred > 50:
+                                st.info(f"➡️ **{gr_teste_nome}** tem compatibilidade MÉDIA vs {adversario_nome} (Taxa prevista: {taxa_pred:.1f}%)")
+                            else:
+                                st.warning(f"⚠️ Considerar alternativa. **{gr_teste_nome}** tem BAIXA compatibilidade (Taxa prevista: {taxa_pred:.1f}%)")
+                            
+                            st.caption(f"🤖 Modelo GBM | RMSE: 5.98% | Treinado com 42 combinações")
+                            
+                    except Exception as e:
+                        st.error(f"❌ Erro: {e}")
+        
+        with col_sim2:
+            st.markdown("**ℹ️ Modelo analisa:**")
+            st.caption("""
+            **Do GR:**
+            • Altura
+            • Envergadura  
+            • Velocidade
+            • Alcance
+            • Agilidade
+            • Experiência
+            
+            **Do Adversário:**
+            • Ranking
+            • Golos/jogo
+            • Velocidade remate
+            • Zonas preferidas
+            • Eficácia 1ª/2ª linha
+            • Transições/jogo
+            """)
+    
+    else:
+        st.warning("""
+        ⚠️ **Modelo H2O Compatibilidade não disponível**
+        
+        Execute: `python train_modelo_compatibilidade.py`
+        """)
     
     st.divider()
     

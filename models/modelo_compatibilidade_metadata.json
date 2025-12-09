@@ -1,0 +1,28 @@
+{
+  "model_path": "C:\\Users\\eduar\\Desktop\\Mestrado\\AVI\\Digital_Twin\\models\\GBM_2_AutoML_1_20251209_151721",
+  "rmse": 5.975989620415085,
+  "mae": 5.444554494713278,
+  "r2": -0.2383347772892277,
+  "features": [
+    "altura_cm",
+    "envergadura_cm",
+    "velocidade_lateral_ms",
+    "alcance_vertical_cm",
+    "agilidade_ttest_s",
+    "anos_experiencia",
+    "ranking_liga",
+    "media_golos_jogo",
+    "velocidade_media_remate_kmh",
+    "remates_zona_alta_perc",
+    "remates_zona_media_perc",
+    "remates_zona_baixa_perc",
+    "eficacia_primeira_linha_perc",
+    "eficacia_segunda_linha_perc",
+    "transicoes_rapidas_jogo"
+  ],
+  "trained_date": "2025-12-09T15:17:38.207696",
+  "n_train": 30,
+  "n_test": 12,
+  "taxa_media": 56.892857142857146,
+  "taxa_std": 5.425252286238675
+}
