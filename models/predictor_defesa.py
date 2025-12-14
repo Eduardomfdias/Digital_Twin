@@ -91,17 +91,30 @@ class DefesaPredictor:
         if self.model is None:
             raise RuntimeError("Modelo não carregado!")
         
+        # Converter minuto para fase (modelo V3)
+        if minuto <= 15:
+            fase = 'inicio'
+        elif minuto <= 30:
+            fase = 'meio_1'
+        elif minuto <= 45:
+            fase = 'meio_2'
+        else:
+            fase = 'final'
+        
         # Criar H2OFrame com o lance
         lance = h2o.H2OFrame({
             'zona_baliza_id': [int(zona)],
             'distancia_remate_m': [float(distancia)],
             'velocidade_remate_kmh': [float(velocidade)],
-            'minuto_jogo': [int(minuto)],
+            'fase_jogo': [fase],  # MUDANÇA: fase em vez de minuto
             'diferenca_golos_momento': [int(diferenca_golos)],
             'altura_cm': [int(altura_gr)],
             'envergadura_cm': [int(envergadura_gr)],
             'velocidade_lateral_ms': [float(vel_lateral_gr)]
         })
+        
+        # Fazer fase categórica
+        lance['fase_jogo'] = lance['fase_jogo'].asfactor()
         
         # Fazer predição
         pred = self.model.predict(lance)
@@ -120,7 +133,7 @@ class DefesaPredictor:
                 - zona_baliza_id
                 - distancia_remate_m
                 - velocidade_remate_kmh
-                - minuto_jogo
+                - minuto_jogo (será convertido para fase_jogo)
                 - diferenca_golos_momento
                 - altura_cm
                 - envergadura_cm
@@ -133,8 +146,21 @@ class DefesaPredictor:
         if self.model is None:
             raise RuntimeError("Modelo não carregado!")
         
+        # Converter minuto para fase
+        import pandas as pd
+        df = lances_df.copy()
+        df['fase_jogo'] = pd.cut(
+            df['minuto_jogo'],
+            bins=[0, 15, 30, 45, 60],
+            labels=['inicio', 'meio_1', 'meio_2', 'final']
+        )
+        
+        # Remover minuto_jogo (não é mais usado)
+        df = df.drop('minuto_jogo', axis=1)
+        
         # Converter para H2OFrame
-        hf = h2o.H2OFrame(lances_df)
+        hf = h2o.H2OFrame(df)
+        hf['fase_jogo'] = hf['fase_jogo'].asfactor()
         
         # Fazer predições
         preds = self.model.predict(hf)
