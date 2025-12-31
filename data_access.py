@@ -17,7 +17,7 @@ class HandballDataAccess:
     
     def get_all_goalkeepers(self):
         """Retorna lista de todos os guarda-redes"""
-        query = "SELECT id, nome, altura_cm, posicao_principal FROM guarda_redes"
+        query = "SELECT id, nome, altura_cm, envergadura_cm, posicao_principal, velocidade_lateral_ms FROM guarda_redes"
         with self.get_connection() as conn:
             return pd.read_sql_query(query, conn)
     

@@ -1,461 +1,375 @@
 """
-Dashboard de Análise Pré-Jogo
-Preparação detalhada 24-48h antes do confronto
+Dashboard Pré-Jogo - Digital Twin ABC Braga
+Preparação tática 24-48h antes do confronto
 """
 
 import streamlit as st
 import pandas as pd
 import numpy as np
+import plotly.graph_objects as go
 from data_access import HandballDataAccess
 import sys
 sys.path.append('..')
-from utils.visualizations import (
-    criar_heatmap_baliza,
-    criar_grafico_compatibilidade_barras,
-    criar_radar_adversario
-)
 
-# NOVO: Import predictor compatibilidade
+# H2O
 try:
-    from models.predictor_compatibilidade import CompatibilidadePredictor
-    H2O_COMPAT_AVAILABLE = True
-except ImportError:
-    H2O_COMPAT_AVAILABLE = False
-    print("⚠️ H2O Compatibilidade não disponível")
+    from models.predictor_defesa import DefesaPredictor
+    H2O_OK = True
+except:
+    H2O_OK = False
 
-# Configuração
-st.set_page_config(
-    page_title="Análise Pré-Jogo - ABC Braga",
-    page_icon="📊",
-    layout="wide"
-)
+# =============================================================================
+# CONFIG
+# =============================================================================
+st.set_page_config(page_title="Pré-Jogo - ABC Braga", page_icon="📊", layout="wide")
 
-# CSS
 with open('styles/custom.css') as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
-# BD
 @st.cache_resource
 def get_db():
     return HandballDataAccess()
 
-db = get_db()
-
-# NOVO: Inicializar predictor compatibilidade
 @st.cache_resource
-def get_predictor_compat():
-    """Carrega modelo H2O.ai de compatibilidade (cached)"""
-    if not H2O_COMPAT_AVAILABLE:
-        return None
-    try:
-        predictor = CompatibilidadePredictor(model_dir='models')
-        return predictor
-    except Exception as e:
-        st.warning(f"⚠️ Modelo Compatibilidade H2O não disponível: {e}")
-        return None
+def get_predictor():
+    if H2O_OK:
+        try:
+            return DefesaPredictor(model_dir='models')
+        except:
+            return None
+    return None
 
-predictor_compat = get_predictor_compat()
+db = get_db()
+predictor = get_predictor()
 
-# Header
-st.markdown('<div class="main-header">📊 Análise Pré-Jogo e Briefing Tático</div>', unsafe_allow_html=True)
-st.markdown("**Preparação detalhada do confronto (24-48h antes)**")
+# =============================================================================
+# HEATMAP BALIZA (Superior em cima, Inferior em baixo)
+# =============================================================================
+def heatmap_baliza(grid, titulo="", height=400, escala_max=100):
+    """
+    grid: array 3x3 onde:
+        - grid[0] = linha SUPERIOR (y=2, topo)
+        - grid[1] = linha MEIO (y=1)
+        - grid[2] = linha INFERIOR (y=0, chão)
+    """
+    # Inverter para plotly (y=0 em baixo)
+    grid_plot = np.flipud(grid)
+    
+    fig = go.Figure()
+    
+    fig.add_trace(go.Heatmap(
+        z=grid_plot,
+        x=['Esquerda', 'Centro', 'Direita'],
+        y=['Inferior', 'Meio', 'Superior'],
+        colorscale='RdYlGn',
+        zmin=0, zmax=escala_max,
+        text=np.round(grid_plot, 1),
+        texttemplate='%{text}%',
+        textfont=dict(size=16, color='black', family='Arial Black'),
+        hovertemplate='%{y} %{x}: %{z:.1f}%<extra></extra>',
+        colorbar=dict(title='%')
+    ))
+    
+    # Postes (vermelho/branco estilo andebol)
+    fig.add_shape(type='rect', x0=-0.55, x1=-0.45, y0=-0.5, y1=2.5,
+                  fillcolor='#C41E3A', line=dict(width=0))
+    fig.add_shape(type='rect', x0=2.45, x1=2.55, y0=-0.5, y1=2.5,
+                  fillcolor='white', line=dict(color='#ccc', width=1))
+    
+    # Trave superior
+    fig.add_shape(type='rect', x0=-0.55, x1=2.55, y0=2.45, y1=2.55,
+                  fillcolor='white', line=dict(color='#ccc', width=1))
+    
+    # Linhas divisórias
+    for i in [0.5, 1.5]:
+        fig.add_shape(type='line', x0=-0.5, x1=2.5, y0=i, y1=i,
+                      line=dict(color='rgba(0,0,0,0.2)', width=1, dash='dot'))
+        fig.add_shape(type='line', x0=i, x1=i, y0=-0.5, y1=2.5,
+                      line=dict(color='rgba(0,0,0,0.2)', width=1, dash='dot'))
+    
+    fig.update_layout(
+        title=dict(text=titulo, font=dict(size=14)),
+        height=height,
+        xaxis=dict(constrain='domain', showgrid=False),
+        yaxis=dict(scaleanchor='x', showgrid=False),
+        margin=dict(l=20, r=60, t=40, b=20)
+    )
+    
+    return fig
+
+# =============================================================================
+# FUNÇÕES AUXILIARES
+# =============================================================================
+def get_distribuicao_adversario(adv):
+    """Retorna grid 3x3 com distribuição de remates do adversário"""
+    alta = adv['remates_zona_alta_perc']
+    media = adv['remates_zona_media_perc']
+    baixa = adv['remates_zona_baixa_perc']
+    
+    # grid[0]=Superior, grid[1]=Meio, grid[2]=Inferior
+    grid = np.array([
+        [alta * 0.28, alta * 0.44, alta * 0.28],
+        [media * 0.35, media * 0.30, media * 0.35],
+        [baixa * 0.30, baixa * 0.40, baixa * 0.30]
+    ])
+    return grid
+
+
+def calcular_probs_h2o(gr, predictor, dist, vel, minuto, dif):
+    """Calcula prob defesa para 9 zonas, retorna grid 3x3"""
+    probs = []
+    for zona in range(1, 10):
+        try:
+            p = predictor.predict(
+                zona=zona, distancia=dist, velocidade=vel,
+                altura_gr=int(gr['altura_cm']),
+                envergadura_gr=int(gr['envergadura_cm']),
+                vel_lateral_gr=float(gr['velocidade_lateral_ms']),
+                minuto=minuto, diferenca_golos=dif
+            )
+            probs.append(p)
+        except:
+            probs.append(50.0)
+    
+    # Zonas 1-3=Superior, 4-6=Meio, 7-9=Inferior
+    grid = np.array(probs).reshape(3, 3)
+    return grid
+
+
+def calcular_media_ponderada(grid_defesa, grid_adversario):
+    """Média ponderada: onde adversário ataca mais pesa mais"""
+    pesos = grid_adversario / grid_adversario.sum()
+    return np.sum(grid_defesa * pesos)
+
+# =============================================================================
+# VERIFICAR H2O
+# =============================================================================
+if not predictor:
+    st.error("⚠️ Modelo H2O não disponível. Executa: `python train_modelo_defesa.py`")
+    st.stop()
+
+# =============================================================================
+# HEADER
+# =============================================================================
+st.markdown('<div class="main-header">📊 Análise Pré-Jogo</div>', unsafe_allow_html=True)
+st.markdown("**Preparação tática 24-48h antes do jogo**")
 st.divider()
 
-# Sidebar - Seleção
+# =============================================================================
+# SIDEBAR
+# =============================================================================
 with st.sidebar:
-    st.markdown("## ⚔️ Próximo Confronto")
+    st.markdown("## ⚔️ Confronto")
     
     # Adversário
-    query = "SELECT id, nome, ranking_liga FROM adversarios ORDER BY ranking_liga"
+    query = "SELECT id, nome FROM adversarios ORDER BY ranking_liga"
     with db.get_connection() as conn:
-        adversarios_df = pd.read_sql_query(query, conn)
+        advs = pd.read_sql_query(query, conn)
     
-    adversario_nome = st.selectbox(
-        "Adversário",
-        adversarios_df['nome'].tolist(),
-        index=0
-    )
-    adversario_id = int(adversarios_df[adversarios_df['nome'] == adversario_nome]['id'].values[0])
+    adv_nome = st.selectbox("Adversário", advs['nome'].tolist())
+    adv_id = int(advs[advs['nome'] == adv_nome]['id'].values[0])
     
-    # Info do adversário
     query = "SELECT * FROM adversarios WHERE id = ?"
     with db.get_connection() as conn:
-        adv_info_df = pd.read_sql_query(query, conn, params=(adversario_id,))
-
-    # Verificar se encontrou o adversário (SEM INDENTAÇÃO EXTRA!)
-    if len(adv_info_df) == 0:
-        st.error(f"❌ Adversário com ID {adversario_id} não encontrado na base de dados!")
-        st.info("💡 Verifica se a tabela 'adversarios' tem dados.")
-        st.stop()
-
-    adv_info = adv_info_df.iloc[0]
+        adv = pd.read_sql_query(query, conn, params=(adv_id,)).iloc[0]
     
     st.divider()
+    st.markdown("## ⚙️ Condições")
     
-    st.markdown("### 📌 Informações")
-    st.metric("Ranking Liga", f"{adv_info['ranking_liga']}º")
-    st.metric("Média Golos/Jogo", f"{adv_info['media_golos_jogo']:.1f}")
-    st.metric("Estilo Ofensivo", adv_info['estilo_ofensivo'])
+    cond_minuto = st.slider("Minuto", 0, 60, 30)
+    cond_dif = st.slider("Diferença Golos", -5, 5, 0)
+    cond_dist = st.slider("Distância (m)", 6.0, 12.0, 9.0, 0.5)
+    cond_vel = st.slider("Velocidade (km/h)", 70, 120, int(adv['velocidade_media_remate_kmh']))
+    
+    st.divider()
+    st.caption(f"🤖 H2O.ai | AUC: 0.561")
 
-# Tabs principais
-tab1, tab2, tab3 = st.tabs(["🎯 Padrões Adversário", "🥅 Compatibilidade GR", "📋 Plano Tático"])
+# =============================================================================
+# CARREGAR DADOS
+# =============================================================================
+# GRs
+query = "SELECT * FROM guarda_redes"
+with db.get_connection() as conn:
+    grs = pd.read_sql_query(query, conn)
 
-# TAB 1: Padrões do Adversário
+# Distribuição adversário
+dist_adv = get_distribuicao_adversario(adv)
+
+# Calcular ranking H2O
+ranking = []
+for _, gr in grs.iterrows():
+    grid = calcular_probs_h2o(gr, predictor, cond_dist, cond_vel, cond_minuto, cond_dif)
+    media = calcular_media_ponderada(grid, dist_adv)
+    ranking.append({
+        'id': gr['id'],
+        'nome': gr['nome'],
+        'altura': gr['altura_cm'],
+        'enverg': gr['envergadura_cm'],
+        'grid': grid,
+        'media': media
+    })
+
+ranking = sorted(ranking, key=lambda x: x['media'], reverse=True)
+
+# =============================================================================
+# TABS
+# =============================================================================
+tab1, tab2, tab3 = st.tabs(["🎯 Adversário", "🥅 Qual GR?", "🔮 E Se...?"])
+
+# =============================================================================
+# TAB 1: ADVERSÁRIO
+# =============================================================================
 with tab1:
-    st.markdown("## 🎯 Análise do Adversário")
+    st.markdown(f"## 🎯 Como ataca o **{adv_nome}**?")
     
-    col1, col2 = st.columns(2)
+    col1, col2 = st.columns([3, 2])
     
     with col1:
-        st.markdown("### 📊 Distribuição de Remates")
+        st.markdown("### 📍 Distribuição de Remates")
+        fig = heatmap_baliza(dist_adv, "", 400, escala_max=25)
+        st.plotly_chart(fig, use_container_width=True)
         
-        # Criar heatmap com padrões do adversário
-        zones_dist = np.array([
-            [adv_info['remates_zona_alta_perc'] * 0.3, 
-             adv_info['remates_zona_alta_perc'] * 0.4, 
-             adv_info['remates_zona_alta_perc'] * 0.3],
-            [adv_info['remates_zona_media_perc'] * 0.35, 
-             adv_info['remates_zona_media_perc'] * 0.3, 
-             adv_info['remates_zona_media_perc'] * 0.35],
-            [adv_info['remates_zona_baixa_perc'] * 0.3, 
-             adv_info['remates_zona_baixa_perc'] * 0.4, 
-             adv_info['remates_zona_baixa_perc'] * 0.3]
-        ])
-        
-        import plotly.graph_objects as go
-        
-        fig_adv = go.Figure(data=go.Heatmap(
-            z=zones_dist,
-            x=['Esquerda', 'Centro', 'Direita'],
-            y=['Superior', 'Meio', 'Inferior'],
-            colorscale='Reds',
-            text=np.round(zones_dist, 1),
-            texttemplate='%{text}%',
-            textfont={"size": 16},
-            colorbar=dict(title="Prob. (%)"),
-        ))
-        
-        fig_adv.update_layout(
-            title=f"Distribuição de Remates - {adversario_nome}",
-            height=400,
-            yaxis=dict(autorange='reversed')
-        )
-        
-        st.plotly_chart(fig_adv, use_container_width=True)
-        
-        # Padrões identificados
-        st.markdown("#### 📌 Padrões Identificados")
-        
-        zona_preferida = "Alta" if adv_info['remates_zona_alta_perc'] > adv_info['remates_zona_media_perc'] else "Média"
-        st.info(f"🔸 **Preferência**: Zona {zona_preferida} ({max(adv_info['remates_zona_alta_perc'], adv_info['remates_zona_media_perc'])}%)")
-        st.info(f"🔸 **Velocidade Média**: {adv_info['velocidade_media_remate_kmh']} km/h")
-        st.info(f"🔸 **Tipo Ataque**: {adv_info['tipo_ataque_predominante']}")
+        # Zona mais atacada
+        idx = np.unravel_index(dist_adv.argmax(), dist_adv.shape)
+        zonas = {(0,0): "Superior Esquerda", (0,1): "Superior Centro", (0,2): "Superior Direita",
+                 (1,0): "Meio Esquerda", (1,1): "Meio Centro", (1,2): "Meio Direita",
+                 (2,0): "Inferior Esquerda", (2,1): "Inferior Centro", (2,2): "Inferior Direita"}
+        st.warning(f"⚠️ **Zona preferida**: {zonas[idx]} ({dist_adv[idx]:.1f}%)")
     
     with col2:
-        st.markdown("### ⚡ Características Ofensivas")
+        st.markdown("### ⚡ Características")
         
-        # Métricas chave
-        col_m1, col_m2 = st.columns(2)
-        
-        with col_m1:
-            st.metric("Transições/Jogo", adv_info['transicoes_rapidas_jogo'])
-            st.metric("Eficácia 1ª Linha", f"{adv_info['eficacia_primeira_linha_perc']}%")
-        
-        with col_m2:
-            st.metric("Golos/Jogo", f"{adv_info['media_golos_jogo']:.1f}")
-            st.metric("Eficácia 2ª Linha", f"{adv_info['eficacia_segunda_linha_perc']}%")
+        st.metric("🚀 Velocidade Média", f"{adv['velocidade_media_remate_kmh']} km/h")
+        st.metric("⚡ Transições/Jogo", adv['transicoes_rapidas_jogo'])
+        st.metric("🎯 Eficácia 1ª Linha", f"{adv['eficacia_primeira_linha_perc']}%")
+        st.metric("🎯 Eficácia 2ª Linha", f"{adv['eficacia_segunda_linha_perc']}%")
         
         st.divider()
         
-        st.markdown("### 🎯 Ameaças Principais")
+        st.markdown("### 🚨 Alertas")
+        if adv['velocidade_media_remate_kmh'] > 100:
+            st.error("🔴 Remates muito rápidos!")
+        if adv['transicoes_rapidas_jogo'] > 20:
+            st.error("🔴 Muitas transições!")
+        if adv['eficacia_primeira_linha_perc'] > 65:
+            st.warning("🟠 Perigo na 1ª linha")
         
-        # Identificar ameaças baseadas nos dados
-        ameacas = []
-        
-        if adv_info['velocidade_media_remate_kmh'] > 100:
-            ameacas.append(("🔴 ALTA", "Remates de alta velocidade", f"{adv_info['velocidade_media_remate_kmh']} km/h"))
-        
-        if adv_info['transicoes_rapidas_jogo'] > 20:
-            ameacas.append(("🟠 MÉDIA", "Transições rápidas frequentes", f"{adv_info['transicoes_rapidas_jogo']}/jogo"))
-        
-        if adv_info['eficacia_primeira_linha_perc'] > 65:
-            ameacas.append(("🟠 MÉDIA", "Eficácia elevada 1ª linha", f"{adv_info['eficacia_primeira_linha_perc']}%"))
-        
-        for nivel, desc, valor in ameacas:
-            st.warning(f"{nivel} **{desc}**: {valor}")
+        st.caption(f"Estilo: {adv['estilo_ofensivo']}")
 
-# TAB 2: Compatibilidade GR
+# =============================================================================
+# TAB 2: QUAL GR?
+# =============================================================================
 with tab2:
-    st.markdown("## 🎯 Matriz de Compatibilidade GR vs Adversário")
+    st.markdown(f"## 🥅 Qual GR usar contra **{adv_nome}**?")
+    st.caption(f"Condições: min {cond_minuto} | dif {cond_dif:+d} | {cond_dist}m | {cond_vel} km/h")
     
-    # Carregar compatibilidade
-    compat_df = db.get_compatibility_matrix(adversario_id)
-    
-    # Gráfico de barras
-    fig_compat = criar_grafico_compatibilidade_barras(compat_df)
-    st.plotly_chart(fig_compat, use_container_width=True)
-    
-    st.divider()
-    
-    # ==================================================================
-    # NOVO: SIMULADOR H2O DE COMPATIBILIDADE
-    # ==================================================================
-    
-    st.markdown("### 🤖 Simulador de Compatibilidade (H2O.ai)")
-    
-    if predictor_compat:
-        st.info("💡 **Modelo ML prevê compatibilidade** - Treinado com 42 combinações GR-Adversário")
-        
-        col_sim1, col_sim2 = st.columns([3, 1])
-        
-        with col_sim1:
-            # Selecionar GR para testar
-            grs_lista = [gr['nome'] for _, gr in compat_df.iterrows()] if len(compat_df) > 0 else db.get_all_goalkeepers()['nome'].tolist()
-            
-            gr_teste_nome = st.selectbox(
-                "🥅 Testar compatibilidade de:",
-                grs_lista,
-                key="gr_teste_compat"
-            )
-            
-            if st.button("🔮 PREVER COMPATIBILIDADE COM H2O.AI", type="primary", use_container_width=True):
-                with st.spinner("🤖 Calculando..."):
-                    try:
-                        # Buscar dados completos do GR
-                        query_gr = "SELECT * FROM guarda_redes WHERE nome = ?"
-                        with db.get_connection() as conn:
-                            gr_teste_df = pd.read_sql_query(query_gr, conn, params=(gr_teste_nome,))
-                        
-                        # Buscar dados completos do adversário
-                        query_adv = "SELECT * FROM adversarios WHERE id = ?"
-                        with db.get_connection() as conn:
-                            adv_teste_df = pd.read_sql_query(query_adv, conn, params=(adversario_id,))
-                        
-                        if len(gr_teste_df) == 0 or len(adv_teste_df) == 0:
-                            st.error("❌ Dados não encontrados!")
-                        else:
-                            # Predição H2O
-                            taxa_pred = predictor_compat.predict_from_dataframes(
-                                gr_row=gr_teste_df.iloc[0],
-                                adv_row=adv_teste_df.iloc[0]
-                            )
-                            
-                            # Buscar histórico (se existir)
-                            taxa_hist_list = compat_df[compat_df['nome'] == gr_teste_nome]['taxa_defesa_perc'].values
-                            taxa_hist = taxa_hist_list[0] if len(taxa_hist_list) > 0 else None
-                            
-                            # RESULTADOS
-                            st.markdown("#### 📊 RESULTADO DA PREDIÇÃO")
-                            
-                            col_r1, col_r2, col_r3 = st.columns(3)
-                            
-                            with col_r1:
-                                st.metric(
-                                    "🤖 Predição H2O",
-                                    f"{taxa_pred:.1f}%",
-                                    help="Machine Learning"
-                                )
-                            
-                            with col_r2:
-                                if taxa_hist:
-                                    delta = taxa_pred - taxa_hist
-                                    st.metric(
-                                        "📊 Histórico Real",
-                                        f"{taxa_hist:.1f}%",
-                                        delta=f"{delta:+.1f}pp"
-                                    )
-                                else:
-                                    st.info("📊 **Sem histórico**\n\nPrimeira vez vs este adversário")
-                            
-                            with col_r3:
-                                if taxa_pred > 60:
-                                    st.success("✅ **ALTA** compatibilidade")
-                                elif taxa_pred > 50:
-                                    st.info("➡️ **MÉDIA** compatibilidade")
-                                else:
-                                    st.error("⚠️ **BAIXA** compatibilidade")
-                            
-                            # Gauge
-                            import plotly.graph_objects as go
-                            
-                            fig_gauge = go.Figure(go.Indicator(
-                                mode="gauge+number",
-                                value=taxa_pred,
-                                title={'text': f"{gr_teste_nome} vs {adversario_nome}"},
-                                gauge={
-                                    'axis': {'range': [0, 100]},
-                                    'bar': {'color': "darkblue"},
-                                    'steps': [
-                                        {'range': [0, 50], 'color': "lightcoral"},
-                                        {'range': [50, 60], 'color': "lightyellow"},
-                                        {'range': [60, 100], 'color': "lightgreen"}
-                                    ]
-                                }
-                            ))
-                            fig_gauge.update_layout(height=300)
-                            st.plotly_chart(fig_gauge, use_container_width=True)
-                            
-                            # Recomendação
-                            if taxa_pred > 60:
-                                st.success(f"✅ **{gr_teste_nome}** é ALTAMENTE compatível vs {adversario_nome} (Taxa prevista: {taxa_pred:.1f}%)")
-                            elif taxa_pred > 50:
-                                st.info(f"➡️ **{gr_teste_nome}** tem compatibilidade MÉDIA vs {adversario_nome} (Taxa prevista: {taxa_pred:.1f}%)")
-                            else:
-                                st.warning(f"⚠️ Considerar alternativa. **{gr_teste_nome}** tem BAIXA compatibilidade (Taxa prevista: {taxa_pred:.1f}%)")
-                            
-                            st.caption(f"🤖 Modelo GBM | RMSE: 5.98% | Treinado com 42 combinações")
-                            
-                    except Exception as e:
-                        st.error(f"❌ Erro: {e}")
-        
-        with col_sim2:
-            st.markdown("**ℹ️ Modelo analisa:**")
-            st.caption("""
-            **Do GR:**
-            • Altura
-            • Envergadura  
-            • Velocidade
-            • Alcance
-            • Agilidade
-            • Experiência
-            
-            **Do Adversário:**
-            • Ranking
-            • Golos/jogo
-            • Velocidade remate
-            • Zonas preferidas
-            • Eficácia 1ª/2ª linha
-            • Transições/jogo
-            """)
-    
-    else:
-        st.warning("""
-        ⚠️ **Modelo H2O Compatibilidade não disponível**
-        
-        Execute: `python train_modelo_compatibilidade.py`
-        """)
-    
-    st.divider()
-    
-    # Tabela detalhada
-    st.markdown("### 📊 Análise Detalhada")
-    
-    # Preparar dados para exibição
-    tabela_compat = compat_df.copy()
-    tabela_compat['Prob. Titular'] = (tabela_compat['prob_ser_titular'] * 100).round(0).astype(int).astype(str) + '%'
-    
-    tabela_display = tabela_compat[[
-        'nome', 
-        'taxa_defesa_perc', 
-        'Prob. Titular',
-        'zona_fraca_1',
-        'zona_fraca_2'
-    ]].rename(columns={
-        'nome': 'Guarda-Redes',
-        'taxa_defesa_perc': 'Taxa Defesa (%)',
-        'zona_fraca_1': 'Zona Fraca 1',
-        'zona_fraca_2': 'Zona Fraca 2'
-    })
-    
-    st.dataframe(
-        tabela_display.style.background_gradient(subset=['Taxa Defesa (%)'], cmap='RdYlGn'),
-        use_container_width=True,
-        hide_index=True
-    )
-    
-    # Recomendação
-    melhor = compat_df.iloc[0]
-    st.success(f"✅ **RECOMENDAÇÃO**: {melhor['nome']} ({melhor['taxa_defesa_perc']:.1f}% eficácia vs {adversario_nome})")
-    
-    # Heatmaps lado a lado dos GRs
-    st.divider()
-    st.markdown("### 🗺️ Performance por Zona - Comparação")
-    
+    # Semáforo - 3 cards
     cols = st.columns(3)
     
-    for idx, (_, gr) in enumerate(compat_df.iterrows()):
-        with cols[idx]:
-            st.markdown(f"**{gr['nome']}**")
+    for i, r in enumerate(ranking):
+        with cols[i]:
+            taxa = r['media']
             
-            # Buscar performance por zona
-            query = """
-            SELECT zona_baliza_id, zona_baliza_nome, 
-                   ROUND(AVG(CASE WHEN resultado = 'Defesa' THEN 100.0 ELSE 0 END), 1) as taxa_defesa
-            FROM lances l
-            JOIN jogos j ON l.jogo_id = j.id
-            WHERE j.guarda_redes_id = ?
-            GROUP BY zona_baliza_id, zona_baliza_nome
-            ORDER BY zona_baliza_id
-            """
-            
-            with db.get_connection() as conn:
-                gr_id = db.get_all_goalkeepers()[db.get_all_goalkeepers()['nome'] == gr['nome']]['id'].values[0]
-                zones_gr = pd.read_sql_query(query, conn, params=(gr_id,))
-            
-            if len(zones_gr) > 0:
-                fig_mini = criar_heatmap_baliza(zones_gr, height=250)
-                st.plotly_chart(fig_mini, use_container_width=True)
+            if taxa >= 55:
+                cor, icon = "#28a745", "✅"
+            elif taxa >= 45:
+                cor, icon = "#ffc107", "➡️"
             else:
-                st.info("Sem dados")
-
-# TAB 3: Plano Tático
-with tab3:
-    st.markdown("## 📋 Plano Tático Detalhado")
+                cor, icon = "#dc3545", "⚠️"
+            
+            borda = "4px solid gold" if i == 0 else f"2px solid {cor}"
+            
+            st.markdown(f"""
+            <div style="background:{cor}22; border:{borda}; border-radius:12px; 
+                        padding:20px; text-align:center;">
+                <div style="font-size:28px">{icon}</div>
+                <div style="font-size:18px; font-weight:bold">{r['nome']}</div>
+                <div style="font-size:36px; font-weight:bold; color:{cor}">{taxa:.1f}%</div>
+                <div style="font-size:12px; color:#666">{r['altura']}cm | {r['enverg']}cm</div>
+                {"<div style='color:gold; margin-top:8px'>⭐ RECOMENDADO</div>" if i==0 else ""}
+            </div>
+            """, unsafe_allow_html=True)
     
-    col1, col2 = st.columns(2)
+    st.divider()
+    
+    # Insight
+    diff = ranking[0]['media'] - ranking[1]['media']
+    if diff > 5:
+        st.success(f"✅ **{ranking[0]['nome']}** é claramente o melhor (+{diff:.1f}pp)")
+    elif diff > 2:
+        st.info(f"➡️ **{ranking[0]['nome']}** tem ligeira vantagem (+{diff:.1f}pp)")
+    else:
+        st.warning(f"⚠️ Diferença mínima ({diff:.1f}pp) - considerar outros fatores")
+    
+    st.divider()
+    
+    # Heatmaps
+    st.markdown("### 🗺️ Probabilidade de Defesa por Zona")
+    cols = st.columns(3)
+    
+    for i, r in enumerate(ranking):
+        with cols[i]:
+            st.markdown(f"**{r['nome']}** ({r['media']:.1f}%)")
+            fig = heatmap_baliza(r['grid'], "", 280)
+            st.plotly_chart(fig, use_container_width=True)
+
+# =============================================================================
+# TAB 3: E SE...?
+# =============================================================================
+with tab3:
+    st.markdown("## 🔮 E Se...?")
+    st.info("💡 Ajusta os parâmetros e vê como muda a recomendação")
+    
+    col1, col2 = st.columns([1, 2])
     
     with col1:
-        st.markdown("### 🎯 Estratégia de Posicionamento")
+        st.markdown("### ⚙️ Cenário")
         
-        with st.expander("🔸 Situações de 1ª Linha (6-9m)", expanded=True):
-            st.markdown(f"""
-            - **Posicionamento**: {'Direita' if adv_info['remates_zona_media_perc'] > 35 else 'Centro'}
-            - **Distância**: 1.2m da linha de golo
-            - **Foco**: Antecipar zona {'média-direita' if adv_info['tipo_ataque_predominante'] == 'Circulação' else 'central'}
-            - **Ajuste**: Atenção a transições rápidas ({adv_info['transicoes_rapidas_jogo']}/jogo)
-            """)
+        sim_min = st.slider("Minuto", 0, 60, 45, key="sim_min")
+        sim_dif = st.slider("Diferença", -5, 5, -2, key="sim_dif")
+        sim_dist = st.slider("Distância", 6.0, 12.0, 7.0, key="sim_dist")
+        sim_vel = st.slider("Velocidade", 70, 120, 105, key="sim_vel")
         
-        with st.expander("🔸 Situações de 2ª Linha (9-12m)"):
-            st.markdown(f"""
-            - **Posicionamento**: Centralizado
-            - **Distância**: 0.8m da linha de golo
-            - **Foco**: Cobertura zonas superiores ({adv_info['remates_zona_alta_perc']}% remates)
-            - **Ajuste**: Preparação para remates {adv_info['velocidade_media_remate_kmh']} km/h
-            """)
-        
-        with st.expander("🔸 Situações de 7 Metros"):
-            st.markdown("""
-            - **Posicionamento**: Agressivo (+2m avanço)
-            - **Foco**: Redução de ângulos
-            - **Risco**: Remates colocados
-            """)
+        st.caption("📝 Cenário: Final de jogo, a perder, remates de perto e rápidos")
     
     with col2:
-        st.markdown("### ⚙️ Ajustes Dinâmicos")
+        st.markdown("### 📊 Novo Ranking")
         
-        # Timeline de ajustes
-        ajustes = pd.DataFrame({
-            'Período': ['0-15 min', '15-30 min', '30-45 min', '45-60 min'],
-            'Ajuste Recomendado': [
-                'Posicionamento padrão, observar',
-                'Ajustar baseado em padrões observados',
-                'Manter vigilância transições',
-                'Posicionamento agressivo (pressão final)'
-            ],
-            'Prioridade': ['Média', 'Alta', 'Alta', 'Crítica']
-        })
+        # Recalcular
+        ranking_sim = []
+        for _, gr in grs.iterrows():
+            grid = calcular_probs_h2o(gr, predictor, sim_dist, sim_vel, sim_min, sim_dif)
+            media = calcular_media_ponderada(grid, dist_adv)
+            ranking_sim.append({'nome': gr['nome'], 'media': media, 'grid': grid})
         
-        st.dataframe(ajustes, use_container_width=True, hide_index=True)
+        ranking_sim = sorted(ranking_sim, key=lambda x: x['media'], reverse=True)
+        
+        # Mostrar
+        for i, r in enumerate(ranking_sim):
+            if i == 0:
+                st.success(f"🥇 **{r['nome']}**: {r['media']:.1f}%")
+            elif i == 1:
+                st.info(f"🥈 **{r['nome']}**: {r['media']:.1f}%")
+            else:
+                st.warning(f"🥉 **{r['nome']}**: {r['media']:.1f}%")
         
         st.divider()
         
-        st.markdown("### 🔄 Critérios de Substituição")
-        st.error(f"""
-        **Considerar substituição se**:
-        - Taxa de defesa < 45% após 20 min
-        - 3+ golos em zonas vulneráveis do GR
-        - Sinais de fadiga técnica
-        - Adversário explora zona fraca sistematicamente
-        """)
+        # Comparar com original
+        if ranking[0]['nome'] != ranking_sim[0]['nome']:
+            st.error(f"🔄 **MUDANÇA!** Neste cenário, **{ranking_sim[0]['nome']}** é melhor que {ranking[0]['nome']}")
+        else:
+            st.success(f"✅ **{ranking[0]['nome']}** continua a ser o melhor")
+        
+        st.divider()
+        
+        # Heatmap do melhor
+        st.markdown(f"### 🗺️ {ranking_sim[0]['nome']} neste cenário")
+        fig = heatmap_baliza(ranking_sim[0]['grid'], "", 350)
+        st.plotly_chart(fig, use_container_width=True)
 
-st.caption("📊 Briefing para preparação 24-48h antes do jogo")
+# =============================================================================
+# FOOTER
+# =============================================================================
+st.divider()
+st.caption("📊 Pré-Jogo | Digital Twin ABC Braga | H2O.ai AutoML")

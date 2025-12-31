@@ -12,39 +12,48 @@ import numpy as np
 def criar_heatmap_baliza(zones_df, height=400):
     """
     Cria heatmap 3x3 da baliza com dados de performance por zona
-    
+    CORES: Vermelho e Branco (cores reais da baliza de andebol)
+
     Args:
         zones_df: DataFrame com colunas 'zona_baliza_id' e 'taxa_defesa'
         height: Altura do gráfico em pixels
-    
+
     Returns:
         Figura Plotly
     """
     # Converter IDs 1-9 para grid 3x3
     zones_grid = zones_df.set_index('zona_baliza_id')['taxa_defesa'].reindex(range(1, 10))
     zones_3x3 = zones_grid.values.reshape(3, 3)
-    
+
+    # Colorscale vermelho-branco-verde (estilo baliza)
+    colorscale = [
+        [0.0, '#8B0000'],    # Vermelho escuro (0%)
+        [0.3, '#DC143C'],    # Vermelho (30%)
+        [0.5, '#FFFFFF'],    # Branco (50%)
+        [0.7, '#90EE90'],    # Verde claro (70%)
+        [1.0, '#006400']     # Verde escuro (100%)
+    ]
+
     fig = go.Figure(data=go.Heatmap(
         z=zones_3x3,
         x=['Esquerda', 'Centro', 'Direita'],
         y=['Superior', 'Meio', 'Inferior'],
-        colorscale='RdYlGn',
+        colorscale=colorscale,
         text=np.round(zones_3x3, 0),
         texttemplate='%{text:.0f}%',
-        textfont={"size": 16, "color": "white"},
+        textfont={"size": 16, "color": "black", "family": "Arial Black"},
         colorbar=dict(title="Taxa<br>Defesa (%)"),
         hovertemplate='<b>%{y} %{x}</b><br>Taxa Defesa: %{z:.1f}%<extra></extra>',
         zmin=0,
         zmax=100
     ))
-    
+
     fig.update_layout(
         title="Performance por Zona da Baliza (Grid 3×3)",
         height=height,
-        yaxis=dict(autorange='reversed'),
         xaxis=dict(side='bottom')
     )
-    
+
     return fig
 
 
