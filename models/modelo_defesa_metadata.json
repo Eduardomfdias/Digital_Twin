@@ -1,19 +1,21 @@
 {
-  "model_path": "C:\\Users\\eduar\\Desktop\\Mestrado\\AVI\\Digital_Twin\\models\\GBM_1_AutoML_1_20251214_160139",
-  "auc": 0.5815695276632169,
-  "accuracy": 0.5789473684210527,
+  "model_path": "C:\\Users\\eduar\\Desktop\\Mestrado\\AVI\\Digital_Twin\\Digital_Twin\\models\\GBM_5_AutoML_2_20260108_195427",
+  "auc": 0.6520705521472392,
+  "accuracy": 0.6222910216718266,
   "features": [
     "zona_baliza_id",
     "distancia_remate_m",
     "velocidade_remate_kmh",
+    "fadiga",
     "diferenca_golos_momento",
     "altura_cm",
     "envergadura_cm",
     "velocidade_lateral_ms"
   ],
-  "trained_date": "2025-12-14T16:02:09.921996",
+  "trained_date": "2026-01-08T19:54:39.073735",
   "n_train": 1299,
   "n_test": 323,
-  "version": "v1",
-  "temporal_feature": "none"
+  "version": "v2",
+  "temporal_feature": "fadiga",
+  "fadiga_formula": "minuto/60"
 }

@@ -1,5 +1,5 @@
 {
-  "model_path": "C:\\Users\\eduar\\Desktop\\Mestrado\\AVI\\Digital_Twin\\models\\GBM_2_AutoML_1_20251209_151721",
+  "model_path": "C:\\Users\\eduar\\Desktop\\Mestrado\\AVI\\Digital_Twin\\Digital_Twin\\models\\GBM_2_AutoML_1_20260108_195328",
   "rmse": 5.975989620415085,
   "mae": 5.444554494713278,
   "r2": -0.2383347772892277,
@@ -20,7 +20,7 @@
     "eficacia_segunda_linha_perc",
     "transicoes_rapidas_jogo"
   ],
-  "trained_date": "2025-12-09T15:17:38.207696",
+  "trained_date": "2026-01-08T19:53:45.742664",
   "n_train": 30,
   "n_test": 12,
   "taxa_media": 56.892857142857146,

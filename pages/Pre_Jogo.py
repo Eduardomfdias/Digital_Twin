@@ -149,14 +149,7 @@ if not predictor:
     st.stop()
 
 # =============================================================================
-# HEADER
-# =============================================================================
-st.markdown('<div class="main-header">📊 Análise Pré-Jogo</div>', unsafe_allow_html=True)
-st.markdown("**Preparação tática 24-48h antes do jogo**")
-st.divider()
-
-# =============================================================================
-# SIDEBAR
+# SIDEBAR (primeiro!)
 # =============================================================================
 with st.sidebar:
     st.markdown("## ⚔️ Confronto")
@@ -183,6 +176,29 @@ with st.sidebar:
     
     st.divider()
     st.caption(f"🤖 H2O.ai | AUC: 0.561")
+
+# =============================================================================
+# HEADER (depois da sidebar!)
+# =============================================================================
+st.markdown(f"""
+<div style="background: linear-gradient(90deg, #1a1a2e, #16213e); 
+            padding: 15px 25px; border-radius: 10px; margin-bottom: 20px;">
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+        <div>
+            <span style="font-size: 28px; font-weight: bold; color: white;">📊 PRÉ-JOGO</span>
+            <span style="font-size: 18px; color: #ccc; margin-left: 20px;">Preparação tática</span>
+        </div>
+        <div style="text-align: right;">
+            <span style="font-size: 24px; font-weight: bold; color: white;">vs {adv_nome}</span>
+            <div style="font-size: 12px; color: #888;">{adv['velocidade_media_remate_kmh']} km/h | {adv['estilo_ofensivo']}</div>
+        </div>
+    </div>
+</div>
+""", unsafe_allow_html=True)
+
+# =============================================================================
+# CARREGAR DADOS (continua...)
+# =============================================================================
 
 # =============================================================================
 # CARREGAR DADOS
