@@ -522,28 +522,33 @@ with tab3:
     dist_adv = get_dist_adversario(adv_info)
     zona_adv_forte = np.argmax(dist_adv.flatten())
     
-    st.markdown(f"### 🎯 Plano de Treino: **{gr_selecionado}** vs **{adv_nome}**")
+    st.markdown(f"### 🎯 Plano de Treino: **{gr_selecionado}**")
     
-    # Cruzar zonas fracas do GR com zonas fortes do adversário
-    st.markdown("#### 🔥 Zonas PRIORITÁRIAS")
-    st.caption(f"Zonas fracas do **{gr_selecionado}** + Zonas preferidas do **{adv_nome}**")
+    # Informação sobre adversário (contexto)
+    st.info(f"💡 Próximo adversário: **{adv_nome}** | Zona preferida: **{ZONAS_NOME[zona_adv_forte]}** ({dist_adv.flatten()[zona_adv_forte]:.1f}%)")
     
-    # Calcular prioridade
+    # TREINO FOCA NAS PIORES ZONAS DO GR (desenvolvimento a longo prazo)
+    st.markdown("#### 🔥 Zonas PRIORITÁRIAS para Treino")
+    st.caption(f"Zonas mais fracas do **{gr_selecionado}** (desenvolvimento individual)")
+    
     prioridades = []
     for zona_idx in range(9):
         prob_defesa = probs_gr[zona_idx]
         prob_ataque = dist_adv.flatten()[zona_idx]
-        risco = (100 - prob_defesa) * prob_ataque / 100
+        
+        # Prioridade baseada na LACUNA do GR
+        lacuna = 100 - prob_defesa
         
         prioridades.append({
             'zona_idx': zona_idx,
             'zona': ZONAS_NOME[zona_idx],
             'defesa': prob_defesa,
             'ataque_adv': prob_ataque,
-            'risco': risco
+            'lacuna': lacuna
         })
-    
-    prioridades = sorted(prioridades, key=lambda x: x['risco'], reverse=True)
+
+    # Ordenar pelas PIORES zonas do GR
+    prioridades = sorted(prioridades, key=lambda x: x['lacuna'], reverse=True)
     top3_prioridades = prioridades[:3]
     
     # Mostrar prioridades
@@ -559,11 +564,32 @@ with tab3:
                 <div style="font-size: 22px; font-weight: bold; margin: 10px 0;">{prio['zona']}</div>
                 <div style="font-size: 13px; color: #666;">
                     Defesa GR: <b>{prio['defesa']:.0f}%</b><br>
-                    Ataque ADV: <b>{prio['ataque_adv']:.1f}%</b><br>
-                    Risco: <b>{prio['risco']:.1f}</b>
+                    Lacuna: <b>{prio['lacuna']:.0f}pp</b>
                 </div>
             </div>
             """, unsafe_allow_html=True)
+    
+    st.divider()
+    
+    # RESUMO DO PLANO (mostrar objetivos primeiro!)
+    st.markdown("#### 📊 Objetivos do Plano Semanal")
+    
+    col1, col2, col3 = st.columns(3)
+    
+    tempo_total = 90*3 + 45 + 90  # Segunda/Terça/Quinta/Sexta + Quarta
+    
+    with col1:
+        st.metric("⏱️ Tempo Total Semanal", f"{tempo_total} min", f"{tempo_total//60}h{tempo_total%60}min")
+    
+    with col2:
+        zonas_trabalhadas = f"{top3_prioridades[0]['zona']}, {top3_prioridades[1]['zona']}, {top3_prioridades[2]['zona']}"
+        st.metric("🎯 Zonas Prioritárias", "3", zonas_trabalhadas)
+    
+    with col3:
+        # Melhoria esperada baseada nas lacunas
+        lacuna_media = np.mean([100 - p['defesa'] for p in top3_prioridades])
+        melhoria_esperada = lacuna_media * 0.15  # 15% de melhoria na lacuna
+        st.metric("📈 Melhoria Esperada", f"+{melhoria_esperada:.1f}pp", "Por zona (1 mês)")
     
     st.divider()
     
@@ -688,28 +714,7 @@ with tab3:
                     - Zona preferida: {ZONAS_NOME[zona_adv_forte]}
                     - Foco nas 3 zonas prioritárias do plano
                     """)
-    
-    st.divider()
-    
-    # Resumo
-    st.markdown("#### 📊 Resumo do Plano Semanal")
-    
-    col1, col2, col3 = st.columns(3)
-    
-    tempo_total = 90*3 + 45 + 90  # Segunda/Terça/Quinta/Sexta + Quarta
-    
-    with col1:
-        st.metric("⏱️ Tempo Total Semanal", f"{tempo_total} min", f"{tempo_total//60}h{tempo_total%60}min")
-    
-    with col2:
-        zonas_trabalhadas = f"{top3_prioridades[0]['zona']}, {top3_prioridades[1]['zona']}, {top3_prioridades[2]['zona']}"
-        st.metric("🎯 Zonas Prioritárias", "3", zonas_trabalhadas)
-    
-    with col3:
-        # Melhoria esperada baseada nas lacunas
-        lacuna_media = np.mean([100 - p['defesa'] for p in top3_prioridades])
-        melhoria_esperada = lacuna_media * 0.15  # 15% de melhoria na lacuna
-        st.metric("📈 Melhoria Esperada", f"+{melhoria_esperada:.1f}%", "Por zona (1 mês)")
+
 # =============================================================================
 # FOOTER
 # =============================================================================

@@ -644,5 +644,5 @@ with tab_penalty:
     
     for i, r in enumerate(ranking_pen):
         with cols_heat[i]:
-            fig = heatmap_baliza(r['grid'], r['nome'], 500)
+            fig = heatmap_baliza(r['grid'], r['nome'], 700)
             st.plotly_chart(fig, use_container_width=True, config={'displayModeBar': False})

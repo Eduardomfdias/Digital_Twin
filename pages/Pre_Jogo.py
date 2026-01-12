@@ -396,11 +396,11 @@ with tab2:
     # Insight
     diff = ranking[0]['media'] - ranking[1]['media']
     if diff > 5:
-        st.success(f"✅ **{ranking[0]['nome']}** é claramente o melhor (+{diff:.1f}pp)")
+        st.success(f"✅ **{ranking[0]['nome']}** é claramente o melhor (+{diff:.1f}%)")
     elif diff > 2:
-        st.info(f"➡️ **{ranking[0]['nome']}** tem ligeira vantagem (+{diff:.1f}pp)")
+        st.info(f"➡️ **{ranking[0]['nome']}** tem ligeira vantagem (+{diff:.1f}%)")
     else:
-        st.warning(f"⚠️ Diferença mínima ({diff:.1f}pp) - considerar outros fatores")
+        st.warning(f"⚠️ Diferença mínima ({diff:.1f}%) - considerar outros fatores")
     
     st.divider()
     
@@ -411,7 +411,7 @@ with tab2:
     for i, r in enumerate(ranking):
         with cols[i]:
             st.markdown(f"**{r['nome']}** ({r['media']:.1f}%)")
-            fig = heatmap_baliza(r['grid'], "", 280)
+            fig = heatmap_baliza(r['grid'], "", 700)
             st.plotly_chart(fig, use_container_width=True)
 
 # =============================================================================
