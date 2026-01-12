@@ -630,11 +630,11 @@ with tab_penalty:
     if melhor_pen['nome'] == gr_atual_nome:
         st.success(f"✅ **MANTER {gr_atual_nome}** para o Pênalti é a melhor opção!")
     elif diff_pen > 5:
-        st.error(f"🔄 **TROCAR para {melhor_pen['nome']}** (+{diff_pen:.0f}pp)")
+        st.error(f"🔄 **TROCAR para {melhor_pen['nome']}** (+{diff_pen:.0f}%)")
     elif diff_pen > 2:
-        st.warning(f"🤔 **Considerar {melhor_pen['nome']}** (+{diff_pen:.0f}pp)")
+        st.warning(f"🤔 **Considerar {melhor_pen['nome']}** (+{diff_pen:.0f}%)")
     else:
-        st.info(f"✅ **MANTER {gr_atual_nome}** - diferença mínima ({diff_pen:.0f}pp)")
+        st.info(f"✅ **MANTER {gr_atual_nome}** - diferença mínima ({diff_pen:.0f}%)")
     
     st.divider()
     

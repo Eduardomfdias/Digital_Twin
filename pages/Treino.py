@@ -564,7 +564,7 @@ with tab3:
                 <div style="font-size: 22px; font-weight: bold; margin: 10px 0;">{prio['zona']}</div>
                 <div style="font-size: 13px; color: #666;">
                     Defesa GR: <b>{prio['defesa']:.0f}%</b><br>
-                    Lacuna: <b>{prio['lacuna']:.0f}pp</b>
+                    Lacuna: <b>{prio['lacuna']:.0f}%</b>
                 </div>
             </div>
             """, unsafe_allow_html=True)
@@ -589,7 +589,7 @@ with tab3:
         # Melhoria esperada baseada nas lacunas
         lacuna_media = np.mean([100 - p['defesa'] for p in top3_prioridades])
         melhoria_esperada = lacuna_media * 0.15  # 15% de melhoria na lacuna
-        st.metric("📈 Melhoria Esperada", f"+{melhoria_esperada:.1f}pp", "Por zona (1 mês)")
+        st.metric("📈 Melhoria Esperada", f"+{melhoria_esperada:.1f}%", "Por zona (1 mês)")
     
     st.divider()
     
