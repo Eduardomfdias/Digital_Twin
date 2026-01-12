@@ -148,48 +148,36 @@ def heatmap_baliza(grid, titulo="", height=400, destacar_fracas=None):
     
     fig = go.Figure()
     
-    # Fundo
-    fig.add_shape(type='rect', x0=-1.5, x1=3.5, y0=-1.2, y1=3.5,
-                  fillcolor='#2C3E50', line=dict(width=0), layer='below')
-    fig.add_shape(type='rect', x0=-1.2, x1=3.2, y0=-0.8, y1=-0.5,
-                  fillcolor='#3498DB', line=dict(width=0), layer='below')
-    fig.add_shape(type='rect', x0=-0.8, x1=2.8, y0=-0.7, y1=-0.5,
-                  fillcolor='#2980B9', line=dict(color='white', width=2), layer='below')
-    
     # Heatmap
     fig.add_trace(go.Heatmap(
         z=grid_plot, x=[0, 1, 2], y=[0, 1, 2],
         colorscale='RdYlGn', zmin=0, zmax=100,
         text=np.round(grid_plot, 0), texttemplate='%{text}%',
         textfont=dict(size=20, color='black', family='Arial Black'),
-        showscale=False, xgap=4, ygap=4
+        showscale=False, xgap=3, ygap=3
     ))
     
-    # Postes listrados
-    for i in range(10):
-        c = '#C41E3A' if i % 2 == 0 else 'white'
-        fig.add_shape(type='rect', x0=-0.7, x1=-0.48, y0=-0.5+i*0.35, y1=-0.5+(i+1)*0.35,
-                      fillcolor=c, line=dict(color='#333', width=1))
-        fig.add_shape(type='rect', x0=2.48, x1=2.7, y0=-0.5+i*0.35, y1=-0.5+(i+1)*0.35,
-                      fillcolor=c, line=dict(color='#333', width=1))
-    for i in range(9):
-        c = '#C41E3A' if i % 2 == 0 else 'white'
-        fig.add_shape(type='rect', x0=-0.7+i*0.38, x1=-0.7+(i+1)*0.38, y0=2.48, y1=2.7,
-                      fillcolor=c, line=dict(color='#333', width=1))
-    
-    # Rede
+    # Postes laterais listrados
     for i in range(8):
-        fig.add_shape(type='line', x0=-0.5+i*0.43, x1=-0.5+i*0.43, y0=-0.5, y1=2.5,
-                      line=dict(color='rgba(200,200,200,0.3)', width=1))
-        fig.add_shape(type='line', x0=-0.5, x1=2.5, y0=-0.5+i*0.43, y1=-0.5+i*0.43,
-                      line=dict(color='rgba(200,200,200,0.3)', width=1))
+        c = '#C41E3A' if i % 2 == 0 else 'white'
+        fig.add_shape(type='rect', x0=-0.6, x1=-0.45, y0=-0.5+i*0.4, y1=-0.5+(i+1)*0.4, 
+                      fillcolor=c, line=dict(width=0))
+        fig.add_shape(type='rect', x0=2.45, x1=2.6, y0=-0.5+i*0.4, y1=-0.5+(i+1)*0.4, 
+                      fillcolor=c, line=dict(width=0))
     
-    # Destacar zonas fracas com borda
+    # Trave superior listrada
+    for i in range(8):
+        c = '#C41E3A' if i % 2 == 0 else 'white'
+        fig.add_shape(type='rect', x0=-0.6+i*0.42, x1=-0.6+(i+1)*0.42, y0=2.45, y1=2.6, 
+                      fillcolor=c, line=dict(width=0))
+    
+   
+    
+    # Destacar zonas fracas com borda vermelha
     if destacar_fracas:
         for zona_idx in destacar_fracas:
             row = zona_idx // 3
             col = zona_idx % 3
-            # Converter para coordenadas do plot (invertido)
             y_plot = 2 - row
             x_plot = col
             fig.add_shape(type='rect', 
@@ -199,20 +187,27 @@ def heatmap_baliza(grid, titulo="", height=400, destacar_fracas=None):
                          fillcolor='rgba(0,0,0,0)')
     
     # Labels
-    fig.add_annotation(x=0, y=-0.95, text="ESQ", showarrow=False, font=dict(size=11, color='white', family='Arial Black'))
-    fig.add_annotation(x=1, y=-0.95, text="CENTRO", showarrow=False, font=dict(size=11, color='white', family='Arial Black'))
-    fig.add_annotation(x=2, y=-0.95, text="DIR", showarrow=False, font=dict(size=11, color='white', family='Arial Black'))
-    fig.add_annotation(x=-1.0, y=2, text="SUP", showarrow=False, font=dict(size=11, color='white', family='Arial Black'))
-    fig.add_annotation(x=-1.0, y=1, text="MEIO", showarrow=False, font=dict(size=11, color='white', family='Arial Black'))
-    fig.add_annotation(x=-1.0, y=0, text="INF", showarrow=False, font=dict(size=11, color='white', family='Arial Black'))
+    fig.add_annotation(x=0, y=-0.75, text="Esq", showarrow=False, 
+                      font=dict(size=10, color='#666'))
+    fig.add_annotation(x=1, y=-0.75, text="Centro", showarrow=False, 
+                      font=dict(size=10, color='#666'))
+    fig.add_annotation(x=2, y=-0.75, text="Dir", showarrow=False, 
+                      font=dict(size=10, color='#666'))
+    fig.add_annotation(x=-0.85, y=2, text="Sup", showarrow=False, 
+                      font=dict(size=10, color='#666'))
+    fig.add_annotation(x=-0.85, y=1, text="Meio", showarrow=False, 
+                      font=dict(size=10, color='#666'))
+    fig.add_annotation(x=-0.85, y=0, text="Inf", showarrow=False, 
+                      font=dict(size=10, color='#666'))
     
     fig.update_layout(
-        title=dict(text=titulo, font=dict(size=14, color='white')),
+        title=dict(text=titulo, font=dict(size=14)),
         height=height,
-        xaxis=dict(showgrid=False, showticklabels=False, range=[-1.5, 3.5], fixedrange=True),
-        yaxis=dict(showgrid=False, showticklabels=False, scaleanchor='x', range=[-1.2, 3.3], fixedrange=True),
+        xaxis=dict(showgrid=False, showticklabels=False, range=[-1.1, 3.1], fixedrange=True),
+        yaxis=dict(showgrid=False, showticklabels=False, scaleanchor='x', range=[-1, 3.1], fixedrange=True),
         margin=dict(l=10, r=10, t=40, b=10),
-        plot_bgcolor='#2C3E50', paper_bgcolor='#1a1a2e'
+        plot_bgcolor='rgba(0,0,0,0)', 
+        paper_bgcolor='rgba(0,0,0,0)'
     )
     
     return fig
@@ -302,13 +297,6 @@ st.markdown(f"""
 # =============================================================================
 # CALCULAR DADOS
 # =============================================================================
-# Dados do GR selecionado
-grid_gr, media_gr, probs_gr = calcular_probs_gr(gr_data, predictor, treino_dist, treino_vel)
-
-# Identificar 3 zonas mais fracas
-zonas_ordenadas = np.argsort(probs_gr)
-zonas_fracas = zonas_ordenadas[:3].tolist()
-
 # Distribuição do adversário
 def get_dist_adversario(adv):
     alta = adv['remates_zona_alta_perc']
@@ -320,9 +308,6 @@ def get_dist_adversario(adv):
         [baixa * 0.30, baixa * 0.40, baixa * 0.30]
     ])
 
-dist_adv = get_dist_adversario(adv_info)
-zona_adv_forte = np.argmax(dist_adv.flatten())
-
 # =============================================================================
 # TABS
 # =============================================================================
@@ -332,6 +317,10 @@ tab1, tab2, tab3 = st.tabs(["📊 Análise Individual", "👥 Comparação Plant
 # TAB 1: ANÁLISE INDIVIDUAL
 # =============================================================================
 with tab1:
+    # Calcular dados do GR selecionado
+    grid_gr, media_gr, probs_gr = calcular_probs_gr(gr_data, predictor, treino_dist, treino_vel)
+    zonas_fracas = np.argsort(probs_gr)[:3].tolist()
+    
     st.markdown(f"### 📊 Análise de {gr_selecionado}")
     
     col1, col2 = st.columns([3, 2])
@@ -339,7 +328,7 @@ with tab1:
     with col1:
         # Heatmap com zonas fracas destacadas
         fig = heatmap_baliza(grid_gr, f"Probabilidade de Defesa - {gr_selecionado}", 420, destacar_fracas=zonas_fracas)
-        st.plotly_chart(fig, use_container_width=True)
+        st.plotly_chart(fig, use_container_width=True, config={'displayModeBar': False})
         st.caption("🔴 Bordas vermelhas = Zonas mais fracas")
     
     with col2:
@@ -376,9 +365,9 @@ with tab1:
         # Média geral
         st.markdown("")
         st.metric("📊 Média Geral", f"{media_gr:.1f}%", 
-                  delta=f"{media_gr - 50:.1f}pp vs 50%" if media_gr != 50 else None)
+                  delta=f"{media_gr - 50:.1f}% vs 50%" if media_gr != 50 else None)
     
-    st.divider()
+ 
     
     # Exercícios recomendados
     st.markdown("### 🏋️ Exercícios Recomendados")
@@ -417,6 +406,7 @@ with tab1:
 # =============================================================================
 # TAB 2: COMPARAÇÃO PLANTEL
 # =============================================================================
+    
 with tab2:
     st.markdown("### 👥 Comparação dos Guarda-Redes")
     
@@ -436,57 +426,113 @@ with tab2:
     cols = st.columns(3)
     for i, gr_info in enumerate(todos_grs):
         with cols[i]:
-            zonas_fracas_gr = np.argsort(gr_info['probs'])[:3].tolist()
-            fig = heatmap_baliza(gr_info['grid'], gr_info['nome'], 320, destacar_fracas=zonas_fracas_gr)
-            st.plotly_chart(fig, use_container_width=True)
-            
+            # Nome do GR em destaque
             st.markdown(f"""
-            <div style="text-align: center; padding: 10px;">
-                <div style="font-size: 28px; font-weight: bold; color: {'#28a745' if gr_info['media'] >= 50 else '#ffc107' if gr_info['media'] >= 40 else '#dc3545'};">
+            <div style="text-align: center; margin-bottom: 0.5rem;">
+                <span style="font-size: 1.4rem; font-weight: 700; color: #333;">
+                    {gr_info['nome']}
+                </span>
+            </div>
+            """, unsafe_allow_html=True)
+            
+            zonas_fracas_gr = np.argsort(gr_info['probs'])[:3].tolist()
+            fig = heatmap_baliza(gr_info['grid'], "", 450, destacar_fracas=zonas_fracas_gr)
+            st.plotly_chart(fig, use_container_width=True, config={'displayModeBar': False})
+            
+            # Card com estatísticas
+            cor = '#28a745' if gr_info['media'] >= 50 else '#ffc107' if gr_info['media'] >= 40 else '#dc3545'
+            st.markdown(f"""
+            <div style="background: linear-gradient(135deg, {cor}15 0%, {cor}30 100%); 
+                        padding: 1rem; border-radius: 12px; text-align: center;
+                        border-left: 5px solid {cor}; margin-top: 0.5rem;">
+                <div style="font-size: 2.2rem; font-weight: 800; color: {cor}; margin-bottom: 0.2rem;">
                     {gr_info['media']:.1f}%
                 </div>
-                <div style="font-size: 12px; color: #888;">Média geral</div>
+                <div style="font-size: 0.8rem; color: #666; text-transform: uppercase; letter-spacing: 1px;">
+                    Eficácia Média
+                </div>
+                <div style="margin-top: 0.6rem; padding-top: 0.6rem; border-top: 1px solid {cor}40;">
+                    <div style="font-size: 0.8rem; color: #888;">
+                        🎯 Altura: <b>{gr_info['altura']} cm</b>
+                    </div>
+                </div>
             </div>
             """, unsafe_allow_html=True)
     
-    st.divider()
+    st.markdown("<br>", unsafe_allow_html=True)
     
-    # Matriz: Melhor GR por zona
+    # Especialista por Zona
     st.markdown("### 🏆 Especialista por Zona")
     st.caption("Quem é o melhor em cada zona da baliza?")
     
-    matriz_data = []
-    for zona_idx in range(9):
-        melhor_gr = max(todos_grs, key=lambda x: x['probs'][zona_idx])
-        pior_gr = min(todos_grs, key=lambda x: x['probs'][zona_idx])
-        
-        matriz_data.append({
-            'Zona': ZONAS_NOME[zona_idx],
-            '🥇 Melhor': f"{melhor_gr['nome']} ({melhor_gr['probs'][zona_idx]:.0f}%)",
-            '⚠️ Pior': f"{pior_gr['nome']} ({pior_gr['probs'][zona_idx]:.0f}%)",
-            'Diferença': f"{melhor_gr['probs'][zona_idx] - pior_gr['probs'][zona_idx]:.0f}pp"
-        })
-    
-    df_matriz = pd.DataFrame(matriz_data)
-    st.dataframe(df_matriz, use_container_width=True, hide_index=True)
+    # Grid 3x3 de cards
+    zona_idx = 0
+    for row in range(3):
+        cols = st.columns(3)
+        for col in range(3):
+            melhor_gr = max(todos_grs, key=lambda x: x['probs'][zona_idx])
+            pior_gr = min(todos_grs, key=lambda x: x['probs'][zona_idx])
+            diff = melhor_gr['probs'][zona_idx] - pior_gr['probs'][zona_idx]
+            
+            with cols[col]:
+                st.markdown(f"""
+                <div style="background: white; padding: 1.2rem; border-radius: 10px; 
+                            box-shadow: 0 2px 8px rgba(0,0,0,0.1); border-top: 4px solid #28a745;">
+                    <div style="font-size: 0.85rem; color: #888; font-weight: 600; 
+                                text-transform: uppercase; margin-bottom: 0.8rem;">
+                        {ZONAS_NOME[zona_idx]}
+                    </div>
+                    <div style="display: flex; align-items: center; justify-content: space-between; 
+                                margin-bottom: 0.6rem;">
+                        <div>
+                            <div style="font-size: 0.75rem; color: #28a745;">🥇 Melhor</div>
+                            <div style="font-size: 1.1rem; font-weight: 700; color: #333;">
+                                {melhor_gr['nome']}
+                            </div>
+                            <div style="font-size: 1.4rem; font-weight: 800; color: #28a745;">
+                                {melhor_gr['probs'][zona_idx]:.0f}%
+                            </div>
+                        </div>
+                    </div>
+                    <div style="border-top: 1px solid #eee; padding-top: 0.6rem; margin-top: 0.6rem;">
+                        <div style="font-size: 0.75rem; color: #dc3545;">⚠️ Pior</div>
+                        <div style="font-size: 0.9rem; color: #666;">
+                            {pior_gr['nome']} ({pior_gr['probs'][zona_idx]:.0f}%)
+                        </div>
+                    </div>
+                    <div style="margin-top: 0.8rem; padding: 0.5rem; background: #f8f9fa; 
+                                border-radius: 6px; text-align: center;">
+                        <div style="font-size: 0.75rem; color: #666;">Gap</div>
+                        <div style="font-size: 1.2rem; font-weight: 700; color: #667eea;">
+                            {diff:.0f}%
+                        </div>
+                    </div>
+                </div>
+                """, unsafe_allow_html=True)
+            
+            zona_idx += 1
 
 # =============================================================================
 # TAB 3: PLANO SEMANAL
 # =============================================================================
 with tab3:
-    st.markdown(f"### 🎯 Plano de Treino vs **{adv_nome}**")
+    # RECALCULAR tudo para o GR atual
+    grid_gr, media_gr, probs_gr = calcular_probs_gr(gr_data, predictor, treino_dist, treino_vel)
+    zonas_fracas = np.argsort(probs_gr)[:3].tolist()
+    dist_adv = get_dist_adversario(adv_info)
+    zona_adv_forte = np.argmax(dist_adv.flatten())
+    
+    st.markdown(f"### 🎯 Plano de Treino: **{gr_selecionado}** vs **{adv_nome}**")
     
     # Cruzar zonas fracas do GR com zonas fortes do adversário
     st.markdown("#### 🔥 Zonas PRIORITÁRIAS")
-    st.caption("Cruzamento: Zonas fracas do GR + Zonas preferidas do adversário")
+    st.caption(f"Zonas fracas do **{gr_selecionado}** + Zonas preferidas do **{adv_nome}**")
     
     # Calcular prioridade
     prioridades = []
     for zona_idx in range(9):
         prob_defesa = probs_gr[zona_idx]
         prob_ataque = dist_adv.flatten()[zona_idx]
-        
-        # Prioridade = onde o adversário ataca mais E o GR defende menos
         risco = (100 - prob_defesa) * prob_ataque / 100
         
         prioridades.append({
@@ -512,49 +558,69 @@ with tab3:
                 <div style="font-size: 14px; color: {cor};">PRIORIDADE {i+1}</div>
                 <div style="font-size: 22px; font-weight: bold; margin: 10px 0;">{prio['zona']}</div>
                 <div style="font-size: 13px; color: #666;">
-                    Defesa: <b>{prio['defesa']:.0f}%</b><br>
-                    Ataque ADV: <b>{prio['ataque_adv']:.1f}%</b>
+                    Defesa GR: <b>{prio['defesa']:.0f}%</b><br>
+                    Ataque ADV: <b>{prio['ataque_adv']:.1f}%</b><br>
+                    Risco: <b>{prio['risco']:.1f}</b>
                 </div>
             </div>
             """, unsafe_allow_html=True)
     
     st.divider()
     
+    # Calcular duração baseada na lacuna
+    def calcular_duracao_treino(prob_defesa):
+        """Quanto pior a zona, mais tempo de treino"""
+        if prob_defesa < 35:
+            return 30  # CRÍTICO - 30min
+        elif prob_defesa < 45:
+            return 25  # IMPORTANTE - 25min
+        else:
+            return 20  # ATENÇÃO - 20min
+    
     # Plano semanal
-    st.markdown("#### 📅 Plano Semanal de Treino")
+    st.markdown("#### 📅 Plano Semanal de Treino (1h30 por sessão)")
     
     dias = ['Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta']
+    
+    duracao_zona1 = calcular_duracao_treino(top3_prioridades[0]['defesa'])
+    duracao_zona2 = calcular_duracao_treino(top3_prioridades[1]['defesa'])
+    duracao_zona3 = calcular_duracao_treino(top3_prioridades[2]['defesa'])
     
     plano = {
         'Segunda': {
             'foco': top3_prioridades[0]['zona'],
             'zona_idx': top3_prioridades[0]['zona_idx'],
             'tipo': 'Técnico Intensivo',
-            'duracao': '45min'
+            'duracao_especifica': duracao_zona1,
+            'duracao_total': '1h30'
         },
         'Terça': {
             'foco': top3_prioridades[1]['zona'],
             'zona_idx': top3_prioridades[1]['zona_idx'],
             'tipo': 'Técnico + Reação',
-            'duracao': '40min'
+            'duracao_especifica': duracao_zona2,
+            'duracao_total': '1h30'
         },
         'Quarta': {
             'foco': 'Recuperação Ativa',
             'zona_idx': None,
             'tipo': 'Alongamentos + Mobilidade',
-            'duracao': '30min'
+            'duracao_especifica': None,
+            'duracao_total': '45min'
         },
         'Quinta': {
             'foco': top3_prioridades[2]['zona'],
             'zona_idx': top3_prioridades[2]['zona_idx'],
             'tipo': 'Técnico + Velocidade',
-            'duracao': '40min'
+            'duracao_especifica': duracao_zona3,
+            'duracao_total': '1h30'
         },
         'Sexta': {
             'foco': 'Simulação de Jogo',
             'zona_idx': None,
             'tipo': f'Remates estilo {adv_nome}',
-            'duracao': '35min'
+            'duracao_especifica': None,
+            'duracao_total': '1h30'
         }
     }
     
@@ -562,21 +628,21 @@ with tab3:
         info = plano[dia]
         zona_idx = info['zona_idx']
         
-        with st.expander(f"📅 **{dia}** - {info['foco']} ({info['duracao']})", expanded=(dia == 'Segunda')):
+        with st.expander(f"📅 **{dia}** - {info['foco']} ({info['duracao_total']})", expanded=(dia == 'Segunda')):
             
-            st.markdown(f"**Tipo:** {info['tipo']}")
+            st.markdown(f"**Tipo de Treino:** {info['tipo']}")
             
             if zona_idx is not None:
                 zona_info = EXERCICIOS[zona_idx]
+                duracao_esp = info['duracao_especifica']
                 
                 st.markdown(f"**Objetivo:** Melhorar defesa na zona {zona_info['zona']}")
+                st.markdown(f"**Tempo Zona Específica:** {duracao_esp} minutos (restante: aquecimento + exercícios gerais)")
                 st.markdown("")
                 
-                # Exercícios do dia
-                st.markdown("**Exercícios:**")
-                tempo_total = 0
+                # Exercícios específicos da zona
+                st.markdown("**🎯 Exercícios Específicos da Zona:**")
                 for ex in zona_info['exercicios']:
-                    tempo_total += int(ex['tempo'].replace('min', ''))
                     st.markdown(f"""
                     <div style="background: #f0f2f6; padding: 10px 15px; border-radius: 8px; margin-bottom: 8px;">
                         <div style="display: flex; justify-content: space-between;">
@@ -588,45 +654,62 @@ with tab3:
                 
                 st.markdown("")
                 st.markdown("**💡 Dicas do dia:**")
-                for dica in zona_info['dicas'][:2]:
+                for dica in zona_info['dicas']:
                     st.markdown(f"- {dica}")
+                
+                st.markdown("")
+                st.markdown(f"**⏱️ Estrutura da Sessão (90min):**")
+                st.markdown(f"""
+                - Aquecimento geral (15min)
+                - Exercícios zona específica ({duracao_esp}min)
+                - Exercícios complementares ({90-15-duracao_esp}min)
+                - Alongamentos finais (restante)
+                """)
             
             else:
                 if dia == 'Quarta':
+                    st.markdown("**⏱️ Sessão de Recuperação (45min):**")
                     st.markdown("""
-                    - Alongamentos dinâmicos (10min)
-                    - Mobilidade articular (10min)
+                    - Alongamentos dinâmicos (15min)
+                    - Mobilidade articular (15min)
                     - Exercícios de proprioceção (10min)
+                    - Relaxamento muscular (5min)
                     """)
                 else:
+                    st.markdown("**⏱️ Sessão de Jogo (90min):**")
                     st.markdown(f"""
-                    - Aquecimento específico (10min)
-                    - Remates variados (15min)
-                    - Situações de jogo (10min)
+                    - Aquecimento específico (15min)
+                    - Situações reais de jogo (45min)
+                    - Remates variados (20min)
+                    - Análise de vídeo + feedback (10min)
                     
                     **Simular padrões do {adv_nome}:**
                     - Velocidade média: {adv_info['velocidade_media_remate_kmh']} km/h
                     - Zona preferida: {ZONAS_NOME[zona_adv_forte]}
+                    - Foco nas 3 zonas prioritárias do plano
                     """)
     
     st.divider()
     
     # Resumo
-    st.markdown("#### 📊 Resumo do Plano")
+    st.markdown("#### 📊 Resumo do Plano Semanal")
     
     col1, col2, col3 = st.columns(3)
     
+    tempo_total = 90*3 + 45 + 90  # Segunda/Terça/Quinta/Sexta + Quarta
+    
     with col1:
-        st.metric("⏱️ Tempo Total", "190 min", "3h10")
+        st.metric("⏱️ Tempo Total Semanal", f"{tempo_total} min", f"{tempo_total//60}h{tempo_total%60}min")
     
     with col2:
-        st.metric("🎯 Zonas Trabalhadas", "3", f"{', '.join([p['zona'] for p in top3_prioridades])}")
+        zonas_trabalhadas = f"{top3_prioridades[0]['zona']}, {top3_prioridades[1]['zona']}, {top3_prioridades[2]['zona']}"
+        st.metric("🎯 Zonas Prioritárias", "3", zonas_trabalhadas)
     
     with col3:
-        # Melhoria esperada (estimativa)
-        melhoria_esperada = sum([100 - p['defesa'] for p in top3_prioridades]) * 0.1
-        st.metric("📈 Melhoria Esperada", f"+{melhoria_esperada:.0f}pp", "Estimativa")
-
+        # Melhoria esperada baseada nas lacunas
+        lacuna_media = np.mean([100 - p['defesa'] for p in top3_prioridades])
+        melhoria_esperada = lacuna_media * 0.15  # 15% de melhoria na lacuna
+        st.metric("📈 Melhoria Esperada", f"+{melhoria_esperada:.1f}%", "Por zona (1 mês)")
 # =============================================================================
 # FOOTER
 # =============================================================================

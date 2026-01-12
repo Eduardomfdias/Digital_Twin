@@ -45,12 +45,13 @@ predictor = get_predictor()
 # =============================================================================
 # HEATMAP BALIZA
 # =============================================================================
-def heatmap_baliza(grid, titulo="", height=350):
-    """Heatmap com baliza realista - grid[0]=Superior, grid[1]=Meio, grid[2]=Inferior"""
+def heatmap_baliza(grid, titulo="", height=400, destacar_fracas=None):
+    """Heatmap com baliza realista e opção de destacar zonas fracas"""
     grid_plot = np.flipud(grid)
     
     fig = go.Figure()
     
+    # Heatmap
     fig.add_trace(go.Heatmap(
         z=grid_plot, x=[0, 1, 2], y=[0, 1, 2],
         colorscale='RdYlGn', zmin=0, zmax=100,
@@ -59,34 +60,55 @@ def heatmap_baliza(grid, titulo="", height=350):
         showscale=False, xgap=3, ygap=3
     ))
     
-    # Postes listrados
+    # Postes laterais listrados
     for i in range(8):
         c = '#C41E3A' if i % 2 == 0 else 'white'
-        fig.add_shape(type='rect', x0=-0.6, x1=-0.45, y0=-0.5+i*0.4, y1=-0.5+(i+1)*0.4, fillcolor=c, line=dict(width=0))
-        fig.add_shape(type='rect', x0=2.45, x1=2.6, y0=-0.5+i*0.4, y1=-0.5+(i+1)*0.4, fillcolor=c, line=dict(width=0))
-    for i in range(8):
-        c = '#C41E3A' if i % 2 == 0 else 'white'
-        fig.add_shape(type='rect', x0=-0.6+i*0.42, x1=-0.6+(i+1)*0.42, y0=2.45, y1=2.6, fillcolor=c, line=dict(width=0))
+        fig.add_shape(type='rect', x0=-0.6, x1=-0.45, y0=-0.5+i*0.4, y1=-0.5+(i+1)*0.4, 
+                      fillcolor=c, line=dict(width=0))
+        fig.add_shape(type='rect', x0=2.45, x1=2.6, y0=-0.5+i*0.4, y1=-0.5+(i+1)*0.4, 
+                      fillcolor=c, line=dict(width=0))
     
-    # Rede
-    for i in range(-5, 10):
-        fig.add_shape(type='line', x0=-0.5, x1=2.5, y0=-0.5+i*0.4, y1=0.5+i*0.4, line=dict(color='rgba(150,150,150,0.15)', width=1))
-        fig.add_shape(type='line', x0=-0.5, x1=2.5, y0=2.5-i*0.4, y1=1.5-i*0.4, line=dict(color='rgba(150,150,150,0.15)', width=1))
+    # Trave superior listrada
+    for i in range(8):
+        c = '#C41E3A' if i % 2 == 0 else 'white'
+        fig.add_shape(type='rect', x0=-0.6+i*0.42, x1=-0.6+(i+1)*0.42, y0=2.45, y1=2.6, 
+                      fillcolor=c, line=dict(width=0))
+    
+    # Destacar zonas fracas com borda vermelha
+    if destacar_fracas:
+        for zona_idx in destacar_fracas:
+            row = zona_idx // 3
+            col = zona_idx % 3
+            y_plot = 2 - row
+            x_plot = col
+            fig.add_shape(type='rect', 
+                         x0=x_plot-0.48, x1=x_plot+0.48, 
+                         y0=y_plot-0.48, y1=y_plot+0.48,
+                         line=dict(color='#ff0000', width=4),
+                         fillcolor='rgba(0,0,0,0)')
     
     # Labels
-    fig.add_annotation(x=0, y=-0.75, text="Esq", showarrow=False, font=dict(size=10, color='#666'))
-    fig.add_annotation(x=1, y=-0.75, text="Centro", showarrow=False, font=dict(size=10, color='#666'))
-    fig.add_annotation(x=2, y=-0.75, text="Dir", showarrow=False, font=dict(size=10, color='#666'))
-    fig.add_annotation(x=-0.85, y=2, text="Sup", showarrow=False, font=dict(size=10, color='#666'))
-    fig.add_annotation(x=-0.85, y=1, text="Meio", showarrow=False, font=dict(size=10, color='#666'))
-    fig.add_annotation(x=-0.85, y=0, text="Inf", showarrow=False, font=dict(size=10, color='#666'))
+    fig.add_annotation(x=0, y=-0.75, text="Esq", showarrow=False, 
+                      font=dict(size=10, color='#666'))
+    fig.add_annotation(x=1, y=-0.75, text="Centro", showarrow=False, 
+                      font=dict(size=10, color='#666'))
+    fig.add_annotation(x=2, y=-0.75, text="Dir", showarrow=False, 
+                      font=dict(size=10, color='#666'))
+    fig.add_annotation(x=-0.85, y=2, text="Sup", showarrow=False, 
+                      font=dict(size=10, color='#666'))
+    fig.add_annotation(x=-0.85, y=1, text="Meio", showarrow=False, 
+                      font=dict(size=10, color='#666'))
+    fig.add_annotation(x=-0.85, y=0, text="Inf", showarrow=False, 
+                      font=dict(size=10, color='#666'))
     
     fig.update_layout(
-        title=dict(text=titulo, font=dict(size=14)), height=height,
-        xaxis=dict(showgrid=False, showticklabels=False, range=[-1.1, 3.1]),
-        yaxis=dict(showgrid=False, showticklabels=False, scaleanchor='x', range=[-1, 3.1]),
+        title=dict(text=titulo, font=dict(size=14)),
+        height=height,
+        xaxis=dict(showgrid=False, showticklabels=False, range=[-1.1, 3.1], fixedrange=True),
+        yaxis=dict(showgrid=False, showticklabels=False, scaleanchor='x', range=[-1, 3.1], fixedrange=True),
         margin=dict(l=10, r=10, t=40, b=10),
-        plot_bgcolor='rgba(0,0,0,0)', paper_bgcolor='rgba(0,0,0,0)'
+        plot_bgcolor='rgba(0,0,0,0)', 
+        paper_bgcolor='rgba(0,0,0,0)'
     )
     
     return fig
@@ -133,35 +155,34 @@ def gerar_recomendacoes_posicionamento(zona_adv_forte, zona_gr_fraca, minuto, di
     # =================================================================
     if zona_adv_forte == zona_gr_fraca:
         recomendacoes.append({
-            'icon': '🚨', 'titulo': f'RISCO CRÍTICO - {zonas_nome[zona_adv_forte]}',
-            'descricao': 'Zona fraca = Zona preferida do adversário! Reforçar este lado.',
+            'icon': '🚨', 'titulo': f'RISCO MÁXIMO - {zonas_nome[zona_adv_forte]}',
+            'descricao': f'Adversário remata {zonas_nome[zona_adv_forte].upper()} (zona mais fraca). Antecipar sempre para este lado!',
             'prioridade': 'critica'
         })
     
     # =================================================================
     # 2. POSIÇÃO LATERAL (baseada no padrão do adversário)
     # =================================================================
-    # Zonas esquerdas: 0, 3, 6 | Zonas direitas: 2, 5, 8 | Centro: 1, 4, 7
     zonas_esq = [0, 3, 6]
     zonas_dir = [2, 5, 8]
     zonas_centro = [1, 4, 7]
     
     if zona_adv_forte in zonas_esq:
         recomendacoes.append({
-            'icon': '⬅️', 'titulo': 'Descair para ESQUERDA',
-            'descricao': 'Adversário ataca mais pela esquerda - aproximar do poste esquerdo',
+            'icon': '⬅️', 'titulo': 'Descair 20-30cm para ESQUERDA',
+            'descricao': 'Adversário prefere lado esquerdo. Ganhar ângulo desse lado, forçar remate à direita.',
             'prioridade': 'alta'
         })
     elif zona_adv_forte in zonas_dir:
         recomendacoes.append({
-            'icon': '➡️', 'titulo': 'Descair para DIREITA',
-            'descricao': 'Adversário ataca mais pela direita - aproximar do poste direito',
+            'icon': '➡️', 'titulo': 'Descair 20-30cm para DIREITA',
+            'descricao': 'Adversário prefere lado direito. Ganhar ângulo desse lado, forçar remate à esquerda.',
             'prioridade': 'alta'
         })
     else:
         recomendacoes.append({
-            'icon': '⚖️', 'titulo': 'Manter CENTRO',
-            'descricao': 'Adversário ataca pelo centro - posição central equilibrada',
+            'icon': '⚖️', 'titulo': 'Posição CENTRAL equilibrada',
+            'descricao': 'Adversário remata ao centro. Manter 50/50 nos lados, não descair prematuramente.',
             'prioridade': 'media'
         })
     
@@ -170,45 +191,44 @@ def gerar_recomendacoes_posicionamento(zona_adv_forte, zona_gr_fraca, minuto, di
     # =================================================================
     vel_adv = adv_info['velocidade_media_remate_kmh']
     
-    # Zonas altas: 0, 1, 2 | Zonas médias: 3, 4, 5 | Zonas baixas: 6, 7, 8
     if zona_adv_forte in [0, 1, 2]:
         # Ataca alto
         if vel_adv >= 95:
             recomendacoes.append({
-                'icon': '📍', 'titulo': 'Posição RECUADA + ALTA',
-                'descricao': f'Remates altos e fortes ({vel_adv:.0f}km/h) - recuar 30cm, braços altos',
+                'icon': '📍', 'titulo': 'RECUAR 30-40cm na baliza',
+                'descricao': f'Remates altos e rápidos ({vel_adv:.0f}km/h). Ganhar tempo de reação. Braços sempre acima dos ombros.',
                 'prioridade': 'alta'
             })
         else:
             recomendacoes.append({
-                'icon': '📍', 'titulo': 'Posição NEUTRA + ALTA',
-                'descricao': f'Remates altos mas lentos ({vel_adv:.0f}km/h) - manter posição, braços altos',
+                'icon': '📍', 'titulo': 'Posição base NEUTRA',
+                'descricao': f'Remates altos mas controláveis ({vel_adv:.0f}km/h). Manter posição base, preparar salto.',
                 'prioridade': 'media'
             })
     elif zona_adv_forte in [6, 7, 8]:
         # Ataca baixo
         recomendacoes.append({
-            'icon': '📍', 'titulo': 'Posição AVANÇADA + BAIXA',
-            'descricao': 'Remates baixos - avançar 30-40cm, baixar centro de gravidade',
+            'icon': '📍', 'titulo': 'AVANÇAR 30-40cm + baixar corpo',
+            'descricao': 'Remates baixos. Ganhar ângulo inferior, fechar espaço entre pernas. Centro gravidade baixo.',
             'prioridade': 'alta'
         })
         recomendacoes.append({
-            'icon': '🦵', 'titulo': 'Pernas ATIVAS',
-            'descricao': 'Flexionar joelhos, peso na ponta dos pés, pronto para mergulhar',
+            'icon': '🦵', 'titulo': 'Joelhos fletidos, peso nos pés',
+            'descricao': 'Pronto para mergulho lateral. NUNCA cruzar pernas. Atacar a bola, não esperar.',
             'prioridade': 'alta'
         })
     else:
         # Ataca meio
         if vel_adv >= 95:
             recomendacoes.append({
-                'icon': '📍', 'titulo': 'Posição ligeiramente RECUADA',
-                'descricao': f'Remates fortes ({vel_adv:.0f}km/h) - recuar 15-20cm para ter tempo',
+                'icon': '📍', 'titulo': 'RECUAR 15-20cm',
+                'descricao': f'Remates fortes à meia-altura ({vel_adv:.0f}km/h). Dar margem para reação lateral.',
                 'prioridade': 'media'
             })
         else:
             recomendacoes.append({
-                'icon': '📍', 'titulo': 'Posição NEUTRA',
-                'descricao': 'Manter posição base, braços preparados',
+                'icon': '📍', 'titulo': 'Posição BASE equilibrada',
+                'descricao': 'Velocidade normal. Posição base standard, pronto para qualquer direção.',
                 'prioridade': 'media'
             })
     
@@ -217,80 +237,67 @@ def gerar_recomendacoes_posicionamento(zona_adv_forte, zona_gr_fraca, minuto, di
     # =================================================================
     prob_min = min(probs_gr)
     if prob_min < 45:
-        lado_fraco = ""
-        if zona_gr_fraca in zonas_esq:
-            lado_fraco = "esquerdo"
-        elif zona_gr_fraca in zonas_dir:
-            lado_fraco = "direito"
-        else:
-            lado_fraco = "central"
-        
-        altura_fraca = ""
-        if zona_gr_fraca in [0, 1, 2]:
-            altura_fraca = "alto"
-        elif zona_gr_fraca in [6, 7, 8]:
-            altura_fraca = "baixo"
-        else:
-            altura_fraca = "meia-altura"
+        lado_fraco = "esquerdo" if zona_gr_fraca in zonas_esq else "direito" if zona_gr_fraca in zonas_dir else "central"
+        altura_fraca = "alto" if zona_gr_fraca in [0, 1, 2] else "baixo" if zona_gr_fraca in [6, 7, 8] else "meia-altura"
         
         recomendacoes.append({
-            'icon': '🎯', 'titulo': f'Compensar zona FRACA ({prob_min:.0f}%)',
-            'descricao': f'Canto {altura_fraca} {lado_fraco} - antecipar e pré-posicionar nesse lado',
+            'icon': '🎯', 'titulo': f'PRÉ-POSICIONAR lado {lado_fraco.upper()}',
+            'descricao': f'Zona fraca ({prob_min:.0f}%): {altura_fraca} {lado_fraco}. Antecipar 0.2s antes, ganhar meio passo.',
             'prioridade': 'media'
         })
     
     # =================================================================
-    # 5. CONTEXTO: RESULTADO + MINUTO (sem contradições)
+    # 5. CONTEXTO: RESULTADO + MINUTO
     # =================================================================
     if diferenca <= -3:
         recomendacoes.append({
-            'icon': '⚡', 'titulo': 'A PERDER muito - ARRISCAR',
-            'descricao': 'Nada a perder - posição avançada, provocar erros, sair da baliza',
+            'icon': '⚡', 'titulo': 'A PERDER - SER AGRESSIVO',
+            'descricao': 'Posição 40-50cm avançada. Provocar erros. Sair para interceptar passes. Arriscar.',
             'prioridade': 'alta'
         })
     elif diferenca < 0:
         if minuto >= 50:
             recomendacoes.append({
-                'icon': '⚡', 'titulo': 'Final a PERDER - ARRISCAR',
-                'descricao': 'Pouco tempo - ser agressivo, avançar na baliza',
+                'icon': '⚡', 'titulo': 'Fim do jogo A PERDER - ASSUMIR RISCOS',
+                'descricao': 'Últimos minutos. Posição muito avançada. Forçar turnovers. Jogar psicológico.',
                 'prioridade': 'alta'
             })
         else:
             recomendacoes.append({
-                'icon': '💪', 'titulo': 'A PERDER - Ser AGRESSIVO',
-                'descricao': 'Precisas de defesas - posição mais avançada',
+                'icon': '💪', 'titulo': 'A PERDER no meio do jogo - SER PROATIVO',
+                'descricao': 'Ainda há tempo. Posição 20-30cm avançada. Mostrar confiança, pressionar adversário.',
                 'prioridade': 'media'
             })
     elif diferenca >= 3:
         recomendacoes.append({
-            'icon': '🛡️', 'titulo': 'A GANHAR muito - GERIR',
-            'descricao': 'Confortável - não arriscar, cobrir bem a baliza',
+            'icon': '🛡️', 'titulo': 'A GANHAR confortável (+3) - GERIR VANTAGEM',
+            'descricao': 'Posição conservadora. Não arriscar saídas. Cobrir bem os ângulos. Segurança máxima.',
             'prioridade': 'media'
         })
     elif diferenca > 0:
         if minuto >= 50:
             recomendacoes.append({
-                'icon': '🛡️', 'titulo': 'Final a GANHAR - CONSERVADOR',
-                'descricao': 'Proteger vantagem - posição segura, não sair da baliza',
+                'icon': '🛡️', 'titulo': 'Fim do jogo A GANHAR - PROTEGER RESULTADO',
+                'descricao': 'Últimos minutos com vantagem. Posição base sólida. Zero riscos. Defender ângulos.',
                 'prioridade': 'alta'
             })
         else:
             recomendacoes.append({
-                'icon': '✅', 'titulo': 'A GANHAR - Manter',
-                'descricao': 'Continuar o que está a funcionar',
+                'icon': '✅', 'titulo': 'A GANHAR - MANTER intensidade defensiva',
+                'descricao': 'Meio do jogo com vantagem. Posição equilibrada. Não relaxar. Antecipar padrões adversários.',
                 'prioridade': 'baixa'
             })
     else:
         if minuto >= 50:
             recomendacoes.append({
-                'icon': '⚖️', 'titulo': 'Final EMPATADO - Equilibrado',
-                'descricao': 'Não cometer erros, esperar oportunidade',
+                'icon': '⚖️', 'titulo': 'Fim EMPATADO - CONCENTRAÇÃO MÁXIMA',
+                'descricao': 'Minutos finais empatados. Uma defesa decide. Posição base perfeita. Zero erros.',
                 'prioridade': 'alta'
             })
         elif minuto <= 15:
             recomendacoes.append({
-                'icon': '🟢', 'titulo': 'Início EMPATADO - Impor ritmo',
-                'descricao': 'Ser agressivo, assumir riscos calculados',
+                'icon': '🟢', 'titulo': 'Início EMPATADO - IMPOR presença',
+                'descricao': 'Início de jogo. Mostrar confiança. Ocupar espaço. Comunicar alto com defesa.',
                 'prioridade': 'media'
             })
     
@@ -401,13 +408,10 @@ st.markdown(f"""
 """, unsafe_allow_html=True)
 
 # =============================================================================
-# TABS: JOGO NORMAL vs PENALTY
+# TABS: JOGO NORMAL vs pênalti
 # =============================================================================
-tab_jogo, tab_penalty = st.tabs(["⚽ Jogo Normal", "🎯 Penalty (7m)"])
+tab_jogo, tab_penalty = st.tabs(["⚽ Jogo Normal", "🎯 Pênalti (7m)"])
 
-# =============================================================================
-# TAB 1: JOGO NORMAL
-# =============================================================================
 with tab_jogo:
     st.markdown("### 🥅 QUEM DEVE ESTAR EM CAMPO?")
     cols = st.columns(3)
@@ -434,7 +438,6 @@ with tab_jogo:
             else:
                 borda, badge = f"2px solid {cor}", ""
             
-            # ESTE BLOCO TEM DE ESTAR AQUI DENTRO DO FOR
             st.markdown(f"""
             <div style="background: {cor}22; border: {borda}; border-radius: 12px; 
                         padding: 20px 15px; text-align: center; min-height: 180px; 
@@ -455,13 +458,7 @@ with tab_jogo:
     with col_heat:
         st.markdown(f"### 🗺️ {gr_atual_nome} - Prob. Defesa")
         fig = heatmap_baliza(gr_atual_data['grid'], f"Min {minuto} | {dist}m | {vel}km/h", 420)
-        st.plotly_chart(fig, use_container_width=True)
-        
-        zonas_nome = ['Sup.Esq', 'Sup.Centro', 'Sup.Dir', 'Meio.Esq', 'Meio.Centro', 'Meio.Dir', 'Inf.Esq', 'Inf.Centro', 'Inf.Dir']
-        probs_flat = gr_atual_data['probs']
-        col1, col2 = st.columns(2)
-        col1.success(f"✅ Forte: {zonas_nome[np.argmax(probs_flat)]} ({max(probs_flat):.0f}%)")
-        col2.error(f"⚠️ Fraca: {zonas_nome[np.argmin(probs_flat)]} ({min(probs_flat):.0f}%)")
+        st.plotly_chart(fig, use_container_width=True, config={'displayModeBar': False})
 
     with col_decisao:
         st.markdown("### 💡 DECISÃO")
@@ -481,7 +478,7 @@ with tab_jogo:
                 <div style="font-size: 40px;">🔄</div>
                 <div style="font-size: 22px; font-weight: bold; color: #dc3545;">TROCAR</div>
                 <div style="font-size: 14px;">{gr_atual_nome} → <b>{melhor['nome']}</b></div>
-                <div style="font-size: 24px; color: #28a745;">+{diff:.0f}pp</div>
+                <div style="font-size: 24px; color: #28a745;">+{diff:.0f}%</div>
             </div>
             """, unsafe_allow_html=True)
         elif diff > 2:
@@ -489,7 +486,7 @@ with tab_jogo:
             <div style="background: #ffc10733; border: 3px solid #ffc107; border-radius: 12px; padding: 20px; text-align: center;">
                 <div style="font-size: 40px;">🤔</div>
                 <div style="font-size: 22px; font-weight: bold; color: #ffc107;">CONSIDERAR</div>
-                <div style="font-size: 14px;">{melhor['nome']} +{diff:.0f}pp</div>
+                <div style="font-size: 14px;">{melhor['nome']} +{diff:.0f}%</div>
             </div>
             """, unsafe_allow_html=True)
         else:
@@ -498,16 +495,32 @@ with tab_jogo:
                 <div style="font-size: 40px;">✅</div>
                 <div style="font-size: 22px; font-weight: bold; color: #17a2b8;">MANTER</div>
                 <div style="font-size: 16px;">{gr_atual_nome}</div>
-                <div style="font-size: 12px; color: #666;">Dif. mínima ({diff:.0f}pp)</div>
+                <div style="font-size: 12px; color: #666;">Dif. mínima ({diff:.0f}%)</div>
             </div>
             """, unsafe_allow_html=True)
+        
+        # Pontos forte/fraco (abaixo da decisão)
+        st.markdown("<br>", unsafe_allow_html=True)
+        zonas_nome = ['Sup.Esq', 'Sup.Centro', 'Sup.Dir', 'Meio.Esq', 'Meio.Centro', 'Meio.Dir', 'Inf.Esq', 'Inf.Centro', 'Inf.Dir']
+        probs_flat = gr_atual_data['probs']
+        
+        st.markdown(f"""
+        <div style="background: #28a74522; border-left: 4px solid #28a745; 
+                    padding: 12px; border-radius: 8px; margin-bottom: 8px;">
+            <div style="font-size: 14px; font-weight: bold; color: #28a745;">
+                ✅ Forte: {zonas_nome[np.argmax(probs_flat)]} ({max(probs_flat):.0f}%)
+            </div>
+        </div>
+        <div style="background: #dc354522; border-left: 4px solid #dc3545; 
+                    padding: 12px; border-radius: 8px;">
+            <div style="font-size: 14px; font-weight: bold; color: #dc3545;">
+                ⚠️ Fraca: {zonas_nome[np.argmin(probs_flat)]} ({min(probs_flat):.0f}%)
+            </div>
+        </div>
+        """, unsafe_allow_html=True)
     
-    # RECOMENDAÇÕES TÁTICAS
-    st.divider()
-    
-    # RECOMENDAÇÕES TÁTICAS
-    # RECOMENDAÇÕES TÁTICAS
-    st.divider()
+    # RECOMENDAÇÕES TÁTICAS (sem dividers)
+    st.markdown("<br>", unsafe_allow_html=True)
     st.markdown("### 📋 INSTRUÇÕES TÁTICAS")
     
     recomendacoes = gerar_recomendacoes_posicionamento(
@@ -523,14 +536,23 @@ with tab_jogo:
         }
         cor_bg, cor_borda, cor_texto = cor_map.get(rec['prioridade'], ('#17a2b833', '#17a2b8', '#fff'))
         
+        # Dividir descrição em bullet points
+        descricao_linhas = rec['descricao'].split('. ')
+        descricao_html = ''.join([f"<li style='margin-bottom: 4px;'>{linha.strip()}{'.' if not linha.endswith('.') else ''}</li>" 
+                                   for linha in descricao_linhas if linha.strip()])
+        
         st.markdown(f"""
         <div style="background: {cor_bg}; border-left: 6px solid {cor_borda}; 
                     padding: 16px 20px; border-radius: 0 12px 12px 0; margin-bottom: 12px;">
-            <div style="display: flex; align-items: center; gap: 15px;">
-                <span style="font-size: 32px;">{rec['icon']}</span>
-                <div>
-                    <div style="font-size: 18px; font-weight: bold; color: {cor_borda};">{rec['titulo']}</div>
-                    <div style="font-size: 14px; color: #888; margin-top: 4px;">{rec['descricao']}</div>
+            <div style="display: flex; align-items: flex-start; gap: 15px;">
+                <span style="font-size: 32px; margin-top: 4px;">{rec['icon']}</span>
+                <div style="flex: 1;">
+                    <div style="font-size: 18px; font-weight: bold; color: {cor_borda}; margin-bottom: 8px;">
+                        {rec['titulo']}
+                    </div>
+                    <ul style="font-size: 14px; color: #333; margin: 0; padding-left: 20px; list-style-type: disc;">
+                        {descricao_html}
+                    </ul>
                 </div>
             </div>
         </div>
@@ -540,14 +562,14 @@ with tab_jogo:
 # TAB 2: PENALTY
 # =============================================================================
 with tab_penalty:
-    st.markdown("### 🎯 Quem deve defender o PENALTY?")
+    st.markdown("### 🎯 Quem deve defender o Pênalti?")
     
     # Velocidade do penalty
     col_info, col_vel = st.columns([2, 1])
     with col_info:
         st.caption(f"Adversário: **{adv_nome}** | Vel. média: {adv_info['velocidade_media_remate_kmh']} km/h")
     with col_vel:
-        vel_penalty = st.slider("Vel. Penalty", 80, 120, int(adv_info['velocidade_media_remate_kmh']), key="vel_pen")
+        vel_penalty = st.slider("Vel. Pênalti", 80, 120, int(adv_info['velocidade_media_remate_kmh']), key="vel_pen")
     
     st.markdown("")
     
@@ -562,7 +584,7 @@ with tab_penalty:
     
     ranking_pen = sorted(ranking_pen, key=lambda x: x['media'], reverse=True)
     
-    # Semáforo
+    # SEMÁFORO - CARDS EM CIMA (MESMO TAMANHO)
     cols = st.columns(3)
     for i, r in enumerate(ranking_pen):
         with cols[i]:
@@ -577,29 +599,24 @@ with tab_penalty:
             else:
                 cor, icon = "#dc3545", "⚠️"
             
-            # Definir badge
             if is_atual and is_melhor:
-                borda = "4px solid gold"
-                badge = "⭐ EM CAMPO + RECOMENDADO"
+                borda, badge = "4px solid gold", "⭐ EM CAMPO + RECOMENDADO"
             elif is_atual:
-                borda = "4px solid #17a2b8"
-                badge = "🔵 EM CAMPO"
+                borda, badge = "4px solid #17a2b8", "🔵 EM CAMPO"
             elif is_melhor:
-                borda = "4px solid gold"
-                badge = "⭐ RECOMENDADO"
+                borda, badge = "4px solid gold", "⭐ RECOMENDADO"
             else:
-                borda = f"2px solid {cor}"
-                badge = ""
+                borda, badge = f"2px solid {cor}", ""
             
             st.markdown(f"""
             <div style="background: {cor}22; border: {borda}; border-radius: 12px; 
-                        padding: 20px 15px; text-align: center; min-height: 180px;
+                        padding: 20px 15px; text-align: center; min-height: 180px; 
                         display: flex; flex-direction: column; justify-content: center;">
                 <div style="font-size: 28px; margin-bottom: 5px;">{icon}</div>
                 <div style="font-size: 18px; font-weight: bold; margin-bottom: 8px;">{r['nome']}</div>
                 <div style="font-size: 42px; font-weight: bold; color: {cor}; line-height: 1;">{taxa:.0f}%</div>
                 <div style="font-size: 11px; color: #888; margin-top: 8px;">7 metros | {r['altura']}cm</div>
-                <div style="font-size: 11px; color: gold; min-height: 16px; margin-top: 4px;">{badge}</div>
+                <div style="font-size: 11px; color: gold; min-height: 16px; margin-top: 4px;">{badge if badge else ""}</div>
             </div>
             """, unsafe_allow_html=True)
     
@@ -611,7 +628,7 @@ with tab_penalty:
     diff_pen = melhor_pen['media'] - atual_pen['media']
     
     if melhor_pen['nome'] == gr_atual_nome:
-        st.success(f"✅ **MANTER {gr_atual_nome}** para o penalty - é o melhor!")
+        st.success(f"✅ **MANTER {gr_atual_nome}** para o Pênalti é a melhor opção!")
     elif diff_pen > 5:
         st.error(f"🔄 **TROCAR para {melhor_pen['nome']}** (+{diff_pen:.0f}pp)")
     elif diff_pen > 2:
@@ -621,30 +638,11 @@ with tab_penalty:
     
     st.divider()
     
-    # Heatmaps - UM POR LINHA (maiores)
-    st.markdown("### 🗺️ Comparação por Zona (7m)")
+    # HEATMAPS - 3 LADO A LADO (grandes)
+    st.markdown("### 🗺️ Comparação por Zona (7 metros)")
+    cols_heat = st.columns(3)
     
     for i, r in enumerate(ranking_pen):
-        col1, col2 = st.columns([2, 1])
-        
-        with col1:
-            fig = heatmap_baliza(r['grid'], "", 320)
-            st.plotly_chart(fig, use_container_width=True)
-        
-        with col2:
-            st.markdown(f"""
-            <div style="padding: 20px; height: 100%; display: flex; flex-direction: column; justify-content: center;">
-                <div style="font-size: 24px; font-weight: bold; margin-bottom: 10px;">{r['nome']}</div>
-                <div style="font-size: 48px; font-weight: bold; color: {'#28a745' if r['media'] >= 50 else '#ffc107' if r['media'] >= 40 else '#dc3545'};">{r['media']:.0f}%</div>
-                <div style="font-size: 14px; color: #888; margin-top: 10px;">Média de defesa a 7m</div>
-                <div style="font-size: 12px; color: #666; margin-top: 5px;">Altura: {r['altura']}cm</div>
-            </div>
-            """, unsafe_allow_html=True)
-        
-        if i < len(ranking_pen) - 1:
-            st.divider()
-# =============================================================================
-# FOOTER
-# =============================================================================
-st.divider()
-st.caption("⏱️ Timeout ABC Braga | H2O.ai AutoML | Decisão em 90s")
+        with cols_heat[i]:
+            fig = heatmap_baliza(r['grid'], r['nome'], 500)
+            st.plotly_chart(fig, use_container_width=True, config={'displayModeBar': False})

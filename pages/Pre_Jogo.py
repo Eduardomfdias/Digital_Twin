@@ -45,54 +45,70 @@ predictor = get_predictor()
 # =============================================================================
 # HEATMAP BALIZA (Superior em cima, Inferior em baixo)
 # =============================================================================
-def heatmap_baliza(grid, titulo="", height=400, escala_max=100):
-    """
-    grid: array 3x3 onde:
-        - grid[0] = linha SUPERIOR (y=2, topo)
-        - grid[1] = linha MEIO (y=1)
-        - grid[2] = linha INFERIOR (y=0, chão)
-    """
-    # Inverter para plotly (y=0 em baixo)
+def heatmap_baliza(grid, titulo="", height=400, destacar_fracas=None, escala_max=100):
+    """Heatmap com baliza realista e opção de destacar zonas fracas"""
     grid_plot = np.flipud(grid)
     
     fig = go.Figure()
     
+    # Heatmap
     fig.add_trace(go.Heatmap(
-        z=grid_plot,
-        x=['Esquerda', 'Centro', 'Direita'],
-        y=['Inferior', 'Meio', 'Superior'],
-        colorscale='RdYlGn',
-        zmin=0, zmax=escala_max,
-        text=np.round(grid_plot, 1),
-        texttemplate='%{text}%',
-        textfont=dict(size=16, color='black', family='Arial Black'),
-        hovertemplate='%{y} %{x}: %{z:.1f}%<extra></extra>',
-        colorbar=dict(title='%')
+        z=grid_plot, x=[0, 1, 2], y=[0, 1, 2],
+        colorscale='RdYlGn', zmin=0, zmax=escala_max,
+        text=np.round(grid_plot, 0), texttemplate='%{text}%',
+        textfont=dict(size=20, color='black', family='Arial Black'),
+        showscale=False, xgap=3, ygap=3
     ))
     
-    # Postes (vermelho/branco estilo andebol)
-    fig.add_shape(type='rect', x0=-0.55, x1=-0.45, y0=-0.5, y1=2.5,
-                  fillcolor='#C41E3A', line=dict(width=0))
-    fig.add_shape(type='rect', x0=2.45, x1=2.55, y0=-0.5, y1=2.5,
-                  fillcolor='white', line=dict(color='#ccc', width=1))
+    # Postes laterais listrados
+    for i in range(8):
+        c = '#C41E3A' if i % 2 == 0 else 'white'
+        fig.add_shape(type='rect', x0=-0.6, x1=-0.45, y0=-0.5+i*0.4, y1=-0.5+(i+1)*0.4, 
+                      fillcolor=c, line=dict(width=0))
+        fig.add_shape(type='rect', x0=2.45, x1=2.6, y0=-0.5+i*0.4, y1=-0.5+(i+1)*0.4, 
+                      fillcolor=c, line=dict(width=0))
     
-    # Trave superior
-    fig.add_shape(type='rect', x0=-0.55, x1=2.55, y0=2.45, y1=2.55,
-                  fillcolor='white', line=dict(color='#ccc', width=1))
+    # Trave superior listrada
+    for i in range(8):
+        c = '#C41E3A' if i % 2 == 0 else 'white'
+        fig.add_shape(type='rect', x0=-0.6+i*0.42, x1=-0.6+(i+1)*0.42, y0=2.45, y1=2.6, 
+                      fillcolor=c, line=dict(width=0))
     
-    # Linhas divisórias
-    for i in [0.5, 1.5]:
-        fig.add_shape(type='line', x0=-0.5, x1=2.5, y0=i, y1=i,
-                      line=dict(color='rgba(0,0,0,0.2)', width=1, dash='dot'))
-        fig.add_shape(type='line', x0=i, x1=i, y0=-0.5, y1=2.5,
-                      line=dict(color='rgba(0,0,0,0.2)', width=1, dash='dot'))
+    # Destacar zonas fracas com borda vermelha
+    if destacar_fracas:
+        for zona_idx in destacar_fracas:
+            row = zona_idx // 3
+            col = zona_idx % 3
+            y_plot = 2 - row
+            x_plot = col
+            fig.add_shape(type='rect', 
+                         x0=x_plot-0.48, x1=x_plot+0.48, 
+                         y0=y_plot-0.48, y1=y_plot+0.48,
+                         line=dict(color='#ff0000', width=4),
+                         fillcolor='rgba(0,0,0,0)')
+    
+    # Labels
+    fig.add_annotation(x=0, y=-0.75, text="Esq", showarrow=False, 
+                      font=dict(size=10, color='#666'))
+    fig.add_annotation(x=1, y=-0.75, text="Centro", showarrow=False, 
+                      font=dict(size=10, color='#666'))
+    fig.add_annotation(x=2, y=-0.75, text="Dir", showarrow=False, 
+                      font=dict(size=10, color='#666'))
+    fig.add_annotation(x=-0.85, y=2, text="Sup", showarrow=False, 
+                      font=dict(size=10, color='#666'))
+    fig.add_annotation(x=-0.85, y=1, text="Meio", showarrow=False, 
+                      font=dict(size=10, color='#666'))
+    fig.add_annotation(x=-0.85, y=0, text="Inf", showarrow=False, 
+                      font=dict(size=10, color='#666'))
     
     fig.update_layout(
         title=dict(text=titulo, font=dict(size=14)),
         height=height,
-        xaxis=dict(constrain='domain', showgrid=False),
-        yaxis=dict(scaleanchor='x', showgrid=False),
-        margin=dict(l=20, r=60, t=40, b=20)
+        xaxis=dict(showgrid=False, showticklabels=False, range=[-1.1, 3.1], fixedrange=True),
+        yaxis=dict(showgrid=False, showticklabels=False, scaleanchor='x', range=[-1, 3.1], fixedrange=True),
+        margin=dict(l=10, r=10, t=40, b=10),
+        plot_bgcolor='rgba(0,0,0,0)', 
+        paper_bgcolor='rgba(0,0,0,0)'
     )
     
     return fig
@@ -106,12 +122,19 @@ def get_distribuicao_adversario(adv):
     media = adv['remates_zona_media_perc']
     baixa = adv['remates_zona_baixa_perc']
     
+    # Distribuir cada faixa pelas 3 colunas (Esq, Centro, Dir)
     # grid[0]=Superior, grid[1]=Meio, grid[2]=Inferior
     grid = np.array([
-        [alta * 0.28, alta * 0.44, alta * 0.28],
-        [media * 0.35, media * 0.30, media * 0.35],
-        [baixa * 0.30, baixa * 0.40, baixa * 0.30]
+        [alta * 0.28, alta * 0.44, alta * 0.28],      # Total = alta
+        [media * 0.35, media * 0.30, media * 0.35],   # Total = media
+        [baixa * 0.30, baixa * 0.40, baixa * 0.30]    # Total = baixa
     ])
+    
+    # Normalizar para somar 100%
+    total = grid.sum()
+    if total > 0:
+        grid = (grid / total) * 100
+    
     return grid
 
 
@@ -243,7 +266,7 @@ with tab1:
     with col1:
         st.markdown("### 📍 Distribuição de Remates")
         fig = heatmap_baliza(dist_adv, "", 400, escala_max=25)
-        st.plotly_chart(fig, use_container_width=True)
+        st.plotly_chart(fig, use_container_width=True, config={'displayModeBar': False})
         
         # Zona mais atacada
         idx = np.unravel_index(dist_adv.argmax(), dist_adv.shape)
@@ -253,25 +276,87 @@ with tab1:
         st.warning(f"⚠️ **Zona preferida**: {zonas[idx]} ({dist_adv[idx]:.1f}%)")
     
     with col2:
-        st.markdown("### ⚡ Características")
+        st.markdown("### ⚡ Características & Alertas")
         
-        st.metric("🚀 Velocidade Média", f"{adv['velocidade_media_remate_kmh']} km/h")
-        st.metric("⚡ Transições/Jogo", adv['transicoes_rapidas_jogo'])
-        st.metric("🎯 Eficácia 1ª Linha", f"{adv['eficacia_primeira_linha_perc']}%")
-        st.metric("🎯 Eficácia 2ª Linha", f"{adv['eficacia_segunda_linha_perc']}%")
+        # CARACTERÍSTICAS - Cards bonitos
+        st.markdown("#### 📊 Perfil do Adversário")
         
-        st.divider()
+        cols_metricas = st.columns(2)
+        with cols_metricas[0]:
+            st.markdown(f"""
+            <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
+                        padding: 15px; border-radius: 10px; text-align: center; margin-bottom: 10px;">
+                <div style="font-size: 12px; color: #fff; opacity: 0.9;">🚀 Velocidade</div>
+                <div style="font-size: 28px; font-weight: bold; color: #fff;">{adv['velocidade_media_remate_kmh']}</div>
+                <div style="font-size: 11px; color: #fff; opacity: 0.8;">km/h</div>
+            </div>
+            """, unsafe_allow_html=True)
+            
+            st.markdown(f"""
+            <div style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); 
+                        padding: 15px; border-radius: 10px; text-align: center;">
+                <div style="font-size: 12px; color: #fff; opacity: 0.9;">🎯 1ª Linha</div>
+                <div style="font-size: 28px; font-weight: bold; color: #fff;">{adv['eficacia_primeira_linha_perc']}</div>
+                <div style="font-size: 11px; color: #fff; opacity: 0.8;">% eficácia</div>
+            </div>
+            """, unsafe_allow_html=True)
         
-        st.markdown("### 🚨 Alertas")
+        with cols_metricas[1]:
+            st.markdown(f"""
+            <div style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); 
+                        padding: 15px; border-radius: 10px; text-align: center; margin-bottom: 10px;">
+                <div style="font-size: 12px; color: #fff; opacity: 0.9;">⚡ Transições</div>
+                <div style="font-size: 28px; font-weight: bold; color: #fff;">{adv['transicoes_rapidas_jogo']}</div>
+                <div style="font-size: 11px; color: #fff; opacity: 0.8;">por jogo</div>
+            </div>
+            """, unsafe_allow_html=True)
+            
+            st.markdown(f"""
+            <div style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); 
+                        padding: 15px; border-radius: 10px; text-align: center;">
+                <div style="font-size: 12px; color: #fff; opacity: 0.9;">🎯 2ª Linha</div>
+                <div style="font-size: 28px; font-weight: bold; color: #fff;">{adv['eficacia_segunda_linha_perc']}</div>
+                <div style="font-size: 11px; color: #fff; opacity: 0.8;">% eficácia</div>
+            </div>
+            """, unsafe_allow_html=True)
+        
+        st.markdown("")
+        
+        # ALERTAS - Cards coloridos
+        st.markdown("#### 🚨 Pontos de Atenção")
+        
+        alertas_ativos = []
+        
         if adv['velocidade_media_remate_kmh'] > 100:
-            st.error("🔴 Remates muito rápidos!")
-        if adv['transicoes_rapidas_jogo'] > 20:
-            st.error("🔴 Muitas transições!")
-        if adv['eficacia_primeira_linha_perc'] > 65:
-            st.warning("🟠 Perigo na 1ª linha")
+            alertas_ativos.append(("🔴", "Remates muito rápidos!", "#dc3545"))
         
-        st.caption(f"Estilo: {adv['estilo_ofensivo']}")
-
+        if adv['transicoes_rapidas_jogo'] > 20:
+            alertas_ativos.append(("🔴", "Muitas transições rápidas!", "#dc3545"))
+        
+        if adv['eficacia_primeira_linha_perc'] > 65:
+            alertas_ativos.append(("🟠", "Alta eficácia na 1ª linha", "#ffc107"))
+        
+        if alertas_ativos:
+            for icon, msg, cor in alertas_ativos:
+                st.markdown(f"""
+                <div style="background: {cor}22; border-left: 5px solid {cor}; 
+                            padding: 12px 15px; border-radius: 8px; margin-bottom: 8px;">
+                    <span style="font-size: 18px; margin-right: 10px;">{icon}</span>
+                    <span style="font-size: 14px; font-weight: bold; color: {cor};">{msg}</span>
+                </div>
+                """, unsafe_allow_html=True)
+        else:
+            st.markdown(f"""
+            <div style="background: #28a74522; border-left: 5px solid #28a745; 
+                        padding: 12px 15px; border-radius: 8px;">
+                <span style="font-size: 18px; margin-right: 10px;">✅</span>
+                <span style="font-size: 14px; font-weight: bold; color: #28a745;">Adversário equilibrado</span>
+            </div>
+            """, unsafe_allow_html=True)
+        
+        st.markdown("")
+        st.caption(f"**Estilo ofensivo:** {adv['estilo_ofensivo']}")
+    
 # =============================================================================
 # TAB 2: QUAL GR?
 # =============================================================================
