@@ -639,19 +639,18 @@ with tab_penalty:
     st.divider()
     
     # HEATMAPS - 3 LADO A LADO (grandes)
-st.markdown("### 🗺️ Comparação por Zona (7 metros)")
-cols_heat = st.columns(3)
-
-for i, r in enumerate(ranking_pen):
-    with cols_heat[i]:
-        st.markdown(f"""
-        <div style="text-align: center; margin-bottom: -50px;">
-            <span style="font-size: 1.5rem; font-weight: 700; color: #333;">
-                {r['nome']}
-            </span>
-        </div>
-        """, unsafe_allow_html=True)
+    st.markdown("### 🗺️ Comparação por Zona (7 metros)")
+    cols_heat = st.columns(3)
         
-        fig = heatmap_baliza(r['grid'], "", 700)
-        st.plotly_chart(fig, use_container_width=True, config={'displayModeBar': False})
- 
+    for i, r in enumerate(ranking_pen):
+        with cols_heat[i]:
+            st.markdown(f"""
+                <div style="text-align: center; margin-bottom: -50px;">
+                    <span style="font-size: 1.5rem; font-weight: 700; color: #333;">
+                        {r['nome']}
+                    </span>
+                </div>
+                """, unsafe_allow_html=True)
+                
+            fig = heatmap_baliza(r['grid'], "", 700)
+            st.plotly_chart(fig, use_container_width=True, config={'displayModeBar': False})

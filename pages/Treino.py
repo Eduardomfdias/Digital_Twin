@@ -49,9 +49,9 @@ EXERCICIOS = {
         'zona': 'Superior Esquerda',
         'problema': 'Dificuldade em alcançar o canto alto esquerdo',
         'exercicios': [
-            {'nome': 'Salto lateral explosivo', 'desc': 'Saltar do centro para o canto superior esquerdo', 'reps': '3x10', 'tempo': '10min'},
-            {'nome': 'Envergadura com elástico', 'desc': 'Esticar braço esquerdo contra resistência', 'reps': '3x15', 'tempo': '8min'},
-            {'nome': 'Reação a bola alta', 'desc': 'Treinador lança bolas altas, GR defende', 'reps': '3x12', 'tempo': '12min'},
+            {'nome': 'Salto lateral explosivo', 'desc': 'Saltar do centro para o canto superior esquerdo', 'reps': '3x10'},
+            {'nome': 'Envergadura com elástico', 'desc': 'Esticar braço esquerdo contra resistência', 'reps': '3x15'},
+            {'nome': 'Reação a bola alta', 'desc': 'Treinador lança bolas altas, GR defende', 'reps': '3x12'},
         ],
         'dicas': ['Manter braço esquerdo mais alto na posição base', 'Trabalhar impulsão da perna direita', 'Antecipar remates ao ângulo']
     },
@@ -59,9 +59,9 @@ EXERCICIOS = {
         'zona': 'Superior Centro',
         'problema': 'Remates altos ao centro passam por cima',
         'exercicios': [
-            {'nome': 'Salto vertical', 'desc': 'Saltar na vertical com braços esticados', 'reps': '3x12', 'tempo': '10min'},
-            {'nome': 'Defesa em X', 'desc': 'Posição X com braços e pernas abertos', 'reps': '3x10', 'tempo': '8min'},
-            {'nome': 'Bolas altas em sequência', 'desc': 'Defender bolas altas consecutivas', 'reps': '4x8', 'tempo': '15min'},
+            {'nome': 'Salto vertical', 'desc': 'Saltar na vertical com braços esticados', 'reps': '3x12'},
+            {'nome': 'Defesa em X', 'desc': 'Posição X com braços e pernas abertos', 'reps': '3x10'},
+            {'nome': 'Bolas altas em sequência', 'desc': 'Defender bolas altas consecutivas', 'reps': '4x8'},
         ],
         'dicas': ['Posição mais recuada contra rematadores de longe', 'Mãos sempre acima dos ombros', 'Não baixar a guarda']
     },
@@ -69,9 +69,9 @@ EXERCICIOS = {
         'zona': 'Superior Direita',
         'problema': 'Dificuldade em alcançar o canto alto direito',
         'exercicios': [
-            {'nome': 'Salto lateral explosivo', 'desc': 'Saltar do centro para o canto superior direito', 'reps': '3x10', 'tempo': '10min'},
-            {'nome': 'Envergadura com elástico', 'desc': 'Esticar braço direito contra resistência', 'reps': '3x15', 'tempo': '8min'},
-            {'nome': 'Reação cruzada', 'desc': 'Bola do lado esquerdo para canto direito alto', 'reps': '3x10', 'tempo': '12min'},
+            {'nome': 'Salto lateral explosivo', 'desc': 'Saltar do centro para o canto superior direito', 'reps': '3x10'},
+            {'nome': 'Envergadura com elástico', 'desc': 'Esticar braço direito contra resistência', 'reps': '3x15'},
+            {'nome': 'Reação cruzada', 'desc': 'Bola do lado esquerdo para canto direito alto', 'reps': '3x10'},
         ],
         'dicas': ['Manter braço direito mais alto', 'Trabalhar impulsão da perna esquerda', 'Atenção a remates cruzados']
     },
@@ -79,9 +79,9 @@ EXERCICIOS = {
         'zona': 'Meio Esquerda',
         'problema': 'Reação lenta ao lado esquerdo',
         'exercicios': [
-            {'nome': 'Deslocamento lateral', 'desc': 'Deslocamentos rápidos para a esquerda', 'reps': '4x10', 'tempo': '10min'},
-            {'nome': 'Defesa com step', 'desc': 'Step lateral + defesa com braço', 'reps': '3x12', 'tempo': '12min'},
-            {'nome': 'Reação a luz/som', 'desc': 'Reagir a estímulo e defender esquerda', 'reps': '3x15', 'tempo': '10min'},
+            {'nome': 'Deslocamento lateral', 'desc': 'Deslocamentos rápidos para a esquerda', 'reps': '4x10'},
+            {'nome': 'Defesa com step', 'desc': 'Step lateral + defesa com braço', 'reps': '3x12'},
+            {'nome': 'Reação a luz/som', 'desc': 'Reagir a estímulo e defender esquerda', 'reps': '3x15'},
         ],
         'dicas': ['Peso mais no pé direito para arrancar', 'Braço esquerdo sempre ativo', 'Antecipar o lado do remate']
     },
@@ -89,9 +89,9 @@ EXERCICIOS = {
         'zona': 'Meio Centro',
         'problema': 'Bolas ao corpo não são defendidas',
         'exercicios': [
-            {'nome': 'Defesa corporal', 'desc': 'Usar o corpo para bloquear bolas ao centro', 'reps': '3x15', 'tempo': '10min'},
-            {'nome': 'Posição fechada', 'desc': 'Treinar posição compacta', 'reps': '3x10', 'tempo': '8min'},
-            {'nome': 'Reação rápida ao centro', 'desc': 'Bolas rápidas ao corpo', 'reps': '4x12', 'tempo': '12min'},
+            {'nome': 'Defesa corporal', 'desc': 'Usar o corpo para bloquear bolas ao centro', 'reps': '3x15'},
+            {'nome': 'Posição fechada', 'desc': 'Treinar posição compacta', 'reps': '3x10'},
+            {'nome': 'Reação rápida ao centro', 'desc': 'Bolas rápidas ao corpo', 'reps': '4x12'},
         ],
         'dicas': ['Fechar mais o corpo na posição base', 'Usar pernas para bolas ao centro-baixo', 'Não abrir demasiado cedo']
     },
@@ -99,9 +99,9 @@ EXERCICIOS = {
         'zona': 'Meio Direita',
         'problema': 'Reação lenta ao lado direito',
         'exercicios': [
-            {'nome': 'Deslocamento lateral', 'desc': 'Deslocamentos rápidos para a direita', 'reps': '4x10', 'tempo': '10min'},
-            {'nome': 'Defesa com step', 'desc': 'Step lateral + defesa com braço', 'reps': '3x12', 'tempo': '12min'},
-            {'nome': 'Espelho', 'desc': 'Seguir movimentos do treinador', 'reps': '3x2min', 'tempo': '8min'},
+            {'nome': 'Deslocamento lateral', 'desc': 'Deslocamentos rápidos para a direita', 'reps': '4x10'},
+            {'nome': 'Defesa com step', 'desc': 'Step lateral + defesa com braço', 'reps': '3x12'},
+            {'nome': 'Espelho', 'desc': 'Seguir movimentos do treinador', 'reps': '3x2min'},
         ],
         'dicas': ['Peso mais no pé esquerdo para arrancar', 'Braço direito sempre ativo', 'Treinar velocidade lateral']
     },
@@ -109,9 +109,9 @@ EXERCICIOS = {
         'zona': 'Inferior Esquerda',
         'problema': 'Dificuldade em mergulhos para a esquerda',
         'exercicios': [
-            {'nome': 'Mergulho lateral', 'desc': 'Mergulhar para o canto inferior esquerdo', 'reps': '3x8', 'tempo': '12min'},
-            {'nome': 'Flexibilidade anca', 'desc': 'Alongamentos dinâmicos da anca', 'reps': '3x30s', 'tempo': '5min'},
-            {'nome': 'Spagat lateral', 'desc': 'Trabalhar abertura lateral', 'reps': '3x20s', 'tempo': '5min'},
+            {'nome': 'Mergulho lateral', 'desc': 'Mergulhar para o canto inferior esquerdo', 'reps': '3x8'},
+            {'nome': 'Flexibilidade anca', 'desc': 'Alongamentos dinâmicos da anca', 'reps': '3x30s'},
+            {'nome': 'Spagat lateral', 'desc': 'Trabalhar abertura lateral', 'reps': '3x20s'},
         ],
         'dicas': ['Baixar mais o centro de gravidade', 'Perna esquerda mais flexionada', 'Atacar a bola, não esperar']
     },
@@ -119,9 +119,9 @@ EXERCICIOS = {
         'zona': 'Inferior Centro',
         'problema': 'Bolas rasteiras passam entre as pernas',
         'exercicios': [
-            {'nome': 'Fecho de pernas', 'desc': 'Fechar pernas rapidamente', 'reps': '4x12', 'tempo': '10min'},
-            {'nome': 'Posição baixa', 'desc': 'Manter posição baixa prolongada', 'reps': '3x30s', 'tempo': '5min'},
-            {'nome': 'Bolas rasteiras', 'desc': 'Defender bolas pelo chão', 'reps': '3x15', 'tempo': '12min'},
+            {'nome': 'Fecho de pernas', 'desc': 'Fechar pernas rapidamente', 'reps': '4x12'},
+            {'nome': 'Posição baixa', 'desc': 'Manter posição baixa prolongada', 'reps': '3x30s'},
+            {'nome': 'Bolas rasteiras', 'desc': 'Defender bolas pelo chão', 'reps': '3x15'},
         ],
         'dicas': ['Joelhos mais fletidos', 'Nunca cruzar as pernas', 'Peso na ponta dos pés']
     },
@@ -129,9 +129,9 @@ EXERCICIOS = {
         'zona': 'Inferior Direita',
         'problema': 'Dificuldade em mergulhos para a direita',
         'exercicios': [
-            {'nome': 'Mergulho lateral', 'desc': 'Mergulhar para o canto inferior direito', 'reps': '3x8', 'tempo': '12min'},
-            {'nome': 'Flexibilidade anca', 'desc': 'Alongamentos dinâmicos da anca', 'reps': '3x30s', 'tempo': '5min'},
-            {'nome': 'Queda controlada', 'desc': 'Treinar técnica de queda para a direita', 'reps': '3x10', 'tempo': '8min'},
+            {'nome': 'Mergulho lateral', 'desc': 'Mergulhar para o canto inferior direito', 'reps': '3x8'},
+            {'nome': 'Flexibilidade anca', 'desc': 'Alongamentos dinâmicos da anca', 'reps': '3x30s'},
+            {'nome': 'Queda controlada', 'desc': 'Treinar técnica de queda para a direita', 'reps': '3x10'},
         ],
         'dicas': ['Baixar mais o centro de gravidade', 'Perna direita mais flexionada', 'Atacar a bola com a mão']
     }
@@ -391,7 +391,7 @@ with tab1:
                         </div>
                         <div style="text-align: right;">
                             <div style="font-size: 14px; font-weight: bold; color: #17a2b8;">{ex['reps']}</div>
-                            <div style="font-size: 12px; color: #888;">⏱️ {ex['tempo']}</div>
+                            <div style="font-size: 12px; color: #888;">⏱️ </div>
                         </div>
                     </div>
                 </div>
@@ -462,18 +462,17 @@ with tab2:
     st.markdown("<br>", unsafe_allow_html=True)
     
     # Especialista por Zona
-st.markdown("### 🏆 Especialista por Zona")
-st.caption("Quem é o melhor em cada zona da baliza?")
-
-# Grid 3x3 de cards - ALTURA REDUZIDA + LETRA MAIOR
-zona_idx = 0
-for row in range(3):
-    cols = st.columns(3)
-    for col in range(3):
-        melhor_gr = max(todos_grs, key=lambda x: x['probs'][zona_idx])
-        pior_gr = min(todos_grs, key=lambda x: x['probs'][zona_idx])
-        diff = melhor_gr['probs'][zona_idx] - pior_gr['probs'][zona_idx]
-        
+    st.markdown("### 🏆 Especialista por Zona")
+    st.caption("Quem é o melhor em cada zona da baliza?")
+    
+    # Grid 3x3 de cards - ALTURA REDUZIDA + LETRA MAIOR
+    zona_idx = 0
+    for row in range(3):
+        cols = st.columns(3)
+        for col in range(3):
+            melhor_gr = max(todos_grs, key=lambda x: x['probs'][zona_idx])
+            pior_gr = min(todos_grs, key=lambda x: x['probs'][zona_idx])
+            diff = melhor_gr['probs'][zona_idx] - pior_gr['probs'][zona_idx]
         with cols[col]:
             st.markdown(f"""
             <div style="background: white; padding: 12px 15px; border-radius: 6px; 
@@ -567,7 +566,7 @@ with tab3:
     
     col1, col2, col3 = st.columns(3)
     
-    tempo_total = 90*3 + 45 + 90  # Segunda/Terça/Quinta/Sexta + Quarta
+    tempo_total = 45*4 + 30   # Segunda/Terça/Quinta/Sexta + Quarta
     
     with col1:
         st.metric("⏱️ Tempo Total Semanal", f"{tempo_total} min", f"{tempo_total//60}h{tempo_total%60}min")
@@ -595,7 +594,7 @@ with tab3:
             return 20  # ATENÇÃO - 20min
     
     # Plano semanal
-    st.markdown("#### 📅 Plano Semanal de Treino (1h30 por sessão)")
+    st.markdown("#### 📅 Plano Semanal de Treino")
     
     dias = ['Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta']
     
@@ -609,35 +608,35 @@ with tab3:
             'zona_idx': top3_prioridades[0]['zona_idx'],
             'tipo': 'Técnico Intensivo',
             'duracao_especifica': duracao_zona1,
-            'duracao_total': '1h30'
+            'duracao_total': ''
         },
         'Terça': {
             'foco': top3_prioridades[1]['zona'],
             'zona_idx': top3_prioridades[1]['zona_idx'],
             'tipo': 'Técnico + Reação',
             'duracao_especifica': duracao_zona2,
-            'duracao_total': '1h30'
+            'duracao_total': ''
         },
         'Quarta': {
             'foco': 'Recuperação Ativa',
             'zona_idx': None,
             'tipo': 'Alongamentos + Mobilidade',
             'duracao_especifica': None,
-            'duracao_total': '45min'
+            'duracao_total': ''
         },
         'Quinta': {
             'foco': top3_prioridades[2]['zona'],
             'zona_idx': top3_prioridades[2]['zona_idx'],
             'tipo': 'Técnico + Velocidade',
             'duracao_especifica': duracao_zona3,
-            'duracao_total': '1h30'
+            'duracao_total': ''
         },
         'Sexta': {
             'foco': 'Simulação de Jogo',
             'zona_idx': None,
             'tipo': f'Remates estilo {adv_nome}',
             'duracao_especifica': None,
-            'duracao_total': '1h30'
+            'duracao_total': ''
         }
     }
     
@@ -645,7 +644,7 @@ with tab3:
         info = plano[dia]
         zona_idx = info['zona_idx']
         
-        with st.expander(f"📅 **{dia}** - {info['foco']} ({info['duracao_total']})", expanded=(dia == 'Segunda')):
+        with st.expander(f"📅 **{dia}** - {info['foco']}", expanded=(dia == 'Segunda')):
             
             st.markdown(f"**Tipo de Treino:** {info['tipo']}")
             
@@ -664,7 +663,7 @@ with tab3:
                     <div style="background: #f0f2f6; padding: 10px 15px; border-radius: 8px; margin-bottom: 8px;">
                         <div style="display: flex; justify-content: space-between;">
                             <span>🔹 <b>{ex['nome']}</b> - {ex['desc']}</span>
-                            <span style="color: #17a2b8;">{ex['reps']} | {ex['tempo']}</span>
+                            <span style="color: #17a2b8;">{ex['reps']} </span>
                         </div>
                     </div>
                     """, unsafe_allow_html=True)
@@ -675,30 +674,30 @@ with tab3:
                     st.markdown(f"- {dica}")
                 
                 st.markdown("")
-                st.markdown(f"**⏱️ Estrutura da Sessão (90min):**")
+                st.markdown(f"**⏱️ Estrutura da Sessão:**")
                 st.markdown(f"""
-                - Aquecimento geral (15min)
-                - Exercícios zona específica ({duracao_esp}min)
-                - Exercícios complementares ({90-15-duracao_esp}min)
+                - Aquecimento geral 
+                - Exercícios zona específica )
+                - Exercícios complementares )
                 - Alongamentos finais (restante)
                 """)
             
             else:
                 if dia == 'Quarta':
-                    st.markdown("**⏱️ Sessão de Recuperação (45min):**")
+                    st.markdown("**⏱️ Sessão de Recuperação:**")
                     st.markdown("""
-                    - Alongamentos dinâmicos (15min)
-                    - Mobilidade articular (15min)
-                    - Exercícios de proprioceção (10min)
-                    - Relaxamento muscular (5min)
+                    - Alongamentos dinâmicos 
+                    - Mobilidade articular
+                    - Exercícios de proprioceção 
+                    - Relaxamento muscular 
                     """)
                 else:
-                    st.markdown("**⏱️ Sessão de Jogo (90min):**")
+                    st.markdown("**⏱️ Sessão de Jogo:**")
                     st.markdown(f"""
-                    - Aquecimento específico (15min)
-                    - Situações reais de jogo (45min)
-                    - Remates variados (20min)
-                    - Análise de vídeo + feedback (10min)
+                    - Aquecimento específico 
+                    - Situações reais de jogo 
+                    - Remates variados 
+                    - Análise de vídeo + feedback 
                     
                     **Simular padrões do {adv_nome}:**
                     - Velocidade média: {adv_info['velocidade_media_remate_kmh']} km/h

@@ -198,7 +198,7 @@ with st.sidebar:
     cond_vel = st.slider("Velocidade (km/h)", 70, 120, int(adv['velocidade_media_remate_kmh']))
     
     st.divider()
-    st.caption(f"🤖 H2O.ai | AUC: 0.561")
+   
 
 # =============================================================================
 # HEADER (depois da sidebar!)
@@ -253,7 +253,7 @@ ranking = sorted(ranking, key=lambda x: x['media'], reverse=True)
 # =============================================================================
 # TABS
 # =============================================================================
-tab1, tab2, tab3 = st.tabs(["🎯 Adversário", "🥅 Qual GR?", "🔮 E Se...?"])
+tab1, tab2= st.tabs(["🎯 Adversário", "🥅 Qual GR?"])
 
 # =============================================================================
 # TAB 1: ADVERSÁRIO
@@ -334,7 +334,7 @@ with tab1:
             alertas_ativos.append(("🔴", "Muitas transições rápidas!", "#dc3545"))
         
         if adv['eficacia_primeira_linha_perc'] > 65:
-            alertas_ativos.append(("🟠", "Alta eficácia na 1ª linha", "#ffc107"))
+            alertas_ativos.append(("🟠", "Alta eficácia na 1ª linha (≤7m)", "#ffc107"))
         
         if alertas_ativos:
             for icon, msg, cor in alertas_ativos:
@@ -414,60 +414,6 @@ with tab2:
             fig = heatmap_baliza(r['grid'], "", 700)
             st.plotly_chart(fig, use_container_width=True)
 
-# =============================================================================
-# TAB 3: E SE...?
-# =============================================================================
-with tab3:
-    st.markdown("## 🔮 E Se...?")
-    st.info("💡 Ajusta os parâmetros e vê como muda a recomendação")
-    
-    col1, col2 = st.columns([1, 2])
-    
-    with col1:
-        st.markdown("### ⚙️ Cenário")
-        
-        sim_min = st.slider("Minuto", 0, 60, 45, key="sim_min")
-        sim_dif = st.slider("Diferença", -5, 5, -2, key="sim_dif")
-        sim_dist = st.slider("Distância", 6.0, 12.0, 7.0, key="sim_dist")
-        sim_vel = st.slider("Velocidade", 70, 120, 105, key="sim_vel")
-        
-        st.caption("📝 Cenário: Final de jogo, a perder, remates de perto e rápidos")
-    
-    with col2:
-        st.markdown("### 📊 Novo Ranking")
-        
-        # Recalcular
-        ranking_sim = []
-        for _, gr in grs.iterrows():
-            grid = calcular_probs_h2o(gr, predictor, sim_dist, sim_vel, sim_min, sim_dif)
-            media = calcular_media_ponderada(grid, dist_adv)
-            ranking_sim.append({'nome': gr['nome'], 'media': media, 'grid': grid})
-        
-        ranking_sim = sorted(ranking_sim, key=lambda x: x['media'], reverse=True)
-        
-        # Mostrar
-        for i, r in enumerate(ranking_sim):
-            if i == 0:
-                st.success(f"🥇 **{r['nome']}**: {r['media']:.1f}%")
-            elif i == 1:
-                st.info(f"🥈 **{r['nome']}**: {r['media']:.1f}%")
-            else:
-                st.warning(f"🥉 **{r['nome']}**: {r['media']:.1f}%")
-        
-        st.divider()
-        
-        # Comparar com original
-        if ranking[0]['nome'] != ranking_sim[0]['nome']:
-            st.error(f"🔄 **MUDANÇA!** Neste cenário, **{ranking_sim[0]['nome']}** é melhor que {ranking[0]['nome']}")
-        else:
-            st.success(f"✅ **{ranking[0]['nome']}** continua a ser o melhor")
-        
-        st.divider()
-        
-        # Heatmap do melhor
-        st.markdown(f"### 🗺️ {ranking_sim[0]['nome']} neste cenário")
-        fig = heatmap_baliza(ranking_sim[0]['grid'], "", 350)
-        st.plotly_chart(fig, use_container_width=True)
 
 # =============================================================================
 # FOOTER
