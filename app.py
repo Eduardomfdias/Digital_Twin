@@ -261,6 +261,9 @@ SELECT
     gr.nome,
     gr.altura_cm,
     gr.envergadura_cm,
+    gr.velocidade_lateral_ms,
+    gr.agilidade_ttest_s,
+    gr.alcance_vertical_cm,
     gr.posicao_principal,
     e.taxa_defesa_global,
     e.jogos_disputados
@@ -276,29 +279,18 @@ cols = st.columns(len(plantel_df))
 for idx, (col, (_, gr)) in enumerate(zip(cols, plantel_df.iterrows())):
     with col:
         emoji = "⭐" if gr['posicao_principal'] == "Titular" else "🔶"
-        st.markdown(f"""
-        <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
-                    padding: 2rem; border-radius: 15px; text-align: center; color: white;
-                    box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-            <div style="font-size: 3rem; margin-bottom: 0.5rem;">{emoji}</div>
-            <div style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem;">{gr['nome']}</div>
-            <div style="background: rgba(255,255,255,0.2); padding: 1rem; border-radius: 10px; margin-bottom: 0.8rem;">
-                <div style="font-size: 2rem; font-weight: 800;">{gr['altura_cm']} cm</div>
-                <div style="font-size: 0.85rem; opacity: 0.9;">Altura</div>
-            </div>
-            <div style="background: rgba(255,255,255,0.2); padding: 1rem; border-radius: 10px; margin-bottom: 0.8rem;">
-                <div style="font-size: 2rem; font-weight: 800;">{gr['envergadura_cm']} cm</div>
-                <div style="font-size: 0.85rem; opacity: 0.9;">Envergadura</div>
-            </div>
-            <div style="background: rgba(255,255,255,0.2); padding: 1rem; border-radius: 10px; margin-bottom: 0.8rem;">
-                <div style="font-size: 2rem; font-weight: 800;">{gr['taxa_defesa_global']:.1f}%</div>
-                <div style="font-size: 0.85rem; opacity: 0.9;">Taxa Defesa</div>
-            </div>
-            <div style="font-size: 0.9rem; opacity: 0.85; margin-top: 1rem;">
-                {gr['jogos_disputados']} jogos | {gr['posicao_principal']}
-            </div>
-        </div>
-        """, unsafe_allow_html=True)
+        
+        st.subheader(f"{emoji} {gr['nome']}")
+        
+        st.metric("🏋️ Altura", f"{gr['altura_cm']} cm")
+        st.metric("📏 Envergadura", f"{gr['envergadura_cm']} cm")
+        st.metric("⬆️ Alcance Vertical", f"{gr['alcance_vertical_cm']} cm")
+        st.metric("⚡ Velocidade Lateral", f"{gr['velocidade_lateral_ms']:.1f} m/s")
+        st.metric("🏃 Agilidade", f"{gr['agilidade_ttest_s']:.1f} s")
+        st.metric("🥅 Taxa Defesa", f"{gr['taxa_defesa_global']:.1f}%")
+        
+        st.caption(f"📊 {gr['jogos_disputados']} jogos | {gr['posicao_principal']}")
+        st.divider()
 
 # FOOTER
 st.markdown("""

@@ -462,56 +462,47 @@ with tab2:
     st.markdown("<br>", unsafe_allow_html=True)
     
     # Especialista por Zona
-    st.markdown("### 🏆 Especialista por Zona")
-    st.caption("Quem é o melhor em cada zona da baliza?")
-    
-    # Grid 3x3 de cards
-    zona_idx = 0
-    for row in range(3):
-        cols = st.columns(3)
-        for col in range(3):
-            melhor_gr = max(todos_grs, key=lambda x: x['probs'][zona_idx])
-            pior_gr = min(todos_grs, key=lambda x: x['probs'][zona_idx])
-            diff = melhor_gr['probs'][zona_idx] - pior_gr['probs'][zona_idx]
-            
-            with cols[col]:
-                st.markdown(f"""
-                <div style="background: white; padding: 1.2rem; border-radius: 10px; 
-                            box-shadow: 0 2px 8px rgba(0,0,0,0.1); border-top: 4px solid #28a745;">
-                    <div style="font-size: 0.85rem; color: #888; font-weight: 600; 
-                                text-transform: uppercase; margin-bottom: 0.8rem;">
-                        {ZONAS_NOME[zona_idx]}
-                    </div>
-                    <div style="display: flex; align-items: center; justify-content: space-between; 
-                                margin-bottom: 0.6rem;">
-                        <div>
-                            <div style="font-size: 0.75rem; color: #28a745;">🥇 Melhor</div>
-                            <div style="font-size: 1.1rem; font-weight: 700; color: #333;">
-                                {melhor_gr['nome']}
-                            </div>
-                            <div style="font-size: 1.4rem; font-weight: 800; color: #28a745;">
-                                {melhor_gr['probs'][zona_idx]:.0f}%
-                            </div>
-                        </div>
-                    </div>
-                    <div style="border-top: 1px solid #eee; padding-top: 0.6rem; margin-top: 0.6rem;">
-                        <div style="font-size: 0.75rem; color: #dc3545;">⚠️ Pior</div>
-                        <div style="font-size: 0.9rem; color: #666;">
-                            {pior_gr['nome']} ({pior_gr['probs'][zona_idx]:.0f}%)
-                        </div>
-                    </div>
-                    <div style="margin-top: 0.8rem; padding: 0.5rem; background: #f8f9fa; 
-                                border-radius: 6px; text-align: center;">
-                        <div style="font-size: 0.75rem; color: #666;">Gap</div>
-                        <div style="font-size: 1.2rem; font-weight: 700; color: #667eea;">
-                            {diff:.0f}%
-                        </div>
+st.markdown("### 🏆 Especialista por Zona")
+st.caption("Quem é o melhor em cada zona da baliza?")
+
+# Grid 3x3 de cards - ALTURA REDUZIDA + LETRA MAIOR
+zona_idx = 0
+for row in range(3):
+    cols = st.columns(3)
+    for col in range(3):
+        melhor_gr = max(todos_grs, key=lambda x: x['probs'][zona_idx])
+        pior_gr = min(todos_grs, key=lambda x: x['probs'][zona_idx])
+        diff = melhor_gr['probs'][zona_idx] - pior_gr['probs'][zona_idx]
+        
+        with cols[col]:
+            st.markdown(f"""
+            <div style="background: white; padding: 12px 15px; border-radius: 6px; 
+                        box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-top: 2px solid #28a745;
+                        max-width: 300px; margin: 0 auto;">
+                <div style="font-size: 13px; color: #888; font-weight: 600; 
+                            text-transform: uppercase; margin-bottom: 10px;">
+                    {ZONAS_NOME[zona_idx]}
+                </div>
+                <div style="margin-bottom: 10px;">
+                    <div style="font-size: 13px; color: #28a745;">🥇 {melhor_gr['nome']}</div>
+                    <div style="font-size: 28px; font-weight: 800; color: #28a745; line-height: 1;">
+                        {melhor_gr['probs'][zona_idx]:.0f}%
                     </div>
                 </div>
-                """, unsafe_allow_html=True)
-            
-            zona_idx += 1
-
+                <div style="border-top: 1px solid #eee; padding-top: 8px; margin-top: 8px; margin-bottom: 8px;">
+                    <div style="font-size: 13px; color: #dc3545;">
+                        ⚠️ {pior_gr['nome']} ({pior_gr['probs'][zona_idx]:.0f}%)
+                    </div>
+                </div>
+                <div style="padding: 6px; background: #f8f9fa; border-radius: 4px; text-align: center;">
+                    <span style="font-size: 12px; color: #666;">Gap:</span>
+                    <span style="font-size: 18px; font-weight: 700; color: #667eea; margin-left: 4px;">{diff:.0f}%</span>
+                </div>
+            </div>
+            """, unsafe_allow_html=True)
+        
+        zona_idx += 1
+        
 # =============================================================================
 # TAB 3: PLANO SEMANAL
 # =============================================================================
