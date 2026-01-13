@@ -462,17 +462,18 @@ with tab2:
     st.markdown("<br>", unsafe_allow_html=True)
     
     # Especialista por Zona
-    st.markdown("### 🏆 Especialista por Zona")
-    st.caption("Quem é o melhor em cada zona da baliza?")
-    
-    # Grid 3x3 de cards - ALTURA REDUZIDA + LETRA MAIOR
-    zona_idx = 0
-    for row in range(3):
-        cols = st.columns(3)
-        for col in range(3):
-            melhor_gr = max(todos_grs, key=lambda x: x['probs'][zona_idx])
-            pior_gr = min(todos_grs, key=lambda x: x['probs'][zona_idx])
-            diff = melhor_gr['probs'][zona_idx] - pior_gr['probs'][zona_idx]
+st.markdown("### 🏆 Especialista por Zona")
+st.caption("Quem é o melhor em cada zona da baliza?")
+
+# Grid 3x3 de cards - ALTURA REDUZIDA + LETRA MAIOR
+zona_idx = 0
+for row in range(3):
+    cols = st.columns(3)
+    for col in range(3):
+        melhor_gr = max(todos_grs, key=lambda x: x['probs'][zona_idx])
+        pior_gr = min(todos_grs, key=lambda x: x['probs'][zona_idx])
+        diff = melhor_gr['probs'][zona_idx] - pior_gr['probs'][zona_idx]
+        
         with cols[col]:
             st.markdown(f"""
             <div style="background: white; padding: 12px 15px; border-radius: 6px; 
